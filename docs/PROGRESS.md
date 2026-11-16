@@ -10,7 +10,9 @@
   development-only `/dev/styleguide`.
 - P2 implemented: lazy trilingual routing, IEEE header/footer, animated skyline, metadata, Contact/Credits/404,
   locale formatting and validated optional environment settings. Feature pages intentionally contain only their h1.
-- Next prompt: **P3 — United page**
+- P3 implemented: United split hero, editorial welcome, scroll-drawn journey map, comparison table,
+  twelve connecting cards and two feature teasers, with trilingual content and reduced-motion support.
+- Next prompt: **P4 — Country frame + Tunisia part 1**
 
 ## Checklist
 ### P0 — Bootstrap & tooling
@@ -127,8 +129,32 @@ Notes:
   Spec clarifications are recorded in D-028–D-031.
 
 ### P3 — United page
-- [ ] split hero, welcome, journey map, glance table, connecting grid, teasers
+- [x] split hero, welcome, journey map, glance table, connecting grid, teasers
 Notes:
+- 2026-11-16: Both flower photos load eagerly with high priority; mobile candidates stop at 1280px.
+  Tunisia stays west/left (above on mobile), Bahrain east/right (below), including in Arabic. Desktop
+  pointer/focus widening uses clipping and a translated seam; physical country arrows stay at the edges.
+- Both ornaments draw, headings reveal by lines (Arabic never splits words), the regional route scrubs,
+  halos pulse once and the distance counts to the content-backed 3,970 km. Reduced motion restores the
+  complete route and final number. All motion uses scoped useGSAP/matchMedia with cleanup.
+- Welcome uses the supplied first sentence and full paragraph. The 14-row table retains its caption,
+  column/row headers and a keyboard-scrollable region with sticky topic cells. All twelve cards link to
+  the specified Matrix slides; hero sharing preserves `?share=1`; teaser links use the requested routes.
+- Pinned and visually reviewed four replacement photos (Razji, Tunisian tea, Bahraini majlis, luqaimat),
+  with regenerated responsive files and credits. Seven card halves use graceful ornament placeholders:
+  two missing photos (`bh-wear-bisht`, `bh-nature-palm-groves`) and five held in `src/content/image-review.json`.
+- Landing JavaScript is approximately 176 KiB gzip (all initial requests, Arabic), below the 180 KiB
+  automated budget. Hero metadata is immediate; other United photo metadata, map artwork and footer
+  skyline load near the viewport. Build-time public environment validation retains the tested schema
+  while excluding Zod from the browser. Subpath/configuration checks pass.
+- `npm run verify` passes (62 unit/content/contrast tests). Playwright adds 44 United checks across
+  EN/FR/AR, 360/768/1280/1920px, normal/reduced motion, axe, geography, keyboard CTAs/cards, table semantics,
+  screenshots, live motion changes and the initial JS budget. The full regression run passed 112 cases;
+  four styleguide selectors needed adaptation to the new picture wrapper. The final focused run passed
+  all 48 United/styleguide cases, completing coverage of all 116 cases without browser errors/warnings.
+  `npm run format:check`, `git diff --check` and the configured `/exchange/` base-path check also pass.
+- Source-art and motion/layout decisions are documented in D-032–D-035. Hosted 4G LCP measurement remains
+  part of P13; the local preview and bundle checks do not establish field LCP.
 
 ### P4 — Country frame + Tunisia part 1
 - [ ] CountryPage frame + config + theming + SectionNav
@@ -227,14 +253,18 @@ Recorded 2026-11-16 from the installed lockfile (Node 24.21.0; npm 12.2.0).
 
 ## Known issues / follow-ups
 - **Review photo subjects before using them in pages.** The supplied resolver finds eligible licences but can rank
-  unrelated subjects highly. A contact-sheet spot check confirmed a damselfly for `un-hero-razji`; source-title
-  inspection also flags `tn-mon-sbeitla` (moth), `tn-food-lablabi` (bird), `tn-drink-mint-tea` (building),
+  unrelated subjects highly. P3 corrected `un-hero-razji`, `tn-drink-mint-tea`, `bh-fest-majlis` and
+  `bh-food-luqaimat`. Source-title inspection still flags `tn-mon-sbeitla` (moth), `tn-food-lablabi` (bird),
   `bh-craft-sadu` (Berlin courthouse), `bh-nature-springs` (Beijing Olympics), `bh-nature-beach` (Swedish parliament),
   `bh-mon-saar` (Spanish river), `bh-fest-national-day` (Singapore fireworks), `bh-food-harees` (hare),
   `bh-product-dates` (Georgian lake) and `cg-oud` (bridge). These examples are not an exhaustive review.
   Review the complete local contact sheet, then curate `scripts/images/overrides.json` and rerun affected ids;
   the supplied scripts, manifest and overrides were preserved byte-for-byte in P0. The 13 missing ids above
   also need curated sources; ResponsiveImage's P1 fallback must handle them.
+- United's five withheld selections need suitable replacements: `bh-hist-pearl-divers`,
+  `tn-wear-silver-jewellery`, `bh-wear-pearls`, `bh-craft-aali-pottery`, `bh-fest-fijiri`.
+  Remove their `image-review.json` holds only after reviewing replacement subjects. Nabeul's current
+  image is a painting of pottery; prefer a workshop/wares photograph in the broader editorial pass.
 - Use Node 22.22.2+, 24.15.0+ or 26+ for tests; the requested `>=22.12` engine alone does not cover latest jsdom.
 - Official IEEE files needed: Master Brand (white/black), favicon set, approved site identifier wordmark, cookie script (if required).
 - Organising IEEE units' names/logos for the footer "Organised by" strip.

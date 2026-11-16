@@ -1,0 +1,10 @@
+import { readFile, writeFile } from 'node:fs/promises';
+const root = new URL('../../', import.meta.url);
+const generated = JSON.parse(await readFile(new URL('src/content/generated/images.generated.json', root)));
+const media = JSON.parse(await readFile(new URL('src/content/media.json', root))).united;
+const rejected = JSON.parse(await readFile(new URL('src/content/image-review.json', root)));
+const ids = new Set(JSON.stringify(media).match(/(?:un|tn|bh|cg)-[a-z-]+/g));
+const catalog = Object.fromEntries(Object.entries(generated.images).filter(([id]) => ids.has(id) && !Object.hasOwn(rejected, id)));
+await writeFile(new URL('src/content/generated/united.generated.json', root), JSON.stringify(catalog, null, 2) + '\n');
+const hero = Object.fromEntries(Object.entries(catalog).filter(([id]) => media.hero.images.includes(id)));
+await writeFile(new URL('src/content/generated/united-hero.generated.json', root), JSON.stringify(hero, null, 2) + '\n');

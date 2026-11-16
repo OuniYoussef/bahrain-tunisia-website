@@ -1,0 +1,48 @@
+{
+  "un-hero-jasmine": {
+    "group": "united",
+    "src": "/images/photos/united/un-hero-jasmine",
+    "widths": [
+      640,
+      1280,
+      1920,
+      2560
+    ],
+    "width": 2560,
+    "height": 1920,
+    "lqip": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAABwBQCdASoYABIAPu1sqlEppaOiqAqpMB2JQBfnAeLVulG4B64Gn+5PyLxU2wWBJeDrOfgAAP7Z90BjhSOYSePIH6Nmugm1suND5Ob86L9Mnn/Cbf6S1IqNHf/IV5VX9D9LzY2TIHefWUMUULKNCFh4j/a+PI7Rx2DgGEU10YWmGUbClwWkCp47KQ0qlIE/CmmlWDfxscAPpzDVfHg3Fn4Y7qIdfBuLNG3HzzVZ0WqTCWmgaaAAAA==",
+    "color": "#383828",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Starr-090806-3871-Jasminum grandiflorum-flower-Wailuku-Maui (24340853294).jpg",
+      "author": "Forest and Kim Starr",
+      "license": "CC BY 3.0 us",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr-090806-3871-Jasminum_grandiflorum-flower-Wailuku-Maui_(24340853294).jpg",
+      "origin": "commons"
+    }
+  },
+  "un-hero-razji": {
+    "group": "united",
+    "src": "/images/photos/united/un-hero-razji",
+    "widths": [
+      640,
+      1280,
+      1920,
+      2560
+    ],
+    "width": 2560,
+    "height": 1920,
+    "lqip": "data:image/webp;base64,UklGRvAAAABXRUJQVlA4IOQAAABQBQCdASoYABIAPu1ur1IppiQiqAgBMB2JQBBc1yqjAdeQcoyM7T30AUMijCqNz0uxaAAA/oNmxUlfpmcFuuaeMt4GErJJmwSbmQjo3KZ82FCscxm1YxIkmp7atoJrsgLEeP4v/6brPMhW8Yzyb4DZ/vYE5fOtrSJNuLTBKp5y3wqFQZZvw3OOI4Tx1Rw6yncl1j22aJZmWaTJLoMJv5TfLCgyyOHZ/g1ghGE5zTRLjLNgjWVxQpNbpxb/ynvDHTyaOsxhNLeza5NoSDXNWnGiwayD+sKl1S6Evgq+hJrD/r/AAAA=",
+    "color": "#182818",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Jasminum sambac flower.jpg",
+      "author": "SJasminum",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jasminum_sambac_flower.jpg",
+      "origin": "commons"
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { parseEnv } from './env';
+import { parseEnv } from './env-schema';
 describe('optional environment configuration', () => {
   it('accepts an empty environment and disables unavailable features', () => {
     expect(parseEnv({})).toMatchObject({ basePath: '/', vaultMode: 'mock' });

@@ -1,6 +1,7 @@
 import { useRef, useState, type CSSProperties } from 'react';
 import { useContent, useLocale } from '@/i18n/content';
-import { buildSrcSet, getImage, imageSrc, assetUrl, type ImageId } from '@/lib/images';
+import { buildSrcSet, imageSrc, assetUrl, type ImageId } from '@/lib/images';
+import { useImage } from './ImageCatalog';
 import { cn } from '@/lib/cn';
 import { DUR, gsap, useGSAP } from '@/lib/gsap';
 import { Ornament } from './Ornament';
@@ -12,12 +13,18 @@ export type ResponsiveImageProps = {
   className?: string;
   alt?: string;
   priority?: boolean;
+  mobileMaxWidth?: number;
   credit?: boolean;
 };
 
 export function ResponsiveImage(props: ResponsiveImageProps) {
   // Reset load/error state when the source changes without remounting the parent's frame.
-  return <ImageContent key={props.id} {...props} />;
+  return props.alt === undefined ? <LocalizedImage {...props} /> : <ImageContent key={props.id} {...props} />;
+}
+
+function LocalizedImage(props: ResponsiveImageProps) {
+  const labels = useContent('images');
+  return <ImageContent key={props.id} {...props} alt={labels[props.id]} />;
 }
 
 function ImageContent({
@@ -26,13 +33,13 @@ function ImageContent({
   className,
   alt,
   priority = false,
+  mobileMaxWidth,
   credit = false,
 }: ResponsiveImageProps) {
-  const image = getImage(id);
-  const labels = useContent('images');
+  const image = useImage(id);
   const { ui } = useContent('common');
   const locale = useLocale();
-  const description = alt ?? labels[id];
+  const description = alt;
   const root = useRef<HTMLDivElement>(null);
   const img = useRef<HTMLImageElement>(null);
   const [loaded, setLoaded] = useState(false);
@@ -75,21 +82,33 @@ function ImageContent({
           </>
         ) : (
           <>
-            <img
-              ref={img}
-              src={imageSrc(image)}
-              srcSet={buildSrcSet(image)}
-              sizes={sizes}
-              width={image.width}
-              height={image.height}
-              alt={description}
-              loading={priority ? 'eager' : 'lazy'}
-              fetchPriority={priority ? 'high' : undefined}
-              decoding="async"
-              style={{ objectPosition: image.focal }}
-              onLoad={() => setLoaded(true)}
-              onError={() => setFailed(true)}
-            />
+            <picture className="contents">
+              {mobileMaxWidth && (
+                <source
+                  media="(width < 1024px)"
+                  sizes={sizes}
+                  srcSet={buildSrcSet({
+                    ...image,
+                    widths: image.widths.filter((width) => width <= mobileMaxWidth),
+                  })}
+                />
+              )}
+              <img
+                ref={img}
+                src={imageSrc(image)}
+                srcSet={buildSrcSet(image)}
+                sizes={sizes}
+                width={image.width}
+                height={image.height}
+                alt={description}
+                loading={priority ? 'eager' : 'lazy'}
+                fetchPriority={priority ? 'high' : undefined}
+                decoding="async"
+                style={{ objectPosition: image.focal }}
+                onLoad={() => setLoaded(true)}
+                onError={() => setFailed(true)}
+              />
+            </picture>
             <span
               data-lqip=""
               aria-hidden="true"

@@ -128,7 +128,10 @@ test('theme, direction and live reduced-motion changes preserve working controls
   await expect(page.locator('h1 div')).toHaveCount(0);
   await expect(page.locator('h1')).toHaveText(en.site.name);
   const image = page.locator('img[fetchpriority="high"]');
-  await expect(image.locator('..').locator('[data-lqip]')).toHaveCSS('opacity', '0');
+  await expect(page.locator('.ui-image:has(img[fetchpriority="high"]) [data-lqip]')).toHaveCSS(
+    'opacity',
+    '0',
+  );
   await image.dispatchEvent('error', { bubbles: false });
   await expect(page.locator('.ui-image-placeholder')).toHaveCount(2);
   expect(

@@ -133,3 +133,41 @@ An absolutely positioned skyline overlaps the preceding section while its ground
 this avoids negative-margin collapse painting ink behind the silhouette. Focusable HTML hotspots outside
 the aria-hidden SVG provide tooltips; the hidden landmark list stays within bounds in RTL. Ordinary feature
 pages retain only their localised h1 until their planned prompts, with dark surfaces exercising overlay chrome.
+
+**D-032 — United geography and compositor-only widening.** MOTION.md suggests flex-grow for the hero,
+but its transform/opacity/clip-path rule and AGENTS.md prohibit animating layout dimensions. Keep photo
+frames at 58% and animate their clipping boundary plus the gold seam transform. The geographic photo,
+ornament and country-arrow layers explicitly use LTR geometry in every locale; only text follows the
+reading direction. Below 1024px the photographs stack, with two ornaments above the headline and a
+separate translated above/below caption. Vertical edge-label writing mode belongs to the text span,
+not its positioned link, so logical offsets continue to refer to the physical horizontal axis.
+
+**D-033 — United media suitability and safe fallbacks.** The P0 resolver's licence eligibility does not
+establish subject relevance. Pin reviewed Wikimedia files for Razji (Jasminum sambac), Tunisian tea,
+Bahraini majlis and luqaimat in overrides.json; regenerate with both `--refresh` and `--force`, since
+`--force` alone re-encodes the cached old original. Retain the source attributions in generated credits.
+Withhold five unsuitable or unverified selections via image-review.json: a Japanese diver, Moroccan
+diadem, satellite image, A'ali's pottery roundabout monument and an unverified Fijiri photo. The latter
+two do not support their supplied subject descriptions. Together with two missing images, these use
+the established graceful placeholder while retaining the specified media ids. The current Nabeul
+painting depicts pottery but remains an editorial follow-up for photographic consistency.
+
+**D-034 — Keep the initial landing request set within budget.** A direct implementation loaded unrelated
+maps and all 170 photo records. Import flower SVGs directly; use a typed, statically selected United
+media lookup; generate hero/United photo catalogs from the canonical manifest during predev/prebuild
+and after image fetching. Load the remaining catalog, regional SVG and footer skyline near the viewport
+with reserved geometry. The footer waits for the route skeleton to disappear before observing, avoiding
+an early request caused by temporary short content. Register only used extra GSAP plugins. Move the same
+allowlisted Zod public-environment schema to Vite startup/build, injecting its parsed output; schema unit
+tests and the configured subpath browser check verify equivalent behavior. This supersedes D-028's
+runtime Zod Mini choice. Measure gzip for every initial JS response, with a 180 × 1024-byte ceiling.
+United's background and card photographs are decorative alongside the visible caption/theme/country
+copy, so they use empty alt text; other ResponsiveImage callers still read alt text from images.json.
+
+**D-035 — Stable counters and rendered-state accessibility checks.** Store the approximate distance
+value in media.united.journey and interpolate `{distance}` in the three locale labels. Animate only an
+aria-hidden visual count; assistive technology always receives the complete final distance. Preserve
+the native comparison table inside a labelled, focusable scroll section, including in RTL. Accessibility
+scans wait for the hero CTA opacity to reach one so they assess the settled interface rather than a
+transient fade. Dedicated checks cover live reduced-motion changes, keyboard navigation and physical
+country-edge positions in all four viewport sizes.

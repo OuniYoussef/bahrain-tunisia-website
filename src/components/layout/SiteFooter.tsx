@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 import { ArrowUp } from 'lucide-react';
 import { useContent, useLocale } from '@/i18n/content';
 import { NewsletterForm } from './NewsletterForm';
-import { Skyline } from './Skyline';
+import { DeferredSkyline } from './DeferredSkyline';
 import { SocialLinks } from './SocialLinks';
 import { hasSocialLinks } from './socials';
 import { useState } from 'react';
@@ -22,7 +22,7 @@ export function SiteFooter() {
   const { columns, ieeeLinks } = footer;
   return (
     <footer className="site-footer tone-ink">
-      <Skyline />
+      <DeferredSkyline />
       <div className="ui-container footer-content">
         <NewsletterForm />
         <div className="footer-links">

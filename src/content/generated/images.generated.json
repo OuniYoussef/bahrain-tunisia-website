@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T16:02:41.595Z",
+  "generatedAt": "2026-11-16T17:28:29.376Z",
   "images": {
     "bh-city-adliya": {
       "group": "bahrain",
@@ -579,16 +579,16 @@
         1440
       ],
       "width": 1440,
-      "height": 770,
-      "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAwBACdASoYAA0APu1iqU2ppaOiMAgBMB2JZgC/OB9TPJ4ohpq6NVtRuOAA/urpKWFuDfcS/5jsjI6i4HuJP4YlNmYxBD9ny+2ujg1FxlU76VsoQhUObnOGWG5lgeIpXzZk1N9m3Bp1ILtmFkQHwQ9aMgV5zpjh96Zm124uelJAAA==",
-      "color": "#d8d8d8",
+      "height": 810,
+      "lqip": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOmUABlGx8Ab+2KYzW+dwAA/mbYKOjH0Negpuy/xEXWhjAkBCaiqwqiepdQchBb7I1pbthUVakm5Qn8jItFB2+aXhZQrl0Lz0zBL6AVhRy7/3o1NWT8hGtXq6Q4wXlTlrg7fnB0t2kgCR1D4q9X1Wyd/6w33WyhEWKM8Lod6I24AAA=",
+      "color": "#e8d8c8",
       "focal": "50% 50%",
       "credit": {
-        "title": "خريطة مجلس التعاون لدول الخليج العربي.jpg",
-        "author": "ARABCREATOR7",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9_%D9%85%D8%AC%D9%84%D8%B3_%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86_%D9%84%D8%AF%D9%88%D9%84_%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC_%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A.jpg",
+        "title": "مجلس بحريني قديم.jpg",
+        "author": "Muneer-119",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D9%85%D8%AC%D9%84%D8%B3_%D8%A8%D8%AD%D8%B1%D9%8A%D9%86%D9%8A_%D9%82%D8%AF%D9%8A%D9%85.jpg",
         "origin": "commons"
       }
     },
@@ -733,16 +733,16 @@
         1440
       ],
       "width": 1440,
-      "height": 718,
-      "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAwBACdASoYAAwAPu1iqU2ppaOiMAgBMB2JQBdgMX6bz2ksNSWa1pcbWAAAzj8VnMKLkIcL7wNuKAIcdd+Y9AZUkw1pq9lLF2pYhDWOjmV+7PKW8X1FFvQOnEhiy+fWPwLkBBl/docALbKi7Kky2Ya1uKCUQbBIchMYJ8aP01K0azDUhkM7p1y16qoJ3i7VSAAAAA==",
-      "color": "#d8e8f8",
+      "height": 1268,
+      "lqip": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAAAwBQCdASoYABUAPu1urlIppiQiqAgBMB2JbAC/OBDc75N+8lKj6HgxX4/gl+19RZw4AAD6n+Rz8bKxmWFz5ZiuZgOE51OJQxwMgZBDp+4FkBPCoQco5Z59JG7WDvnKhs1FUwjxP5tJwYa3K4GL/KYRhY8yhwc3L66prbRwtDiASPVzuzo2a6uFn/xH3AngP2mi5wpXTfOrupY59RinJsuDcJBItiIFjtTrHGJx0TB9KEJAAAA=",
+      "color": "#d8d8d8",
       "focal": "50% 50%",
       "credit": {
-        "title": "Lokma Zamidar Bari 1.jpg",
-        "author": "Rangan Datta Wiki",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lokma_Zamidar_Bari_1.jpg",
+        "title": "Lugaimat Riyadh 2024.jpg",
+        "author": "Hamza A. Durrani",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lugaimat_Riyadh_2024.jpg",
         "origin": "commons"
       }
     },
@@ -2229,16 +2229,16 @@
         1440
       ],
       "width": 1440,
-      "height": 1440,
-      "lqip": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAADwBACdASoYABgAPu1kq06ppaOiKA1RMB2JYwDDcBFAX64zzUzI5MLapH9yM0NFMnwA/uq0vgX9kUm7C5U7T/6JQOjhA411UP9ZJ75YbNDz+M1YFoXpZKuXxLSw1xOOzIuU7a0FrbrowPfKw/dCaBWQaqVa0U/q31qTrbBhdHiPteXi16O8N1x+Tz/Wkgqf94VCrQ6G4FC15BYKxnkiPyC6DacKgIl+EDD8OHMyy3AAAA==",
-      "color": "#787878",
+      "height": 1411,
+      "lqip": "data:image/webp;base64,UklGRgABAABXRUJQVlA4IPQAAABQBgCdASoYABgAPu1oqVAppaOiqA1RMB2JZACsMuu0b0lQ5wzFNgJEB4c8JbI3vHPdjXN3QLNMSK58wAD+MQeocosZILIcKhCx5tF+mRFmtDy89hIJQN1xoyNgLepAadLY36spg0afUxs1IOf2WlWkZHS+xql5xiE8lqvH3eOrtSN2SAbdNqfrKQEMLm/v5XtjbbPAIMRUl8tPlUUQt7Q+KBtun9Tbx/T1myy0IlQ7ekqGVhhzWmWNvQunFJo6u0E7RQMxEHSgB4kah3IV+BmTcmFtcxSse0EJvUeBZeJi+QbnEonb7b6a1WdJGRET1ZHzcAAA",
+      "color": "#281818",
       "focal": "50% 50%",
       "credit": {
-        "title": "FOT3919 Doppemmietshaus Melscher Straße 12a; 12b.jpg",
-        "author": "August Geyler",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:FOT3919_Doppemmietshaus_Melscher_Stra%C3%9Fe_12a;_12b.jpg",
+        "title": "Tunisian Tea with pine nuts.jpg",
+        "author": "sky#walker",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tunisian_Tea_with_pine_nuts.jpg",
         "origin": "commons"
       }
     },
@@ -3721,16 +3721,16 @@
         2560
       ],
       "width": 2560,
-      "height": 1706,
-      "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAwBACdASoYABAAPu1iqU2ppaQiMAgBMB2JQAALcKXfKP9Kpi0nF9ladgAA/u6C99VoGTRX1EVOec/CpCwWRRpVBerPxvr4AbU5cIBUift9N5jT/Smm4puUNrCVyxHDpD3Mwnwy9CUxinuBoAA=",
-      "color": "#181808",
+      "height": 1920,
+      "lqip": "data:image/webp;base64,UklGRvAAAABXRUJQVlA4IOQAAABQBQCdASoYABIAPu1ur1IppiQiqAgBMB2JQBBc1yqjAdeQcoyM7T30AUMijCqNz0uxaAAA/oNmxUlfpmcFuuaeMt4GErJJmwSbmQjo3KZ82FCscxm1YxIkmp7atoJrsgLEeP4v/6brPMhW8Yzyb4DZ/vYE5fOtrSJNuLTBKp5y3wqFQZZvw3OOI4Tx1Rw6yncl1j22aJZmWaTJLoMJv5TfLCgyyOHZ/g1ghGE5zTRLjLNgjWVxQpNbpxb/ynvDHTyaOsxhNLeza5NoSDXNWnGiwayD+sKl1S6Evgq+hJrD/r/AAAA=",
+      "color": "#182818",
       "focal": "50% 50%",
       "credit": {
-        "title": "Aciagrion occidentale-Kadavoor-2017-05-08-001.jpg",
-        "author": "Jeevan Jose, Kerala, India",
+        "title": "Jasminum sambac flower.jpg",
+        "author": "SJasminum",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aciagrion_occidentale-Kadavoor-2017-05-08-001.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jasminum_sambac_flower.jpg",
         "origin": "commons"
       }
     }

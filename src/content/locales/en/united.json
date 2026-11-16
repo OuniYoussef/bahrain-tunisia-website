@@ -13,7 +13,8 @@
     "discoverBahrain": "Discover Bahrain",
     "exploreConnections": "Explore What Connects Us",
     "shareStory": "Share Your Story",
-    "scrollHint": "Scroll to explore"
+    "scrollHint": "Scroll to explore",
+    "backgroundCaptionStacked": "Jasmine of Tunisia above, Al Razji of Bahrain below."
   },
   "journey": {
     "eyebrow": "Two seas, one heart",
@@ -21,7 +22,7 @@
     "text": "Tunis and Manama lie almost 4,000 kilometres apart as the crow flies, yet both capitals face the sea, and both peoples built their history on it.",
     "tunisLabel": "Tunis",
     "manamaLabel": "Manama",
-    "distanceLabel": "≈ 3,970 km apart",
+    "distanceLabel": "≈ {distance} km apart",
     "mapAlt": "Map showing Tunisia in North Africa and Bahrain in the Arabian Gulf, joined by an arc."
   },
   "glance": {

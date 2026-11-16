@@ -1274,6 +1274,9 @@
     }
   },
   "united": {
+    "journey": {
+      "distanceKm": 3970
+    },
     "hero": {
       "images": [
         "un-hero-jasmine",

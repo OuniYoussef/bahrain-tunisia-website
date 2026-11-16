@@ -36,6 +36,7 @@ for (const locale of ['en', 'fr', 'ar'] as const) {
           await expect(page.locator('link[rel="alternate"]')).toHaveCount(4);
           expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
           if (route === '' || route === '/contact' || route === '/missing') {
+            if (!route) await expect(page.locator('.hero-actions')).toHaveCSS('opacity', '1');
             expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
           }
           if (!route) {

@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { assetUrl, buildSrcSet, getImage, imageSrc } from './images';
+import { assetUrl, buildSrcSet, imageSrc } from './images';
+import { getImage } from './imageCatalog';
 describe('responsive image sources', () => {
   it('builds candidates for the actual generated El Djem widths', () => {
     const image = getImage('tn-dest-el-djem')!;

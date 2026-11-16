@@ -17,6 +17,7 @@ for (const reducedMotion of ['no-preference', 'reduce'] as const) {
       await page.waitForLoadState('networkidle');
       await expect(page.getByRole('main')).toBeVisible();
       await expect(page.getByRole('heading', { level: 1 })).toHaveCount(1);
+      await expect(page.locator('.hero-actions')).toHaveCSS('opacity', '1');
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
       expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
       expect(errors).toEqual([]);

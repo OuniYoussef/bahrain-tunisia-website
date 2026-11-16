@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/images/united-catalog.mjs",
+    "prebuild": "node scripts/images/united-catalog.mjs",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
@@ -15,6 +17,7 @@
     "test:e2e": "playwright test",
     "content:check": "node scripts/check-content.mjs",
     "images:fetch": "node scripts/images/fetch-images.mjs",
+    "postimages:fetch": "node scripts/images/united-catalog.mjs",
     "audit": "npm audit --omit=dev --audit-level=high",
     "verify": "npm run typecheck && npm run lint && npm run content:check && npm run test && npm run build"
   },

@@ -13,7 +13,8 @@
     "discoverBahrain": "Découvrir Bahreïn",
     "exploreConnections": "Explorer ce qui nous relie",
     "shareStory": "Partager votre histoire",
-    "scrollHint": "Faites défiler pour explorer"
+    "scrollHint": "Faites défiler pour explorer",
+    "backgroundCaptionStacked": "Le jasmin de Tunisie en haut, Al Razji de Bahreïn en bas."
   },
   "journey": {
     "eyebrow": "Deux mers, un seul cœur",
@@ -21,7 +22,7 @@
     "text": "Près de 4 000 kilomètres à vol d'oiseau séparent Tunis et Manama, mais les deux capitales regardent la mer, et les deux peuples ont bâti leur histoire sur elle.",
     "tunisLabel": "Tunis",
     "manamaLabel": "Manama",
-    "distanceLabel": "≈ 3 970 km de distance",
+    "distanceLabel": "≈ {distance} km de distance",
     "mapAlt": "Carte montrant la Tunisie en Afrique du Nord et Bahreïn dans le golfe Arabique, reliés par un arc."
   },
   "glance": {
