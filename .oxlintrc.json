@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "react", "jsx-a11y", "import", "oxc"],
+  "categories": { "correctness": "error" },
+  "options": { "denyWarnings": true },
+  "ignorePatterns": [
+    "dist/**",
+    "coverage/**",
+    ".agents/**",
+    "playwright-report/**",
+    "test-results/**",
+    "scripts/images/.cache/**"
+  ],
+  "rules": {
+    "react/rules-of-hooks": "error",
+    "react/exhaustive-deps": "error",
+    "typescript/no-explicit-any": "error",
+    "react/only-export-components": ["warn", { "allowConstantExport": true }]
+  }
+}

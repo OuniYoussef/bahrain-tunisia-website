@@ -1,0 +1,304 @@
+{
+  "meta": {
+    "title": "La matrice médias Points communs",
+    "description": "Un voyage, diapositive après diapositive, à travers ce qui relie la Tunisie et Bahreïn : histoire maritime, croisements culinaires, langue, famille, foi, habit, artisanat, architecture, musique, fêtes et personnalités."
+  },
+  "intro": {
+    "eyebrow": "Points communs",
+    "title": "La matrice médias Points communs",
+    "text": "Une présentation fluide, diapositive après diapositive, qui compare les deux pays. Elle retrace leur histoire maritime commune, leurs croisements culinaires et leurs liens linguistiques, et aborde aussi la famille, la foi, l'habit, l'artisanat, l'architecture, la musique, les fêtes et les personnalités.",
+    "start": "Commencer le voyage"
+  },
+  "ui": {
+    "slideLabel": "Diapositive {current} sur {total}",
+    "regionLabel": "Diapositives Points communs",
+    "previous": "Diapositive précédente",
+    "next": "Diapositive suivante",
+    "allSlides": "Toutes les diapositives",
+    "closeIndex": "Fermer l'index des diapositives",
+    "play": "Lancer le diaporama",
+    "pause": "Mettre le diaporama en pause",
+    "mute": "Couper le son de la vidéo",
+    "unmute": "Activer le son de la vidéo",
+    "fullscreen": "Plein écran",
+    "exitFullscreen": "Quitter le plein écran",
+    "hint": "Balayez, faites défiler ou utilisez les flèches du clavier",
+    "tunisia": "Tunisie",
+    "bahrain": "Bahreïn",
+    "shared": "En commun",
+    "wordsMeaning": "Sens",
+    "sharedWordsTitle": "Des mots que les deux comprennent"
+  },
+  "slides": [
+    {
+      "id": "welcome",
+      "kicker": "01",
+      "title": "Bienvenue dans Points communs",
+      "text": "Deux pays, deux mers, un seul cœur. Balayez pour découvrir ce qui relie la Tunisie et Bahreïn.",
+      "captions": {
+        "tunisia": "Les ruelles bleu et blanc de Sidi Bou Saïd, et le jasmin tunisien.",
+        "bahrain": "Le vieux souk de Manama, et la fleur Al Razji."
+      }
+    },
+    {
+      "id": "families",
+      "kicker": "02",
+      "title": "La famille avant tout",
+      "text": "En Tunisie comme à Bahreïn, la famille est au centre de la vie. Les générations vivent proches les unes des autres, partagent des repas chaque semaine et se réunissent à chaque fête. On respecte les aînés, on chérit les enfants, et l'invité est traité comme un membre de la famille.",
+      "captions": {
+        "tunisia": "Le couscous familial du vendredi, une table partagée par les grands-parents, les parents et les enfants, et les voisins qui passent.",
+        "bahrain": "Le majlis familial, où parents et amis se retrouvent autour du café, des dattes et de la conversation."
+      }
+    },
+    {
+      "id": "language",
+      "kicker": "03",
+      "title": "La langue du cœur",
+      "text": "L'arabe unit la Tunisie et Bahreïn. Les Tunisiens parlent la derja, un dialecte qui mêle l'arabe à des mots français, italiens et amazighs (berbères), tandis que les Bahreïnis parlent un arabe du Golfe aux touches marines et persanes. Et pourtant, tous comprennent les mêmes mots de bienvenue.",
+      "captions": {
+        "tunisia": "Les lettres coufiques de la Grande Mosquée de Kairouan.",
+        "bahrain": "Une calligraphie dans l'esprit du coufique de la Grande Mosquée Al-Fateh à Manama."
+      },
+      "pairsTitle": "Des mots qui veulent dire la même chose avec deux accents",
+      "pairs": [
+        {
+          "id": "a-lot",
+          "meaning": "beaucoup",
+          "tunisia": "Barcha",
+          "bahrain": "Wayed"
+        },
+        {
+          "id": "hello",
+          "meaning": "bonjour",
+          "tunisia": "Aslama",
+          "bahrain": "Marhaba"
+        },
+        {
+          "id": "thank-you",
+          "meaning": "merci",
+          "tunisia": "Aychek",
+          "bahrain": "Shukran"
+        }
+      ],
+      "sharedWords": [
+        "Marhaba",
+        "Ahlan wa sahlan",
+        "Shukran",
+        "Mabrouk",
+        "Inchallah",
+        "Yalla"
+      ]
+    },
+    {
+      "id": "written-word",
+      "kicker": "04",
+      "title": "L'écrit",
+      "text": "La calligraphie arabe est un art partagé. Kairouan est la patrie du célèbre Coran bleu, un manuscrit des premiers temps de l'islam écrit en lettres coufiques d'or sur un parchemin teint en bleu, tandis que Beit Al-Quran à Bahreïn conserve de rares manuscrits coraniques de nombreuses époques, ainsi que le plus petit et le plus grand Coran du monde.",
+      "captions": {
+        "tunisia": "Un feuillet du Coran bleu, coufique d'or sur parchemin bleu.",
+        "bahrain": "Beit Al-Quran à Hoora, un musée de manuscrits coraniques rares."
+      }
+    },
+    {
+      "id": "poets",
+      "kicker": "05",
+      "title": "Les poètes du peuple",
+      "text": "La poésie vit dans les deux nations. Le Tunisien Aboul-Qacem Chebbi a donné une voix à tout un peuple avec ses vers sur la liberté et la vie, et le Bahreïni Ibrahim Al-Arrayedh, « le prince des poètes », a appris à écrire à toute une génération.",
+      "captions": {
+        "tunisia": "Tozeur, la ville-oasis où est né Chebbi.",
+        "bahrain": "Muharraq, foyer de la renaissance littéraire de Bahreïn."
+      }
+    },
+    {
+      "id": "sea",
+      "kicker": "06",
+      "title": "Enfants de la mer",
+      "text": "La mer a façonné les deux pays. Les colons phéniciens de Tunisie ont fondé Carthage vers 814 av. J.-C. et bâti un empire commercial à travers la Méditerranée, tandis que Dilmun faisait de Bahreïn une plaque tournante du commerce entre la Mésopotamie et la vallée de l'Indus il y a 5 000 ans. Les Tunisiens pêchaient avec les charfia des îles Kerkennah et récoltaient les éponges au large de Djerba et de Zarzis. Les Bahreïnis ont plongé pour les perles pendant 7 000 ans et construit des navires en bois sans un seul clou en fer.",
+      "captions": {
+        "tunisia": "Les ports puniques de Carthage et les pêcheries des Kerkennah.",
+        "bahrain": "Pêcheurs de perles, boutres et Chemin des perles de Muharraq."
+      }
+    },
+    {
+      "id": "ships-songs",
+      "kicker": "07",
+      "title": "Navires et chansons",
+      "text": "Les marins chantaient pour garder le rythme des rames et adoucir les longues traversées. Le fijiri de Bahreïn est l'art chanté des navires de pêche des perles, avec tambours et tambourins, tandis que les communautés côtières de Tunisie ont leurs propres chants de pêcheurs. Le oud, instrument de la musique arabe, résonne dans les deux pays.",
+      "captions": {
+        "tunisia": "Le mezoued, la cornemuse des fêtes tunisiennes.",
+        "bahrain": "Le fijiri, les chants de mer des pêcheurs de perles."
+      }
+    },
+    {
+      "id": "dates-sweets",
+      "kicker": "08",
+      "title": "Dattes, épices et douceurs",
+      "text": "Les dattes sont un cadeau du désert dans les deux pays. La Tunisie est célèbre pour les dattes Deglet Nour des oasis de Tozeur et de Kébili, Bahreïn pour les variétés khalas et khunaizi de ses palmeraies. Les deux cuisines transforment la datte en dessert : le makroudh tunisien est une pâtisserie de semoule fourrée aux dattes et trempée dans le miel, et les luqaimat bahreïnis sont des boules de pâte dorées nappées de sirop de dattes.",
+      "captions": {
+        "tunisia": "Dattes Deglet Nour et makroudh.",
+        "bahrain": "Dattes khalas et luqaimat."
+      }
+    },
+    {
+      "id": "culinary",
+      "kicker": "09",
+      "title": "Croisements culinaires",
+      "text": "Les épices relient les deux cuisines. La cuisine tunisienne repose sur le carvi, la coriandre, le cumin, la cannelle et le piment, avec la harissa sur la table ; la cuisine bahreïnie utilise la cannelle, la cardamome, le clou de girofle, le curcuma et le safran, avec la sauce de poisson mahyawa. Toutes deux aiment les céréales : le couscous en Tunisie, le riz (machboos) et le blé concassé (harees) à Bahreïn. Toutes deux célèbrent les fêtes avec un agneau entier rôti : le méchoui en Tunisie et le quzi à Bahreïn. Et toutes deux commencent la journée avec un œuf : l'ojja tunisienne et le balaleet bahreïni.",
+      "captions": {
+        "tunisia": "Couscous, harissa et ojja.",
+        "bahrain": "Machboos, mahyawa et balaleet."
+      }
+    },
+    {
+      "id": "welcome-art",
+      "kicker": "10",
+      "title": "L'art de recevoir",
+      "text": "L'hospitalité est un art de vivre. En Tunisie, on accueille l'invité par un « Marhba » et on lui offre un thé aux pignons, et l'on offre des bouquets de jasmin en signe de bienvenue. À Bahreïn, on l'accueille par un « Ahlan wa sahlan » et on lui sert le café arabe de la dallah avec des dattes. Dans les deux pays, refuser une deuxième tasse est un geste de politesse, et un invité ne repart jamais le ventre vide.",
+      "captions": {
+        "tunisia": "Thé aux pignons et bouquet de jasmin.",
+        "bahrain": "Café arabe versé de la dallah, avec des dattes."
+      }
+    },
+    {
+      "id": "palms",
+      "kicker": "11",
+      "title": "Palmiers et oasis",
+      "text": "Le palmier est l'arbre de vie des deux pays. Bahreïn était surnommé l'île au million de palmiers, et les oasis du sud tunisien, Tozeur et Nefta, abritent des centaines de milliers de palmiers. Le palmier donne des dattes, de l'ombre, des cordes, des paniers, des nattes et des éventails. En 2019, les savoirs et traditions du palmier dattier ont été reconnus par l'UNESCO comme patrimoine commun des pays arabes, dont la Tunisie et Bahreïn.",
+      "captions": {
+        "tunisia": "L'oasis de montagne de Chebika et les palmeraies de Tozeur.",
+        "bahrain": "Les palmeraies et les sources d'eau douce de Bahreïn."
+      }
+    },
+    {
+      "id": "dress",
+      "kicker": "12",
+      "title": "L'élégance de la tradition",
+      "text": "Les longues robes protègent du soleil et honorent la tradition. La jebba tunisienne et la thobe bahreïnie sont toutes deux de longues robes ; la chéchia tunisienne et la ghutra bahreïnie sont toutes deux des couvre-chefs ; le burnous tunisien et le bisht bahreïni sont tous deux des capes de laine. La tenue des femmes brille d'or : la keswa tunisienne et la thobe al-nashal bahreïnie sont brodées de fils d'or, et autrefois les femmes des deux pays s'enveloppaient d'un grand voile, le sefsari en Tunisie et l'abaya dans le Golfe.",
+      "captions": {
+        "tunisia": "Jebba, chéchia et keswa de mariée.",
+        "bahrain": "Thobe, ghutra, bisht et thobe al-nashal."
+      }
+    },
+    {
+      "id": "jewellery",
+      "kicker": "13",
+      "title": "Or, argent et henné",
+      "text": "Les bijoux racontent des histoires de famille. La Tunisie est connue pour son argent, dont la khomsa contre le mauvais œil, et Bahreïn pour son or et ses perles naturelles : le collier murtasha et la habga ornée de perles. Dans les deux pays, la mariée célèbre une nuit du henné, où ses mains sont décorées entourée des femmes de sa famille, en chansons et en musique.",
+      "captions": {
+        "tunisia": "Bijoux en argent et khomsa.",
+        "bahrain": "Or et perles naturelles."
+      }
+    },
+    {
+      "id": "weddings",
+      "kicker": "14",
+      "title": "Fêtes de mariage",
+      "text": "Les mariages sont des fêtes de famille. Les deux pays célèbrent une nuit du henné, un cortège nuptial aux tambours et aux chants traditionnels (la zaffa à Bahreïn), des cadeaux entre les familles, de superbes robes de mariée et un grand festin avec un agneau rôti et des douceurs.",
+      "captions": {
+        "tunisia": "La keswa de la mariée et le mezoued.",
+        "bahrain": "La thobe al-nashal et le festin de noces autour du quzi."
+      }
+    },
+    {
+      "id": "crafts",
+      "kicker": "15",
+      "title": "Des mains qui créent",
+      "text": "Des villages sont devenus célèbres pour leur artisanat. Nabeul, Guellala à Djerba et Sejnane sont réputés pour leur poterie en Tunisie ; à Bahreïn, A'ali façonne la poterie depuis plus de 4 000 ans. Les deux pays tissent la laine, brodent au fil d'or et d'argent et tressent des paniers en feuilles de palmier.",
+      "captions": {
+        "tunisia": "Poteries de Guellala, de Nabeul et de Sejnane, et tapis de Kairouan.",
+        "bahrain": "Poterie d'A'ali et métiers à tisser de Bani Jamra."
+      }
+    },
+    {
+      "id": "windows",
+      "kicker": "16",
+      "title": "Fenêtres sur le passé",
+      "text": "Les maisons anciennes s'ouvrent sur des patios et respirent à travers des claustras de bois sculpté : les moucharabiehs de Sidi Bou Saïd et de la médina de Tunis, et les rawazin de Muharraq. Ruelles étroites, murs ombragés et intérieurs frais sont la réponse traditionnelle à la chaleur.",
+      "captions": {
+        "tunisia": "Portes bleues et moucharabiehs de Sidi Bou Saïd et de la médina de Tunis.",
+        "bahrain": "Fenêtres rawazin du Chemin des perles à Muharraq."
+      }
+    },
+    {
+      "id": "forts-waters",
+      "kicker": "17",
+      "title": "Forts et eaux sacrées",
+      "text": "Les deux nations gardent des forteresses au bord de la mer : le Ribat de Monastir (construit en 796) et la Kasbah de Hammamet en Tunisie, Qal'at al-Bahreïn et le fort d'Arad à Bahreïn. Des temples antiques honoraient l'eau : le temple de Barbar à Bahreïn a été bâti sur une source sacrée, et le temple romain des eaux de Zaghouan célèbre la source qui alimentait Carthage.",
+      "captions": {
+        "tunisia": "Le Ribat de Monastir et le temple des eaux de Zaghouan.",
+        "bahrain": "Qal'at al-Bahreïn et le temple de Barbar."
+      }
+    },
+    {
+      "id": "civilizations",
+      "kicker": "18",
+      "title": "Civilisations antiques",
+      "text": "Deux grandes civilisations du monde antique : Carthage, la cité phénicienne qui rivalisa avec Rome, et Dilmun, la terre marchande que les Sumériens appelaient la Terre de l'immortalité. Toutes deux apparaissent dans les plus anciens récits de l'humanité : Dilmun dans l'Épopée de Gilgamesh, Carthage dans la légende de la reine Élissa (Didon). Aujourd'hui, leurs sites sont protégés par l'UNESCO.",
+      "captions": {
+        "tunisia": "Les colonnes des thermes d'Antonin à Carthage.",
+        "bahrain": "Les tumulus de Dilmun."
+      }
+    },
+    {
+      "id": "faith",
+      "kicker": "19",
+      "title": "Foi et fêtes",
+      "text": "Le ramadan, l'Aïd el-Fitr, l'Aïd el-Adha, le Nouvel An de l'Hégire et la naissance du Prophète rassemblent les deux pays. Pendant le ramadan, la table se couvre de dattes et de douceurs, et les enfants font la fête : à Bahreïn lors de la nuit de Gargee'an, en costumes colorés, et en Tunisie lors des réunions de famille, avec brik, zlabia et assidat zgougou pour le Mouled.",
+      "captions": {
+        "tunisia": "Zlabia et brik sur la table du ramadan.",
+        "bahrain": "Des enfants récoltant des douceurs la nuit de Gargee'an."
+      }
+    },
+    {
+      "id": "learning",
+      "kicker": "20",
+      "title": "Savoir et progrès",
+      "text": "Les deux nations ont une longue tradition de savoir et de réforme. Tunis abrite la mosquée Zitouna, l'un des plus anciens foyers du savoir islamique, et a vu naître le penseur du XIVᵉ siècle Ibn Khaldoun. Bahreïn a ouvert sa première école moderne en 1919 et la première école de filles du Golfe en 1928. La Tunisie est devenue pionnière des droits des femmes dans le monde arabe avec son Code du statut personnel de 1956.",
+      "captions": {
+        "tunisia": "La mosquée Zitouna dans la médina de Tunis.",
+        "bahrain": "L'école Al-Hidaya Al-Khalifiya à Muharraq, ouverte en 1919."
+      }
+    },
+    {
+      "id": "sport-talent",
+      "kicker": "21",
+      "title": "Fierté du sport et du talent",
+      "text": "Les deux pays ont leurs champions. La star tunisienne du tennis Ons Jabeur a atteint des finales de Grand Chelem, le nageur Oussama Mellouli a remporté l'or olympique, et la Bahreïnie Winfred Yavi a été sacrée championne olympique du steeple à Paris en 2024. Les deux pays aiment le football, et tous deux accueillent des événements mondiaux : le Festival international de Carthage en Tunisie et le Grand Prix de Formule 1 de Bahreïn.",
+      "captions": {
+        "tunisia": "Le théâtre romain de Carthage, scène du Festival international de Carthage.",
+        "bahrain": "Le circuit international de Bahreïn à Sakhir."
+      }
+    },
+    {
+      "id": "independence",
+      "kicker": "22",
+      "title": "Indépendance et fierté nationale",
+      "text": "La Tunisie célèbre son indépendance le 20 mars (1956) et Bahreïn sa fête nationale le 16 décembre. Les deux pays marquent ces jours avec drapeaux, défilés, feux d'artifice et réunions de famille, et leurs deux drapeaux sont rouge et blanc.",
+      "captions": {
+        "tunisia": "Le drapeau tunisien le jour de l'Indépendance.",
+        "bahrain": "Les célébrations de la fête nationale à Bahreïn."
+      }
+    },
+    {
+      "id": "differences",
+      "kicker": "23",
+      "title": "Des différences qui rendent chacun unique",
+      "text": "À côté de tout ce qu'ils partagent, chaque pays garde son caractère propre. La Tunisie offre la côte méditerranéenne, les ruines romaines et le Sahara, une cuisine de harissa et de couscous, et environ 12 millions d'habitants. Bahreïn offre une île de perles, les tumulus de Dilmun et des gratte-ciel étincelants, une cuisine de machboos et de muhammar, et environ 1,5 million d'habitants. Les dialectes tunisien et bahreïni diffèrent, et la musique, l'habit et l'architecture de chaque pays reflètent sa propre histoire.",
+      "captions": {
+        "tunisia": "De la Méditerranée au Sahara.",
+        "bahrain": "Une île de perles aux gratte-ciel étincelants."
+      }
+    },
+    {
+      "id": "cta",
+      "kicker": "24",
+      "title": "À vous de jouer.",
+      "text": "Partagez votre histoire, une photo ou un souvenir de Tunisie ou de Bahreïn dans le Coffre des expériences de la communauté.",
+      "cta": "Partager votre histoire",
+      "captions": {
+        "tunisia": "",
+        "bahrain": ""
+      }
+    }
+  ]
+}

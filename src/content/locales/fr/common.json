@@ -1,0 +1,171 @@
+{
+  "site": {
+    "name": "Bahreïn × Tunisie",
+    "identifierLine1": "IEEE",
+    "identifierLine2": "Bahreïn × Tunisie",
+    "purpose": "Un site d'échange culturel réalisé par des étudiants de l'IEEE, qui célèbre la Tunisie, Bahreïn et tout ce qui les relie.",
+    "defaultTitle": "Bahreïn × Tunisie | Deux nations. Un même esprit.",
+    "titleTemplate": "{page} | Bahreïn × Tunisie",
+    "defaultDescription": "Découvrez la Tunisie et Bahreïn, deux nations unies par un même esprit : destinations, traditions, cuisine, histoire et les récits qui les relient."
+  },
+  "a11y": {
+    "skipToContent": "Aller au contenu principal",
+    "mainNav": "Navigation principale",
+    "footerNav": "Navigation du pied de page",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "languageSwitcher": "Choisir la langue",
+    "currentLanguage": "Langue actuelle : {language}",
+    "externalLink": "(ouvre le site de l'IEEE)",
+    "newTab": "(s'ouvre dans un nouvel onglet)",
+    "backToTop": "Retour en haut",
+    "breadcrumb": "Fil d'Ariane",
+    "loadingPage": "Chargement de la page",
+    "decorative": ""
+  },
+  "nav": {
+    "united": "Ensemble",
+    "tunisia": "Tunisie",
+    "bahrain": "Bahreïn",
+    "commonGrounds": "Points communs",
+    "vault": "Coffre des expériences",
+    "contact": "Contact",
+    "credits": "Crédits photo"
+  },
+  "ui": {
+    "readMore": "Lire la suite",
+    "showMore": "Voir plus",
+    "showLess": "Voir moins",
+    "close": "Fermer",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "seeAll": "Tout voir",
+    "viewOnMap": "Voir sur la carte",
+    "unescoLabel": "Patrimoine mondial de l'UNESCO",
+    "unescoYear": "Patrimoine mondial de l'UNESCO, {year}",
+    "tip": "Conseil",
+    "imageCredit": "Photo : {author}, {license}",
+    "loading": "Chargement…",
+    "error": "Une erreur est survenue.",
+    "retry": "Réessayer",
+    "scrollHint": "Défiler",
+    "tunisia": "Tunisie",
+    "bahrain": "Bahreïn",
+    "both": "Les deux",
+    "other": "Autre"
+  },
+  "alerts": {
+    "regionLabel": "Annonces du site",
+    "dismiss": "Fermer l'annonce"
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Restons en contact.",
+      "text": "Recevez des histoires, des recettes et des idées de voyage de Tunisie et de Bahreïn dans votre boîte mail.",
+      "emailLabel": "Adresse e-mail",
+      "consent": "J'accepte de recevoir la newsletter. Je peux me désabonner à tout moment.",
+      "button": "S'abonner",
+      "submitting": "Inscription en cours…",
+      "success": "Merci ! Vous êtes inscrit(e).",
+      "already": "Cette adresse est déjà inscrite.",
+      "invalid": "Veuillez saisir une adresse e-mail valide.",
+      "error": "L'inscription a échoué. Veuillez réessayer plus tard.",
+      "unavailable": "La newsletter ouvrira bientôt."
+    },
+    "columns": {
+      "quickLinks": {
+        "title": "Liens rapides",
+        "united": "Page Ensemble",
+        "tunisia": "Découvrir la Tunisie",
+        "bahrain": "Découvrir Bahreïn"
+      },
+      "explore": {
+        "title": "Explorer",
+        "commonGrounds": "Matrice médias Points communs",
+        "vault": "Coffre des expériences de la communauté"
+      },
+      "connect": {
+        "title": "Rejoignez-nous",
+        "contact": "Contact",
+        "follow": "Suivez-nous"
+      }
+    },
+    "social": {
+      "label": "Suivez-nous sur les réseaux sociaux",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "youtube": "YouTube"
+    },
+    "organisedBy": "Organisé par des étudiants bénévoles de l'IEEE en Tunisie et à Bahreïn",
+    "ieeeLinks": {
+      "label": "Politiques de l'IEEE",
+      "home": "Accueil",
+      "contact": "Contact",
+      "accessibility": "Accessibilité",
+      "nondiscrimination": "Politique de non-discrimination",
+      "ethics": "Signalement éthique IEEE",
+      "terms": "Conditions et mentions",
+      "privacy": "Politique de confidentialité de l'IEEE",
+      "sitemap": "Plan du site",
+      "credits": "Crédits photo"
+    },
+    "projectLine": "2026 Bahreïn × Tunisie. Un projet d'échange étudiant de l'IEEE.",
+    "skyline": {
+      "label": "Silhouette de monuments de Tunisie et de Bahreïn",
+      "landmarks": {
+        "bab-bhar": "Bab Bhar, Tunis",
+        "zitouna-minaret": "Minaret de la mosquée Zitouna",
+        "sidi-bou-said-house": "Une maison bleu et blanc de Sidi Bou Saïd",
+        "el-djem": "Amphithéâtre d'El Jem",
+        "kairouan-minaret": "Minaret de la Grande Mosquée de Kairouan",
+        "antonine-baths": "Colonnes des thermes d'Antonin, Carthage",
+        "ribat-monastir": "Ribat de Monastir",
+        "palm": "Le palmier dattier, commun aux deux pays",
+        "tree-of-life": "L'Arbre de vie",
+        "arad-fort": "Fort d'Arad",
+        "al-fateh": "Grande Mosquée Al-Fateh",
+        "bab-al-bahrain": "Bab Al-Bahreïn",
+        "financial-harbour": "Tours du Bahrain Financial Harbour",
+        "bahrain-wtc": "Bahrain World Trade Center",
+        "qalat-al-bahrain": "Qal'at al-Bahreïn (fort de Bahreïn)"
+      }
+    }
+  },
+  "contact": {
+    "metaTitle": "Contact",
+    "metaDescription": "Contactez l'équipe étudiante de l'IEEE derrière le site Bahreïn × Tunisie.",
+    "eyebrow": "Écrivez-nous",
+    "title": "Contact",
+    "text": "Une question, une correction ou une idée pour le site ? Écrivez à l'équipe étudiante de l'IEEE en Tunisie et à Bahreïn.",
+    "emailLabel": "Écrire à l'équipe",
+    "socialTitle": "Suivez l'échange",
+    "responseNote": "Nous répondons généralement sous quelques jours."
+  },
+  "credits": {
+    "metaTitle": "Crédits photo",
+    "metaDescription": "Sources et licences des photos, cartes et illustrations utilisées sur ce site.",
+    "title": "Crédits photo",
+    "intro": "Les photos de ce site proviennent de Wikimedia Commons et d'autres sources sous licence libre. Elles ont été redimensionnées et converties en WebP, sans autre modification. Merci à chaque photographe.",
+    "columns": {
+      "photo": "Image",
+      "author": "Auteur",
+      "license": "Licence",
+      "source": "Source"
+    },
+    "viewSource": "Voir la source",
+    "maps": "Cartes : Natural Earth (domaine public) et © contributeurs d'OpenStreetMap (ODbL). Drapeaux : country-flag-icons (MIT). Silhouette, motifs et ornements : créations originales pour ce projet.",
+    "empty": "Les crédits photo apparaîtront ici dès que les photos seront ajoutées."
+  },
+  "notFound": {
+    "metaTitle": "Page introuvable",
+    "title": "Cette ruelle ne mène nulle part",
+    "text": "Comme dans les ruelles d'une vieille médina, certains chemins s'arrêtent devant un mur paisible. Revenons sur nos pas.",
+    "cta": "Retour à la page Ensemble"
+  },
+  "error": {
+    "title": "Une erreur est survenue",
+    "text": "Veuillez recharger la page. Si le problème persiste, contactez-nous.",
+    "reload": "Recharger"
+  }
+}

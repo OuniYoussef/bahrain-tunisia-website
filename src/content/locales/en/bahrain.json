@@ -1,0 +1,1061 @@
+{
+  "meta": {
+    "title": "Discover Bahrain",
+    "description": "The Pearl of the Arabian Gulf: destinations, traditional wear and crafts, nature, cities, 5,000 years of history, celebrations, food and monuments of Bahrain."
+  },
+  "sectionNav": {
+    "label": "Sections of the Bahrain page",
+    "welcome": "Welcome",
+    "destinations": "Destinations",
+    "wear": "Traditional Wear",
+    "nature": "Nature",
+    "cities": "Cities",
+    "history": "History",
+    "festive": "Celebrations",
+    "food": "Food",
+    "monuments": "Monuments"
+  },
+  "welcome": {
+    "eyebrow": "Welcome to Bahrain",
+    "headline": "Discover Bahrain",
+    "subheadline": "The Pearl of the Arabian Gulf.",
+    "intro": "Bahrain is an Arab Muslim kingdom in the middle of the Arabian Gulf, an archipelago of natural islands and artificial islands, with Manama as its capital. Once the capital of the ancient Dilmun civilization, and for thousands of years the home of the world's finest natural pearls, it is a place where 5,000 years of history stand beside gleaming skylines. Its people are known for their generosity and hospitality, and the island is known for its religious tolerance, its poets, its palms and its fresh-water springs.",
+    "factsTitle": "Quick facts",
+    "facts": [
+      {
+        "id": "capital",
+        "label": "Capital",
+        "value": "Manama"
+      },
+      {
+        "id": "language",
+        "label": "Language",
+        "value": "Arabic (English widely spoken)"
+      },
+      {
+        "id": "religion",
+        "label": "Religion",
+        "value": "Islam"
+      },
+      {
+        "id": "government",
+        "label": "Government",
+        "value": "Constitutional monarchy; King Hamad bin Isa Al Khalifa"
+      },
+      {
+        "id": "independence",
+        "label": "Independence",
+        "value": "15 August 1971"
+      },
+      {
+        "id": "currency",
+        "label": "Currency",
+        "value": "Bahraini Dinar (BHD), divided into 1000 fils"
+      },
+      {
+        "id": "flag",
+        "label": "Flag",
+        "value": "Red and white, separated by a serrated edge of five white points"
+      },
+      {
+        "id": "flower",
+        "label": "Flower",
+        "value": "Al Razji (jasmine / arfaj)"
+      },
+      {
+        "id": "geography",
+        "label": "Geography",
+        "value": "On the western coast of the Arabian Gulf, linked to Saudi Arabia by the King Fahd Causeway (opened 1986). The kingdom includes Bahrain Island (the main island), Muharraq, Sitra, Umm an-Nasan, Hawar and others."
+      },
+      {
+        "id": "climate",
+        "label": "Climate",
+        "value": "Hot and humid summers and mild winters"
+      },
+      {
+        "id": "best-time",
+        "label": "Best time to visit",
+        "value": "November to March"
+      }
+    ],
+    "nicknamesTitle": "Nicknames",
+    "nicknames": [
+      {
+        "id": "pearl",
+        "title": "Pearl of the Gulf",
+        "text": "For its natural pearls."
+      },
+      {
+        "id": "immortality",
+        "title": "Land of Immortality",
+        "text": "From the Sumerian texts about Dilmun in the Epic of Gilgamesh."
+      },
+      {
+        "id": "paradise",
+        "title": "Land of the Great Paradise",
+        "text": "For its springs and gardens."
+      },
+      {
+        "id": "million-palms",
+        "title": "Island of a Million Palms",
+        "text": "For its palm groves."
+      },
+      {
+        "id": "awal",
+        "title": "Awal",
+        "text": "The ancient name of Bahrain."
+      }
+    ],
+    "nameOrigin": "Bahrain was named after its two types of water: fresh water from natural springs and wells, and the salt water of the surrounding sea.",
+    "wordsTitle": "Useful words",
+    "wordsIntro": "A few words of Bahraini Arabic to start a conversation.",
+    "wordsColumns": {
+      "meaning": "English",
+      "local": "Bahraini Arabic"
+    },
+    "words": [
+      {
+        "id": "hello",
+        "meaning": "Hello",
+        "say": "Marhaba",
+        "script": "مرحبا"
+      },
+      {
+        "id": "welcome",
+        "meaning": "Welcome",
+        "say": "Ahlan wa sahlan",
+        "script": "أهلاً وسهلاً"
+      },
+      {
+        "id": "how-are-you",
+        "meaning": "How are you?",
+        "say": "Shlonak? (to a man) / Shlonich? (to a woman)",
+        "script": "شلونك؟ / شلونچ؟"
+      },
+      {
+        "id": "good",
+        "meaning": "Good / fine",
+        "say": "Zain",
+        "script": "زين"
+      },
+      {
+        "id": "thanks",
+        "meaning": "Thank you",
+        "say": "Shukran",
+        "script": "شكراً"
+      },
+      {
+        "id": "goodbye",
+        "meaning": "Goodbye",
+        "say": "Ma'a salama",
+        "script": "مع السلامة"
+      },
+      {
+        "id": "how-much",
+        "meaning": "How much is this?",
+        "say": "Kam hatha?",
+        "script": "كم هذا؟"
+      },
+      {
+        "id": "a-lot",
+        "meaning": "A lot",
+        "say": "Wayed",
+        "script": "وايد"
+      }
+    ],
+    "didYouKnowTitle": "Did you know?",
+    "didYouKnow": [
+      "Bahrain was the pearl capital of the world, and pearl diving is a 7,000-year-old profession.",
+      "Bahraini ships were built without a single iron nail.",
+      "The Bahrain World Trade Center was the first skyscraper in the world to integrate wind turbines.",
+      "A tree has survived alone in the Bahraini desert for over 400 years.",
+      "Beit Al-Quran holds both the smallest and the largest Quran in the world.",
+      "Bahrain was the first Gulf country to discover oil, in 1932."
+    ]
+  },
+  "destinations": {
+    "eyebrow": "Must-see places",
+    "title": "Interesting Destinations",
+    "intro": "An immersive showcase of must-see places. Six destination cards open the page: Qal'at al-Bahrain, the Tree of Life, the Pearling Path, Al-Fateh Grand Mosque, Bahrain World Trade Center and the Old Manama Souq.",
+    "mapLabel": "Map of the destinations in Bahrain",
+    "featured": [
+      {
+        "id": "qalat",
+        "title": "Qal'at al-Bahrain (Bahrain Fort)",
+        "text": "Located 4 km west of Manama, it is an archaeological tell: civilizations layered on top of one another for over 4,500 years, from 2300 BCE to the 16th century CE. The fort standing today was built by the Portuguese over the ruins of the Dilmun capital. Visitors see the massive walls, the watchtowers at all four corners and the site museum. A UNESCO World Heritage Site since 2005.",
+        "tip": "The fort glows at sunset and is lit at night."
+      },
+      {
+        "id": "tree-of-life",
+        "title": "Tree of Life",
+        "text": "A Prosopis cineraria tree over 400 years old that stands alone in the desert on a small hill, with no visible water source. Its survival remains a scientific mystery, and it draws tens of thousands of visitors every year. It stands near Jebel Dukhan, the highest point of Bahrain.",
+        "tip": ""
+      },
+      {
+        "id": "pearling-path",
+        "title": "Pearling Path, Muharraq",
+        "text": "A 3.5 km walking path through the old city of Muharraq, with 17 historical buildings: homes of pearl merchants (tawawish) and ship captains (nawakhida), Bu Maher Fort and three Hayrats (pearl oyster beds). Famous for authentic Bahraini mud architecture and wooden windows called rawazin. A UNESCO World Heritage Site since 2012.",
+        "tip": ""
+      },
+      {
+        "id": "al-fateh",
+        "title": "Al-Fateh Grand Mosque",
+        "text": "The national mosque of Bahrain, holding 7,000 worshippers. Built in 1988 on an area of 6,500 square metres. It has the largest fibreglass dome in the world (24 m), Kufic calligraphy decorating its walls, Italian marble and a luxurious Austrian chandelier.",
+        "tip": ""
+      },
+      {
+        "id": "bahrain-wtc",
+        "title": "Bahrain World Trade Center",
+        "text": "Twin towers 240 metres tall with 50 floors, opened in 2008. The first skyscraper in the world to integrate three massive wind turbines between its towers, generating 11 to 15% of the building's electricity. It won two international awards for sustainable architecture.",
+        "tip": ""
+      },
+      {
+        "id": "old-manama-souq",
+        "title": "Old Manama Souq and Bab Al-Bahrain",
+        "text": "Bab Al-Bahrain, a historic building from 1945, is the symbolic gateway to Manama and its souq. Behind it lies the traditional market famous for spices, incense and oud, perfumes, gold and traditional textiles, including a gold souk.",
+        "tip": ""
+      }
+    ],
+    "moreTitle": "More places to explore",
+    "more": [
+      {
+        "id": "barbar-mounds",
+        "title": "Barbar Temple and Dilmun Burial Mounds",
+        "text": "Barbar Temple, in Barbar village, dates to the third millennium BCE and was found in 1954 by a Danish expedition. The Dilmun Burial Mounds hold over 170,000 tombs, a UNESCO World Heritage Site since 2019."
+      },
+      {
+        "id": "arad-fort",
+        "title": "Arad Fort",
+        "text": "A 15th-century fort on Muharraq Island beside the sea, with a square shape and circular corner towers, lit at night."
+      },
+      {
+        "id": "hawar",
+        "title": "Hawar Islands",
+        "text": "A group of islands in the south, a protected nature reserve and bird haven."
+      },
+      {
+        "id": "circuit",
+        "title": "Bahrain International Circuit, Sakhir",
+        "text": "Opened in 2004, the first Formula 1 circuit in the Middle East, hosting the annual Bahrain Grand Prix."
+      }
+    ]
+  },
+  "wear": {
+    "eyebrow": "Heritage you can wear",
+    "title": "Traditional Wear",
+    "intro": "",
+    "groups": [
+      {
+        "id": "men",
+        "title": "Men's clothing",
+        "items": [
+          {
+            "id": "thobe",
+            "title": "Thobe (dishdasha)",
+            "text": "A long white robe with long sleeves, worn daily."
+          },
+          {
+            "id": "ghutra",
+            "title": "Ghutra",
+            "text": "A white or red checkered head covering."
+          },
+          {
+            "id": "agal",
+            "title": "Agal",
+            "text": "A doubled black cord worn over the ghutra."
+          },
+          {
+            "id": "bisht",
+            "title": "Bisht",
+            "text": "A luxurious wool cloak worn for occasions, in brown, black or gold."
+          },
+          {
+            "id": "dagger",
+            "title": "Silver dagger",
+            "text": "A dagger decorated with silver and gold, worn on formal occasions."
+          }
+        ]
+      },
+      {
+        "id": "women",
+        "title": "Women's clothing",
+        "items": [
+          {
+            "id": "thobe-nashal",
+            "title": "Thobe Al-Nashal",
+            "text": "A loose dress of dark silky fabric, embroidered with gold threads on the chest, sleeves and hem."
+          },
+          {
+            "id": "daraa",
+            "title": "Daraa",
+            "text": "A long inner dress with decorated sleeves."
+          },
+          {
+            "id": "bukhnuq",
+            "title": "Bukhnuq",
+            "text": "A young girl's head covering, black embroidered with gold."
+          },
+          {
+            "id": "abaya",
+            "title": "Abaya",
+            "text": "A black outer garment for going out."
+          },
+          {
+            "id": "shaila",
+            "title": "Shaila",
+            "text": "A light black headscarf."
+          },
+          {
+            "id": "burqa",
+            "title": "Burqa",
+            "text": "A traditional face covering, now only worn by elderly women."
+          }
+        ]
+      },
+      {
+        "id": "jewellery",
+        "title": "Traditional jewellery",
+        "items": [
+          {
+            "id": "murtasha",
+            "title": "Murtasha",
+            "text": "A long gold necklace set with stones."
+          },
+          {
+            "id": "tassa",
+            "title": "Tassa",
+            "text": "A head ornament."
+          },
+          {
+            "id": "habga",
+            "title": "Habga",
+            "text": "A necklace with natural pearls."
+          },
+          {
+            "id": "kufuf",
+            "title": "Kufuf",
+            "text": "Golden hand ornaments."
+          },
+          {
+            "id": "khulkhal",
+            "title": "Khulkhal",
+            "text": "An ankle ornament."
+          }
+        ]
+      },
+      {
+        "id": "weddings",
+        "title": "Weddings",
+        "items": [
+          {
+            "id": "jalwa",
+            "title": "Jalwa",
+            "text": "The first official meeting of the groom and bride."
+          },
+          {
+            "id": "henna",
+            "title": "Henna",
+            "text": "The bride's hands are decorated with henna among her friends."
+          },
+          {
+            "id": "dazza",
+            "title": "Dazza",
+            "text": "Gifts from the groom's family to the bride."
+          },
+          {
+            "id": "zaffa",
+            "title": "Zaffa",
+            "text": "A festive procession with traditional chants."
+          },
+          {
+            "id": "feast",
+            "title": "Wedding feast",
+            "text": "Quzi, a whole lamb stuffed with chicken, eggs and rice, is the wedding dish."
+          }
+        ]
+      },
+      {
+        "id": "crafts-clothes",
+        "title": "The crafts behind the clothes",
+        "items": [
+          {
+            "id": "bani-jamra",
+            "title": "Bani Jamra weaving",
+            "text": "A village in northwest Bahrain famous for handwoven cotton and wool on traditional looms, making dishdashas, bishts, women's fabrics and embroidered towels. The weaver sits in an earthen pit with a wooden loom."
+          },
+          {
+            "id": "kasheeda",
+            "title": "Hand embroidery (Kasheeda)",
+            "text": "A women's craft in traditional homes, embroidering the thobe al-nashal with real gold thread (zari), silver (badla) and buttons (makkook)."
+          },
+          {
+            "id": "sadu",
+            "title": "Al-Sadu weaving",
+            "text": "Bedouin weaving of camel and sheep wool into tents, rugs, carpets and saddlebags (kharj), in red, black, white and brown with natural dyes."
+          }
+        ]
+      },
+      {
+        "id": "crafts",
+        "title": "Traditional crafts of Bahrain",
+        "items": [
+          {
+            "id": "aali-pottery",
+            "title": "A'ali pottery",
+            "text": "The oldest craft in Bahrain (over 4,000 years), in A'ali village south of Manama near the Dilmun Burial Mounds. Zirs (water jars), burmas (cooking pots), incense burners and vases, made with local red clay, a potter's wheel and stone kilns."
+          },
+          {
+            "id": "shipbuilding",
+            "title": "Shipbuilding",
+            "text": "In Karbabad, Muharraq and Sitra: sailing ships built without iron nails, using only palm-fibre ropes. Types include Boom, Sanbuk, Jalbut, Shuwai, Baghla and Baytil. The main material is teak imported from India."
+          },
+          {
+            "id": "basketry",
+            "title": "Palm-leaf basketry",
+            "text": "In Karbabad, Jannusan and Sar: baskets, mats (hasir), hand fans, hats and brooms made from dried palm fronds and coconut fibre."
+          },
+          {
+            "id": "rope",
+            "title": "Rope making (Lif)",
+            "text": "In Muharraq and Sitra: strong ropes from coconut and palm fibres, essential for pearl-diving boats."
+          },
+          {
+            "id": "rawazin",
+            "title": "Rawazin (wooden windows)",
+            "text": "Carved wooden windows with Arabic and geometric patterns in Muharraq and traditional homes."
+          },
+          {
+            "id": "perfumes",
+            "title": "Perfumes, bakhoor and oud",
+            "text": "Oriental perfumes blended with inherited techniques in Manama, Muharraq and all the markets: oud, bakhoor, oud oil, rosewater, amber and musk."
+          },
+          {
+            "id": "ceramics",
+            "title": "Decorative ceramics",
+            "text": "Vessels and plates decorated with Islamic patterns."
+          }
+        ]
+      }
+    ],
+    "jewelleryNote": "Jewellery is made in 21- and 22-karat gold with natural Bahraini pearls and precious stones, using melting, drawing, soldering, engraving and inlaying. Goldsmiths work in Manama and Muharraq, and the Manama gold souk is the traditional centre."
+  },
+  "nature": {
+    "eyebrow": "Springs, palms and islands",
+    "title": "Best Go-To Nature",
+    "intro": "",
+    "groups": [
+      {
+        "id": "all",
+        "title": "",
+        "items": [
+          {
+            "id": "tree-of-life",
+            "title": "Tree of Life",
+            "text": "A Prosopis cineraria tree over 400 years old, alone in the desert with no visible water source. The scientific mystery of its survival is what makes it famous."
+          },
+          {
+            "id": "springs",
+            "title": "Fresh-water springs",
+            "text": "Bahrain is known for its natural fresh-water springs, including springs that bubble up beneath the sea. They gave the island the name Land of Immortality. The Ain Umm Al-Sujur wells date back to the third millennium BCE."
+          },
+          {
+            "id": "million-palms",
+            "title": "Island of a Million Palms",
+            "text": "Palm groves still cover the north-west of the main island, where Bahraini dates, especially the Khalas and Khunaizi varieties, are grown."
+          },
+          {
+            "id": "hawar",
+            "title": "Hawar Islands",
+            "text": "An island group in the south, a protected reserve home to rare birds, including the Socotra cormorant, and to Arabian oryx and gazelles. Day trips and a quiet resort stay."
+          },
+          {
+            "id": "al-areen",
+            "title": "Al Areen Wildlife Park and Reserve",
+            "text": "A reserve where Arabian oryx, Bahrain's national animal, and other desert animals can be seen."
+          },
+          {
+            "id": "jebel-dukhan",
+            "title": "Jebel Dukhan",
+            "text": "The \"Mountain of Smoke\", about 134 m, the highest point in Bahrain."
+          },
+          {
+            "id": "tubli-bay",
+            "title": "Tubli Bay",
+            "text": "A bay with mangroves and migrating birds close to the capital."
+          },
+          {
+            "id": "beaches",
+            "title": "Beaches and islands",
+            "text": "Al Dar Islands, Amwaj Islands and the shores of the Hawar Islands for swimming and boat trips."
+          },
+          {
+            "id": "desert",
+            "title": "Desert",
+            "text": "The southern desert around Sakhir, for camping and quad biking under the stars."
+          }
+        ]
+      }
+    ]
+  },
+  "cities": {
+    "eyebrow": "City life",
+    "title": "Best Go-To City",
+    "items": [
+      {
+        "id": "manama",
+        "title": "Manama (the capital)",
+        "text": "Bahrain World Trade Center (240 m, 50 floors, three wind turbines); Bahrain Financial Harbour (two towers of 260 m, the tallest buildings in Bahrain, with a modern sail-shaped design); Bab Al-Bahrain and the Old Manama Souq for spices, incense, oud, perfumes, gold and textiles; Al-Fateh Grand Mosque; Bahrain National Museum (opened in 1988 at a cost of $30 million, with 9 galleries covering 6,000 years, Dilmun gold jewellery and archaeological finds); and Beit Al-Quran in Hoora, with rare Quranic manuscripts. Nightlife and dining: Adliya (Block 338) with its cafes, restaurants and art galleries, and the waterfront restaurants of the Financial Harbour."
+      },
+      {
+        "id": "muharraq",
+        "title": "Muharraq",
+        "text": "The old capital and heart of the pearling heritage. Walk the Pearling Path, visit Arad Fort, admire the rawazin windows and see shipbuilding and rope making."
+      },
+      {
+        "id": "riffa",
+        "title": "Riffa",
+        "text": "Home of Riffa Fort and the royal family, with desert and modern housing."
+      },
+      {
+        "id": "aali",
+        "title": "A'ali",
+        "text": "A village south of Manama known for pottery and the Dilmun Burial Mounds."
+      },
+      {
+        "id": "sitra",
+        "title": "Sitra",
+        "text": "An island city known for boat building and an oil port."
+      },
+      {
+        "id": "budaiya",
+        "title": "Budaiya",
+        "text": "A coastal town with date farms and old houses on the road along the sea."
+      },
+      {
+        "id": "sakhir",
+        "title": "Sakhir",
+        "text": "Home of the Bahrain International Circuit and the Tree of Life area."
+      }
+    ]
+  },
+  "history": {
+    "eyebrow": "Five thousand years",
+    "title": "History",
+    "intro": "A history of 5,000 years. Bahrain was home to three great civilizations: Dilmun, Tylos and Awal.",
+    "timelineTitle": "Most memorable events",
+    "timeline": [
+      {
+        "id": "dilmun",
+        "date": "3000-600 BCE",
+        "text": "Dilmun: a global trading centre linking Mesopotamia (Iraq) with the Indus Valley (India), famous for copper, dates and pearls. The Sumerians called it the Land of Immortality in the Epic of Gilgamesh."
+      },
+      {
+        "id": "tylos",
+        "date": "Hellenistic period",
+        "text": "Bahrain becomes known as Tylos in the Greek and Roman period, an important trading post on the route of Alexander the Great."
+      },
+      {
+        "id": "awal",
+        "date": "Before Islam",
+        "text": "Bahrain is known as Awal, a name derived from an idol worshipped on the island."
+      },
+      {
+        "id": "628",
+        "date": "628 CE",
+        "text": "Bahrain embraces Islam peacefully, during the time of the Prophet Muhammad (PBUH)."
+      },
+      {
+        "id": "khamis",
+        "date": "7th century",
+        "text": "Al-Khamis Mosque, the oldest mosque in Bahrain, is built."
+      },
+      {
+        "id": "1521",
+        "date": "1521",
+        "text": "The Portuguese take Bahrain and build the fort at Qal'at al-Bahrain."
+      },
+      {
+        "id": "1783",
+        "date": "1783",
+        "text": "Sheikh Ahmed bin Muhammad Al-Fateh Al Khalifa founds the modern state; the Al Khalifa family still rules."
+      },
+      {
+        "id": "1820",
+        "date": "1820 and 1861",
+        "text": "Treaties with Britain place Bahrain under British protection."
+      },
+      {
+        "id": "1919",
+        "date": "1919",
+        "text": "Al-Hidaya Al-Khalifiya School opens in Muharraq, the first regular school in Bahrain."
+      },
+      {
+        "id": "1920",
+        "date": "1920",
+        "text": "The Muharraq Literary Club is founded."
+      },
+      {
+        "id": "1928",
+        "date": "1928",
+        "text": "The first girls' school in the Gulf opens in Muharraq."
+      },
+      {
+        "id": "1930s",
+        "date": "1930s",
+        "text": "The pearl trade declines after the arrival of cultured pearls."
+      },
+      {
+        "id": "1932",
+        "date": "1932",
+        "text": "Oil is discovered, a first for the Gulf, starting a new era for the economy."
+      },
+      {
+        "id": "1971",
+        "date": "15 August 1971",
+        "text": "Bahrain becomes independent."
+      },
+      {
+        "id": "2002",
+        "date": "2002",
+        "text": "Bahrain is declared a kingdom."
+      },
+      {
+        "id": "2004",
+        "date": "2004",
+        "text": "The Bahrain International Circuit opens: the first Formula 1 circuit in the Middle East."
+      },
+      {
+        "id": "unesco",
+        "date": "2005, 2012, 2019",
+        "text": "Qal'at al-Bahrain, the Pearling Path and the Dilmun Burial Mounds are inscribed on the UNESCO World Heritage List."
+      }
+    ],
+    "pearl": {
+      "title": "Pearl and maritime heritage",
+      "intro": "Before oil, pearls were the lifeblood of Bahrain. Pearl diving is a 7,000-year-old profession and Bahrain was once the pearl capital of the world.",
+      "groups": [
+        {
+          "id": "seasons",
+          "title": "Diving seasons",
+          "text": "Khanjiya (pre-season); Al-Ghaws Al-Kabeer, the Great Dive, 4 months from May to September; Al-Radda, a short return season; Al-Rdedia, the final season."
+        },
+        {
+          "id": "roles",
+          "title": "Roles on the ship",
+          "text": "Nokhada: the captain. Ghais: the diver. Saib: pulls the diver up with the rope. Tawwash: the pearl merchant. Nahham: the singer of sea chants."
+        },
+        {
+          "id": "tools",
+          "title": "Diving tools",
+          "text": "Fatam: a wooden clip for the nose. Diyeen: a fibre basket for oysters. Zabil: a rope weighted with a stone. Khabt: a knife to open oysters. Mashkhal: used to sort pearls."
+        },
+        {
+          "id": "types",
+          "title": "Types of pearls",
+          "text": "Danah: the highest quality and most valuable. Hasbaa: medium. Badla: smaller. Yakka: the smallest."
+        },
+        {
+          "id": "sea-arts",
+          "title": "Sea arts",
+          "text": "Fijiri: the sailors' chanted art with drums and tambourine. Sawt: traditional music with the oud. Tanboura: an ancient lyre. Liwa: a communal dance with African-infused rhythms."
+        }
+      ]
+    },
+    "figuresTitle": "Most important figures",
+    "figures": [
+      {
+        "id": "ahmed-al-fateh",
+        "name": "Sheikh Ahmed bin Muhammad Al-Fateh Al Khalifa",
+        "years": "",
+        "text": "Founder of the modern state of Bahrain in 1783."
+      },
+      {
+        "id": "isa-bin-ali",
+        "name": "Sheikh Isa bin Ali Al Khalifa",
+        "years": "ruler 1869-1923",
+        "text": "A long-reigning ruler whose Muharraq house is a heritage site."
+      },
+      {
+        "id": "isa-bin-salman",
+        "name": "Sheikh Isa bin Salman Al Khalifa",
+        "years": "ruler 1961-1999",
+        "text": "The ruler who led Bahrain to independence in 1971."
+      },
+      {
+        "id": "king-hamad",
+        "name": "King Hamad bin Isa Al Khalifa",
+        "years": "",
+        "text": "The current king; Bahrain became a kingdom in 2002."
+      },
+      {
+        "id": "ibrahim-bin-muhammad",
+        "name": "Sheikh Ibrahim bin Muhammad Al Khalifa",
+        "years": "died 1933",
+        "text": "Known as \"the Sheikh of Writers\", a pioneer of the literary renaissance who founded the Muharraq Literary Club in 1920 and helped establish Al-Hidaya Al-Khalifiya School."
+      },
+      {
+        "id": "arrayedh",
+        "name": "Ibrahim Al-Arrayedh",
+        "years": "died 2002",
+        "text": "\"The Prince of Poets\" in Bahrain, who wrote many diwans and poetic plays and taught a generation of Bahraini poets."
+      },
+      {
+        "id": "ahmed-bin-muhammad",
+        "name": "Sheikh Ahmed bin Muhammad Al Khalifa",
+        "years": "died 2004",
+        "text": "The poet of nature in Bahrain, a student of Al-Arrayedh."
+      },
+      {
+        "id": "qassim-haddad",
+        "name": "Qassim Haddad",
+        "years": "",
+        "text": "A contemporary poet whose works have been translated into French, English and German."
+      },
+      {
+        "id": "al-siddiqi",
+        "name": "Sheikh Yusuf bin Ahmed Al-Siddiqi",
+        "years": "",
+        "text": "Judge and preacher at Al-Qudhaibiya Mosque, an Al-Azhar graduate and one of the great scholars of 20th-century Bahrain."
+      },
+      {
+        "id": "sheikha-mai",
+        "name": "Sheikha Mai bint Mohammed Al Khalifa",
+        "years": "",
+        "text": "A scholar and writer who chaired the Bahrain Authority for Culture and Antiquities and led the inscription of Bahrain's sites on the UNESCO lists."
+      },
+      {
+        "id": "al-muharraqi",
+        "name": "Abdullah Al-Muharraqi",
+        "years": "",
+        "text": "A pioneer of fine art whose paintings portray heritage and the marine environment."
+      },
+      {
+        "id": "nasser-al-yousif",
+        "name": "Nasser Al-Yousif",
+        "years": "",
+        "text": "A late Bahraini artist whose oil paintings document old everyday life."
+      },
+      {
+        "id": "musicians",
+        "name": "Mohammed Zuwaid and Ali Bahar",
+        "years": "",
+        "text": "Pioneers of Bahraini music, in particular the sawt art; Sultan Hameed and Khalid Al-Sheikh are also leading names."
+      },
+      {
+        "id": "athletes",
+        "name": "Winfred Yavi, Ruth Jebet and Maryam Yusuf Jamal",
+        "years": "",
+        "text": "Olympic gold medallists in athletics for Bahrain (Yavi in the 3000 m steeplechase in Paris 2024, with an Olympic record)."
+      }
+    ]
+  },
+  "festive": {
+    "eyebrow": "A year of celebrations",
+    "title": "Festive Celebrations",
+    "groups": [
+      {
+        "id": "national",
+        "title": "National holidays",
+        "note": "",
+        "items": [
+          {
+            "id": "new-year",
+            "date": "1 January",
+            "title": "New Year's Day",
+            "text": ""
+          },
+          {
+            "id": "labour",
+            "date": "1 May",
+            "title": "Labour Day",
+            "text": "Celebrates workers."
+          },
+          {
+            "id": "national-day",
+            "date": "16 December",
+            "title": "National Day",
+            "text": "The national celebration of the kingdom, with official ceremonies, parades, fireworks and lit-up cities. It is linked to Bahrain's independence in 1971."
+          },
+          {
+            "id": "accession",
+            "date": "17 December",
+            "title": "Accession Day",
+            "text": "Follows National Day; the two days form a national holiday."
+          }
+        ]
+      },
+      {
+        "id": "religious",
+        "title": "Religious celebrations",
+        "note": "Dates follow the lunar calendar.",
+        "items": [
+          {
+            "id": "eid-fitr",
+            "date": "",
+            "title": "Eid al-Fitr",
+            "text": "Three days at the end of Ramadan. Khabeesa and Bahraini halwa are prepared, families visit one another and children receive Eidiya (Eid money)."
+          },
+          {
+            "id": "eid-adha",
+            "date": "",
+            "title": "Arafat Day and Eid al-Adha",
+            "text": "The feast of sacrifice."
+          },
+          {
+            "id": "hijri",
+            "date": "",
+            "title": "Islamic New Year (Al Hijra)",
+            "text": "The first day of the Hijri calendar."
+          },
+          {
+            "id": "ashura",
+            "date": "",
+            "title": "Ashura",
+            "text": "The 9th and 10th of Muharram, observed with religious gatherings and processions."
+          },
+          {
+            "id": "mawlid",
+            "date": "",
+            "title": "The Prophet's Birthday",
+            "text": "Celebrated with religious gatherings."
+          }
+        ]
+      },
+      {
+        "id": "ramadan",
+        "title": "Ramadan traditions",
+        "note": "",
+        "items": [
+          {
+            "id": "gargeean",
+            "date": "",
+            "title": "Gargee'an",
+            "text": "Celebrated on the 14th and 15th nights of Ramadan. Children wear colourful traditional Bahraini clothing and go from house to house singing traditional chants. Neighbours welcome them with candies, nuts and dried fruits in decorated bags."
+          },
+          {
+            "id": "gargeean-chant",
+            "date": "",
+            "title": "Chant of Gargee'an",
+            "text": "\"Gargee'an Gargee'an, give us and may God give to you, may He take you to the House of Mecca, O Mecca, O the flourishing, O mother of chains and gold, O Nora.\""
+          },
+          {
+            "id": "naqsa",
+            "date": "",
+            "title": "Naqsa",
+            "text": "Neighbours exchange dishes during Ramadan."
+          },
+          {
+            "id": "reyouq",
+            "date": "",
+            "title": "Reyouq",
+            "text": "The iftar breakfast, with balaleet and nakhi."
+          },
+          {
+            "id": "suhoor",
+            "date": "",
+            "title": "Suhoor",
+            "text": "Preceded by the Musaharati, who walks the streets with his drum."
+          },
+          {
+            "id": "cannons",
+            "date": "",
+            "title": "Cannons",
+            "text": "The iftar and imsak cannons are daily rituals."
+          }
+        ]
+      },
+      {
+        "id": "social",
+        "title": "Social traditions and events",
+        "note": "",
+        "items": [
+          {
+            "id": "majlis",
+            "date": "",
+            "title": "The Majlis (Diwaniya)",
+            "text": "A sitting room in the home for receiving guests, where coffee and dates are served and conversation is shared."
+          },
+          {
+            "id": "grand-prix",
+            "date": "",
+            "title": "Bahrain Grand Prix",
+            "text": "The annual Formula 1 race at the Bahrain International Circuit in Sakhir."
+          },
+          {
+            "id": "camel-racing",
+            "date": "",
+            "title": "Camel racing",
+            "text": "A traditional sport of the desert."
+          },
+          {
+            "id": "sea-heritage",
+            "date": "",
+            "title": "Sea heritage",
+            "text": "Fijiri, sawt and liwa performances keep the pearl-diving songs and dances alive."
+          }
+        ]
+      }
+    ],
+    "weddings": {
+      "title": "Weddings",
+      "text": "Bahraini weddings include the jalwa (the first official meeting of the groom and bride), the henna night, the dazza (gifts from the groom's family) and the zaffa (a festive procession with traditional chants), followed by a feast of quzi."
+    }
+  },
+  "food": {
+    "eyebrow": "The sea and the palm grove",
+    "title": "Best Foods",
+    "intro": "Bahraini cuisine relies on the bounty of the sea and the palm groves and reflects the values of generosity and hospitality.",
+    "groups": [
+      {
+        "id": "dishes",
+        "title": "Our dishes",
+        "items": [
+          {
+            "id": "machboos",
+            "title": "Machboos (the national dish)",
+            "text": "Basmati rice cooked in a spiced broth (cloves, cardamom, turmeric, cinnamon) with meat, chicken or fish. Served at celebrations and feasts."
+          },
+          {
+            "id": "muhammar",
+            "title": "Muhammar (sweet rice)",
+            "text": "One of the most distinctive rice dishes in Bahrain. Rice sweetened with dates, sugar, cardamom and saffron, dark brown in colour. Always served with fried fish (safi or hamour). Sweet meets savoury."
+          },
+          {
+            "id": "harees",
+            "title": "Harees",
+            "text": "Cracked wheat cooked with meat for hours until smooth like porridge. Served hot with ghee or melted butter and a sprinkle of sugar and cinnamon. A Ramadan staple."
+          },
+          {
+            "id": "balaleet",
+            "title": "Balaleet",
+            "text": "Sweet vermicelli with saffron, cardamom and sugar, topped with an egg omelette. A traditional breakfast (reyouq) that combines sweet and savoury."
+          },
+          {
+            "id": "luqaimat",
+            "title": "Luqaimat",
+            "text": "Small dough balls fried until golden, dipped in date syrup (dibs) with cardamom and saffron. One of the most popular Ramadan sweets."
+          },
+          {
+            "id": "quzi",
+            "title": "Quzi",
+            "text": "A whole lamb stuffed with chicken, eggs and rice, grilled over charcoal. A wedding dish."
+          },
+          {
+            "id": "mahyawa",
+            "title": "Mahyawa",
+            "text": "A strong fermented fish sauce, served with flatbread."
+          },
+          {
+            "id": "mumawash",
+            "title": "Mumawash",
+            "text": "Rice with green lentils and dried shrimp."
+          },
+          {
+            "id": "nakhi",
+            "title": "Nakhi",
+            "text": "Soaked and boiled chickpeas with chilli pepper and cumin."
+          },
+          {
+            "id": "bajela",
+            "title": "Bajela",
+            "text": "Boiled green fava beans with salt."
+          },
+          {
+            "id": "khabeesa",
+            "title": "Khabeesa",
+            "text": "A sweet of flour, ghee, sugar and cardamom."
+          },
+          {
+            "id": "halwa",
+            "title": "Halwa Showaiter",
+            "text": "A brown, translucent sweet made of starch and sugar, the most famous popular dessert."
+          }
+        ]
+      }
+    ],
+    "coffee": {
+      "title": "Arabic coffee",
+      "text": "The dallah (golden coffee pot) and the small finjan cups are symbols of Bahraini hospitality. The coffee is roasted with cardamom and saffron and served with dates.",
+      "etiquette": "Etiquette: shake the cup slightly when you have had enough."
+    },
+    "productsTitle": "Famous products",
+    "products": "Bahraini dates (Khalas and Khunaizi), natural pearls (Danah), traditional sweets such as Bahraini halwa and khabeesa, and oriental perfumes, bakhoor and oud."
+  },
+  "monuments": {
+    "eyebrow": "Heritage in stone",
+    "title": "Monuments & Historical Spots",
+    "intro": "Bahrain has three UNESCO World Heritage sites.",
+    "items": [
+      {
+        "id": "qalat",
+        "title": "Qal'at al-Bahrain",
+        "text": "The ancient capital of Dilmun and a Portuguese fort, with layers of 4,500 years of history, massive walls and a site museum."
+      },
+      {
+        "id": "pearling-path",
+        "title": "Pearling Path, Muharraq",
+        "text": "A 3.5 km path of 17 buildings, including merchants' houses, Bu Maher Fort and the pearl oyster beds; the Siyadi House and Shaikh Isa bin Ali House are part of the heritage of Muharraq."
+      },
+      {
+        "id": "dilmun-mounds",
+        "title": "Dilmun Burial Mounds",
+        "text": "Over 170,000 tombs, among the largest ancient burial grounds in the world."
+      },
+      {
+        "id": "barbar",
+        "title": "Barbar Temple",
+        "text": "Third millennium BCE temple found in 1954 by a Danish expedition. Dedicated to Enki, the Sumerian god of water, with a stone altar, a sacred well and stairs leading to the spring."
+      },
+      {
+        "id": "saar",
+        "title": "Saar settlement",
+        "text": "An ancient residential city of the Dilmun period."
+      },
+      {
+        "id": "ain-umm-al-sujur",
+        "title": "Ain Umm Al-Sujur",
+        "text": "Wells dating to the third millennium BCE."
+      },
+      {
+        "id": "arad-fort",
+        "title": "Arad Fort",
+        "text": "A 15th-century fort on Muharraq Island, square in shape with circular corner towers."
+      },
+      {
+        "id": "riffa-fort",
+        "title": "Riffa Fort",
+        "text": "A fort built in 1812 on a ridge in Riffa."
+      },
+      {
+        "id": "bu-maher",
+        "title": "Bu Maher Fort",
+        "text": "A fort on the Pearling Path, on the sea."
+      },
+      {
+        "id": "al-khamis",
+        "title": "Al-Khamis Mosque",
+        "text": "The oldest mosque in Bahrain, from the 7th century, in the reign of the Umayyad Caliph Umar ibn Abdul Aziz, with twin matching minarets that are a unique feature in Islamic architecture."
+      },
+      {
+        "id": "bab-al-bahrain",
+        "title": "Bab Al-Bahrain",
+        "text": "A historic building from 1945, the gateway to Old Manama."
+      },
+      {
+        "id": "national-museum",
+        "title": "Bahrain National Museum",
+        "text": "Opened in 1988 with 9 galleries covering 6,000 years of history."
+      },
+      {
+        "id": "beit-al-quran",
+        "title": "Beit Al-Quran",
+        "text": "A museum and library in Hoora with a rare collection of Quranic manuscripts, the smallest Quran in the world and the largest Quran in the world."
+      },
+      {
+        "id": "al-fateh",
+        "title": "Al-Fateh Grand Mosque",
+        "text": "The national mosque, built in 1988, with the largest fibreglass dome in the world."
+      }
+    ]
+  }
+}

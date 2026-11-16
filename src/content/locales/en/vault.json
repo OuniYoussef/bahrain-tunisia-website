@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "title": "The Community Experience Vault",
+    "description": "Your story belongs here. Share personal stories, photography, travel diaries and cross-cultural anecdotes that connect Tunisia and Bahrain."
+  },
+  "hero": {
+    "eyebrow": "Community",
+    "headline": "The Community Experience Vault",
+    "subheadline": "Your story belongs here.",
+    "intro": "Have you walked the lanes of Sidi Bou Said or the Pearling Path? Shared tea with a Tunisian family or coffee in a Bahraini majlis? Share the moment. Every photo and every story adds colour and life to this bridge between Tunisia and Bahrain.",
+    "ctaShare": "Share My Story",
+    "ctaBrowse": "Browse the wall"
+  },
+  "categories": {
+    "title": "What can you share?",
+    "items": [
+      {
+        "id": "story",
+        "title": "Personal Stories",
+        "text": "A moment, a memory, or a family story connected to Tunisia or Bahrain.",
+        "prompt": "Tell us about a time you felt at home."
+      },
+      {
+        "id": "photo",
+        "title": "Photography",
+        "text": "Your own photos of places, people, food, crafts and celebrations.",
+        "prompt": "What did you capture that others should see?"
+      },
+      {
+        "id": "diary",
+        "title": "Travel Diaries",
+        "text": "Your journey day by day.",
+        "prompt": "Where did you go, what did you taste, who did you meet?"
+      },
+      {
+        "id": "anecdote",
+        "title": "Cross-Cultural Anecdotes",
+        "text": "Stories that connect the two cultures: a Tunisian in Bahrain, a Bahraini in Tunisia, a shared recipe or a shared word.",
+        "prompt": "What surprised you about how alike we are?"
+      }
+    ]
+  },
+  "wall": {
+    "title": "Stories from the community",
+    "filtersLabel": "Filter the stories",
+    "countryLabel": "Country",
+    "categoryLabel": "Type",
+    "country": {
+      "all": "All",
+      "tunisia": "Tunisia",
+      "bahrain": "Bahrain",
+      "both": "Both"
+    },
+    "category": {
+      "all": "All types",
+      "story": "Stories",
+      "photo": "Photos",
+      "diary": "Diaries",
+      "anecdote": "Anecdotes"
+    },
+    "resultsCount": {
+      "zero": "{count} stories",
+      "one": "{count} story",
+      "two": "{count} stories",
+      "few": "{count} stories",
+      "many": "{count} stories",
+      "other": "{count} stories"
+    },
+    "empty": "Be the first to share a story from Tunisia or Bahrain.",
+    "emptyFiltered": "No stories match these filters yet.",
+    "clearFilters": "Clear filters",
+    "loading": "Loading stories…",
+    "loadMore": "Load more stories",
+    "end": "You have reached the end of the wall.",
+    "error": "We could not load the stories. Please try again.",
+    "retry": "Try again",
+    "sampleBadge": "Sample",
+    "sampleNote": "Sample posts show how the wall will look. They will be replaced by real stories.",
+    "readStory": "Read the story",
+    "by": "by {name}",
+    "postedOn": "Posted on {date}",
+    "photoCount": {
+      "zero": "{count} photos",
+      "one": "{count} photo",
+      "two": "{count} photos",
+      "few": "{count} photos",
+      "many": "{count} photos",
+      "other": "{count} photos"
+    },
+    "countryFlag": "Story from {country}",
+    "close": "Close",
+    "previousPhoto": "Previous photo",
+    "nextPhoto": "Next photo",
+    "react": "Send a heart",
+    "reacted": "You sent a heart",
+    "hearts": {
+      "zero": "{count} hearts",
+      "one": "{count} heart",
+      "two": "{count} hearts",
+      "few": "{count} hearts",
+      "many": "{count} hearts",
+      "other": "{count} hearts"
+    }
+  },
+  "report": {
+    "button": "Report this post",
+    "title": "Report this post",
+    "intro": "Tell our moderation team what is wrong with this post.",
+    "reasonLabel": "Reason",
+    "reasons": {
+      "not-owner": "The photos or text do not belong to the author",
+      "offensive": "Offensive or disrespectful",
+      "private": "Shares private details about someone",
+      "spam": "Spam, political or commercial content",
+      "other": "Something else"
+    },
+    "detailsLabel": "Details (optional)",
+    "submit": "Send report",
+    "thanks": "Thank you. Our team will review this post.",
+    "error": "We could not send the report. Please try again."
+  },
+  "form": {
+    "title": "Share your story",
+    "intro": "Every post is reviewed by our team before it appears on the wall.",
+    "fields": {
+      "name": {
+        "label": "Your name or nickname",
+        "hint": ""
+      },
+      "country": {
+        "label": "Country of the story",
+        "options": {
+          "tunisia": "Tunisia",
+          "bahrain": "Bahrain",
+          "both": "Both",
+          "other": "Other"
+        }
+      },
+      "category": {
+        "label": "Category",
+        "options": {
+          "story": "Personal Story",
+          "photo": "Photography",
+          "diary": "Travel Diary",
+          "anecdote": "Cross-Cultural Anecdote"
+        }
+      },
+      "title": {
+        "label": "Title",
+        "hint": "Maximum 80 characters."
+      },
+      "body": {
+        "label": "Your story",
+        "hint": "Maximum 1,500 characters."
+      },
+      "placeYear": {
+        "label": "Place and year",
+        "hint": "Optional. Example: Sidi Bou Said, 2024."
+      },
+      "photos": {
+        "label": "Photos",
+        "hint": "Up to 5 images (JPG, PNG or WEBP). Images are compressed and converted to WEBP automatically in the browser before upload.",
+        "add": "Add photos",
+        "drop": "or drop them here",
+        "remove": "Remove photo {n}",
+        "processing": "Optimising photo…",
+        "altLabel": "Describe photo {n} (optional)",
+        "altHint": "A short description helps visitors who use screen readers."
+      },
+      "consent": {
+        "label": "I confirm that the photos and text are mine and I agree to the community guidelines."
+      },
+      "honeypot": {
+        "label": "Leave this field empty"
+      }
+    },
+    "counter": "{count}/{max}",
+    "guidelinesLink": "Read the community guidelines",
+    "captchaLabel": "Security check",
+    "submit": "Share My Story",
+    "submitting": "Sending your story…",
+    "errors": {
+      "required": "This field is required.",
+      "tooLong": "Please keep it under {max} characters.",
+      "tooShort": "Please write at least {min} characters.",
+      "tooManyPhotos": "You can add up to 5 photos.",
+      "photoRequired": "Please add at least one photo for a Photography post.",
+      "upload": "We could not upload this image. Please try a smaller JPG, PNG or WEBP file.",
+      "consent": "Please confirm that the photos and text are yours.",
+      "captcha": "Please complete the security check.",
+      "rateLimited": "You have shared several stories in a short time. Please try again later.",
+      "offline": "You seem to be offline. Your story is kept on this page; try again when you are connected.",
+      "generic": "Something went wrong. Please try again."
+    },
+    "success": {
+      "title": "Thank you!",
+      "text": "Thank you! Your story has been received and will appear after a quick review by our team.",
+      "another": "Share another story",
+      "back": "Back to the wall"
+    }
+  },
+  "guidelines": {
+    "title": "Community guidelines",
+    "items": [
+      "Share only photos and stories that belong to you.",
+      "Be respectful of both cultures and of every visitor.",
+      "Do not post private details about other people, such as phone numbers or home addresses.",
+      "Do not post offensive, political or commercial content.",
+      "Every post is reviewed by the moderation team before it appears.",
+      "Posts can be removed at any time if they do not follow these guidelines."
+    ]
+  },
+  "privacy": {
+    "note": "We keep the name you choose, your story and your photos. Photos are stripped of location data before upload. We never show any other personal information.",
+    "policyLink": "IEEE Privacy Policy"
+  },
+  "unavailable": {
+    "title": "The Vault is resting",
+    "text": "Story sharing is not connected yet on this version of the site. Please come back soon."
+  }
+}

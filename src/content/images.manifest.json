@@ -1,0 +1,1723 @@
+{
+  "$comment": "Source of truth for every photo id. Run `npm run images:fetch` to resolve, download and convert to WebP. Pin a specific file in scripts/images/overrides.json. Alt text lives in src/content/locales/<lang>/images.json.",
+  "widths": {
+    "hero": [
+      640,
+      1280,
+      1920,
+      2560
+    ],
+    "wide": [
+      640,
+      1280,
+      1920
+    ],
+    "card": [
+      480,
+      960,
+      1440
+    ],
+    "thumb": [
+      320,
+      640
+    ]
+  },
+  "minWidth": {
+    "hero": 1800,
+    "wide": 1400,
+    "card": 1000,
+    "thumb": 600
+  },
+  "images": {
+    "un-hero-jasmine": {
+      "group": "united",
+      "use": "hero",
+      "orientation": "any",
+      "sources": [
+        "q:Jasminum grandiflorum flower",
+        "wp:Jasminum grandiflorum",
+        "wp:Jasminum officinale"
+      ]
+    },
+    "un-hero-razji": {
+      "group": "united",
+      "use": "hero",
+      "orientation": "any",
+      "sources": [
+        "q:Jasminum sambac flower",
+        "wp:Jasminum sambac"
+      ]
+    },
+    "tn-hero-sidi-bou-said-sea": {
+      "group": "tunisia",
+      "use": "hero",
+      "orientation": "landscape",
+      "sources": [
+        "q:Sidi Bou Said view Gulf of Tunis",
+        "cat:Sidi Bou Said",
+        "wp:Sidi Bou Said"
+      ]
+    },
+    "tn-hero-sahara-dunes": {
+      "group": "tunisia",
+      "use": "hero",
+      "orientation": "landscape",
+      "sources": [
+        "q:Grand Erg Oriental dunes Tunisia",
+        "q:Douz sand dunes",
+        "wp:Grand Erg Oriental"
+      ]
+    },
+    "tn-dest-sidi-bou-said": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Sidi Bou Said street houses",
+        "cat:Sidi Bou Said"
+      ]
+    },
+    "tn-sbs-blue-door": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "portrait",
+      "sources": [
+        "q:Sidi Bou Said door",
+        "q:porte Sidi Bou Said"
+      ]
+    },
+    "tn-mashrabiya": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:moucharabieh Sidi Bou Said",
+        "q:mashrabiya Medina of Tunis"
+      ]
+    },
+    "tn-dest-el-djem": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Amphitheatre of El Jem",
+        "wp:Amphitheatre of El Jem"
+      ]
+    },
+    "tn-dest-bizerte": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Bizerte old port",
+        "q:vieux port Bizerte",
+        "cat:Bizerte",
+        "wp:Bizerte"
+      ]
+    },
+    "tn-dest-monastir": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Ribat of Monastir",
+        "wp:Ribat of Monastir"
+      ]
+    },
+    "tn-dest-medina-tunis": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Medina of Tunis",
+        "wp:Medina of Tunis"
+      ]
+    },
+    "tn-dest-kairouan": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Great Mosque of Kairouan",
+        "wp:Great Mosque of Kairouan"
+      ]
+    },
+    "tn-dest-carthage": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Antonine Baths",
+        "wp:Baths of Antoninus",
+        "wp:Carthage"
+      ]
+    },
+    "tn-dest-djerba": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Djerba beach palm",
+        "cat:Djerba",
+        "wp:Djerba"
+      ]
+    },
+    "tn-dest-dougga": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Dougga",
+        "wp:Dougga"
+      ]
+    },
+    "tn-dest-douz-tozeur": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Douz Sahara camels",
+        "cat:Douz",
+        "wp:Douz"
+      ]
+    },
+    "tn-dest-hammamet": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Hammamet medina sea",
+        "cat:Hammamet",
+        "wp:Hammamet"
+      ]
+    },
+    "tn-dest-matmata": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Matmata troglodyte house",
+        "wp:Matmata, Tunisia"
+      ]
+    },
+    "tn-bizerte-medina": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Bizerte medina",
+        "cat:Medina of Bizerte"
+      ]
+    },
+    "tn-bizerte-coco-beach": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Bizerte beach",
+        "q:plage Bizerte corniche"
+      ]
+    },
+    "tn-bizerte-ras-serrat": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Ras Sarrat",
+        "q:Ras Serrat Bizerte",
+        "q:Bizerte coast sand"
+      ]
+    },
+    "tn-bizerte-cap-zbib": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Cap Zbib",
+        "q:Ras Zbib",
+        "q:Metline coast"
+      ]
+    },
+    "tn-bizerte-rafraf": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Rafraf beach",
+        "cat:Raf Raf",
+        "wp:Raf Raf"
+      ]
+    },
+    "tn-bizerte-night": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Bizerte night",
+        "q:Bizerte by night"
+      ]
+    },
+    "tn-wear-jebba": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "portrait",
+      "sources": [
+        "q:jebba tunisienne",
+        "q:Tunisian jebba",
+        "wp:Jebba (clothing)"
+      ]
+    },
+    "tn-wear-chechia": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:chechia Tunis souk",
+        "wp:Chechia"
+      ]
+    },
+    "tn-wear-burnous": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "portrait",
+      "sources": [
+        "q:burnous Tunisie",
+        "wp:Burnous"
+      ]
+    },
+    "tn-wear-balgha": {
+      "group": "tunisia",
+      "use": "thumb",
+      "orientation": "any",
+      "sources": [
+        "q:balgha Tunisie",
+        "q:babouches souk Tunis"
+      ]
+    },
+    "tn-wear-sefseri": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "portrait",
+      "sources": [
+        "q:sefseri",
+        "q:safsari Tunisie",
+        "wp:Sefseri"
+      ]
+    },
+    "tn-wear-keswa": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "portrait",
+      "sources": [
+        "q:keswa tunisienne",
+        "q:costume traditionnel mariee tunisienne",
+        "q:Tunisian traditional wedding dress"
+      ]
+    },
+    "tn-wear-fouta": {
+      "group": "tunisia",
+      "use": "thumb",
+      "orientation": "any",
+      "sources": [
+        "q:fouta tunisienne",
+        "q:Tunisian fouta"
+      ]
+    },
+    "tn-wear-khomsa": {
+      "group": "tunisia",
+      "use": "thumb",
+      "orientation": "any",
+      "sources": [
+        "q:khomsa Tunisie",
+        "q:hamsa silver hand",
+        "wp:Hamsa"
+      ]
+    },
+    "tn-wear-silver-jewellery": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:bijoux berberes argent Tunisie",
+        "q:Berber silver jewellery Tunisia"
+      ]
+    },
+    "tn-wear-jasmine-posy": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:machmoum jasmin",
+        "q:Tunisian jasmine bouquet",
+        "q:jasmine seller Tunisia"
+      ]
+    },
+    "tn-craft-nabeul-pottery": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Nabeul pottery",
+        "q:poterie Nabeul"
+      ]
+    },
+    "tn-craft-guellala-pottery": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Guellala pottery",
+        "q:poterie Guellala"
+      ]
+    },
+    "tn-craft-sejnane-pottery": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Sejnane pottery",
+        "q:poterie Sejnane",
+        "wp:Sejnane"
+      ]
+    },
+    "tn-craft-kairouan-carpet": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Kairouan carpet",
+        "q:tapis Kairouan"
+      ]
+    },
+    "tn-nature-ras-angela": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Cap Angela Bizerte",
+        "q:Ras Ben Sakka",
+        "wp:Cape Angela"
+      ]
+    },
+    "tn-nature-cap-bon": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Kelibia beach",
+        "q:El Mansourah Kelibia",
+        "wp:Cap Bon"
+      ]
+    },
+    "tn-nature-tabarka": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Tabarka aiguilles",
+        "q:Tabarka coast",
+        "wp:Tabarka"
+      ]
+    },
+    "tn-nature-kerkennah": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Kerkennah charfia",
+        "q:Kerkennah Islands",
+        "wp:Kerkennah Islands"
+      ]
+    },
+    "tn-nature-ichkeul": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Ichkeul National Park",
+        "wp:Ichkeul National Park"
+      ]
+    },
+    "tn-nature-chambi": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Jebel Chambi",
+        "wp:Chambi National Park"
+      ]
+    },
+    "tn-nature-zaghouan": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Djebel Zaghouan",
+        "q:Zaghouan mountain"
+      ]
+    },
+    "tn-nature-boukornine": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Boukornine",
+        "wp:Boukornine National Park"
+      ]
+    },
+    "tn-nature-ksar-ghilane": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Ksar Ghilane",
+        "wp:Ksar Ghilane"
+      ]
+    },
+    "tn-nature-chott-el-djerid": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Chott el Djerid",
+        "wp:Chott el Djerid"
+      ]
+    },
+    "tn-nature-chebika": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Chebika oasis",
+        "q:Tamerza waterfall",
+        "wp:Chebika"
+      ]
+    },
+    "tn-nature-tataouine-landscape": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Tataouine landscape",
+        "q:Matmata landscape"
+      ]
+    },
+    "tn-nature-tozeur-oasis": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Tozeur palmeraie",
+        "q:Tozeur oasis palm",
+        "q:Nefta oasis"
+      ]
+    },
+    "tn-city-tunis": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Avenue Habib Bourguiba Tunis",
+        "q:Theatre municipal de Tunis",
+        "wp:Avenue Habib Bourguiba"
+      ]
+    },
+    "tn-city-sousse": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Medina of Sousse",
+        "q:Ribat of Sousse",
+        "wp:Medina of Sousse"
+      ]
+    },
+    "tn-city-sfax": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Sfax medina walls",
+        "cat:Medina of Sfax",
+        "wp:Sfax"
+      ]
+    },
+    "tn-city-tozeur": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Tozeur brick architecture",
+        "q:Ouled el Hadef Tozeur",
+        "wp:Tozeur"
+      ]
+    },
+    "tn-city-houmt-souk": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Houmt Souk",
+        "q:Houmt Souk Djerba market"
+      ]
+    },
+    "tn-city-monastir-mausoleum": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Bourguiba Mausoleum Monastir",
+        "q:Monastir marina"
+      ]
+    },
+    "tn-hist-punic-ports": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Punic ports Carthage",
+        "wp:Ports of Carthage"
+      ]
+    },
+    "tn-hist-roman-mosaic": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Bardo museum Roman mosaic",
+        "q:Virgil mosaic Bardo"
+      ]
+    },
+    "tn-mon-zitouna": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "cat:Al-Zaytuna Mosque",
+        "q:Zitouna mosque minaret",
+        "wp:Al-Zaytuna Mosque"
+      ]
+    },
+    "tn-mon-bardo": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Bardo National Museum (Tunis)",
+        "wp:Bardo National Museum (Tunis)"
+      ]
+    },
+    "tn-mon-mahdia": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Skifa el Kahla Mahdia",
+        "q:Mahdia Great Mosque",
+        "wp:Mahdia"
+      ]
+    },
+    "tn-mon-kerkouane": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Kerkouane",
+        "wp:Kerkouane"
+      ]
+    },
+    "tn-mon-bulla-regia": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Bulla Regia",
+        "wp:Bulla Regia"
+      ]
+    },
+    "tn-mon-sbeitla": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Sufetula",
+        "q:Sbeitla temples",
+        "wp:Sufetula"
+      ]
+    },
+    "tn-mon-zaghouan-temple": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Zaghouan Water Temple",
+        "wp:Zaghouan Aqueduct"
+      ]
+    },
+    "tn-mon-thuburbo-majus": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Thuburbo Majus",
+        "wp:Thuburbo Majus"
+      ]
+    },
+    "tn-mon-ksar-ouled-soltane": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Ksar Ouled Soltane",
+        "wp:Ksar Ouled Soltane"
+      ]
+    },
+    "tn-mon-borj-el-kebir": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Borj el Kebir Djerba",
+        "q:Borj Ghazi Mustapha"
+      ]
+    },
+    "tn-mon-bizerte-kasbah": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Kasbah of Bizerte",
+        "q:Fort d'Espagne Bizerte"
+      ]
+    },
+    "tn-mon-hammamet-kasbah": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Kasbah Hammamet",
+        "q:Hammamet medina fort"
+      ]
+    },
+    "tn-fest-carthage-theatre": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Roman theatre of Carthage",
+        "q:theatre romain de Carthage"
+      ]
+    },
+    "tn-fest-sahara-festival": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Festival international du Sahara Douz",
+        "q:Sahara festival Douz"
+      ]
+    },
+    "tn-fest-el-ghriba": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "cat:El Ghriba synagogue",
+        "wp:El Ghriba synagogue"
+      ]
+    },
+    "tn-fest-independence": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Tunisian flag Avenue Habib Bourguiba",
+        "q:drapeau tunisien Tunis"
+      ]
+    },
+    "tn-fest-mezoued": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:mezoued",
+        "wp:Mezwed"
+      ]
+    },
+    "tn-food-couscous": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:couscous tunisien",
+        "wp:Couscous"
+      ]
+    },
+    "tn-food-brik": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:brik tunisien",
+        "wp:Brik"
+      ]
+    },
+    "tn-food-lablabi": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:lablabi",
+        "wp:Lablabi"
+      ]
+    },
+    "tn-food-ojja": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:ojja tunisienne",
+        "wp:Shakshouka"
+      ]
+    },
+    "tn-food-mechouia": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:salade mechouia",
+        "wp:Slata mechouia"
+      ]
+    },
+    "tn-food-tajine": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:tajine tunisien",
+        "q:Tunisian tajine"
+      ]
+    },
+    "tn-food-fricasse": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:fricasse tunisien",
+        "wp:Fricasse (Tunisian cuisine)"
+      ]
+    },
+    "tn-food-kafteji": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:kafteji",
+        "wp-fr:Kafteji"
+      ]
+    },
+    "tn-food-mloukhia": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:mloukhia",
+        "wp:Mulukhiyah"
+      ]
+    },
+    "tn-food-mechoui": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:mechoui",
+        "wp:Mechoui"
+      ]
+    },
+    "tn-food-marqa": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:marqa tunisienne",
+        "q:Tunisian lamb stew"
+      ]
+    },
+    "tn-food-harissa": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:harissa paste",
+        "wp:Harissa"
+      ]
+    },
+    "tn-sweet-makroudh": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:makroudh",
+        "wp:Makroudh"
+      ]
+    },
+    "tn-sweet-baklawa": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:baklawa tunisienne",
+        "wp:Baklava"
+      ]
+    },
+    "tn-sweet-zlebia": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:zlabia",
+        "wp:Jalebi"
+      ]
+    },
+    "tn-sweet-bambalouni": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:bambalouni",
+        "q:Sidi Bou Said doughnut"
+      ]
+    },
+    "tn-sweet-assidat-zgougou": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:assidat zgougou",
+        "q:assida zgougou"
+      ]
+    },
+    "tn-sweet-samsa": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:samsa tunisienne",
+        "q:yoyo tunisien"
+      ]
+    },
+    "tn-sweet-kaak-warka": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:kaak warka",
+        "q:kaak tunisien"
+      ]
+    },
+    "tn-drink-mint-tea": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:the aux pignons",
+        "q:Tunisian mint tea pine nuts",
+        "q:Tunisian tea glass"
+      ]
+    },
+    "tn-drink-kahwa": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:cafe arabe Tunisie",
+        "q:Arabic coffee cezve"
+      ]
+    },
+    "tn-drink-legmi": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:legmi",
+        "q:palm sap Tunisia"
+      ]
+    },
+    "tn-product-deglet-nour": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Deglet Nour",
+        "wp:Deglet Nour"
+      ]
+    },
+    "tn-product-olive-oil": {
+      "group": "tunisia",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:olive grove Tunisia",
+        "q:oliveraie Sfax"
+      ]
+    },
+    "bh-hero-manama-skyline": {
+      "group": "bahrain",
+      "use": "hero",
+      "orientation": "landscape",
+      "sources": [
+        "q:Manama skyline",
+        "cat:Skylines of Manama",
+        "wp:Manama"
+      ]
+    },
+    "bh-hero-dhow-sea": {
+      "group": "bahrain",
+      "use": "hero",
+      "orientation": "landscape",
+      "sources": [
+        "q:dhow Bahrain",
+        "q:Bahrain dhow sunset"
+      ]
+    },
+    "bh-dest-qalat": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Qal'at al-Bahrain",
+        "wp:Qal'at al-Bahrain"
+      ]
+    },
+    "bh-dest-tree-of-life": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Tree of Life (Bahrain)",
+        "wp:Tree of Life (Bahrain)"
+      ]
+    },
+    "bh-dest-pearling-path": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Pearling Path Muharraq",
+        "wp:Pearling, Testimony of an Island Economy"
+      ]
+    },
+    "bh-dest-al-fateh": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Al-Fateh Grand Mosque",
+        "q:Al Fateh Grand Mosque Manama",
+        "wp:Al Fateh Grand Mosque"
+      ]
+    },
+    "bh-dest-bahrain-wtc": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "portrait",
+      "sources": [
+        "cat:Bahrain World Trade Center",
+        "wp:Bahrain World Trade Center"
+      ]
+    },
+    "bh-dest-bab-al-bahrain": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "cat:Bab Al Bahrain",
+        "q:Bab Al Bahrain Manama",
+        "wp:Bab Al Bahrain"
+      ]
+    },
+    "bh-souq-manama": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Manama souq",
+        "q:Bahrain souq spices"
+      ]
+    },
+    "bh-dest-barbar-temple": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Barbar Temple",
+        "wp:Barbar Temple"
+      ]
+    },
+    "bh-dest-dilmun-mounds": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Dilmun Burial Mounds",
+        "wp:Dilmun Burial Mounds"
+      ]
+    },
+    "bh-dest-arad-fort": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Arad Fort",
+        "wp:Arad Fort"
+      ]
+    },
+    "bh-dest-hawar": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Hawar Islands",
+        "wp:Hawar Islands"
+      ]
+    },
+    "bh-dest-circuit": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Bahrain International Circuit",
+        "wp:Bahrain International Circuit"
+      ]
+    },
+    "bh-wear-thobe": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "portrait",
+      "sources": [
+        "q:Bahraini thobe",
+        "q:thawb white Gulf",
+        "wp:Thawb"
+      ]
+    },
+    "bh-wear-ghutra": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:ghutra agal",
+        "wp:Keffiyeh"
+      ]
+    },
+    "bh-wear-bisht": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "portrait",
+      "sources": [
+        "q:bisht cloak",
+        "wp:Bisht (clothing)"
+      ]
+    },
+    "bh-wear-thobe-nashal": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "portrait",
+      "sources": [
+        "q:thobe nashal",
+        "q:Bahraini traditional dress gold embroidery",
+        "q:thoub nashal"
+      ]
+    },
+    "bh-wear-gold-jewellery": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Manama gold souq",
+        "q:Bahrain gold jewellery"
+      ]
+    },
+    "bh-wear-pearls": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:natural pearls Bahrain",
+        "q:natural pearl necklace"
+      ]
+    },
+    "bh-craft-bani-jamra": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Bani Jamra weaving",
+        "q:Bahrain weaving loom"
+      ]
+    },
+    "bh-craft-sadu": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Al Sadu weaving",
+        "wp:Al Sadu"
+      ]
+    },
+    "bh-craft-aali-pottery": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:A'ali pottery",
+        "q:Aali pottery Bahrain"
+      ]
+    },
+    "bh-craft-dhow-building": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:dhow building Bahrain",
+        "q:dhow construction yard"
+      ]
+    },
+    "bh-craft-rawazin": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "portrait",
+      "sources": [
+        "q:Siyadi House window",
+        "q:Muharraq wooden window",
+        "q:rawazin"
+      ]
+    },
+    "bh-craft-oud-bakhoor": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:bakhoor incense burner",
+        "q:mabkhara incense"
+      ]
+    },
+    "bh-nature-springs": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Ain Adhari",
+        "q:Bahrain natural spring"
+      ]
+    },
+    "bh-nature-palm-groves": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Bahrain palm grove",
+        "q:date palm farm Bahrain"
+      ]
+    },
+    "bh-nature-oryx": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Arabian oryx Al Areen",
+        "wp:Arabian oryx"
+      ]
+    },
+    "bh-nature-socotra-cormorant": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Socotra cormorant",
+        "wp:Socotra cormorant"
+      ]
+    },
+    "bh-nature-jebel-dukhan": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Jebel Dukhan Bahrain",
+        "wp:Mountain of Smoke"
+      ]
+    },
+    "bh-nature-tubli-mangroves": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Tubli Bay mangroves",
+        "wp:Tubli Bay"
+      ]
+    },
+    "bh-nature-beach": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Al Dar Islands",
+        "q:Amwaj Islands",
+        "q:Bahrain beach"
+      ]
+    },
+    "bh-nature-desert-sakhir": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Sakhir desert",
+        "q:Bahrain desert"
+      ]
+    },
+    "bh-city-financial-harbour": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "portrait",
+      "sources": [
+        "q:Bahrain Financial Harbour",
+        "wp:Bahrain Financial Harbour"
+      ]
+    },
+    "bh-city-muharraq": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Muharraq old house",
+        "wp:Muharraq"
+      ]
+    },
+    "bh-city-riffa-fort": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Riffa Fort",
+        "wp:Riffa Fort"
+      ]
+    },
+    "bh-city-national-museum": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Bahrain National Museum",
+        "wp:Bahrain National Museum"
+      ]
+    },
+    "bh-city-beit-al-quran": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Beit Al Quran",
+        "wp:Beit Al Qur'an"
+      ]
+    },
+    "bh-city-adliya": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Adliya Bahrain",
+        "q:Block 338 Adliya"
+      ]
+    },
+    "bh-city-sitra": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Sitra Bahrain",
+        "wp:Sitra"
+      ]
+    },
+    "bh-city-budaiya": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Budaiya",
+        "wp:Budaiya"
+      ]
+    },
+    "bh-hist-pearl-divers": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:pearl divers Bahrain historical",
+        "wp:Pearl hunting"
+      ]
+    },
+    "bh-hist-dilmun-seal": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Dilmun seal",
+        "q:Dilmun stamp seal"
+      ]
+    },
+    "bh-hist-al-khamis": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Al Khamis Mosque",
+        "wp:Khamis Mosque"
+      ]
+    },
+    "bh-hist-oil-well": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Oil Well No. 1 Bahrain",
+        "q:first oil well Bahrain"
+      ]
+    },
+    "bh-hist-siyadi-house": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Siyadi House Muharraq",
+        "q:Siyadi Mosque"
+      ]
+    },
+    "bh-hist-shaikh-isa-house": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Shaikh Isa bin Ali House",
+        "wp:Shaikh Isa bin Ali House"
+      ]
+    },
+    "bh-hist-hidaya-school": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Al-Hidaya Al-Khalifiya School",
+        "q:Hidaya school Muharraq"
+      ]
+    },
+    "bh-mon-saar": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Saar settlement Bahrain",
+        "q:Saar Bahrain archaeological"
+      ]
+    },
+    "bh-mon-ain-umm-al-sujur": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Ain Umm Al Sujur",
+        "q:Umm es-Sujur"
+      ]
+    },
+    "bh-mon-bu-maher": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Bu Maher Fort",
+        "wp:Bu Maher Fort"
+      ]
+    },
+    "bh-fest-national-day": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Bahrain National Day",
+        "q:Bahrain flag celebration"
+      ]
+    },
+    "bh-fest-gargeean": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Gergean",
+        "q:Girgian Bahrain",
+        "q:Garangao"
+      ]
+    },
+    "bh-fest-majlis": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:majlis Bahrain",
+        "q:Arabic majlis interior"
+      ]
+    },
+    "bh-fest-camel-racing": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:camel racing Bahrain",
+        "wp:Camel racing"
+      ]
+    },
+    "bh-fest-fijiri": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:fijiri",
+        "q:Bahrain traditional sea music",
+        "q:Bahraini traditional dance"
+      ]
+    },
+    "bh-food-machboos": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:machboos",
+        "wp:Kabsa"
+      ]
+    },
+    "bh-food-muhammar": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:muhammar rice",
+        "q:Bahraini sweet rice"
+      ]
+    },
+    "bh-food-harees": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:harees",
+        "wp:Harees"
+      ]
+    },
+    "bh-food-balaleet": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:balaleet",
+        "wp:Balaleet"
+      ]
+    },
+    "bh-food-luqaimat": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:luqaimat",
+        "wp:Luqaimat"
+      ]
+    },
+    "bh-food-quzi": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:quzi lamb rice",
+        "wp:Ghuzi"
+      ]
+    },
+    "bh-food-mahyawa": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:mahyawa",
+        "wp:Mahyawa"
+      ]
+    },
+    "bh-food-mumawash": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:mumawash",
+        "q:rice lentils dried shrimp"
+      ]
+    },
+    "bh-food-nakhi": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:nakhi chickpeas",
+        "q:boiled chickpeas cumin"
+      ]
+    },
+    "bh-food-bajela": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:bajela fava beans",
+        "q:boiled broad beans"
+      ]
+    },
+    "bh-food-khabeesa": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:khabeesa",
+        "q:khabees sweet"
+      ]
+    },
+    "bh-food-halwa": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Bahraini halwa",
+        "q:halwa showaiter"
+      ]
+    },
+    "bh-drink-arabic-coffee": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:dallah Arabic coffee",
+        "wp:Dallah (pot)",
+        "wp:Arabic coffee"
+      ]
+    },
+    "bh-product-dates": {
+      "group": "bahrain",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Khalas dates",
+        "q:Bahrain dates"
+      ]
+    },
+    "cg-kairouan-kufic": {
+      "group": "common",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Great Mosque of Kairouan kufic inscription",
+        "q:Kairouan kufic"
+      ]
+    },
+    "cg-blue-quran": {
+      "group": "common",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "wp:Blue Quran",
+        "q:Blue Quran folio"
+      ]
+    },
+    "cg-calligraphy": {
+      "group": "common",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Arabic calligraphy calligrapher",
+        "q:Arabic calligraphy pen ink"
+      ]
+    },
+    "cg-manuscript": {
+      "group": "common",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Arabic manuscript poetry",
+        "q:Arabic manuscript page"
+      ]
+    },
+    "cg-oud": {
+      "group": "common",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:oud instrument",
+        "wp:Oud"
+      ]
+    },
+    "cg-ramadan-lanterns": {
+      "group": "common",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:Ramadan lanterns",
+        "q:fanous Ramadan"
+      ]
+    },
+    "cg-iftar-table": {
+      "group": "common",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:iftar table dates",
+        "q:Ramadan iftar"
+      ]
+    },
+    "cg-gold-embroidery": {
+      "group": "common",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:gold embroidery Arabic dress",
+        "q:zari embroidery"
+      ]
+    },
+    "cg-henna": {
+      "group": "common",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:henna hand pattern",
+        "wp:Henna"
+      ]
+    },
+    "cg-palm-weaving": {
+      "group": "common",
+      "use": "card",
+      "orientation": "any",
+      "sources": [
+        "q:palm leaf weaving",
+        "q:palm frond basket weaving"
+      ]
+    },
+    "cg-spices": {
+      "group": "common",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:spices souk",
+        "q:cardamom saffron cinnamon spices"
+      ]
+    },
+    "cg-stadium-crowd": {
+      "group": "common",
+      "use": "card",
+      "orientation": "landscape",
+      "sources": [
+        "q:Stade Hammadi Agrebi",
+        "q:Bahrain National Stadium",
+        "q:football stadium crowd"
+      ]
+    }
+  }
+}

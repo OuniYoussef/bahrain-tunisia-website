@@ -1,0 +1,171 @@
+{
+  "site": {
+    "name": "Bahrain × Tunisia",
+    "identifierLine1": "IEEE",
+    "identifierLine2": "Bahrain × Tunisia",
+    "purpose": "A cultural exchange website by IEEE students celebrating Tunisia, Bahrain and what connects them.",
+    "defaultTitle": "Bahrain × Tunisia | Two Nations. One Shared Spirit.",
+    "titleTemplate": "{page} | Bahrain × Tunisia",
+    "defaultDescription": "Discover Tunisia and Bahrain, two nations with one shared spirit: destinations, traditions, food, history and the stories that connect them."
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "mainNav": "Main navigation",
+    "footerNav": "Footer navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "languageSwitcher": "Choose language",
+    "currentLanguage": "Current language: {language}",
+    "externalLink": "(opens IEEE website)",
+    "newTab": "(opens in a new tab)",
+    "backToTop": "Back to top",
+    "breadcrumb": "Breadcrumb",
+    "loadingPage": "Loading page",
+    "decorative": ""
+  },
+  "nav": {
+    "united": "United",
+    "tunisia": "Tunisia",
+    "bahrain": "Bahrain",
+    "commonGrounds": "Common Grounds",
+    "vault": "Experience Vault",
+    "contact": "Contact",
+    "credits": "Photo credits"
+  },
+  "ui": {
+    "readMore": "Read more",
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next",
+    "seeAll": "See all",
+    "viewOnMap": "Show on the map",
+    "unescoLabel": "UNESCO World Heritage",
+    "unescoYear": "UNESCO World Heritage, {year}",
+    "tip": "Tip",
+    "imageCredit": "Photo: {author}, {license}",
+    "loading": "Loading…",
+    "error": "Something went wrong.",
+    "retry": "Try again",
+    "scrollHint": "Scroll",
+    "tunisia": "Tunisia",
+    "bahrain": "Bahrain",
+    "both": "Both",
+    "other": "Other"
+  },
+  "alerts": {
+    "regionLabel": "Site announcements",
+    "dismiss": "Dismiss announcement"
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Stay connected.",
+      "text": "Get stories, recipes and travel ideas from Tunisia and Bahrain in your inbox.",
+      "emailLabel": "Email address",
+      "consent": "I agree to receive the newsletter. I can unsubscribe at any time.",
+      "button": "Subscribe",
+      "submitting": "Subscribing…",
+      "success": "Thank you! You are on the list.",
+      "already": "This address is already subscribed.",
+      "invalid": "Please enter a valid email address.",
+      "error": "We could not subscribe you. Please try again later.",
+      "unavailable": "The newsletter will open soon."
+    },
+    "columns": {
+      "quickLinks": {
+        "title": "Quick Links",
+        "united": "United Page",
+        "tunisia": "Discover Tunisia",
+        "bahrain": "Discover Bahrain"
+      },
+      "explore": {
+        "title": "Explore",
+        "commonGrounds": "Common Grounds Media Matrix",
+        "vault": "Community Experience Vault"
+      },
+      "connect": {
+        "title": "Connect",
+        "contact": "Contact",
+        "follow": "Follow us"
+      }
+    },
+    "social": {
+      "label": "Follow us on social media",
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "youtube": "YouTube"
+    },
+    "organisedBy": "Organised by IEEE student volunteers in Tunisia and Bahrain",
+    "ieeeLinks": {
+      "label": "IEEE policies",
+      "home": "Home",
+      "contact": "Contact",
+      "accessibility": "Accessibility",
+      "nondiscrimination": "Nondiscrimination Policy",
+      "ethics": "IEEE Ethics Reporting",
+      "terms": "Terms & Disclosures",
+      "privacy": "IEEE Privacy Policy",
+      "sitemap": "Sitemap",
+      "credits": "Photo credits"
+    },
+    "projectLine": "2026 Bahrain × Tunisia. An IEEE student exchange project.",
+    "skyline": {
+      "label": "Skyline of landmarks from Tunisia and Bahrain",
+      "landmarks": {
+        "bab-bhar": "Bab Bhar, Tunis",
+        "zitouna-minaret": "Zitouna Mosque minaret",
+        "sidi-bou-said-house": "A blue-and-white house of Sidi Bou Said",
+        "el-djem": "El Djem amphitheatre",
+        "kairouan-minaret": "Great Mosque of Kairouan minaret",
+        "antonine-baths": "Antonine Baths columns, Carthage",
+        "ribat-monastir": "Ribat of Monastir",
+        "palm": "The date palm, shared by both countries",
+        "tree-of-life": "The Tree of Life",
+        "arad-fort": "Arad Fort",
+        "al-fateh": "Al-Fateh Grand Mosque",
+        "bab-al-bahrain": "Bab Al-Bahrain",
+        "financial-harbour": "Bahrain Financial Harbour towers",
+        "bahrain-wtc": "Bahrain World Trade Center",
+        "qalat-al-bahrain": "Qal'at al-Bahrain (Bahrain Fort)"
+      }
+    }
+  },
+  "contact": {
+    "metaTitle": "Contact",
+    "metaDescription": "Contact the IEEE student team behind the Bahrain × Tunisia website.",
+    "eyebrow": "Get in touch",
+    "title": "Contact",
+    "text": "Questions, corrections or ideas for the site? Write to the IEEE student team in Tunisia and Bahrain.",
+    "emailLabel": "Email the team",
+    "socialTitle": "Follow the exchange",
+    "responseNote": "We usually answer within a few days."
+  },
+  "credits": {
+    "metaTitle": "Photo credits",
+    "metaDescription": "Sources and licences of the photos, maps and illustrations used on this website.",
+    "title": "Photo credits",
+    "intro": "The photos on this website come from Wikimedia Commons and other free-licence sources. They were resized and converted to WebP; no other changes were made. Thank you to every photographer.",
+    "columns": {
+      "photo": "Image",
+      "author": "Author",
+      "license": "Licence",
+      "source": "Source"
+    },
+    "viewSource": "View source",
+    "maps": "Maps: Natural Earth (public domain) and © OpenStreetMap contributors (ODbL). Flags: country-flag-icons (MIT). Skyline, patterns and ornaments: original artwork for this project.",
+    "empty": "Photo credits will appear here once the photos are added."
+  },
+  "notFound": {
+    "metaTitle": "Page not found",
+    "title": "This lane leads nowhere",
+    "text": "Like the alleys of an old medina, some paths end in a quiet wall. Let's take you back.",
+    "cta": "Back to the United page"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "text": "Please reload the page. If the problem continues, contact us.",
+    "reload": "Reload"
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "meta": {
+    "title": "The Common Grounds Media Matrix",
+    "description": "A slide-based journey through what connects Tunisia and Bahrain: seafaring history, culinary crossovers, language, family, faith, dress, crafts, architecture, music, celebrations and people."
+  },
+  "intro": {
+    "eyebrow": "Common Grounds",
+    "title": "The Common Grounds Media Matrix",
+    "text": "A smooth, slide-based presentation comparing the two countries. It charts shared seafaring history, culinary crossovers and language links, and also covers family, faith, dress, crafts, architecture, music, celebrations and people.",
+    "start": "Start the journey"
+  },
+  "ui": {
+    "slideLabel": "Slide {current} of {total}",
+    "regionLabel": "Common Grounds slides",
+    "previous": "Previous slide",
+    "next": "Next slide",
+    "allSlides": "All slides",
+    "closeIndex": "Close slide index",
+    "play": "Play slideshow",
+    "pause": "Pause slideshow",
+    "mute": "Mute video",
+    "unmute": "Unmute video",
+    "fullscreen": "Full screen",
+    "exitFullscreen": "Exit full screen",
+    "hint": "Swipe, scroll or use the arrow keys",
+    "tunisia": "Tunisia",
+    "bahrain": "Bahrain",
+    "shared": "Shared",
+    "wordsMeaning": "Meaning",
+    "sharedWordsTitle": "Words both understand"
+  },
+  "slides": [
+    {
+      "id": "welcome",
+      "kicker": "01",
+      "title": "Welcome to Common Grounds",
+      "text": "Two countries, two seas, one heart. Swipe to discover what connects Tunisia and Bahrain.",
+      "captions": {
+        "tunisia": "The blue-and-white lanes of Sidi Bou Said, and Tunisian jasmine.",
+        "bahrain": "The old Manama souq, and the Al Razji flower."
+      }
+    },
+    {
+      "id": "families",
+      "kicker": "02",
+      "title": "Families First",
+      "text": "In Tunisia and Bahrain the family is the centre of life. Generations live close, share weekly meals and gather for every celebration. Elders are respected, children are cherished, and a guest is treated as part of the family.",
+      "captions": {
+        "tunisia": "The Friday family couscous, a table shared by grandparents, parents and children, with neighbours dropping in.",
+        "bahrain": "The family majlis, where relatives and friends meet to share coffee, dates and conversation."
+      }
+    },
+    {
+      "id": "language",
+      "kicker": "03",
+      "title": "The Language of the Heart",
+      "text": "Arabic unites Tunisia and Bahrain. Tunisians speak Derja, a dialect that blends Arabic with French, Italian and Amazigh (Berber) words, while Bahrainis speak a Gulf Arabic dialect with its own seafaring and Persian touches. Yet both understand the same words of welcome.",
+      "captions": {
+        "tunisia": "Kufic lettering of the Great Mosque of Kairouan.",
+        "bahrain": "Calligraphy in the spirit of the Kufic of the Al-Fateh Grand Mosque in Manama."
+      },
+      "pairsTitle": "Words that mean the same in two accents",
+      "pairs": [
+        {
+          "id": "a-lot",
+          "meaning": "a lot",
+          "tunisia": "Barcha",
+          "bahrain": "Wayed"
+        },
+        {
+          "id": "hello",
+          "meaning": "hello",
+          "tunisia": "Aslama",
+          "bahrain": "Marhaba"
+        },
+        {
+          "id": "thank-you",
+          "meaning": "thank you",
+          "tunisia": "Aychek",
+          "bahrain": "Shukran"
+        }
+      ],
+      "sharedWords": [
+        "Marhaba",
+        "Ahlan wa sahlan",
+        "Shukran",
+        "Mabrouk",
+        "Inshallah",
+        "Yalla"
+      ]
+    },
+    {
+      "id": "written-word",
+      "kicker": "04",
+      "title": "The Written Word",
+      "text": "Arabic calligraphy is a shared art. Kairouan is the home of the famous Blue Quran, a manuscript from the early Islamic period written in gold Kufic script on blue-dyed parchment, while Bahrain's Beit Al-Quran holds rare Quranic manuscripts from many eras, and the smallest and the largest Quran in the world.",
+      "captions": {
+        "tunisia": "A folio of the Blue Quran, gold Kufic on blue parchment.",
+        "bahrain": "Beit Al-Quran in Hoora, a museum of rare Quranic manuscripts."
+      }
+    },
+    {
+      "id": "poets",
+      "kicker": "05",
+      "title": "Poets of the People",
+      "text": "Poetry lives in both nations. Tunisia's Aboul-Qacem Echebbi gave voice to a whole people with verses on freedom and life, and Bahrain's Ibrahim Al-Arrayedh, \"the Prince of Poets\", taught a generation to write.",
+      "captions": {
+        "tunisia": "Tozeur, the oasis city where Echebbi was born.",
+        "bahrain": "Muharraq, home of Bahrain's literary renaissance."
+      }
+    },
+    {
+      "id": "sea",
+      "kicker": "06",
+      "title": "Sons and Daughters of the Sea",
+      "text": "Both countries were shaped by the sea. Tunisia's Phoenician settlers founded Carthage around 814 BC and sailed a trading empire across the Mediterranean, while Dilmun made Bahrain a hub of trade between Mesopotamia and the Indus Valley 5,000 years ago. Tunisians fished with the charfia traps of the Kerkennah Islands and gathered sponges off Djerba and Zarzis. Bahrainis dove for pearls for 7,000 years and built wooden ships without a single iron nail.",
+      "captions": {
+        "tunisia": "The Punic ports of Carthage and the fishing traps of Kerkennah.",
+        "bahrain": "Pearl divers, dhows and the Pearling Path of Muharraq."
+      }
+    },
+    {
+      "id": "ships-songs",
+      "kicker": "07",
+      "title": "Ships and Songs",
+      "text": "Sailors sang to keep time at the oars and to ease the long voyages. Bahrain's Fijiri is the chanted art of the pearl-diving ships, with drums and tambourine, while Tunisia's coastal communities have their own fishermen's songs. The oud, the instrument of Arab music, is heard in both countries.",
+      "captions": {
+        "tunisia": "The mezoued, the bagpipe of Tunisian celebrations.",
+        "bahrain": "Fijiri, the sea songs of the pearl divers."
+      }
+    },
+    {
+      "id": "dates-sweets",
+      "kicker": "08",
+      "title": "Dates, Spices and Sweets",
+      "text": "Dates are a gift of the desert in both countries. Tunisia is famous for Deglet Nour dates from the oases of Tozeur and Kebili, and Bahrain for the Khalas and Khunaizi varieties of its palm groves. Both kitchens turn dates into dessert: Tunisian makroudh is a semolina pastry stuffed with dates and soaked in honey, and Bahraini luqaimat are golden dough balls dipped in date syrup.",
+      "captions": {
+        "tunisia": "Deglet Nour dates and makroudh.",
+        "bahrain": "Khalas dates and luqaimat."
+      }
+    },
+    {
+      "id": "culinary",
+      "kicker": "09",
+      "title": "Culinary Crossovers",
+      "text": "Spices tie the two cuisines together. Tunisian cooking is built on caraway, coriander, cumin, cinnamon and chilli, with harissa on the table; Bahraini cooking uses cinnamon, cardamom, cloves, turmeric and saffron, with mahyawa fish sauce. Both love grains: couscous in Tunisia, rice (machboos) and cracked wheat (harees) in Bahrain. Both celebrate with a whole roasted lamb: mechoui in Tunisia and quzi in Bahrain. Both start the day with egg: Tunisian ojja and Bahraini balaleet.",
+      "captions": {
+        "tunisia": "Couscous, harissa and ojja.",
+        "bahrain": "Machboos, mahyawa and balaleet."
+      }
+    },
+    {
+      "id": "welcome-art",
+      "kicker": "10",
+      "title": "The Art of Welcome",
+      "text": "Hospitality is a way of life. In Tunisia a guest is greeted with Marhba and offered tea with pine nuts, and jasmine posies are given as a sign of welcome. In Bahrain a guest is greeted with Ahlan wa sahlan and served Arabic coffee from the dallah with dates. In both countries refusing a second cup is a polite gesture, and a guest is never allowed to leave hungry.",
+      "captions": {
+        "tunisia": "Tea with pine nuts and a jasmine posy.",
+        "bahrain": "Arabic coffee poured from the dallah, with dates."
+      }
+    },
+    {
+      "id": "palms",
+      "kicker": "11",
+      "title": "Palms and Oases",
+      "text": "The palm is the tree of life in both countries. Bahrain was called the Island of a Million Palms and Tunisia's southern oases of Tozeur and Nefta shelter hundreds of thousands of palms. The palm gives dates, shade, rope, baskets, mats and fans. In 2019 the knowledge and traditions of the date palm were recognized by UNESCO as a shared heritage of Arab countries, including both Tunisia and Bahrain.",
+      "captions": {
+        "tunisia": "The mountain oasis of Chebika and the palm groves of Tozeur.",
+        "bahrain": "Palm groves and the fresh-water springs of Bahrain."
+      }
+    },
+    {
+      "id": "dress",
+      "kicker": "12",
+      "title": "Dressed with Pride",
+      "text": "Long, graceful robes protect from the sun and honour tradition. The Tunisian jebba and the Bahraini thobe are both long robes; the Tunisian chechia and the Bahraini ghutra are both head coverings; the Tunisian burnous and the Bahraini bisht are both cloaks of wool. Women's dress shines with gold: the Tunisian keswa and the Bahraini thobe al-nashal are embroidered with gold thread, and women in both countries once wrapped themselves in a large outer covering, the sefseri in Tunisia and the abaya in the Gulf.",
+      "captions": {
+        "tunisia": "Jebba, chechia and the bridal keswa.",
+        "bahrain": "Thobe, ghutra, bisht and the thobe al-nashal."
+      }
+    },
+    {
+      "id": "jewellery",
+      "kicker": "13",
+      "title": "Gold, Silver and Henna",
+      "text": "Jewellery tells family stories. Tunisia is known for its silver, including the khomsa against the evil eye, and Bahrain for its gold and natural pearls: the murtasha necklace and the habga with pearls. In both countries the bride celebrates a henna night, when her hands are decorated among her female relatives with songs and music.",
+      "captions": {
+        "tunisia": "Silver jewellery and the khomsa.",
+        "bahrain": "Gold and natural pearls."
+      }
+    },
+    {
+      "id": "weddings",
+      "kicker": "14",
+      "title": "Wedding Celebrations",
+      "text": "Weddings are family festivals. Both countries celebrate with a henna night, a bridal procession with drums and traditional chants (the zaffa in Bahrain), gifts between families, beautiful bridal gowns and a large feast with a roast lamb and sweets.",
+      "captions": {
+        "tunisia": "The bridal keswa and the mezoued.",
+        "bahrain": "The thobe al-nashal and the wedding feast of quzi."
+      }
+    },
+    {
+      "id": "crafts",
+      "kicker": "15",
+      "title": "Hands that Create",
+      "text": "Villages became famous for crafts. Tunisia's Nabeul, Guellala in Djerba and Sejnane are known for pottery; Bahrain's A'ali has made pottery for over 4,000 years. Both countries weave wool, embroider with gold and silver thread, and make baskets from palm leaves.",
+      "captions": {
+        "tunisia": "Pottery of Guellala, Nabeul and Sejnane, and the carpets of Kairouan.",
+        "bahrain": "Pottery of A'ali and the looms of Bani Jamra."
+      }
+    },
+    {
+      "id": "windows",
+      "kicker": "16",
+      "title": "Windows to the Past",
+      "text": "Old houses open to courtyards and breathe through carved wooden screens: the mashrabiya windows of Sidi Bou Said and the Tunis medina, and the rawazin windows of Muharraq. Narrow lanes, shady walls and cool interiors are the traditional answer to the heat.",
+      "captions": {
+        "tunisia": "Blue doors and mashrabiya of Sidi Bou Said and the Medina of Tunis.",
+        "bahrain": "Rawazin windows of the Pearling Path in Muharraq."
+      }
+    },
+    {
+      "id": "forts-waters",
+      "kicker": "17",
+      "title": "Forts and Sacred Waters",
+      "text": "Both nations guard fortresses by the sea: the Ribat of Monastir (built in 796) and the Kasbah of Hammamet in Tunisia, Qal'at al-Bahrain and Arad Fort in Bahrain. Ancient temples honoured water: Bahrain's Barbar Temple was built over a sacred spring, and the Roman water temple of Zaghouan celebrates the spring that fed Carthage.",
+      "captions": {
+        "tunisia": "The Ribat of Monastir and the water temple of Zaghouan.",
+        "bahrain": "Qal'at al-Bahrain and Barbar Temple."
+      }
+    },
+    {
+      "id": "civilizations",
+      "kicker": "18",
+      "title": "Ancient Civilizations",
+      "text": "Two great civilizations of the ancient world: Carthage, the Phoenician city that rivalled Rome, and Dilmun, the trading land the Sumerians called the Land of Immortality. Both appear in the oldest stories of humanity, Dilmun in the Epic of Gilgamesh and Carthage in the legend of Queen Elissa (Dido). Today the sites of both are protected by UNESCO.",
+      "captions": {
+        "tunisia": "The columns of the Antonine Baths in Carthage.",
+        "bahrain": "The Dilmun Burial Mounds."
+      }
+    },
+    {
+      "id": "faith",
+      "kicker": "19",
+      "title": "Faith and Festivals",
+      "text": "Ramadan, Eid al-Fitr, Eid al-Adha, the Islamic New Year and the Prophet's Birthday bring both countries together. In Ramadan the table is set with dates and sweets, and children celebrate: in Bahrain on Gargee'an night in colourful costumes, and in Tunisia at family gatherings with brik, zlebia and assidat zgougou at Mouled.",
+      "captions": {
+        "tunisia": "Zlebia and brik on the Ramadan table.",
+        "bahrain": "Children collecting sweets on Gargee'an night."
+      }
+    },
+    {
+      "id": "learning",
+      "kicker": "20",
+      "title": "Learning and Progress",
+      "text": "Both nations have long traditions of learning and reform. Tunis is home to the Zitouna Mosque, one of the oldest centres of Islamic learning, and the 14th-century thinker Ibn Khaldun. Bahrain opened its first regular school in 1919 and the first girls' school in the Gulf in 1928. Tunisia became known as a pioneer in women's rights in the Arab world with its 1956 Code of Personal Status.",
+      "captions": {
+        "tunisia": "The Zitouna Mosque in the Medina of Tunis.",
+        "bahrain": "Al-Hidaya Al-Khalifiya School in Muharraq, opened in 1919."
+      }
+    },
+    {
+      "id": "sport-talent",
+      "kicker": "21",
+      "title": "Pride of Sport and Talent",
+      "text": "Champions come from both countries. Tunisian tennis star Ons Jabeur reached Grand Slam finals, swimmer Oussama Mellouli won Olympic gold, and Bahrain's Winfred Yavi won Olympic steeplechase gold in Paris in 2024. Both countries love football, and both host global events: the Carthage International Festival in Tunisia and the Formula 1 Bahrain Grand Prix.",
+      "captions": {
+        "tunisia": "The Roman theatre of Carthage, stage of the Carthage International Festival.",
+        "bahrain": "The Bahrain International Circuit in Sakhir."
+      }
+    },
+    {
+      "id": "independence",
+      "kicker": "22",
+      "title": "Independence and National Pride",
+      "text": "Tunisia celebrates independence on 20 March (1956) and Bahrain celebrates National Day on 16 December. Both mark their days with flags, parades, fireworks and family gatherings, and both flags are red and white.",
+      "captions": {
+        "tunisia": "The Tunisian flag on Independence Day.",
+        "bahrain": "National Day celebrations in Bahrain."
+      }
+    },
+    {
+      "id": "differences",
+      "kicker": "23",
+      "title": "Differences that Make Each Special",
+      "text": "Alongside everything they share, each country keeps its own character. Tunisia offers Mediterranean coast, Roman ruins and the Sahara, a cuisine of harissa and couscous, and about 12 million people. Bahrain offers an island of pearls, Dilmun mounds and gleaming skylines, a cuisine of machboos and muhammar, and about 1.5 million people. The Tunisian dialect and the Bahraini dialect differ, and each country's music, dress and architecture reflect its own history.",
+      "captions": {
+        "tunisia": "From the Mediterranean to the Sahara.",
+        "bahrain": "An island of pearls and gleaming skylines."
+      }
+    },
+    {
+      "id": "cta",
+      "kicker": "24",
+      "title": "Now it's your turn.",
+      "text": "Share your own story, photo or memory from Tunisia or Bahrain in the Community Experience Vault.",
+      "cta": "Share Your Story",
+      "captions": {
+        "tunisia": "",
+        "bahrain": ""
+      }
+    }
+  ]
+}

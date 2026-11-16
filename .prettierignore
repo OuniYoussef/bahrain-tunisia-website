@@ -1,0 +1,20 @@
+node_modules/
+dist/
+dist-ssr/
+coverage/
+public/images/
+src/content/locales/**/*.json
+src/content/generated/
+playwright-report/
+test-results/
+.agents/
+skills-lock.json
+package-lock.json
+
+# Preserve the supplied kit and upstream skill sources without formatting churn.
+AGENTS.md
+docs/
+scripts/
+public/brand/
+src/content/media.json
+src/content/images.manifest.json

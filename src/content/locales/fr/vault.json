@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "title": "Le Coffre des expériences de la communauté",
+    "description": "Votre histoire a sa place ici. Partagez des récits personnels, des photographies, des carnets de voyage et des anecdotes interculturelles qui relient la Tunisie et Bahreïn."
+  },
+  "hero": {
+    "eyebrow": "Communauté",
+    "headline": "Le Coffre des expériences de la communauté",
+    "subheadline": "Votre histoire a sa place ici.",
+    "intro": "Avez-vous parcouru les ruelles de Sidi Bou Saïd ou le Chemin des perles ? Partagé un thé avec une famille tunisienne ou un café dans un majlis bahreïni ? Partagez ce moment. Chaque photo et chaque histoire ajoute de la couleur et de la vie à ce pont entre la Tunisie et Bahreïn.",
+    "ctaShare": "Partager mon histoire",
+    "ctaBrowse": "Parcourir le mur"
+  },
+  "categories": {
+    "title": "Que pouvez-vous partager ?",
+    "items": [
+      {
+        "id": "story",
+        "title": "Récits personnels",
+        "text": "Un moment, un souvenir ou une histoire de famille liés à la Tunisie ou à Bahreïn.",
+        "prompt": "Racontez-nous un moment où vous vous êtes senti(e) chez vous."
+      },
+      {
+        "id": "photo",
+        "title": "Photographie",
+        "text": "Vos propres photos de lieux, de personnes, de plats, d'artisanat et de fêtes.",
+        "prompt": "Qu'avez-vous saisi que les autres devraient voir ?"
+      },
+      {
+        "id": "diary",
+        "title": "Carnets de voyage",
+        "text": "Votre voyage, jour après jour.",
+        "prompt": "Où êtes-vous allé(e), qu'avez-vous goûté, qui avez-vous rencontré ?"
+      },
+      {
+        "id": "anecdote",
+        "title": "Anecdotes interculturelles",
+        "text": "Des histoires qui relient les deux cultures : un Tunisien à Bahreïn, un Bahreïni en Tunisie, une recette ou un mot en commun.",
+        "prompt": "Qu'est-ce qui vous a surpris dans nos ressemblances ?"
+      }
+    ]
+  },
+  "wall": {
+    "title": "Les histoires de la communauté",
+    "filtersLabel": "Filtrer les histoires",
+    "countryLabel": "Pays",
+    "categoryLabel": "Type",
+    "country": {
+      "all": "Tous",
+      "tunisia": "Tunisie",
+      "bahrain": "Bahreïn",
+      "both": "Les deux"
+    },
+    "category": {
+      "all": "Tous les types",
+      "story": "Récits",
+      "photo": "Photos",
+      "diary": "Carnets",
+      "anecdote": "Anecdotes"
+    },
+    "resultsCount": {
+      "zero": "{count} histoire",
+      "one": "{count} histoire",
+      "two": "{count} histoires",
+      "few": "{count} histoires",
+      "many": "{count} histoires",
+      "other": "{count} histoires"
+    },
+    "empty": "Soyez le premier ou la première à partager une histoire de Tunisie ou de Bahreïn.",
+    "emptyFiltered": "Aucune histoire ne correspond encore à ces filtres.",
+    "clearFilters": "Effacer les filtres",
+    "loading": "Chargement des histoires…",
+    "loadMore": "Charger plus d'histoires",
+    "end": "Vous êtes arrivé(e) au bout du mur.",
+    "error": "Impossible de charger les histoires. Veuillez réessayer.",
+    "retry": "Réessayer",
+    "sampleBadge": "Exemple",
+    "sampleNote": "Les publications d'exemple montrent à quoi ressemblera le mur. Elles seront remplacées par de vraies histoires.",
+    "readStory": "Lire l'histoire",
+    "by": "par {name}",
+    "postedOn": "Publié le {date}",
+    "photoCount": {
+      "zero": "{count} photo",
+      "one": "{count} photo",
+      "two": "{count} photos",
+      "few": "{count} photos",
+      "many": "{count} photos",
+      "other": "{count} photos"
+    },
+    "countryFlag": "Histoire de {country}",
+    "close": "Fermer",
+    "previousPhoto": "Photo précédente",
+    "nextPhoto": "Photo suivante",
+    "react": "Envoyer un cœur",
+    "reacted": "Vous avez envoyé un cœur",
+    "hearts": {
+      "zero": "{count} cœur",
+      "one": "{count} cœur",
+      "two": "{count} cœurs",
+      "few": "{count} cœurs",
+      "many": "{count} cœurs",
+      "other": "{count} cœurs"
+    }
+  },
+  "report": {
+    "button": "Signaler cette publication",
+    "title": "Signaler cette publication",
+    "intro": "Dites à notre équipe de modération ce qui ne va pas dans cette publication.",
+    "reasonLabel": "Motif",
+    "reasons": {
+      "not-owner": "Les photos ou le texte n'appartiennent pas à l'auteur",
+      "offensive": "Offensant ou irrespectueux",
+      "private": "Divulgue des informations privées sur quelqu'un",
+      "spam": "Spam, contenu politique ou commercial",
+      "other": "Autre chose"
+    },
+    "detailsLabel": "Précisions (facultatif)",
+    "submit": "Envoyer le signalement",
+    "thanks": "Merci. Notre équipe va examiner cette publication.",
+    "error": "Impossible d'envoyer le signalement. Veuillez réessayer."
+  },
+  "form": {
+    "title": "Partagez votre histoire",
+    "intro": "Chaque publication est vérifiée par notre équipe avant d'apparaître sur le mur.",
+    "fields": {
+      "name": {
+        "label": "Votre nom ou pseudo",
+        "hint": ""
+      },
+      "country": {
+        "label": "Pays de l'histoire",
+        "options": {
+          "tunisia": "Tunisie",
+          "bahrain": "Bahreïn",
+          "both": "Les deux",
+          "other": "Autre"
+        }
+      },
+      "category": {
+        "label": "Catégorie",
+        "options": {
+          "story": "Récit personnel",
+          "photo": "Photographie",
+          "diary": "Carnet de voyage",
+          "anecdote": "Anecdote interculturelle"
+        }
+      },
+      "title": {
+        "label": "Titre",
+        "hint": "80 caractères maximum."
+      },
+      "body": {
+        "label": "Votre histoire",
+        "hint": "1 500 caractères maximum."
+      },
+      "placeYear": {
+        "label": "Lieu et année",
+        "hint": "Facultatif. Exemple : Sidi Bou Saïd, 2024."
+      },
+      "photos": {
+        "label": "Photos",
+        "hint": "Jusqu'à 5 images (JPG, PNG ou WEBP). Les images sont compressées et converties automatiquement en WEBP dans le navigateur avant l'envoi.",
+        "add": "Ajouter des photos",
+        "drop": "ou déposez-les ici",
+        "remove": "Retirer la photo {n}",
+        "processing": "Optimisation de la photo…",
+        "altLabel": "Décrire la photo {n} (facultatif)",
+        "altHint": "Une courte description aide les visiteurs qui utilisent un lecteur d'écran."
+      },
+      "consent": {
+        "label": "Je confirme que les photos et le texte sont les miens et j'accepte les règles de la communauté."
+      },
+      "honeypot": {
+        "label": "Laissez ce champ vide"
+      }
+    },
+    "counter": "{count}/{max}",
+    "guidelinesLink": "Lire les règles de la communauté",
+    "captchaLabel": "Vérification de sécurité",
+    "submit": "Partager mon histoire",
+    "submitting": "Envoi de votre histoire…",
+    "errors": {
+      "required": "Ce champ est obligatoire.",
+      "tooLong": "Veuillez rester sous {max} caractères.",
+      "tooShort": "Veuillez écrire au moins {min} caractères.",
+      "tooManyPhotos": "Vous pouvez ajouter jusqu'à 5 photos.",
+      "photoRequired": "Veuillez ajouter au moins une photo pour une publication Photographie.",
+      "upload": "Impossible d'envoyer cette image. Essayez un fichier JPG, PNG ou WEBP plus léger.",
+      "consent": "Veuillez confirmer que les photos et le texte sont les vôtres.",
+      "captcha": "Veuillez effectuer la vérification de sécurité.",
+      "rateLimited": "Vous avez partagé plusieurs histoires en peu de temps. Veuillez réessayer plus tard.",
+      "offline": "Vous semblez hors ligne. Votre histoire reste sur cette page ; réessayez une fois connecté(e).",
+      "generic": "Une erreur est survenue. Veuillez réessayer."
+    },
+    "success": {
+      "title": "Merci !",
+      "text": "Merci ! Votre histoire a bien été reçue et apparaîtra après une rapide vérification par notre équipe.",
+      "another": "Partager une autre histoire",
+      "back": "Retour au mur"
+    }
+  },
+  "guidelines": {
+    "title": "Règles de la communauté",
+    "items": [
+      "Ne partagez que des photos et des histoires qui vous appartiennent.",
+      "Respectez les deux cultures et chaque visiteur.",
+      "Ne publiez pas d'informations privées sur d'autres personnes, comme des numéros de téléphone ou des adresses.",
+      "Ne publiez pas de contenu offensant, politique ou commercial.",
+      "Chaque publication est vérifiée par l'équipe de modération avant d'apparaître.",
+      "Les publications peuvent être retirées à tout moment si elles ne respectent pas ces règles."
+    ]
+  },
+  "privacy": {
+    "note": "Nous conservons le nom que vous choisissez, votre histoire et vos photos. Les données de localisation sont retirées des photos avant l'envoi. Nous n'affichons jamais d'autres informations personnelles.",
+    "policyLink": "Politique de confidentialité de l'IEEE"
+  },
+  "unavailable": {
+    "title": "Le Coffre se repose",
+    "text": "Le partage d'histoires n'est pas encore activé sur cette version du site. Revenez bientôt."
+  }
+}

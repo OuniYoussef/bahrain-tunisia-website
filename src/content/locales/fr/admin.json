@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "Modération"
+  },
+  "login": {
+    "title": "Connexion modérateur",
+    "intro": "Seuls les modérateurs invités peuvent se connecter.",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "submit": "Se connecter",
+    "submitting": "Connexion…",
+    "error": "E-mail ou mot de passe incorrect.",
+    "locked": "Trop de tentatives. Patientez quelques minutes puis réessayez."
+  },
+  "mfa": {
+    "enrollTitle": "Protégez votre compte",
+    "enrollIntro": "Scannez ce QR code avec une application d'authentification (comme Google Authenticator, Microsoft Authenticator ou 1Password), puis saisissez le code à 6 chiffres.",
+    "secretLabel": "Ou saisissez cette clé manuellement",
+    "verifyTitle": "Vérification en deux étapes",
+    "verifyIntro": "Saisissez le code à 6 chiffres de votre application d'authentification.",
+    "code": "Code à 6 chiffres",
+    "verify": "Vérifier",
+    "error": "Ce code n'est pas valide. Réessayez."
+  },
+  "nav": {
+    "pending": "En attente",
+    "approved": "Approuvées",
+    "rejected": "Refusées",
+    "reports": "Signalements",
+    "alerts": "Alertes du site",
+    "newsletter": "Newsletter",
+    "signOut": "Se déconnecter"
+  },
+  "queue": {
+    "title": "File de modération",
+    "empty": "Rien à vérifier. Beau travail !",
+    "submitted": "Envoyée le {date}",
+    "approve": "Approuver",
+    "reject": "Refuser",
+    "rejectReason": "Motif (reste privé)",
+    "hide": "Masquer",
+    "restore": "Restaurer",
+    "delete": "Supprimer définitivement",
+    "confirmDelete": "Supprimer définitivement cette publication et ses photos ? Cette action est irréversible.",
+    "markSample": "Publication d'exemple",
+    "approved": "Publication approuvée et mise en ligne.",
+    "rejected": "Publication refusée.",
+    "error": "L'action a échoué. Veuillez réessayer."
+  },
+  "reports": {
+    "title": "Signalements",
+    "empty": "Aucun signalement en cours.",
+    "count": {
+      "zero": "{count} signalement",
+      "one": "{count} signalement",
+      "two": "{count} signalements",
+      "few": "{count} signalements",
+      "many": "{count} signalements",
+      "other": "{count} signalements"
+    },
+    "resolve": "Marquer comme traité",
+    "viewPost": "Voir la publication"
+  },
+  "alerts": {
+    "title": "Alertes du site",
+    "intro": "Les alertes s'affichent en haut de chaque page jusqu'à leur expiration ou leur désactivation.",
+    "message": "Message",
+    "level": "Niveau",
+    "levels": {
+      "info": "Information",
+      "warning": "Avertissement",
+      "critical": "Critique"
+    },
+    "link": "Lien (facultatif)",
+    "expires": "Expire le (facultatif)",
+    "active": "Active",
+    "save": "Enregistrer l'alerte",
+    "remove": "Supprimer"
+  },
+  "newsletter": {
+    "title": "Abonnés à la newsletter",
+    "export": "Exporter en CSV",
+    "count": {
+      "zero": "{count} abonné actif",
+      "one": "{count} abonné actif",
+      "two": "{count} abonnés actifs",
+      "few": "{count} abonnés actifs",
+      "many": "{count} abonnés actifs",
+      "other": "{count} abonnés actifs"
+    }
+  },
+  "status": {
+    "pending": "En attente",
+    "approved": "Approuvée",
+    "rejected": "Refusée",
+    "hidden": "Masquée"
+  }
+}

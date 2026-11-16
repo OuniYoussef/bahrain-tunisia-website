@@ -1,0 +1,1061 @@
+{
+  "meta": {
+    "title": "Découvrir Bahreïn",
+    "description": "La perle du golfe Arabique : destinations, habits et artisanat traditionnels, nature, villes, 5 000 ans d'histoire, fêtes, cuisine et monuments de Bahreïn."
+  },
+  "sectionNav": {
+    "label": "Sections de la page Bahreïn",
+    "welcome": "Bienvenue",
+    "destinations": "Destinations",
+    "wear": "Habits traditionnels",
+    "nature": "Nature",
+    "cities": "Villes",
+    "history": "Histoire",
+    "festive": "Fêtes",
+    "food": "Cuisine",
+    "monuments": "Monuments"
+  },
+  "welcome": {
+    "eyebrow": "Bienvenue à Bahreïn",
+    "headline": "Découvrir Bahreïn",
+    "subheadline": "La perle du golfe Arabique.",
+    "intro": "Bahreïn est un royaume arabe et musulman situé au milieu du golfe Arabique, un archipel d'îles naturelles et artificielles dont la capitale est Manama. Ancienne capitale de la civilisation de Dilmun et, pendant des millénaires, patrie des plus belles perles naturelles du monde, c'est un lieu où 5 000 ans d'histoire côtoient des gratte-ciel étincelants. Ses habitants sont réputés pour leur générosité et leur hospitalité, et l'île est connue pour sa tolérance religieuse, ses poètes, ses palmiers et ses sources d'eau douce.",
+    "factsTitle": "En bref",
+    "facts": [
+      {
+        "id": "capital",
+        "label": "Capitale",
+        "value": "Manama"
+      },
+      {
+        "id": "language",
+        "label": "Langue",
+        "value": "Arabe (anglais largement parlé)"
+      },
+      {
+        "id": "religion",
+        "label": "Religion",
+        "value": "Islam"
+      },
+      {
+        "id": "government",
+        "label": "Régime",
+        "value": "Monarchie constitutionnelle ; le roi Hamad ben Issa Al Khalifa"
+      },
+      {
+        "id": "independence",
+        "label": "Indépendance",
+        "value": "15 août 1971"
+      },
+      {
+        "id": "currency",
+        "label": "Monnaie",
+        "value": "Le dinar bahreïni (BHD), divisé en 1 000 fils"
+      },
+      {
+        "id": "flag",
+        "label": "Drapeau",
+        "value": "Rouge et blanc, séparés par une bordure dentelée de cinq pointes blanches"
+      },
+      {
+        "id": "flower",
+        "label": "Fleur",
+        "value": "Al Razji (jasmin / arfaj)"
+      },
+      {
+        "id": "geography",
+        "label": "Géographie",
+        "value": "Sur la côte occidentale du golfe Arabique, relié à l'Arabie saoudite par la chaussée du Roi-Fahd (ouverte en 1986). Le royaume comprend l'île de Bahreïn (l'île principale), Muharraq, Sitra, Umm an-Nasan, Hawar et d'autres îles."
+      },
+      {
+        "id": "climate",
+        "label": "Climat",
+        "value": "Étés chauds et humides, hivers doux"
+      },
+      {
+        "id": "best-time",
+        "label": "Meilleure période pour visiter",
+        "value": "De novembre à mars"
+      }
+    ],
+    "nicknamesTitle": "Surnoms",
+    "nicknames": [
+      {
+        "id": "pearl",
+        "title": "Perle du Golfe",
+        "text": "Pour ses perles naturelles."
+      },
+      {
+        "id": "immortality",
+        "title": "Terre de l'immortalité",
+        "text": "D'après les textes sumériens sur Dilmun dans l'Épopée de Gilgamesh."
+      },
+      {
+        "id": "paradise",
+        "title": "Terre du grand paradis",
+        "text": "Pour ses sources et ses jardins."
+      },
+      {
+        "id": "million-palms",
+        "title": "L'île au million de palmiers",
+        "text": "Pour ses palmeraies."
+      },
+      {
+        "id": "awal",
+        "title": "Awal",
+        "text": "L'ancien nom de Bahreïn."
+      }
+    ],
+    "nameOrigin": "Bahreïn doit son nom à ses deux eaux : l'eau douce de ses sources naturelles et de ses puits, et l'eau salée de la mer qui l'entoure.",
+    "wordsTitle": "Mots utiles",
+    "wordsIntro": "Quelques mots d'arabe bahreïni pour engager la conversation.",
+    "wordsColumns": {
+      "meaning": "Français",
+      "local": "Arabe bahreïni"
+    },
+    "words": [
+      {
+        "id": "hello",
+        "meaning": "Bonjour",
+        "say": "Marhaba",
+        "script": "مرحبا"
+      },
+      {
+        "id": "welcome",
+        "meaning": "Bienvenue",
+        "say": "Ahlan wa sahlan",
+        "script": "أهلاً وسهلاً"
+      },
+      {
+        "id": "how-are-you",
+        "meaning": "Comment vas-tu ?",
+        "say": "Shlonak? (to a man) / Shlonich? (to a woman)",
+        "script": "شلونك؟ / شلونچ؟"
+      },
+      {
+        "id": "good",
+        "meaning": "Bien",
+        "say": "Zain",
+        "script": "زين"
+      },
+      {
+        "id": "thanks",
+        "meaning": "Merci",
+        "say": "Shukran",
+        "script": "شكراً"
+      },
+      {
+        "id": "goodbye",
+        "meaning": "Au revoir",
+        "say": "Ma'a salama",
+        "script": "مع السلامة"
+      },
+      {
+        "id": "how-much",
+        "meaning": "Combien ça coûte ?",
+        "say": "Kam hatha?",
+        "script": "كم هذا؟"
+      },
+      {
+        "id": "a-lot",
+        "meaning": "Beaucoup",
+        "say": "Wayed",
+        "script": "وايد"
+      }
+    ],
+    "didYouKnowTitle": "Le saviez-vous ?",
+    "didYouKnow": [
+      "Bahreïn était la capitale mondiale de la perle, et la pêche des perles y est un métier vieux de 7 000 ans.",
+      "Les navires bahreïnis étaient construits sans un seul clou en fer.",
+      "Le Bahrain World Trade Center a été le premier gratte-ciel au monde à intégrer des éoliennes.",
+      "Un arbre survit seul dans le désert bahreïni depuis plus de 400 ans.",
+      "Beit Al-Quran abrite à la fois le plus petit et le plus grand Coran du monde.",
+      "Bahreïn a été le premier pays du Golfe à découvrir du pétrole, en 1932."
+    ]
+  },
+  "destinations": {
+    "eyebrow": "Lieux incontournables",
+    "title": "Destinations à découvrir",
+    "intro": "Une vitrine immersive des lieux incontournables. Six destinations ouvrent la page : Qal'at al-Bahreïn, l'Arbre de vie, le Chemin des perles, la Grande Mosquée Al-Fateh, le Bahrain World Trade Center et le vieux souk de Manama.",
+    "mapLabel": "Carte des destinations à Bahreïn",
+    "featured": [
+      {
+        "id": "qalat",
+        "title": "Qal'at al-Bahreïn (fort de Bahreïn)",
+        "text": "Situé à 4 km à l'ouest de Manama, c'est un tell archéologique : des civilisations superposées depuis plus de 4 500 ans, de 2300 av. J.-C. au XVIᵉ siècle. Le fort actuel a été construit par les Portugais sur les ruines de la capitale de Dilmun. On y découvre des murailles massives, des tours de guet aux quatre angles et le musée du site. Inscrit au patrimoine mondial de l'UNESCO depuis 2005.",
+        "tip": "Le fort s'embrase au coucher du soleil et s'illumine la nuit."
+      },
+      {
+        "id": "tree-of-life",
+        "title": "L'Arbre de vie",
+        "text": "Un Prosopis cineraria de plus de 400 ans, seul dans le désert sur une petite colline, sans source d'eau visible. Sa survie reste un mystère scientifique, et il attire des dizaines de milliers de visiteurs chaque année. Il se dresse près du Jebel Dukhan, le point culminant de Bahreïn.",
+        "tip": ""
+      },
+      {
+        "id": "pearling-path",
+        "title": "Le Chemin des perles, Muharraq",
+        "text": "Un parcours piéton de 3,5 km dans la vieille ville de Muharraq, jalonné de 17 bâtiments historiques : maisons de marchands de perles (tawawish) et de capitaines de navires (nawakhida), le fort de Bu Maher et trois hayrat (bancs d'huîtres perlières). Célèbre pour son authentique architecture bahreïnie en terre et ses fenêtres en bois appelées rawazin. Inscrit au patrimoine mondial de l'UNESCO depuis 2012.",
+        "tip": ""
+      },
+      {
+        "id": "al-fateh",
+        "title": "Grande Mosquée Al-Fateh",
+        "text": "La mosquée nationale de Bahreïn, qui accueille 7 000 fidèles. Construite en 1988 sur une surface de 6 500 mètres carrés, elle possède la plus grande coupole en fibre de verre du monde (24 m), des calligraphies coufiques sur ses murs, du marbre italien et un somptueux lustre autrichien.",
+        "tip": ""
+      },
+      {
+        "id": "bahrain-wtc",
+        "title": "Bahrain World Trade Center",
+        "text": "Des tours jumelles de 240 mètres et 50 étages, inaugurées en 2008. Le premier gratte-ciel au monde à intégrer trois immenses éoliennes entre ses tours, qui produisent 11 à 15 % de l'électricité du bâtiment. Il a remporté deux prix internationaux d'architecture durable.",
+        "tip": ""
+      },
+      {
+        "id": "old-manama-souq",
+        "title": "Le vieux souk de Manama et Bab Al-Bahreïn",
+        "text": "Bab Al-Bahreïn, bâtiment historique de 1945, est la porte symbolique de Manama et de son souk. Derrière elle s'étend le marché traditionnel réputé pour ses épices, son encens et son oud, ses parfums, son or et ses textiles traditionnels, avec un souk de l'or.",
+        "tip": ""
+      }
+    ],
+    "moreTitle": "D'autres lieux à explorer",
+    "more": [
+      {
+        "id": "barbar-mounds",
+        "title": "Temple de Barbar et tumulus de Dilmun",
+        "text": "Le temple de Barbar, dans le village du même nom, date du IIIᵉ millénaire av. J.-C. et a été découvert en 1954 par une expédition danoise. Les tumulus de Dilmun comptent plus de 170 000 tombes ; ils sont inscrits au patrimoine mondial de l'UNESCO depuis 2019."
+      },
+      {
+        "id": "arad-fort",
+        "title": "Fort d'Arad",
+        "text": "Un fort du XVᵉ siècle sur l'île de Muharraq, au bord de la mer, de plan carré avec des tours d'angle circulaires, illuminé la nuit."
+      },
+      {
+        "id": "hawar",
+        "title": "Îles Hawar",
+        "text": "Un groupe d'îles au sud, réserve naturelle protégée et refuge pour les oiseaux."
+      },
+      {
+        "id": "circuit",
+        "title": "Circuit international de Bahreïn, Sakhir",
+        "text": "Inauguré en 2004, le premier circuit de Formule 1 du Moyen-Orient, qui accueille chaque année le Grand Prix de Bahreïn."
+      }
+    ]
+  },
+  "wear": {
+    "eyebrow": "Un patrimoine qui se porte",
+    "title": "Habits traditionnels",
+    "intro": "",
+    "groups": [
+      {
+        "id": "men",
+        "title": "Habits pour hommes",
+        "items": [
+          {
+            "id": "thobe",
+            "title": "Thobe (dishdasha)",
+            "text": "Une longue robe blanche à manches longues, portée au quotidien."
+          },
+          {
+            "id": "ghutra",
+            "title": "Ghutra",
+            "text": "Un couvre-chef blanc ou à carreaux rouges."
+          },
+          {
+            "id": "agal",
+            "title": "Agal",
+            "text": "Un double cordon noir porté sur la ghutra."
+          },
+          {
+            "id": "bisht",
+            "title": "Bisht",
+            "text": "Une cape de laine luxueuse portée lors des grandes occasions, brune, noire ou dorée."
+          },
+          {
+            "id": "dagger",
+            "title": "Poignard d'argent",
+            "text": "Un poignard orné d'argent et d'or, porté lors des cérémonies officielles."
+          }
+        ]
+      },
+      {
+        "id": "women",
+        "title": "Habits pour femmes",
+        "items": [
+          {
+            "id": "thobe-nashal",
+            "title": "Thobe al-nashal",
+            "text": "Une robe ample en tissu soyeux sombre, brodée de fils d'or sur la poitrine, les manches et l'ourlet."
+          },
+          {
+            "id": "daraa",
+            "title": "Daraa",
+            "text": "Une longue robe de dessous aux manches ornées."
+          },
+          {
+            "id": "bukhnuq",
+            "title": "Bukhnuq",
+            "text": "Le voile des jeunes filles, noir et brodé d'or."
+          },
+          {
+            "id": "abaya",
+            "title": "Abaya",
+            "text": "Un vêtement de dessus noir porté pour sortir."
+          },
+          {
+            "id": "shaila",
+            "title": "Shaila",
+            "text": "Un léger foulard noir."
+          },
+          {
+            "id": "burqa",
+            "title": "Burqa",
+            "text": "Un voile traditionnel du visage, aujourd'hui porté seulement par les femmes âgées."
+          }
+        ]
+      },
+      {
+        "id": "jewellery",
+        "title": "Bijoux traditionnels",
+        "items": [
+          {
+            "id": "murtasha",
+            "title": "Murtasha",
+            "text": "Un long collier en or serti de pierres."
+          },
+          {
+            "id": "tassa",
+            "title": "Tassa",
+            "text": "Un ornement de tête."
+          },
+          {
+            "id": "habga",
+            "title": "Habga",
+            "text": "Un collier de perles naturelles."
+          },
+          {
+            "id": "kufuf",
+            "title": "Kufuf",
+            "text": "Des parures de main en or."
+          },
+          {
+            "id": "khulkhal",
+            "title": "Khulkhal",
+            "text": "Un bijou de cheville."
+          }
+        ]
+      },
+      {
+        "id": "weddings",
+        "title": "Mariages",
+        "items": [
+          {
+            "id": "jalwa",
+            "title": "Jalwa",
+            "text": "La première rencontre officielle entre les mariés."
+          },
+          {
+            "id": "henna",
+            "title": "Henné",
+            "text": "Les mains de la mariée sont ornées de henné, entourée de ses amies."
+          },
+          {
+            "id": "dazza",
+            "title": "Dazza",
+            "text": "Les cadeaux offerts à la mariée par la famille du marié."
+          },
+          {
+            "id": "zaffa",
+            "title": "Zaffa",
+            "text": "Un cortège festif accompagné de chants traditionnels."
+          },
+          {
+            "id": "feast",
+            "title": "Festin de noces",
+            "text": "Le quzi, un agneau entier farci de poulet, d'œufs et de riz, est le plat des noces."
+          }
+        ]
+      },
+      {
+        "id": "crafts-clothes",
+        "title": "L'artisanat derrière les habits",
+        "items": [
+          {
+            "id": "bani-jamra",
+            "title": "Tissage de Bani Jamra",
+            "text": "Un village du nord-ouest de Bahreïn célèbre pour ses étoffes de coton et de laine tissées à la main sur des métiers traditionnels : dishdashas, bishts, tissus pour femmes et serviettes brodées. Le tisserand est assis dans une fosse creusée dans la terre, devant son métier en bois."
+          },
+          {
+            "id": "kasheeda",
+            "title": "Broderie à la main (kasheeda)",
+            "text": "Un savoir-faire féminin des foyers traditionnels : la broderie de la thobe al-nashal au véritable fil d'or (zari), à l'argent (badla) et aux boutons (makkook)."
+          },
+          {
+            "id": "sadu",
+            "title": "Tissage al-sadu",
+            "text": "Le tissage bédouin de laine de chameau et de mouton pour fabriquer tentes, tapis, carpettes et sacoches (kharj), en rouge, noir, blanc et brun, avec des teintures naturelles."
+          }
+        ]
+      },
+      {
+        "id": "crafts",
+        "title": "Les métiers traditionnels de Bahreïn",
+        "items": [
+          {
+            "id": "aali-pottery",
+            "title": "Poterie d'A'ali",
+            "text": "Le plus ancien artisanat de Bahreïn (plus de 4 000 ans), dans le village d'A'ali au sud de Manama, près des tumulus de Dilmun. Jarres à eau (zirs), marmites (burmas), brûle-encens et vases, façonnés en argile rouge locale sur un tour de potier et cuits dans des fours en pierre."
+          },
+          {
+            "id": "shipbuilding",
+            "title": "Construction navale",
+            "text": "À Karbabad, Muharraq et Sitra : des voiliers construits sans clous en fer, uniquement avec des cordes en fibre de palmier. Parmi les types : boom, sanbuk, jalbut, shuwai, baghla et baytil. Le principal matériau est le teck importé d'Inde."
+          },
+          {
+            "id": "basketry",
+            "title": "Vannerie en feuilles de palmier",
+            "text": "À Karbabad, Jannusan et Sar : paniers, nattes (hasir), éventails, chapeaux et balais fabriqués avec des palmes séchées et de la fibre de coco."
+          },
+          {
+            "id": "rope",
+            "title": "Corderie (lif)",
+            "text": "À Muharraq et Sitra : des cordes solides en fibres de coco et de palmier, indispensables aux bateaux de pêche des perles."
+          },
+          {
+            "id": "rawazin",
+            "title": "Rawazin (fenêtres en bois)",
+            "text": "Des fenêtres en bois sculpté aux motifs arabes et géométriques, à Muharraq et dans les maisons traditionnelles."
+          },
+          {
+            "id": "perfumes",
+            "title": "Parfums, bakhour et oud",
+            "text": "Des parfums orientaux composés selon des savoir-faire hérités, à Manama, Muharraq et dans tous les marchés : oud, bakhour, huile d'oud, eau de rose, ambre et musc."
+          },
+          {
+            "id": "ceramics",
+            "title": "Céramique décorative",
+            "text": "Des vases et des plats ornés de motifs islamiques."
+          }
+        ]
+      }
+    ],
+    "jewelleryNote": "Les bijoux sont façonnés en or 21 et 22 carats, avec des perles naturelles de Bahreïn et des pierres précieuses, par fonte, étirage, soudure, gravure et incrustation. Les orfèvres travaillent à Manama et à Muharraq, et le souk de l'or de Manama en est le centre traditionnel."
+  },
+  "nature": {
+    "eyebrow": "Sources, palmiers et îles",
+    "title": "La nature à ne pas manquer",
+    "intro": "",
+    "groups": [
+      {
+        "id": "all",
+        "title": "",
+        "items": [
+          {
+            "id": "tree-of-life",
+            "title": "L'Arbre de vie",
+            "text": "Un Prosopis cineraria de plus de 400 ans, seul dans le désert, sans source d'eau visible. Le mystère scientifique de sa survie fait sa renommée."
+          },
+          {
+            "id": "springs",
+            "title": "Sources d'eau douce",
+            "text": "Bahreïn est connu pour ses sources naturelles d'eau douce, dont certaines jaillissent sous la mer. Elles ont valu à l'île le nom de Terre de l'immortalité. Les puits d'Aïn Umm Al-Sujur remontent au IIIᵉ millénaire av. J.-C."
+          },
+          {
+            "id": "million-palms",
+            "title": "L'île au million de palmiers",
+            "text": "Les palmeraies couvrent encore le nord-ouest de l'île principale, où l'on cultive les dattes bahreïnies, notamment les variétés khalas et khunaizi."
+          },
+          {
+            "id": "hawar",
+            "title": "Îles Hawar",
+            "text": "Un archipel au sud, réserve protégée abritant des oiseaux rares, dont le cormoran de Socotra, ainsi que des oryx d'Arabie et des gazelles. Excursions à la journée et séjour paisible en resort."
+          },
+          {
+            "id": "al-areen",
+            "title": "Parc et réserve animalière d'Al Areen",
+            "text": "Une réserve où l'on peut voir l'oryx d'Arabie, animal national de Bahreïn, et d'autres animaux du désert."
+          },
+          {
+            "id": "jebel-dukhan",
+            "title": "Jebel Dukhan",
+            "text": "La « montagne de fumée », environ 134 m, le point culminant de Bahreïn."
+          },
+          {
+            "id": "tubli-bay",
+            "title": "Baie de Tubli",
+            "text": "Une baie bordée de mangroves et fréquentée par les oiseaux migrateurs, tout près de la capitale."
+          },
+          {
+            "id": "beaches",
+            "title": "Plages et îles",
+            "text": "Les îles Al Dar, les îles Amwaj et les rivages des îles Hawar, pour la baignade et les sorties en bateau."
+          },
+          {
+            "id": "desert",
+            "title": "Désert",
+            "text": "Le désert du sud autour de Sakhir, pour camper et faire du quad sous les étoiles."
+          }
+        ]
+      }
+    ]
+  },
+  "cities": {
+    "eyebrow": "La vie en ville",
+    "title": "Les villes à ne pas manquer",
+    "items": [
+      {
+        "id": "manama",
+        "title": "Manama (la capitale)",
+        "text": "Le Bahrain World Trade Center (240 m, 50 étages, trois éoliennes) ; le Bahrain Financial Harbour (deux tours de 260 m, les plus hauts bâtiments de Bahreïn, au design moderne en forme de voile) ; Bab Al-Bahreïn et le vieux souk de Manama pour les épices, l'encens, le oud, les parfums, l'or et les textiles ; la Grande Mosquée Al-Fateh ; le Musée national de Bahreïn (inauguré en 1988 pour un coût de 30 millions de dollars, avec 9 galeries couvrant 6 000 ans, des bijoux en or de Dilmun et des découvertes archéologiques) ; et Beit Al-Quran à Hoora, avec ses manuscrits coraniques rares. Sorties et restaurants : Adliya (bloc 338), ses cafés, restaurants et galeries d'art, et les restaurants en bord de mer du Financial Harbour."
+      },
+      {
+        "id": "muharraq",
+        "title": "Muharraq",
+        "text": "L'ancienne capitale et le cœur du patrimoine perlier. Parcourez le Chemin des perles, visitez le fort d'Arad, admirez les fenêtres rawazin et découvrez la construction navale et la corderie."
+      },
+      {
+        "id": "riffa",
+        "title": "Riffa",
+        "text": "Siège du fort de Riffa et de la famille royale, entre désert et quartiers résidentiels modernes."
+      },
+      {
+        "id": "aali",
+        "title": "A'ali",
+        "text": "Un village au sud de Manama connu pour sa poterie et les tumulus de Dilmun."
+      },
+      {
+        "id": "sitra",
+        "title": "Sitra",
+        "text": "Une ville insulaire connue pour la construction de bateaux et son port pétrolier."
+      },
+      {
+        "id": "budaiya",
+        "title": "Budaiya",
+        "text": "Une ville côtière aux palmeraies et aux vieilles maisons, le long de la route du bord de mer."
+      },
+      {
+        "id": "sakhir",
+        "title": "Sakhir",
+        "text": "Le circuit international de Bahreïn et la région de l'Arbre de vie."
+      }
+    ]
+  },
+  "history": {
+    "eyebrow": "Cinq mille ans",
+    "title": "Histoire",
+    "intro": "Une histoire de 5 000 ans. Bahreïn a vu naître trois grandes civilisations : Dilmun, Tylos et Awal.",
+    "timelineTitle": "Les événements les plus marquants",
+    "timeline": [
+      {
+        "id": "dilmun",
+        "date": "3000-600 av. J.-C.",
+        "text": "Dilmun : un centre commercial international reliant la Mésopotamie (Irak) à la vallée de l'Indus (Inde), réputé pour son cuivre, ses dattes et ses perles. Les Sumériens l'appelaient la Terre de l'immortalité dans l'Épopée de Gilgamesh."
+      },
+      {
+        "id": "tylos",
+        "date": "Période hellénistique",
+        "text": "Bahreïn prend le nom de Tylos aux époques grecque et romaine ; c'est alors un comptoir important sur la route d'Alexandre le Grand."
+      },
+      {
+        "id": "awal",
+        "date": "Avant l'islam",
+        "text": "Bahreïn est appelé Awal, nom dérivé d'une idole vénérée sur l'île."
+      },
+      {
+        "id": "628",
+        "date": "628",
+        "text": "Bahreïn embrasse pacifiquement l'islam, à l'époque du Prophète Mohammed (PSL)."
+      },
+      {
+        "id": "khamis",
+        "date": "VIIᵉ siècle",
+        "text": "Construction de la mosquée Al-Khamis, la plus ancienne de Bahreïn."
+      },
+      {
+        "id": "1521",
+        "date": "1521",
+        "text": "Les Portugais s'emparent de Bahreïn et construisent le fort de Qal'at al-Bahreïn."
+      },
+      {
+        "id": "1783",
+        "date": "1783",
+        "text": "Cheikh Ahmed ben Mohammed Al-Fateh Al Khalifa fonde l'État moderne ; la famille Al Khalifa règne toujours."
+      },
+      {
+        "id": "1820",
+        "date": "1820 et 1861",
+        "text": "Des traités avec la Grande-Bretagne placent Bahreïn sous protection britannique."
+      },
+      {
+        "id": "1919",
+        "date": "1919",
+        "text": "Ouverture de l'école Al-Hidaya Al-Khalifiya à Muharraq, la première école moderne de Bahreïn."
+      },
+      {
+        "id": "1920",
+        "date": "1920",
+        "text": "Fondation du Club littéraire de Muharraq."
+      },
+      {
+        "id": "1928",
+        "date": "1928",
+        "text": "La première école de filles du Golfe ouvre à Muharraq."
+      },
+      {
+        "id": "1930s",
+        "date": "Années 1930",
+        "text": "Le commerce des perles décline avec l'arrivée des perles de culture."
+      },
+      {
+        "id": "1932",
+        "date": "1932",
+        "text": "Découverte du pétrole, une première dans le Golfe, qui ouvre une nouvelle ère économique."
+      },
+      {
+        "id": "1971",
+        "date": "15 août 1971",
+        "text": "Bahreïn devient indépendant."
+      },
+      {
+        "id": "2002",
+        "date": "2002",
+        "text": "Bahreïn est proclamé royaume."
+      },
+      {
+        "id": "2004",
+        "date": "2004",
+        "text": "Ouverture du circuit international de Bahreïn : le premier circuit de Formule 1 du Moyen-Orient."
+      },
+      {
+        "id": "unesco",
+        "date": "2005, 2012, 2019",
+        "text": "Qal'at al-Bahreïn, le Chemin des perles et les tumulus de Dilmun sont inscrits sur la Liste du patrimoine mondial de l'UNESCO."
+      }
+    ],
+    "pearl": {
+      "title": "Le patrimoine perlier et maritime",
+      "intro": "Avant le pétrole, les perles étaient la richesse vitale de Bahreïn. La pêche des perles est un métier vieux de 7 000 ans, et Bahreïn fut autrefois la capitale mondiale de la perle.",
+      "groups": [
+        {
+          "id": "seasons",
+          "title": "Les saisons de plongée",
+          "text": "Khanjiya (avant-saison) ; Al-Ghaws Al-Kabir, la grande plongée, quatre mois de mai à septembre ; Al-Radda, une courte saison de retour ; Al-Rdedia, la dernière saison."
+        },
+        {
+          "id": "roles",
+          "title": "Les rôles à bord",
+          "text": "Nokhada : le capitaine. Ghais : le plongeur. Saib : celui qui remonte le plongeur à la corde. Tawwash : le marchand de perles. Nahham : le chanteur des chants de mer."
+        },
+        {
+          "id": "tools",
+          "title": "Les outils de plongée",
+          "text": "Fatam : une pince en bois pour le nez. Diyeen : un panier en fibres pour les huîtres. Zabil : une corde lestée d'une pierre. Khabt : un couteau pour ouvrir les huîtres. Mashkhal : pour trier les perles."
+        },
+        {
+          "id": "types",
+          "title": "Les types de perles",
+          "text": "Danah : la plus belle et la plus précieuse. Hasbaa : moyenne. Badla : plus petite. Yakka : la plus petite."
+        },
+        {
+          "id": "sea-arts",
+          "title": "Les arts de la mer",
+          "text": "Fijiri : l'art chanté des marins, avec tambours et tambourins. Sawt : musique traditionnelle au oud. Tanboura : une lyre ancienne. Liwa : une danse collective aux rythmes d'influence africaine."
+        }
+      ]
+    },
+    "figuresTitle": "Les grandes figures",
+    "figures": [
+      {
+        "id": "ahmed-al-fateh",
+        "name": "Cheikh Ahmed ben Mohammed Al-Fateh Al Khalifa",
+        "years": "",
+        "text": "Fondateur de l'État moderne de Bahreïn en 1783."
+      },
+      {
+        "id": "isa-bin-ali",
+        "name": "Cheikh Issa ben Ali Al Khalifa",
+        "years": "souverain de 1869 à 1923",
+        "text": "Un souverain au long règne dont la maison de Muharraq est un site patrimonial."
+      },
+      {
+        "id": "isa-bin-salman",
+        "name": "Cheikh Issa ben Salman Al Khalifa",
+        "years": "souverain de 1961 à 1999",
+        "text": "Le souverain qui a conduit Bahreïn à l'indépendance en 1971."
+      },
+      {
+        "id": "king-hamad",
+        "name": "Le roi Hamad ben Issa Al Khalifa",
+        "years": "",
+        "text": "L'actuel roi ; Bahreïn est devenu un royaume en 2002."
+      },
+      {
+        "id": "ibrahim-bin-muhammad",
+        "name": "Cheikh Ibrahim ben Mohammed Al Khalifa",
+        "years": "mort en 1933",
+        "text": "Surnommé « le cheikh des écrivains », pionnier de la renaissance littéraire, il fonda le Club littéraire de Muharraq en 1920 et contribua à la création de l'école Al-Hidaya Al-Khalifiya."
+      },
+      {
+        "id": "arrayedh",
+        "name": "Ibrahim Al-Arrayedh",
+        "years": "mort en 2002",
+        "text": "« Le prince des poètes » de Bahreïn, auteur de nombreux recueils et pièces en vers, qui forma toute une génération de poètes bahreïnis."
+      },
+      {
+        "id": "ahmed-bin-muhammad",
+        "name": "Cheikh Ahmed ben Mohammed Al Khalifa",
+        "years": "mort en 2004",
+        "text": "Le poète de la nature à Bahreïn, élève d'Al-Arrayedh."
+      },
+      {
+        "id": "qassim-haddad",
+        "name": "Qassim Haddad",
+        "years": "",
+        "text": "Un poète contemporain dont les œuvres ont été traduites en français, en anglais et en allemand."
+      },
+      {
+        "id": "al-siddiqi",
+        "name": "Cheikh Youssef ben Ahmed Al-Siddiqi",
+        "years": "",
+        "text": "Juge et prédicateur à la mosquée Al-Qudhaibiya, diplômé d'Al-Azhar et l'un des grands savants du Bahreïn du XXᵉ siècle."
+      },
+      {
+        "id": "sheikha-mai",
+        "name": "Cheikha Mai bint Mohammed Al Khalifa",
+        "years": "",
+        "text": "Savante et écrivaine qui a présidé l'Autorité bahreïnie pour la culture et les antiquités et mené l'inscription des sites de Bahreïn sur les listes de l'UNESCO."
+      },
+      {
+        "id": "al-muharraqi",
+        "name": "Abdullah Al-Muharraqi",
+        "years": "",
+        "text": "Un pionnier des beaux-arts dont les tableaux représentent le patrimoine et le monde marin."
+      },
+      {
+        "id": "nasser-al-yousif",
+        "name": "Nasser Al-Yousif",
+        "years": "",
+        "text": "Un artiste bahreïni disparu dont les peintures à l'huile racontent la vie quotidienne d'autrefois."
+      },
+      {
+        "id": "musicians",
+        "name": "Mohammed Zuwaid et Ali Bahar",
+        "years": "",
+        "text": "Pionniers de la musique bahreïnie, en particulier de l'art du sawt ; Sultan Hameed et Khalid Al-Sheikh en sont aussi des noms majeurs."
+      },
+      {
+        "id": "athletes",
+        "name": "Winfred Yavi, Ruth Jebet et Maryam Yusuf Jamal",
+        "years": "",
+        "text": "Championnes olympiques d'athlétisme pour Bahreïn (Yavi sur 3 000 m steeple à Paris en 2024, avec un record olympique)."
+      }
+    ]
+  },
+  "festive": {
+    "eyebrow": "Une année de fêtes",
+    "title": "Fêtes et célébrations",
+    "groups": [
+      {
+        "id": "national",
+        "title": "Fêtes nationales",
+        "note": "",
+        "items": [
+          {
+            "id": "new-year",
+            "date": "1er janvier",
+            "title": "Jour de l'An",
+            "text": ""
+          },
+          {
+            "id": "labour",
+            "date": "1er mai",
+            "title": "Fête du Travail",
+            "text": "Célèbre les travailleurs."
+          },
+          {
+            "id": "national-day",
+            "date": "16 décembre",
+            "title": "Fête nationale",
+            "text": "La grande célébration du royaume, avec cérémonies officielles, défilés, feux d'artifice et villes illuminées. Elle est liée à l'indépendance de Bahreïn en 1971."
+          },
+          {
+            "id": "accession",
+            "date": "17 décembre",
+            "title": "Jour de l'Accession",
+            "text": "Suit la fête nationale ; les deux jours forment un congé national."
+          }
+        ]
+      },
+      {
+        "id": "religious",
+        "title": "Fêtes religieuses",
+        "note": "Les dates suivent le calendrier lunaire.",
+        "items": [
+          {
+            "id": "eid-fitr",
+            "date": "",
+            "title": "Aïd el-Fitr",
+            "text": "Trois jours à la fin du ramadan. On prépare la khabeesa et la halwa bahreïnie, les familles se rendent visite et les enfants reçoivent l'eidiya (l'argent de l'Aïd)."
+          },
+          {
+            "id": "eid-adha",
+            "date": "",
+            "title": "Jour d'Arafat et Aïd el-Adha",
+            "text": "La fête du sacrifice."
+          },
+          {
+            "id": "hijri",
+            "date": "",
+            "title": "Nouvel An de l'Hégire (Al Hijra)",
+            "text": "Le premier jour du calendrier hégirien."
+          },
+          {
+            "id": "ashura",
+            "date": "",
+            "title": "Achoura",
+            "text": "Les 9 et 10 mouharram, marqués par des rassemblements religieux et des processions."
+          },
+          {
+            "id": "mawlid",
+            "date": "",
+            "title": "La naissance du Prophète",
+            "text": "Célébrée par des rassemblements religieux."
+          }
+        ]
+      },
+      {
+        "id": "ramadan",
+        "title": "Traditions du ramadan",
+        "note": "",
+        "items": [
+          {
+            "id": "gargeean",
+            "date": "",
+            "title": "Gargee'an",
+            "text": "Célébré les 14ᵉ et 15ᵉ nuits du ramadan. Les enfants revêtent des habits traditionnels bahreïnis colorés et vont de maison en maison en chantant des chants traditionnels. Les voisins les accueillent avec des bonbons, des fruits secs et des noix dans des sachets décorés."
+          },
+          {
+            "id": "gargeean-chant",
+            "date": "",
+            "title": "Le chant de Gargee'an",
+            "text": "« Gargee'an, Gargee'an, donnez-nous et que Dieu vous donne, qu'Il vous mène à la Maison de La Mecque, ô La Mecque, ô la florissante, ô mère des chaînes et de l'or, ô Nora. »"
+          },
+          {
+            "id": "naqsa",
+            "date": "",
+            "title": "Naqsa",
+            "text": "Les voisins échangent des plats pendant le ramadan."
+          },
+          {
+            "id": "reyouq",
+            "date": "",
+            "title": "Reyouq",
+            "text": "Le repas de rupture du jeûne, avec balaleet et nakhi."
+          },
+          {
+            "id": "suhoor",
+            "date": "",
+            "title": "Suhoor",
+            "text": "Annoncé par le musaharati, qui parcourt les rues avec son tambour."
+          },
+          {
+            "id": "cannons",
+            "date": "",
+            "title": "Les canons",
+            "text": "Les canons de l'iftar et de l'imsak rythment chaque jour."
+          }
+        ]
+      },
+      {
+        "id": "social",
+        "title": "Traditions sociales et événements",
+        "note": "",
+        "items": [
+          {
+            "id": "majlis",
+            "date": "",
+            "title": "Le majlis (diwaniya)",
+            "text": "Un salon de la maison pour recevoir les invités, où l'on sert le café et les dattes et où l'on partage la conversation."
+          },
+          {
+            "id": "grand-prix",
+            "date": "",
+            "title": "Grand Prix de Bahreïn",
+            "text": "La course annuelle de Formule 1 sur le circuit international de Bahreïn, à Sakhir."
+          },
+          {
+            "id": "camel-racing",
+            "date": "",
+            "title": "Courses de dromadaires",
+            "text": "Un sport traditionnel du désert."
+          },
+          {
+            "id": "sea-heritage",
+            "date": "",
+            "title": "Patrimoine de la mer",
+            "text": "Les spectacles de fijiri, de sawt et de liwa font vivre les chants et les danses des pêcheurs de perles."
+          }
+        ]
+      }
+    ],
+    "weddings": {
+      "title": "Mariages",
+      "text": "Les mariages bahreïnis comprennent la jalwa (la première rencontre officielle des mariés), la nuit du henné, la dazza (les cadeaux de la famille du marié) et la zaffa (un cortège festif aux chants traditionnels), suivies d'un festin de quzi."
+    }
+  },
+  "food": {
+    "eyebrow": "La mer et la palmeraie",
+    "title": "Les meilleurs plats",
+    "intro": "La cuisine bahreïnie puise dans les richesses de la mer et des palmeraies, et reflète les valeurs de générosité et d'hospitalité.",
+    "groups": [
+      {
+        "id": "dishes",
+        "title": "Nos plats",
+        "items": [
+          {
+            "id": "machboos",
+            "title": "Machboos (le plat national)",
+            "text": "Du riz basmati cuit dans un bouillon épicé (clou de girofle, cardamome, curcuma, cannelle) avec de la viande, du poulet ou du poisson. Servi lors des fêtes et des banquets."
+          },
+          {
+            "id": "muhammar",
+            "title": "Muhammar (riz sucré)",
+            "text": "L'un des plats de riz les plus singuliers de Bahreïn : un riz sucré aux dattes, au sucre, à la cardamome et au safran, de couleur brun foncé. Toujours servi avec du poisson frit (safi ou mérou). Le sucré rencontre le salé."
+          },
+          {
+            "id": "harees",
+            "title": "Harees",
+            "text": "Du blé concassé cuit des heures avec de la viande jusqu'à obtenir une texture onctueuse de bouillie. Servi chaud avec du ghee ou du beurre fondu, une pincée de sucre et de cannelle. Un incontournable du ramadan."
+          },
+          {
+            "id": "balaleet",
+            "title": "Balaleet",
+            "text": "Des vermicelles sucrés au safran, à la cardamome et au sucre, surmontés d'une omelette. Un petit-déjeuner traditionnel (reyouq) qui marie sucré et salé."
+          },
+          {
+            "id": "luqaimat",
+            "title": "Luqaimat",
+            "text": "De petites boules de pâte frites jusqu'à être dorées, nappées de sirop de dattes (dibs) à la cardamome et au safran. L'une des douceurs les plus populaires du ramadan."
+          },
+          {
+            "id": "quzi",
+            "title": "Quzi",
+            "text": "Un agneau entier farci de poulet, d'œufs et de riz, grillé sur la braise. Le plat des mariages."
+          },
+          {
+            "id": "mahyawa",
+            "title": "Mahyawa",
+            "text": "Une sauce de poisson fermenté au goût puissant, servie avec du pain plat."
+          },
+          {
+            "id": "mumawash",
+            "title": "Mumawash",
+            "text": "Du riz aux lentilles vertes et aux crevettes séchées."
+          },
+          {
+            "id": "nakhi",
+            "title": "Nakhi",
+            "text": "Des pois chiches trempés et bouillis, au piment et au cumin."
+          },
+          {
+            "id": "bajela",
+            "title": "Bajela",
+            "text": "Des fèves vertes bouillies, simplement salées."
+          },
+          {
+            "id": "khabeesa",
+            "title": "Khabeesa",
+            "text": "Une douceur à base de farine, de ghee, de sucre et de cardamome."
+          },
+          {
+            "id": "halwa",
+            "title": "Halwa Showaiter",
+            "text": "Une douceur brune et translucide à base d'amidon et de sucre, le dessert populaire le plus célèbre."
+          }
+        ]
+      }
+    ],
+    "coffee": {
+      "title": "Le café arabe",
+      "text": "La dallah (cafetière dorée) et les petites tasses finjan sont les symboles de l'hospitalité bahreïnie. Le café est torréfié avec de la cardamome et du safran et servi avec des dattes.",
+      "etiquette": "Usage : agitez légèrement la tasse quand vous ne voulez plus de café."
+    },
+    "productsTitle": "Produits célèbres",
+    "products": "Les dattes bahreïnies (khalas et khunaizi), les perles naturelles (danah), les douceurs traditionnelles comme la halwa bahreïnie et la khabeesa, ainsi que les parfums orientaux, le bakhour et le oud."
+  },
+  "monuments": {
+    "eyebrow": "Un patrimoine de pierre",
+    "title": "Monuments et lieux historiques",
+    "intro": "Bahreïn compte trois sites inscrits au patrimoine mondial de l'UNESCO.",
+    "items": [
+      {
+        "id": "qalat",
+        "title": "Qal'at al-Bahreïn",
+        "text": "L'ancienne capitale de Dilmun et un fort portugais, avec 4 500 ans d'histoire superposée, des murailles massives et un musée de site."
+      },
+      {
+        "id": "pearling-path",
+        "title": "Le Chemin des perles, Muharraq",
+        "text": "Un parcours de 3,5 km jalonné de 17 bâtiments, dont des maisons de marchands, le fort de Bu Maher et les bancs d'huîtres perlières ; la maison Siyadi et la maison du cheikh Issa ben Ali font partie du patrimoine de Muharraq."
+      },
+      {
+        "id": "dilmun-mounds",
+        "title": "Tumulus de Dilmun",
+        "text": "Plus de 170 000 tombes, parmi les plus vastes nécropoles antiques du monde."
+      },
+      {
+        "id": "barbar",
+        "title": "Temple de Barbar",
+        "text": "Temple du IIIᵉ millénaire av. J.-C. découvert en 1954 par une expédition danoise. Consacré à Enki, dieu sumérien des eaux, il comporte un autel en pierre, un puits sacré et des marches menant à la source."
+      },
+      {
+        "id": "saar",
+        "title": "Site de Saar",
+        "text": "Une ancienne ville résidentielle de l'époque de Dilmun."
+      },
+      {
+        "id": "ain-umm-al-sujur",
+        "title": "Aïn Umm Al-Sujur",
+        "text": "Des puits datant du IIIᵉ millénaire av. J.-C."
+      },
+      {
+        "id": "arad-fort",
+        "title": "Fort d'Arad",
+        "text": "Un fort du XVᵉ siècle sur l'île de Muharraq, de plan carré avec des tours d'angle circulaires."
+      },
+      {
+        "id": "riffa-fort",
+        "title": "Fort de Riffa",
+        "text": "Un fort construit en 1812 sur une crête à Riffa."
+      },
+      {
+        "id": "bu-maher",
+        "title": "Fort de Bu Maher",
+        "text": "Un fort sur le Chemin des perles, au bord de la mer."
+      },
+      {
+        "id": "al-khamis",
+        "title": "Mosquée Al-Khamis",
+        "text": "La plus ancienne mosquée de Bahreïn, du VIIᵉ siècle, sous le règne du calife omeyyade Omar ibn Abd al-Aziz, avec des minarets jumeaux identiques, une particularité unique dans l'architecture islamique."
+      },
+      {
+        "id": "bab-al-bahrain",
+        "title": "Bab Al-Bahreïn",
+        "text": "Un bâtiment historique de 1945, la porte du vieux Manama."
+      },
+      {
+        "id": "national-museum",
+        "title": "Musée national de Bahreïn",
+        "text": "Inauguré en 1988, avec 9 galeries couvrant 6 000 ans d'histoire."
+      },
+      {
+        "id": "beit-al-quran",
+        "title": "Beit Al-Quran",
+        "text": "Un musée et une bibliothèque à Hoora, avec une rare collection de manuscrits coraniques, le plus petit et le plus grand Coran du monde."
+      },
+      {
+        "id": "al-fateh",
+        "title": "Grande Mosquée Al-Fateh",
+        "text": "La mosquée nationale, construite en 1988, avec la plus grande coupole en fibre de verre du monde."
+      }
+    ]
+  }
+}

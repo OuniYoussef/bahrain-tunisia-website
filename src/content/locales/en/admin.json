@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "title": "Moderation"
+  },
+  "login": {
+    "title": "Moderator sign-in",
+    "intro": "Only invited moderators can sign in.",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign in",
+    "submitting": "Signing in…",
+    "error": "Email or password is incorrect.",
+    "locked": "Too many attempts. Please wait a few minutes and try again."
+  },
+  "mfa": {
+    "enrollTitle": "Protect your account",
+    "enrollIntro": "Scan this QR code with an authenticator app (such as Google Authenticator, Microsoft Authenticator or 1Password), then enter the 6-digit code.",
+    "secretLabel": "Or enter this key manually",
+    "verifyTitle": "Two-step verification",
+    "verifyIntro": "Enter the 6-digit code from your authenticator app.",
+    "code": "6-digit code",
+    "verify": "Verify",
+    "error": "The code is not valid. Try again."
+  },
+  "nav": {
+    "pending": "Pending",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "reports": "Reports",
+    "alerts": "Site alerts",
+    "newsletter": "Newsletter",
+    "signOut": "Sign out"
+  },
+  "queue": {
+    "title": "Moderation queue",
+    "empty": "Nothing to review. Great job!",
+    "submitted": "Submitted {date}",
+    "approve": "Approve",
+    "reject": "Reject",
+    "rejectReason": "Reason (kept private)",
+    "hide": "Hide",
+    "restore": "Restore",
+    "delete": "Delete permanently",
+    "confirmDelete": "Delete this post and its photos permanently? This cannot be undone.",
+    "markSample": "Sample post",
+    "approved": "Post approved and published.",
+    "rejected": "Post rejected.",
+    "error": "The action failed. Please try again."
+  },
+  "reports": {
+    "title": "Reports",
+    "empty": "No open reports.",
+    "count": {
+      "zero": "{count} reports",
+      "one": "{count} report",
+      "two": "{count} reports",
+      "few": "{count} reports",
+      "many": "{count} reports",
+      "other": "{count} reports"
+    },
+    "resolve": "Mark as resolved",
+    "viewPost": "View post"
+  },
+  "alerts": {
+    "title": "Site alerts",
+    "intro": "Alerts appear at the top of every page until they expire or are turned off.",
+    "message": "Message",
+    "level": "Level",
+    "levels": {
+      "info": "Information",
+      "warning": "Warning",
+      "critical": "Critical"
+    },
+    "link": "Link (optional)",
+    "expires": "Expires on (optional)",
+    "active": "Active",
+    "save": "Save alert",
+    "remove": "Remove"
+  },
+  "newsletter": {
+    "title": "Newsletter subscribers",
+    "export": "Export CSV",
+    "count": {
+      "zero": "{count} active subscribers",
+      "one": "{count} active subscriber",
+      "two": "{count} active subscribers",
+      "few": "{count} active subscribers",
+      "many": "{count} active subscribers",
+      "other": "{count} active subscribers"
+    }
+  },
+  "status": {
+    "pending": "Pending",
+    "approved": "Approved",
+    "rejected": "Rejected",
+    "hidden": "Hidden"
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "Deux nations. Un même esprit.",
+    "description": "La Tunisie et Bahreïn côte à côte : des rivages de la Méditerranée aux eaux perlières du golfe Arabique, un lien de famille, d'hospitalité, de foi, de mer et de palmiers."
+  },
+  "hero": {
+    "eyebrow": "Tunisie × Bahreïn",
+    "headline": "Deux nations. Un même esprit.",
+    "subheadline": "Des rivages de la Méditerranée aux eaux perlières du golfe Arabique, la Tunisie et Bahreïn partagent un lien de famille, d'hospitalité, de foi, de mer et de palmiers.",
+    "welcome": "Des milliers de kilomètres de mer et de désert séparent la Tunisie et Bahreïn, et pourtant leurs peuples s'accueillent avec la même chaleur. Ce sont deux nations arabes et musulmanes aux racines anciennes : la Tunisie est la terre de Carthage, Bahreïn celle de Dilmun. Toutes deux se sont enrichies grâce à la mer, toutes deux chérissent le palmier dattier, et toutes deux ouvrent leurs portes aux invités avec du thé, du café, des dattes et des douceurs. Ce site célèbre chaque pays pour lui-même, et les nombreux liens qui les unissent.",
+    "backgroundCaption": "Le jasmin de Tunisie à gauche, Al Razji de Bahreïn à droite.",
+    "discoverTunisia": "Découvrir la Tunisie",
+    "discoverBahrain": "Découvrir Bahreïn",
+    "exploreConnections": "Explorer ce qui nous relie",
+    "shareStory": "Partager votre histoire",
+    "scrollHint": "Faites défiler pour explorer"
+  },
+  "journey": {
+    "eyebrow": "Deux mers, un seul cœur",
+    "title": "De la Méditerranée au golfe Arabique",
+    "text": "Près de 4 000 kilomètres à vol d'oiseau séparent Tunis et Manama, mais les deux capitales regardent la mer, et les deux peuples ont bâti leur histoire sur elle.",
+    "tunisLabel": "Tunis",
+    "manamaLabel": "Manama",
+    "distanceLabel": "≈ 3 970 km de distance",
+    "mapAlt": "Carte montrant la Tunisie en Afrique du Nord et Bahreïn dans le golfe Arabique, reliés par un arc."
+  },
+  "glance": {
+    "eyebrow": "Côte à côte",
+    "title": "Les deux nations en un coup d'œil",
+    "caption": "Comparaison entre la Tunisie et Bahreïn",
+    "columns": {
+      "topic": "Thème",
+      "tunisia": "Tunisie",
+      "bahrain": "Bahreïn"
+    },
+    "rows": [
+      {
+        "id": "name",
+        "label": "Nom officiel",
+        "tunisia": "République tunisienne",
+        "bahrain": "Royaume de Bahreïn"
+      },
+      {
+        "id": "capital",
+        "label": "Capitale",
+        "tunisia": "Tunis",
+        "bahrain": "Manama"
+      },
+      {
+        "id": "location",
+        "label": "Situation",
+        "tunisia": "Afrique du Nord, sur la mer Méditerranée",
+        "bahrain": "Archipel d'îles dans le golfe Arabique"
+      },
+      {
+        "id": "language",
+        "label": "Langue officielle",
+        "tunisia": "Arabe (français largement parlé)",
+        "bahrain": "Arabe (anglais largement parlé)"
+      },
+      {
+        "id": "religion",
+        "label": "Religion",
+        "tunisia": "Islam",
+        "bahrain": "Islam"
+      },
+      {
+        "id": "currency",
+        "label": "Monnaie",
+        "tunisia": "Dinar tunisien (1 dinar = 1 000 millimes)",
+        "bahrain": "Dinar bahreïni (1 dinar = 1 000 fils)"
+      },
+      {
+        "id": "independence",
+        "label": "Indépendance",
+        "tunisia": "20 mars 1956 (de la France)",
+        "bahrain": "15 août 1971 (du Royaume-Uni)"
+      },
+      {
+        "id": "flag",
+        "label": "Drapeau",
+        "tunisia": "Rouge, avec un disque blanc portant un croissant et une étoile rouges",
+        "bahrain": "Rouge et blanc, séparés par une bordure dentelée de cinq pointes blanches"
+      },
+      {
+        "id": "flower",
+        "label": "Fleur",
+        "tunisia": "Jasmin",
+        "bahrain": "Al Razji (jasmin / arfaj)"
+      },
+      {
+        "id": "dish",
+        "label": "Plat national",
+        "tunisia": "Couscous",
+        "bahrain": "Machboos"
+      },
+      {
+        "id": "drink",
+        "label": "Boisson emblématique",
+        "tunisia": "Thé à la menthe aux pignons",
+        "bahrain": "Café arabe à la cardamome"
+      },
+      {
+        "id": "civilization",
+        "label": "Civilisation antique",
+        "tunisia": "Carthage (phénicienne, puis Afrique romaine)",
+        "bahrain": "Dilmun (puis Tylos)"
+      },
+      {
+        "id": "tree",
+        "label": "Arbre ou plante emblématique",
+        "tunisia": "L'olivier et le palmier dattier des oasis",
+        "bahrain": "L'Arbre de vie et le palmier dattier"
+      },
+      {
+        "id": "dates",
+        "label": "Fruit du palmier",
+        "tunisia": "Dattes Deglet Nour",
+        "bahrain": "Dattes Khalas et Khunaizi"
+      }
+    ]
+  },
+  "connecting": {
+    "eyebrow": "Ce que nous partageons",
+    "title": "Nos points communs en un coup d'œil",
+    "intro": "Douze fils qui relient les deux cultures.",
+    "items": [
+      {
+        "id": "family",
+        "theme": "Famille",
+        "tunisia": "Le couscous familial du vendredi, les grandes réunions de famille",
+        "bahrain": "Le majlis familial, la générosité envers les invités"
+      },
+      {
+        "id": "hospitality",
+        "theme": "Hospitalité",
+        "tunisia": "Thé à la menthe aux pignons, bouquets de jasmin",
+        "bahrain": "Café arabe à la cardamome et dattes"
+      },
+      {
+        "id": "sea",
+        "theme": "Mer",
+        "tunisia": "Carthage et ses ports, la pêche aux Kerkennah, les éponges de Djerba",
+        "bahrain": "Le commerce de Dilmun, la pêche des perles, les boutres en bois"
+      },
+      {
+        "id": "palms",
+        "theme": "Palmiers",
+        "tunisia": "Les oasis de Tozeur et Nefta, les dattes Deglet Nour",
+        "bahrain": "L'île au million de palmiers, les dattes Khalas et Khunaizi"
+      },
+      {
+        "id": "faith",
+        "theme": "Foi",
+        "tunisia": "Ramadan, Aïds, Mouled",
+        "bahrain": "Ramadan, Aïds, Achoura, naissance du Prophète"
+      },
+      {
+        "id": "dress",
+        "theme": "Habit",
+        "tunisia": "Jebba, chéchia, burnous, keswa, sefsari",
+        "bahrain": "Thobe, ghutra, bisht, thobe al-nashal, abaya"
+      },
+      {
+        "id": "jewellery",
+        "theme": "Bijoux",
+        "tunisia": "L'argent et la khomsa",
+        "bahrain": "L'or et les perles naturelles"
+      },
+      {
+        "id": "sweets",
+        "theme": "Douceurs",
+        "tunisia": "Makroudh, zlabia, bambalouni",
+        "bahrain": "Luqaimat, halwa bahreïnie, khabeesa"
+      },
+      {
+        "id": "crafts",
+        "theme": "Artisanat",
+        "tunisia": "Poterie de Nabeul et de Sejnane, tissage de la laine",
+        "bahrain": "Poterie d'A'ali, tissage de Bani Jamra"
+      },
+      {
+        "id": "music",
+        "theme": "Musique",
+        "tunisia": "Malouf, mezoued, le oud",
+        "bahrain": "Sawt, fijiri, le oud"
+      },
+      {
+        "id": "heritage",
+        "theme": "Patrimoine antique",
+        "tunisia": "Carthage, El Jem, Dougga",
+        "bahrain": "Dilmun, Qal'at al-Bahreïn, temple de Barbar"
+      },
+      {
+        "id": "language",
+        "theme": "Langue",
+        "tunisia": "La derja tunisienne (arabe, avec des touches de français, d'italien et d'amazigh)",
+        "bahrain": "L'arabe du Golfe (arabe aux accents marins)"
+      }
+    ]
+  },
+  "teasers": {
+    "commonGrounds": {
+      "eyebrow": "À découvrir",
+      "title": "La matrice médias Points communs",
+      "text": "Un voyage fluide, diapositive après diapositive, à travers tout ce que partagent les deux pays : histoire maritime, croisements culinaires, liens linguistiques, famille, foi, habit, artisanat, architecture, musique, fêtes et personnalités.",
+      "cta": "Explorer ce qui nous relie"
+    },
+    "vault": {
+      "eyebrow": "Communauté",
+      "title": "Le Coffre des expériences de la communauté",
+      "text": "Avez-vous parcouru les ruelles de Sidi Bou Saïd ou le Chemin des perles ? Partagez vos histoires, vos photos et vos carnets de voyage, et ajoutez de la couleur au pont qui relie la Tunisie et Bahreïn.",
+      "cta": "Partager votre histoire"
+    }
+  }
+}

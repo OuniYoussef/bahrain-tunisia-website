@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "Two Nations. One Shared Spirit.",
+    "description": "Tunisia and Bahrain side by side: from the shores of the Mediterranean to the pearl waters of the Arabian Gulf, a bond of family, hospitality, faith, sea and palm."
+  },
+  "hero": {
+    "eyebrow": "Tunisia × Bahrain",
+    "headline": "Two Nations. One Shared Spirit.",
+    "subheadline": "From the shores of the Mediterranean to the pearl waters of the Arabian Gulf, Tunisia and Bahrain share a bond of family, hospitality, faith, sea and palm.",
+    "welcome": "Tunisia and Bahrain are separated by thousands of kilometres of sea and desert, yet their people greet each other with the same warmth. Both are Arab and Muslim nations with ancient roots: Tunisia is the land of Carthage, and Bahrain is the land of Dilmun. Both grew rich from the sea, both cherish the date palm, and both open their doors to guests with tea, coffee, dates and sweets. This website celebrates each country on its own, and the many things that connect them.",
+    "backgroundCaption": "Jasmine of Tunisia on the left, Al Razji of Bahrain on the right.",
+    "discoverTunisia": "Discover Tunisia",
+    "discoverBahrain": "Discover Bahrain",
+    "exploreConnections": "Explore What Connects Us",
+    "shareStory": "Share Your Story",
+    "scrollHint": "Scroll to explore"
+  },
+  "journey": {
+    "eyebrow": "Two seas, one heart",
+    "title": "From the Mediterranean to the Arabian Gulf",
+    "text": "Tunis and Manama lie almost 4,000 kilometres apart as the crow flies, yet both capitals face the sea, and both peoples built their history on it.",
+    "tunisLabel": "Tunis",
+    "manamaLabel": "Manama",
+    "distanceLabel": "≈ 3,970 km apart",
+    "mapAlt": "Map showing Tunisia in North Africa and Bahrain in the Arabian Gulf, joined by an arc."
+  },
+  "glance": {
+    "eyebrow": "Side by side",
+    "title": "The Two Nations at a Glance",
+    "caption": "A comparison of Tunisia and Bahrain",
+    "columns": {
+      "topic": "Topic",
+      "tunisia": "Tunisia",
+      "bahrain": "Bahrain"
+    },
+    "rows": [
+      {
+        "id": "name",
+        "label": "Official name",
+        "tunisia": "Republic of Tunisia",
+        "bahrain": "Kingdom of Bahrain"
+      },
+      {
+        "id": "capital",
+        "label": "Capital",
+        "tunisia": "Tunis",
+        "bahrain": "Manama"
+      },
+      {
+        "id": "location",
+        "label": "Location",
+        "tunisia": "North Africa, on the Mediterranean Sea",
+        "bahrain": "Island archipelago in the Arabian Gulf"
+      },
+      {
+        "id": "language",
+        "label": "Official language",
+        "tunisia": "Arabic (French widely spoken)",
+        "bahrain": "Arabic (English widely spoken)"
+      },
+      {
+        "id": "religion",
+        "label": "Religion",
+        "tunisia": "Islam",
+        "bahrain": "Islam"
+      },
+      {
+        "id": "currency",
+        "label": "Currency",
+        "tunisia": "Tunisian Dinar (1 dinar = 1000 millimes)",
+        "bahrain": "Bahraini Dinar (1 dinar = 1000 fils)"
+      },
+      {
+        "id": "independence",
+        "label": "Independence",
+        "tunisia": "20 March 1956 (from France)",
+        "bahrain": "15 August 1971 (from Britain)"
+      },
+      {
+        "id": "flag",
+        "label": "Flag",
+        "tunisia": "Red with a white disc, red crescent and star",
+        "bahrain": "Red and white, separated by a serrated edge of five white points"
+      },
+      {
+        "id": "flower",
+        "label": "Flower",
+        "tunisia": "Jasmine",
+        "bahrain": "Al Razji (jasmine / arfaj)"
+      },
+      {
+        "id": "dish",
+        "label": "National dish",
+        "tunisia": "Couscous",
+        "bahrain": "Machboos"
+      },
+      {
+        "id": "drink",
+        "label": "Signature drink",
+        "tunisia": "Mint tea with pine nuts",
+        "bahrain": "Arabic coffee with cardamom"
+      },
+      {
+        "id": "civilization",
+        "label": "Ancient civilization",
+        "tunisia": "Carthage (Phoenician, then Roman Africa)",
+        "bahrain": "Dilmun (and later Tylos)"
+      },
+      {
+        "id": "tree",
+        "label": "Famous tree or plant",
+        "tunisia": "Olive tree and date palm of the oases",
+        "bahrain": "Tree of Life and the date palm"
+      },
+      {
+        "id": "dates",
+        "label": "Fruit of the palm",
+        "tunisia": "Deglet Nour dates",
+        "bahrain": "Khalas and Khunaizi dates"
+      }
+    ]
+  },
+  "connecting": {
+    "eyebrow": "What we share",
+    "title": "Connecting Points at a Glance",
+    "intro": "Twelve threads that tie the two cultures together.",
+    "items": [
+      {
+        "id": "family",
+        "theme": "Family",
+        "tunisia": "Friday family couscous, large family gatherings",
+        "bahrain": "Family majlis, generosity to guests"
+      },
+      {
+        "id": "hospitality",
+        "theme": "Hospitality",
+        "tunisia": "Mint tea with pine nuts, jasmine posies",
+        "bahrain": "Arabic coffee with cardamom and dates"
+      },
+      {
+        "id": "sea",
+        "theme": "Sea",
+        "tunisia": "Carthage and its ports, Kerkennah fishing, Djerba sponges",
+        "bahrain": "Dilmun trade, pearl diving, wooden dhows"
+      },
+      {
+        "id": "palms",
+        "theme": "Palms",
+        "tunisia": "Oases of Tozeur and Nefta, Deglet Nour dates",
+        "bahrain": "Island of a Million Palms, Khalas and Khunaizi dates"
+      },
+      {
+        "id": "faith",
+        "theme": "Faith",
+        "tunisia": "Ramadan, Eids, Mouled",
+        "bahrain": "Ramadan, Eids, Ashura, Prophet's Birthday"
+      },
+      {
+        "id": "dress",
+        "theme": "Dress",
+        "tunisia": "Jebba, chechia, burnous, keswa, sefseri",
+        "bahrain": "Thobe, ghutra, bisht, thobe al-nashal, abaya"
+      },
+      {
+        "id": "jewellery",
+        "theme": "Jewellery",
+        "tunisia": "Silver and khomsa",
+        "bahrain": "Gold and natural pearls"
+      },
+      {
+        "id": "sweets",
+        "theme": "Sweets",
+        "tunisia": "Makroudh, zlebia, bambalouni",
+        "bahrain": "Luqaimat, Bahraini halwa, khabeesa"
+      },
+      {
+        "id": "crafts",
+        "theme": "Crafts",
+        "tunisia": "Pottery of Nabeul and Sejnane, wool weaving",
+        "bahrain": "Pottery of A'ali, Bani Jamra weaving"
+      },
+      {
+        "id": "music",
+        "theme": "Music",
+        "tunisia": "Malouf, mezoued, the oud",
+        "bahrain": "Sawt, Fijiri, the oud"
+      },
+      {
+        "id": "heritage",
+        "theme": "Ancient heritage",
+        "tunisia": "Carthage, El Djem, Dougga",
+        "bahrain": "Dilmun, Qal'at al-Bahrain, Barbar Temple"
+      },
+      {
+        "id": "language",
+        "theme": "Language",
+        "tunisia": "Tunisian Derja (Arabic, French, Italian, Amazigh touches)",
+        "bahrain": "Gulf Arabic (Arabic with seafaring touches)"
+      }
+    ]
+  },
+  "teasers": {
+    "commonGrounds": {
+      "eyebrow": "Feature",
+      "title": "The Common Grounds Media Matrix",
+      "text": "A smooth, slide-based journey through everything the two countries share: seafaring history, culinary crossovers, language links, family, faith, dress, crafts, architecture, music, celebrations and people.",
+      "cta": "Explore What Connects Us"
+    },
+    "vault": {
+      "eyebrow": "Community",
+      "title": "The Community Experience Vault",
+      "text": "Have you walked the lanes of Sidi Bou Said or the Pearling Path? Share your stories, photos and travel diaries, and add colour to the bridge between Tunisia and Bahrain.",
+      "cta": "Share Your Story"
+    }
+  }
+}

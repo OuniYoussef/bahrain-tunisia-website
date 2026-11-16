@@ -1,0 +1,1147 @@
+{
+  "meta": {
+    "title": "Découvrir la Tunisie",
+    "description": "Là où la Méditerranée rencontre le Sahara : destinations, habits traditionnels, nature, villes, histoire, fêtes, cuisine et monuments de Tunisie."
+  },
+  "sectionNav": {
+    "label": "Sections de la page Tunisie",
+    "welcome": "Bienvenue",
+    "destinations": "Destinations",
+    "wear": "Habits traditionnels",
+    "nature": "Nature",
+    "cities": "Villes",
+    "history": "Histoire",
+    "festive": "Fêtes",
+    "food": "Cuisine",
+    "monuments": "Monuments"
+  },
+  "welcome": {
+    "eyebrow": "Bienvenue en Tunisie",
+    "headline": "Partons à la découverte de la Tunisie",
+    "subheadline": "Là où la Méditerranée rencontre le Sahara.",
+    "intro": "La Tunisie est un État d'Afrique du Nord qui appartient au Maghreb ; sa capitale est Tunis. Elle est bordée par l'Algérie à l'ouest et au sud-ouest, par la Libye au sud-est, et par la mer Méditerranée au nord et à l'est. État libre, indépendant et souverain, la Tunisie a l'islam pour religion, la République pour régime et l'arabe pour langue, le français y étant largement parlé. Son dialecte mêle l'arabe, le français et l'italien. Dans ce pays compact, on passe des plages dorées de la Méditerranée et des villages blanchis à la chaux perchés sur les collines aux amphithéâtres romains, aux villes saintes et aux dunes du Sahara.",
+    "factsTitle": "En bref",
+    "facts": [
+      {
+        "id": "capital",
+        "label": "Capitale",
+        "value": "Tunis"
+      },
+      {
+        "id": "area",
+        "label": "Superficie et population",
+        "value": "Environ 163 000 kilomètres carrés et près de 12 millions d'habitants"
+      },
+      {
+        "id": "languages",
+        "label": "Langues",
+        "value": "L'arabe, avec un large usage du français ; le dialecte tunisien (derja)"
+      },
+      {
+        "id": "independence",
+        "label": "Indépendance",
+        "value": "20 mars 1956 ; République proclamée le 25 juillet 1957"
+      },
+      {
+        "id": "currency",
+        "label": "Monnaie",
+        "value": "Le dinar tunisien (DT). 1 dinar = 1 000 millimes. Neuf coupures et pièces : 10, 20, 50, 100, 200 et 500 millimes, et 1, 2 et 5 dinars."
+      },
+      {
+        "id": "flag",
+        "label": "Drapeau",
+        "value": "Rouge, avec un disque blanc portant un croissant et une étoile rouges"
+      },
+      {
+        "id": "flower",
+        "label": "Fleur",
+        "value": "Le jasmin"
+      },
+      {
+        "id": "climate",
+        "label": "Climat",
+        "value": "Méditerranéen au nord (étés chauds et secs, hivers doux et humides), semi-aride au centre, saharien au sud"
+      },
+      {
+        "id": "best-time",
+        "label": "Meilleure période pour visiter",
+        "value": "De mars à mai et de septembre à novembre"
+      }
+    ],
+    "wordsTitle": "Mots utiles",
+    "wordsIntro": "Quelques mots de derja tunisienne pour engager la conversation.",
+    "wordsColumns": {
+      "meaning": "Français",
+      "local": "Tunisien"
+    },
+    "words": [
+      {
+        "id": "hello",
+        "meaning": "Bonjour",
+        "say": "Aslama",
+        "script": "عسلامة"
+      },
+      {
+        "id": "bye",
+        "meaning": "Au revoir",
+        "say": "Beslama",
+        "script": "بالسلامة"
+      },
+      {
+        "id": "how-are-you",
+        "meaning": "Comment vas-tu ?",
+        "say": "Chneya ahwelek",
+        "script": "شنية أحوالك"
+      },
+      {
+        "id": "fine",
+        "meaning": "Je vais bien",
+        "say": "Labes",
+        "script": "لاباس"
+      },
+      {
+        "id": "sorry",
+        "meaning": "Pardon",
+        "say": "Samahny",
+        "script": "سامحني"
+      },
+      {
+        "id": "thanks",
+        "meaning": "Merci",
+        "say": "Aychek",
+        "script": "يعيشك"
+      },
+      {
+        "id": "ok",
+        "meaning": "D'accord",
+        "say": "Mrigel",
+        "script": "مريقل"
+      },
+      {
+        "id": "good-night",
+        "meaning": "Bonne nuit",
+        "say": "Alekhyr",
+        "script": "على الخير"
+      },
+      {
+        "id": "how-much",
+        "meaning": "Combien ça coûte ?",
+        "say": "Bkadah hedhi",
+        "script": "بقداش هذي"
+      },
+      {
+        "id": "a-lot",
+        "meaning": "Beaucoup",
+        "say": "Barcha",
+        "script": "برشا"
+      }
+    ],
+    "didYouKnowTitle": "Le saviez-vous ?",
+    "didYouKnow": [
+      "La cuisine tunisienne repose sur une multitude d'épices.",
+      "La Tunisie est pionnière dans le monde arabe en matière de droits des femmes.",
+      "Les Tunisiens parlent beaucoup avec les mains.",
+      "De nombreuses scènes de Star Wars ont été tournées dans le désert tunisien.",
+      "Le dialecte tunisien mêle l'arabe, le français et l'italien.",
+      "Ras Angela, près de Bizerte, est le point le plus septentrional du continent africain."
+    ]
+  },
+  "destinations": {
+    "eyebrow": "Lieux incontournables",
+    "title": "Destinations à découvrir",
+    "intro": "Une vitrine immersive des lieux incontournables. Les six sites les plus connus de Tunisie sont Sidi Bou Saïd, El Jem, Bizerte, Monastir, la Médina et Kairouan.",
+    "mapLabel": "Carte des destinations en Tunisie",
+    "featured": [
+      {
+        "id": "sidi-bou-said",
+        "title": "Sidi Bou Saïd",
+        "text": "Un village perché sur une colline dominant le golfe de Tunis, à une vingtaine de kilomètres de la capitale, tout près de Carthage. Ses maisons blanchies à la chaux, aux portes bleues, aux grilles de fenêtres bleues et aux balcons en fer forgé, couvertes de bougainvilliers et de jasmin, regardent la mer et le golfe de Tunis. Le village porte le nom d'un saint musulman du XIIIᵉ siècle, Abou Saïd al-Béji. Gravissez les ruelles en escalier, sirotez un thé à la menthe aux pignons à la terrasse d'un café, goûtez des bambalouni tout chauds (beignets tunisiens), visitez le palais Ennejma Ezzahra, centre des musiques arabes et méditerranéennes, et admirez le coucher du soleil sur la baie.",
+        "tip": "Meilleur moment : en fin d'après-midi."
+      },
+      {
+        "id": "el-djem",
+        "title": "El Jem",
+        "text": "Une petite ville du Sahel dont l'amphithéâtre romain, construit vers 238 apr. J.-C. dans l'antique Thysdrus, est l'un des plus grands et des mieux conservés au monde ; il pouvait accueillir quelque 35 000 spectateurs. Il est inscrit au patrimoine mondial de l'UNESCO. Les visiteurs peuvent parcourir l'arène, les galeries souterraines et les gradins supérieurs. Chaque été, le Festival international de musique symphonique remplit l'arène de musique. Le musée voisin expose des mosaïques romaines.",
+        "tip": ""
+      },
+      {
+        "id": "bizerte",
+        "title": "Bizerte",
+        "text": "Fondée vers 1100 av. J.-C. par des colons phéniciens venus de Sidon, Bizerte se trouve à la pointe nord de l'Afrique, au bord de la Méditerranée, non loin de la frontière algérienne. C'est l'une des villes côtières les plus anciennes et les plus chargées d'histoire de Tunisie. Son vieux port aux barques de pêche colorées, sa médina, la Kasbah et le fort d'Espagne, ainsi que ses plages, en font une escapade très appréciée.",
+        "tip": "Voir le coup de projecteur sur Bizerte ci-dessous."
+      },
+      {
+        "id": "monastir",
+        "title": "Monastir",
+        "text": "Une ville balnéaire de la côte est, ville natale de Habib Bourguiba, premier président de la Tunisie. Le Ribat de Monastir, monastère fortifié du littoral construit en 796, domine la plage et offre un panorama depuis sa tour de guet. Le mausolée blanc de Bourguiba et sa coupole dorée, une marina animée et de longues plages de sable complètent le tableau.",
+        "tip": ""
+      },
+      {
+        "id": "medina-tunis",
+        "title": "La Médina (Médina de Tunis)",
+        "text": "La vieille ville fortifiée au cœur de la capitale, inscrite au patrimoine mondial de l'UNESCO. Son dédale de ruelles abrite quelque 700 monuments : mosquées, palais, médersas, mausolées et fontaines. La mosquée Zitouna se dresse en son centre, entourée de souks qui rayonnent autour d'elle : le souk El Attarine (parfums), le souk des Chéchias (bonnets rouges), les souks du cuir, du cuivre, de l'or, des tapis et des épices. Les visiteurs peuvent monter sur une terrasse pour boire un thé au-dessus des coupoles et des minarets.",
+        "tip": ""
+      },
+      {
+        "id": "kairouan",
+        "title": "Kairouan",
+        "text": "L'une des villes les plus saintes de l'islam et la première capitale arabo-musulmane du Maghreb, fondée en 670 apr. J.-C. Sa Grande Mosquée, avec son minaret de 31 mètres, sa vaste cour et sa forêt de colonnes antiques, est un chef-d'œuvre de l'architecture islamique des premiers siècles. La médina est inscrite au patrimoine mondial de l'UNESCO. Kairouan est célèbre pour ses tapis noués à la main, sa dinanderie et ses makroudh, ainsi que pour les bassins des Aghlabides et la mosquée des Trois Portes.",
+        "tip": ""
+      }
+    ],
+    "moreTitle": "D'autres lieux à explorer",
+    "more": [
+      {
+        "id": "carthage",
+        "title": "Carthage",
+        "text": "Les vestiges de l'ancienne capitale phénico-punique, devenue ensuite une ville romaine, près de Tunis, inscrits au patrimoine mondial de l'UNESCO. À ne pas manquer : les thermes d'Antonin, parmi les plus grands thermes romains du monde ; les ports puniques, dont le port militaire circulaire ; le Tophet ; la colline de Byrsa et son musée ; le théâtre romain, qui accueille le Festival international de Carthage ; et les villas romaines et leurs mosaïques."
+      },
+      {
+        "id": "djerba",
+        "title": "Djerba",
+        "text": "Une île ensoleillée du sud, reliée au continent par une chaussée, avec ses villages blanchis à la chaux, ses palmeraies, ses larges plages, la ville marchande de Houmt Souk, les potiers de Guellala, la forteresse de Borj El Kébir et la synagogue de la Ghriba, lieu de pèlerinage. Réputée pour son rythme paisible et sa mer chaude."
+      },
+      {
+        "id": "dougga",
+        "title": "Dougga",
+        "text": "La ville romaine la mieux conservée d'Afrique du Nord, à flanc de colline au milieu des oliviers, avec son théâtre, son Capitole, ses temples, ses thermes et son mausolée. Inscrite au patrimoine mondial de l'UNESCO."
+      },
+      {
+        "id": "douz-tozeur",
+        "title": "Douz et Tozeur",
+        "text": "Les portes du Sahara. Douz est le point de départ des randonnées à dos de dromadaire dans les dunes ; Tozeur est une oasis de palmiers dont la médina est ornée de briques jaunes à motifs, près des oasis de montagne de Chebika, Tamerza et Midès."
+      },
+      {
+        "id": "hammamet-tabarka-cap-bon",
+        "title": "Hammamet, Tabarka et le cap Bon",
+        "text": "Des côtes balnéaires aux plages blanches, une vieille ville fortifiée à Hammamet, des récifs coralliens pour la plongée à Tabarka, et les plages et orangeraies du cap Bon."
+      },
+      {
+        "id": "matmata-tataouine",
+        "title": "Matmata et Tataouine",
+        "text": "Des maisons berbères souterraines creusées dans la terre, des greniers fortifiés (ksour) et des paysages désertiques. De nombreuses scènes de Star Wars ont été tournées dans cette région."
+      }
+    ],
+    "spotlight": {
+      "eyebrow": "Coup de projecteur",
+      "title": "Coup de projecteur sur Bizerte",
+      "facts": [
+        {
+          "id": "where",
+          "title": "Où se trouve Bizerte",
+          "text": "Située à la pointe nord de l'Afrique, au bord de la Méditerranée, près de la frontière algérienne, Bizerte a été fondée vers 1100 av. J.-C. par des colons phéniciens venus de Sidon ; c'est l'une des villes côtières les plus anciennes et les plus chargées d'histoire de Tunisie."
+        },
+        {
+          "id": "about",
+          "title": "À propos de Bizerte",
+          "text": "Avec leur nature chaleureuse et pleine d'humour, les Bizertins forment une communauté vivante et accueillante. Ils sont décontractés, joyeux, sincères et connus pour leur amour du football."
+        },
+        {
+          "id": "climate",
+          "title": "Climat",
+          "text": "Les étés sont courts, très chauds et dégagés ; les hivers sont longs, frais et plutôt dégagés, avec du vent par moments. Les températures varient généralement de 8 °C à 33 °C, descendant rarement sous 5 °C ou dépassant rarement 37 °C."
+        }
+      ],
+      "placesTitle": "Lieux à visiter à Bizerte",
+      "places": [
+        {
+          "id": "al-madina",
+          "title": "La Médina",
+          "text": "La vieille ville, ses ruelles étroites, ses portes bleues et ses maisons traditionnelles."
+        },
+        {
+          "id": "old-port",
+          "title": "Le Vieux Port",
+          "text": "Des barques colorées, des cafés au bord de l'eau et la vue sur le vieux fort."
+        },
+        {
+          "id": "coco-beach",
+          "title": "Coco Beach",
+          "text": "Une plage pleine de couleurs sur la côte."
+        },
+        {
+          "id": "ras-serrat",
+          "title": "Ras Serrat",
+          "text": "Un littoral de sable doré aux eaux calmes."
+        },
+        {
+          "id": "cap-zbib",
+          "title": "Cap Zbib",
+          "text": "Des falaises rocheuses et une eau limpide."
+        },
+        {
+          "id": "rafraf",
+          "title": "Rafraf",
+          "text": "Un village côtier avec vue sur la mer."
+        },
+        {
+          "id": "night-walks",
+          "title": "Promenades nocturnes à Bizerte",
+          "text": "Le vieux port et les ruelles illuminés la nuit."
+        }
+      ]
+    }
+  },
+  "wear": {
+    "eyebrow": "Un patrimoine qui se porte",
+    "title": "Habits traditionnels",
+    "intro": "Le vêtement tunisien reflète les nombreuses cultures du pays : amazighe (berbère), arabe, andalouse, ottomane et méditerranéenne. Les pièces traditionnelles se portent aujourd'hui lors des mariages, des fêtes religieuses, des festivals et le vendredi, jour de prière.",
+    "groups": [
+      {
+        "id": "men",
+        "title": "Habits pour hommes",
+        "items": [
+          {
+            "id": "jebba",
+            "title": "Jebba",
+            "text": "Une longue robe ample en laine ou en coton, généralement blanche ou de couleur claire, portée le vendredi, lors des mariages et des fêtes religieuses."
+          },
+          {
+            "id": "chechia",
+            "title": "Chéchia",
+            "text": "Le bonnet de feutre rouge, symbole de la Tunisie, fabriqué à la main dans le souk des Chéchias de la médina de Tunis. Un gland pend de son sommet."
+          },
+          {
+            "id": "burnous",
+            "title": "Burnous",
+            "text": "Une cape de laine à capuche pour l'hiver, les cérémonies et le sud."
+          },
+          {
+            "id": "balgha",
+            "title": "Balgha",
+            "text": "Des babouches traditionnelles en cuir, souvent jaunes."
+          },
+          {
+            "id": "sirwal",
+            "title": "Sirwal",
+            "text": "Le pantalon bouffant traditionnel porté sous la jebba."
+          }
+        ]
+      },
+      {
+        "id": "women",
+        "title": "Habits pour femmes",
+        "items": [
+          {
+            "id": "sefseri",
+            "title": "Sefsari",
+            "text": "Un grand voile d'étoffe légère, traditionnellement blanc, qui couvre la tête et le corps pour sortir. Une image classique du vieux Tunis, de Kairouan et de Monastir."
+          },
+          {
+            "id": "jebba-women",
+            "title": "Jebba",
+            "text": "Une robe richement brodée pour les femmes, souvent au fil d'or, portée lors des fêtes."
+          },
+          {
+            "id": "kaftan",
+            "title": "Caftan",
+            "text": "Une robe longue, fluide et élégante, ornée de broderies, pour les fêtes et les mariages."
+          },
+          {
+            "id": "fouta",
+            "title": "Fouta",
+            "text": "Une étoffe rayée traditionnelle en coton ou en soie, nouée à la taille et portée avec une blouse (blouza) comme tenue traditionnelle ; on l'utilise aussi au hammam et à la plage."
+          },
+          {
+            "id": "blouza",
+            "title": "Blouza",
+            "text": "Une robe-tunique ample portée à la maison et au quotidien."
+          }
+        ]
+      },
+      {
+        "id": "bridal",
+        "title": "Tenue de mariée et mariages",
+        "items": [
+          {
+            "id": "keswa",
+            "title": "Keswa",
+            "text": "Une tenue de mariée traditionnelle richement brodée, souvent en soie ou en velours rehaussé de broderies d'or, portée par la mariée le jour de ses noces."
+          },
+          {
+            "id": "wedding-customs",
+            "title": "Coutumes du mariage",
+            "text": "Les fiançailles et l'échange de cadeaux entre les deux familles ; la journée de la mariée au hammam ; la nuit du henné, où les mains et les pieds de la mariée sont ornés de henné entourée de sa famille et de ses amies, en musique et en chansons ; le cortège nuptial au son du mezoued (cornemuse) et des tambours ; la mariée qui change plusieurs fois de tenue au cours de la soirée ; le marié en jebba blanche, burnous et chéchia ; un grand repas familial et une table de douceurs traditionnelles comme les makroudh et la baklawa."
+          }
+        ]
+      },
+      {
+        "id": "jewellery",
+        "title": "Bijoux et accessoires",
+        "items": [
+          {
+            "id": "khomsa",
+            "title": "Khomsa",
+            "text": "Une amulette en forme de main contre le mauvais œil, en argent ou en or."
+          },
+          {
+            "id": "silver",
+            "title": "Bijoux en argent",
+            "text": "Bracelets, bracelets de cheville, colliers et grandes parures amazighes (berbères), surtout dans le sud."
+          },
+          {
+            "id": "jasmine-posy",
+            "title": "Bouquet de jasmin",
+            "text": "Hommes et femmes portent un petit bouquet de jasmin derrière l'oreille ou au col, en signe de bienvenue, d'amour et de vœux de bonheur."
+          }
+        ]
+      }
+    ],
+    "regionalTitle": "Costumes régionaux",
+    "regional": [
+      "Djerba et le sud : foutas rayées aux couleurs vives et capes de laine, avec des bijoux d'argent et d'ambre.",
+      "Matmata et les villages amazighs : robes en laine tissée aux couleurs naturelles.",
+      "Le Sahel (Monastir, Sousse) : sefsari blanc et jebba brodée."
+    ]
+  },
+  "nature": {
+    "eyebrow": "Mer, montagnes et Sahara",
+    "title": "La nature à ne pas manquer",
+    "intro": "Des plages méditerranéennes aux dunes du Sahara, la Tunisie réunit des paysages naturels très variés dans un petit pays.",
+    "groups": [
+      {
+        "id": "coast",
+        "title": "Plages et littoral",
+        "items": [
+          {
+            "id": "bizerte-coast",
+            "title": "Côte de Bizerte",
+            "text": "Coco Beach, Ras Serrat, Cap Zbib et Rafraf : eaux turquoise, sable et criques rocheuses dans l'extrême nord."
+          },
+          {
+            "id": "ras-angela",
+            "title": "Ras Angela",
+            "text": "Près de Bizerte, le point le plus septentrional du continent africain."
+          },
+          {
+            "id": "cap-bon",
+            "title": "Cap Bon",
+            "text": "Une péninsule aux longues plages blanches près de Kélibia, Hammamet et Nabeul, avec ses orangeraies et ses vergers d'agrumes."
+          },
+          {
+            "id": "tabarka",
+            "title": "Tabarka",
+            "text": "Une côte rocheuse au nord-ouest, aux eaux limpides, riche en corail et idéale pour la plongée."
+          },
+          {
+            "id": "djerba-kerkennah",
+            "title": "Djerba et les îles Kerkennah",
+            "text": "Des eaux chaudes et peu profondes, du sable blanc et un rythme tranquille ; Kerkennah est connue pour ses pêcheries traditionnelles en palmes, appelées charfia."
+          }
+        ]
+      },
+      {
+        "id": "parks",
+        "title": "Parcs et zones humides",
+        "items": [
+          {
+            "id": "ichkeul",
+            "title": "Parc national de l'Ichkeul",
+            "text": "Un lac et une zone humide près de Bizerte, inscrits au patrimoine mondial de l'UNESCO. En hiver, c'est une escale majeure pour des centaines de milliers d'oiseaux d'eau migrateurs."
+          },
+          {
+            "id": "chambi",
+            "title": "Parc national du Jebel Chambi",
+            "text": "Une forêt de pins d'Alep autour du plus haut sommet de Tunisie, le Jebel Chambi (environ 1 544 m), près de Kasserine."
+          },
+          {
+            "id": "zaghouan",
+            "title": "Montagne de Zaghouan",
+            "text": "Sources, grottes et un temple romain des eaux au nord-est."
+          },
+          {
+            "id": "boukornine",
+            "title": "Parc national de Boukornine",
+            "text": "Un parc de montagne près de Tunis, idéal pour la randonnée."
+          }
+        ]
+      },
+      {
+        "id": "desert",
+        "title": "Désert et oasis",
+        "items": [
+          {
+            "id": "douz",
+            "title": "Douz",
+            "text": "La porte du Sahara, pour les randonnées à dos de dromadaire et les marches dans les dunes. Le Festival du Sahara s'y tient chaque hiver."
+          },
+          {
+            "id": "ksar-ghilane",
+            "title": "Ksar Ghilane",
+            "text": "Une oasis au cœur du désert avec une source chaude naturelle."
+          },
+          {
+            "id": "chott-el-djerid",
+            "title": "Chott el-Jérid",
+            "text": "Un immense lac salé du sud qui scintille de blanc et de rose sous le soleil et fait naître des mirages."
+          },
+          {
+            "id": "mountain-oases",
+            "title": "Chebika, Tamerza et Midès",
+            "text": "Des oasis de montagne avec cascades, palmeraies et canyons près de la frontière algérienne."
+          },
+          {
+            "id": "matmata-tataouine",
+            "title": "Matmata et Tataouine",
+            "text": "Des paysages lunaires qui ont servi de décors de tournage pour Star Wars."
+          },
+          {
+            "id": "tozeur-nefta",
+            "title": "Tozeur et Nefta",
+            "text": "Les oasis du sud et leurs centaines de milliers de palmiers dattiers."
+          }
+        ]
+      }
+    ]
+  },
+  "cities": {
+    "eyebrow": "La vie en ville",
+    "title": "Les villes à ne pas manquer",
+    "items": [
+      {
+        "id": "tunis",
+        "title": "Tunis (la capitale)",
+        "text": "Le point de rencontre entre la Tunisie antique et moderne. Visitez la médina et ses souks, le musée du Bardo et l'une des plus grandes collections de mosaïques romaines au monde, la mosquée Zitouna et les ruines de Carthage. L'avenue Habib-Bourguiba, le grand boulevard, est bordée de cafés, du Théâtre municipal et de bâtiments de l'époque coloniale. Architecture : maisons arabo-andalouses dans la médina, boulevards Art déco à la française et quartier moderne du Lac. Shopping : les souks de la médina et les boutiques de La Marsa. Vie nocturne : restaurants, cafés et clubs de plage à La Marsa et Gammarth, et les cafés de Sidi Bou Saïd."
+      },
+      {
+        "id": "sousse",
+        "title": "Sousse",
+        "text": "Une ville côtière de l'est, surnommée la Perle du Sahel. Sa médina, inscrite par l'UNESCO, est couronnée par le Ribat et la tour de la Kasbah, avec un musée de mosaïques romaines. Ses longues plages et la station de Port El-Kantaoui la rendent animée en été, avec bars, cafés et vie nocturne au bord de la mer."
+      },
+      {
+        "id": "sfax",
+        "title": "Sfax",
+        "text": "La deuxième ville du pays et la capitale économique du sud, avec une médina fortifiée, un port actif et une réputation pour son huile d'olive, ses fruits de mer et ses douceurs aux amandes. Idéale pour une cuisine authentique et des marchés traditionnels, loin de la foule des stations balnéaires."
+      },
+      {
+        "id": "hammamet",
+        "title": "Hammamet",
+        "text": "Une station balnéaire sur le golfe d'Hammamet, avec des plages blanches, une vieille ville fortifiée et des jardins de jasmin. De nombreux hôtels, un golf et une marina animée."
+      },
+      {
+        "id": "kairouan",
+        "title": "Kairouan",
+        "text": "La ville sainte, avec la Grande Mosquée, la mosquée des Trois Portes et les ateliers de tapis. On y achète des tapis, des objets en cuivre et des makroudh."
+      },
+      {
+        "id": "monastir",
+        "title": "Monastir",
+        "text": "Une ville balnéaire avec son ribat, le mausolée de Bourguiba, sa marina et ses plages."
+      },
+      {
+        "id": "houmt-souk",
+        "title": "Djerba (Houmt Souk)",
+        "text": "La ville marchande de l'île, avec son port de pêche, la forteresse de Borj El Kébir, ses échoppes d'artisans et ses cafés, et le village de potiers de Guellala."
+      },
+      {
+        "id": "bizerte",
+        "title": "Bizerte",
+        "text": "Une ville portuaire avec un charmant vieux port, la Kasbah et le fort d'Espagne, et des promenades nocturnes le long du front de mer (voir le coup de projecteur sur Bizerte)."
+      },
+      {
+        "id": "tozeur",
+        "title": "Tozeur",
+        "text": "Une ville d'oasis à l'architecture de briques, entourée de palmeraies, point de départ vers le désert."
+      }
+    ]
+  },
+  "history": {
+    "eyebrow": "Trois mille ans",
+    "title": "Histoire",
+    "intro": "La culture tunisienne est le fruit de plus de trois mille ans d'histoire et d'un important brassage de peuples. La Tunisie antique fut un grand carrefour de civilisations, et différentes cultures ainsi que de multiples dynasties successives ont contribué, au fil des siècles et à des degrés divers, à la culture du pays. Parmi elles : les Carthaginois, la civilisation autochtone, les Romains (Africains romains), les Vandales, les juifs, les chrétiens, les Arabes, les dynasties islamiques et les Turcs.",
+    "timelineTitle": "Les événements les plus marquants",
+    "timeline": [
+      {
+        "id": "1100bc",
+        "date": "v. 1100 av. J.-C.",
+        "text": "Des colons phéniciens venus de Sidon fondent des cités côtières, dont Utique et Bizerte."
+      },
+      {
+        "id": "814bc",
+        "date": "814 av. J.-C.",
+        "text": "Date traditionnelle de la fondation de Carthage par la reine Élissa (Didon)."
+      },
+      {
+        "id": "218bc",
+        "date": "218 av. J.-C.",
+        "text": "Hannibal franchit les Alpes avec son armée pendant la deuxième guerre punique."
+      },
+      {
+        "id": "202bc",
+        "date": "202 av. J.-C.",
+        "text": "Bataille de Zama : le général romain Scipion bat Hannibal."
+      },
+      {
+        "id": "146bc",
+        "date": "146 av. J.-C.",
+        "text": "Rome détruit Carthage à la fin de la troisième guerre punique ; la région devient la province romaine d'Afrique."
+      },
+      {
+        "id": "238",
+        "date": "v. 238 apr. J.-C.",
+        "text": "Construction de l'amphithéâtre de Thysdrus (El Jem)."
+      },
+      {
+        "id": "439",
+        "date": "439 apr. J.-C.",
+        "text": "Les Vandales s'emparent de Carthage."
+      },
+      {
+        "id": "533",
+        "date": "533 apr. J.-C.",
+        "text": "Le général byzantin Bélisaire reconquiert la région."
+      },
+      {
+        "id": "670",
+        "date": "670 apr. J.-C.",
+        "text": "Oqba ibn Nafi fonde Kairouan, première capitale arabo-musulmane du Maghreb."
+      },
+      {
+        "id": "800",
+        "date": "800-909 apr. J.-C.",
+        "text": "La dynastie aghlabide règne depuis Kairouan, construit des bassins et conquiert la Sicile en 827."
+      },
+      {
+        "id": "909",
+        "date": "909-973 apr. J.-C.",
+        "text": "Les Fatimides règnent depuis la Tunisie et fondent Mahdia, leur capitale."
+      },
+      {
+        "id": "1229",
+        "date": "1229-1574",
+        "text": "La dynastie hafside règne depuis Tunis, qui devient une grande capitale méditerranéenne."
+      },
+      {
+        "id": "1574",
+        "date": "1574",
+        "text": "Les Ottomans prennent Tunis ; plus tard, la dynastie husseinite (à partir de 1705) règne en tant que beys."
+      },
+      {
+        "id": "1846",
+        "date": "1846",
+        "text": "Ahmed Bey abolit l'esclavage, parmi les premiers dans le monde arabe et musulman."
+      },
+      {
+        "id": "1861",
+        "date": "1861",
+        "text": "Adoption de la première constitution du monde arabe."
+      },
+      {
+        "id": "1881",
+        "date": "1881",
+        "text": "Le traité du Bardo fait de la Tunisie un protectorat français."
+      },
+      {
+        "id": "1934",
+        "date": "1934",
+        "text": "Habib Bourguiba et ses compagnons fondent le parti du Néo-Destour."
+      },
+      {
+        "id": "1938",
+        "date": "9 avril 1938",
+        "text": "Des manifestations à Tunis réclament un parlement national ; ce jour est aujourd'hui la Journée des martyrs."
+      },
+      {
+        "id": "1942",
+        "date": "1942-1943",
+        "text": "La campagne de Tunisie pendant la Seconde Guerre mondiale ; les forces de l'Axe capitulent en mai 1943."
+      },
+      {
+        "id": "1956",
+        "date": "20 mars 1956",
+        "text": "Indépendance vis-à-vis de la France."
+      },
+      {
+        "id": "1956-csp",
+        "date": "13 août 1956",
+        "text": "Le Code du statut personnel accorde aux femmes de nouveaux droits dans le mariage et la vie familiale."
+      },
+      {
+        "id": "1957",
+        "date": "25 juillet 1957",
+        "text": "La Tunisie devient une république ; Habib Bourguiba en est le premier président."
+      },
+      {
+        "id": "1963",
+        "date": "15 octobre 1963",
+        "text": "Les dernières troupes françaises quittent Bizerte (fête de l'Évacuation)."
+      },
+      {
+        "id": "2010",
+        "date": "17 décembre 2010",
+        "text": "L'immolation de Mohamed Bouazizi à Sidi Bouzid déclenche la révolution de 2010-2011."
+      },
+      {
+        "id": "2015",
+        "date": "2015",
+        "text": "Le Quartet du dialogue national tunisien reçoit le prix Nobel de la paix."
+      }
+    ],
+    "figuresTitle": "Les grandes figures",
+    "figures": [
+      {
+        "id": "elissa",
+        "name": "Élissa (Didon)",
+        "years": "",
+        "text": "Reine phénicienne légendaire, fondatrice de Carthage en 814 av. J.-C."
+      },
+      {
+        "id": "hannibal",
+        "name": "Hannibal Barca",
+        "years": "247-183 av. J.-C.",
+        "text": "Général carthaginois, l'un des plus grands stratèges de l'histoire, qui conduisit son armée et ses éléphants à travers les Alpes contre Rome."
+      },
+      {
+        "id": "uqba",
+        "name": "Oqba ibn Nafi",
+        "years": "mort en 683",
+        "text": "Chef militaire arabe qui fonda Kairouan en 670 apr. J.-C."
+      },
+      {
+        "id": "ibn-khaldun",
+        "name": "Ibn Khaldoun",
+        "years": "1332-1406",
+        "text": "Né à Tunis, historien et penseur dont la Muqaddima est considérée comme une œuvre fondatrice de la sociologie et de la philosophie de l'histoire."
+      },
+      {
+        "id": "khayr-al-din",
+        "name": "Kheireddine Pacha",
+        "years": "1822-1890",
+        "text": "Homme d'État réformateur et grand vizir, l'un des artisans de la modernisation au XIXᵉ siècle."
+      },
+      {
+        "id": "ahmed-bey",
+        "name": "Ahmed Bey",
+        "years": "1806-1855",
+        "text": "Souverain qui abolit l'esclavage en 1846 et modernisa l'armée."
+      },
+      {
+        "id": "tahar-haddad",
+        "name": "Tahar Haddad",
+        "years": "1899-1935",
+        "text": "Réformateur et écrivain qui défendit l'éducation et les droits des femmes dans son livre « Notre femme dans la charia et la société » (1930)."
+      },
+      {
+        "id": "echebbi",
+        "name": "Aboul-Qacem Chebbi",
+        "years": "1909-1934",
+        "text": "Poète national dont les vers sur la liberté et la vie sont devenus la voix de la nation et la source des célèbres vers de l'hymne national."
+      },
+      {
+        "id": "farhat-hached",
+        "name": "Farhat Hached",
+        "years": "1914-1952",
+        "text": "Fondateur de l'Union générale tunisienne du travail et l'un des dirigeants du mouvement national, assassiné en 1952."
+      },
+      {
+        "id": "bourguiba",
+        "name": "Habib Bourguiba",
+        "years": "1903-2000",
+        "text": "Leader du mouvement national et premier président de la République ; il instaura le Code du statut personnel et l'enseignement gratuit."
+      },
+      {
+        "id": "habiba-msika",
+        "name": "Habiba Msika",
+        "years": "1903-1930",
+        "text": "Chanteuse et actrice tunisienne pionnière."
+      },
+      {
+        "id": "ons-jabeur",
+        "name": "Ons Jabeur",
+        "years": "née en 1994",
+        "text": "Championne de tennis, première femme arabe et africaine à atteindre une finale de Grand Chelem en simple (Wimbledon 2022)."
+      },
+      {
+        "id": "mellouli",
+        "name": "Oussama Mellouli",
+        "years": "né en 1984",
+        "text": "Nageur, champion olympique en 2008 et 2012."
+      }
+    ]
+  },
+  "festive": {
+    "eyebrow": "Une année de fêtes",
+    "title": "Fêtes et célébrations",
+    "groups": [
+      {
+        "id": "national",
+        "title": "Fêtes nationales",
+        "note": "",
+        "items": [
+          {
+            "id": "new-year",
+            "date": "1er janvier",
+            "title": "Jour de l'An",
+            "text": ""
+          },
+          {
+            "id": "independence",
+            "date": "20 mars",
+            "title": "Fête de l'Indépendance",
+            "text": "Célèbre l'indépendance vis-à-vis de la France en 1956, avec drapeaux, défilés et cérémonies officielles."
+          },
+          {
+            "id": "martyrs",
+            "date": "9 avril",
+            "title": "Journée des martyrs",
+            "text": "Commémore les manifestations de 1938 et tous ceux qui sont morts pour l'indépendance."
+          },
+          {
+            "id": "labour",
+            "date": "1er mai",
+            "title": "Fête du Travail",
+            "text": "Célèbre les travailleurs."
+          },
+          {
+            "id": "republic",
+            "date": "25 juillet",
+            "title": "Fête de la République",
+            "text": "Célèbre la proclamation de la République en 1957."
+          },
+          {
+            "id": "women",
+            "date": "13 août",
+            "title": "Fête de la Femme",
+            "text": "Célèbre le Code du statut personnel de 1956, qui a accordé de nouveaux droits aux Tunisiennes."
+          },
+          {
+            "id": "evacuation",
+            "date": "15 octobre",
+            "title": "Fête de l'Évacuation",
+            "text": "Célèbre le départ des dernières troupes françaises de Bizerte en 1963."
+          },
+          {
+            "id": "revolution",
+            "date": "17 décembre",
+            "title": "Fête de la Révolution et de la Jeunesse",
+            "text": "Marque le début de la révolution de 2010-2011."
+          }
+        ]
+      },
+      {
+        "id": "religious",
+        "title": "Fêtes religieuses",
+        "note": "Les dates suivent le calendrier lunaire.",
+        "items": [
+          {
+            "id": "ramadan",
+            "date": "",
+            "title": "Ramadan",
+            "text": "Le mois du jeûne. Les familles se réunissent pour l'iftar, et les tables se garnissent de brik, de soupe, de dattes, de zlabia et de makroudh. Les mosquées et les rues s'illuminent la nuit."
+          },
+          {
+            "id": "eid-fitr",
+            "date": "",
+            "title": "Aïd el-Fitr (Aïd es-Seghir)",
+            "text": "La fête qui clôt le ramadan : vêtements neufs, visites familiales, douceurs et cadeaux pour les enfants."
+          },
+          {
+            "id": "eid-adha",
+            "date": "",
+            "title": "Aïd el-Adha (Aïd el-Kébir)",
+            "text": "La fête du sacrifice : un repas familial autour de l'agneau rôti et des dons aux plus démunis."
+          },
+          {
+            "id": "hijri",
+            "date": "",
+            "title": "Nouvel An de l'Hégire",
+            "text": "Le premier jour du calendrier hégirien."
+          },
+          {
+            "id": "mouled",
+            "date": "",
+            "title": "Mouled (naissance du Prophète)",
+            "text": "Célébré avec l'assidat zgougou, une crème aux graines de pin d'Alep, et des chants religieux ; la célébration de Kairouan est particulièrement renommée."
+          }
+        ]
+      },
+      {
+        "id": "festivals",
+        "title": "Festivals",
+        "note": "",
+        "items": [
+          {
+            "id": "carthage-festival",
+            "date": "",
+            "title": "Festival international de Carthage",
+            "text": "Concerts, théâtre et danse dans le théâtre romain de Carthage chaque été, depuis 1964."
+          },
+          {
+            "id": "jcc",
+            "date": "",
+            "title": "Journées cinématographiques de Carthage (JCC)",
+            "text": "Fondées en 1966, c'est le plus ancien festival de cinéma d'Afrique et du monde arabe."
+          },
+          {
+            "id": "sahara-festival",
+            "date": "",
+            "title": "Festival international du Sahara, Douz",
+            "text": "Spectacles de dromadaires et de chevaux, musique populaire et traditions du désert, chaque hiver."
+          },
+          {
+            "id": "el-djem-festival",
+            "date": "",
+            "title": "Festival international de musique symphonique d'El Jem",
+            "text": "Des concerts dans l'amphithéâtre romain."
+          },
+          {
+            "id": "hammamet-festival",
+            "date": "",
+            "title": "Festival international de Hammamet",
+            "text": "Musique, théâtre et danse en été."
+          },
+          {
+            "id": "testour-festival",
+            "date": "",
+            "title": "Festival international du malouf de Testour",
+            "text": "Une célébration du malouf, la musique classique andalouse de Tunisie."
+          },
+          {
+            "id": "el-ghriba",
+            "date": "",
+            "title": "Pèlerinage de la Ghriba, Djerba",
+            "text": "Un pèlerinage annuel à l'ancienne synagogue de Djerba."
+          }
+        ]
+      }
+    ],
+    "weddings": {
+      "title": "Mariages",
+      "text": "Les mariages tunisiens sont des fêtes familiales qui durent plusieurs jours : le hammam, la nuit du henné, le cortège au son du mezoued et des tambours, la keswa et la jebba de la mariée, et un grand festin. Voir la section Habits traditionnels pour toutes les coutumes."
+    }
+  },
+  "food": {
+    "eyebrow": "Épices et huile d'olive",
+    "title": "Les meilleurs plats",
+    "intro": "Que goûter en Tunisie ? La cuisine tunisienne repose sur les épices et l'huile d'olive. La harissa, pâte de piment relevée, est présente sur presque toutes les tables, et le tabil, mélange d'épices (coriandre, carvi, ail et piment), parfume de nombreux plats. Le couscous (reconnu par l'UNESCO en 2020) et la harissa (2022) font partie du patrimoine immatériel.",
+    "groups": [
+      {
+        "id": "dishes",
+        "title": "Nos plats",
+        "items": [
+          {
+            "id": "couscous",
+            "title": "Couscous",
+            "text": "Le plat national : de la semoule cuite à la vapeur servie avec un ragoût de légumes et de viande ou de poisson. Traditionnellement le repas familial du vendredi."
+          },
+          {
+            "id": "brik",
+            "title": "Brik",
+            "text": "Une fine feuille de pâte (malsouka) pliée autour d'un œuf, de thon, de persil et de câpres, puis frite jusqu'à être croustillante. Incontournable à l'iftar du ramadan."
+          },
+          {
+            "id": "lablabi",
+            "title": "Lablabi",
+            "text": "Une soupe de pois chiches versée sur des morceaux de pain, avec du cumin, de la harissa, de l'huile d'olive, un œuf et du thon. Un grand classique du petit-déjeuner d'hiver."
+          },
+          {
+            "id": "ojja",
+            "title": "Ojja",
+            "text": "Des œufs cuits dans une sauce relevée de tomates et de poivrons, souvent avec des merguez ou des crevettes."
+          },
+          {
+            "id": "mechouia",
+            "title": "Salade méchouia",
+            "text": "Une salade de poivrons et de tomates grillés à l'huile d'olive, à l'ail et au thon."
+          },
+          {
+            "id": "tajine",
+            "title": "Tajine tunisien",
+            "text": "Un plat cuit au four à base d'œufs, de fromage et de viande, comme une épaisse frittata."
+          },
+          {
+            "id": "fricasse",
+            "title": "Fricassé",
+            "text": "Un petit sandwich frit au thon, à l'œuf, aux olives et à la harissa. Un favori de la cuisine de rue."
+          },
+          {
+            "id": "kafteji",
+            "title": "Kafteji",
+            "text": "Des poivrons, pommes de terre, potiron et tomates frits, hachés ensemble et surmontés d'un œuf."
+          },
+          {
+            "id": "mloukhia",
+            "title": "Mloukhia",
+            "text": "Un ragoût sombre de feuilles de corète, d'huile d'olive et d'agneau, mijoté longuement."
+          },
+          {
+            "id": "mechoui",
+            "title": "Méchoui",
+            "text": "L'agneau entier rôti, servi lors des mariages et des grandes réunions."
+          },
+          {
+            "id": "marqa",
+            "title": "Marqa et ragoûts",
+            "text": "Des ragoûts à la tomate d'agneau, de poulet ou de poisson."
+          }
+        ]
+      },
+      {
+        "id": "sweets",
+        "title": "Nos douceurs",
+        "items": [
+          {
+            "id": "makroudh",
+            "title": "Makroudh",
+            "text": "Des pâtisseries de semoule fourrées aux dattes, frites puis trempées dans le miel. Kairouan en est la capitale."
+          },
+          {
+            "id": "baklawa",
+            "title": "Baklawa",
+            "text": "Des couches de pâte fine aux amandes ou aux pistaches, nappées de sirop."
+          },
+          {
+            "id": "zlebia",
+            "title": "Zlabia",
+            "text": "Des spirales orangées de pâte frite trempées dans un sirop de miel, un délice du ramadan."
+          },
+          {
+            "id": "bambalouni",
+            "title": "Bambalouni",
+            "text": "Des beignets chauds roulés dans le sucre, célèbres à Sidi Bou Saïd."
+          },
+          {
+            "id": "assidat-zgougou",
+            "title": "Assidat zgougou",
+            "text": "Une crème aux graines de pin d'Alep, préparée pour le Mouled."
+          },
+          {
+            "id": "samsa-yoyo",
+            "title": "Samsa et yoyo",
+            "text": "Des pâtisseries fourrées aux amandes, et des anneaux frits imbibés de sirop."
+          },
+          {
+            "id": "kaak-warka",
+            "title": "Kaak warka",
+            "text": "De délicates pâtisseries aux amandes pour les mariages et l'Aïd."
+          }
+        ]
+      },
+      {
+        "id": "drinks",
+        "title": "Boissons et traditions du thé",
+        "items": [
+          {
+            "id": "mint-tea",
+            "title": "Thé à la menthe aux pignons",
+            "text": "Servi dans de petits verres avec quelques pignons flottant à la surface. Partager le thé est au cœur de l'hospitalité tunisienne."
+          },
+          {
+            "id": "kahwa-arbi",
+            "title": "Café arabe (kahwa arbi)",
+            "text": "Un café corsé, souvent parfumé à l'eau de fleur d'oranger ou à l'eau de rose."
+          },
+          {
+            "id": "boga",
+            "title": "Boga",
+            "text": "Une boisson gazeuse tunisienne très populaire, souvent la Boga Cidre au goût de pomme."
+          },
+          {
+            "id": "legmi",
+            "title": "Legmi",
+            "text": "De la sève de palmier fraîche, venue des oasis du sud."
+          }
+        ]
+      }
+    ],
+    "productsTitle": "Produits célèbres",
+    "products": "Les dattes Deglet Nour des oasis de Tozeur et de Kébili, l'huile d'olive vierge extra (la Tunisie est l'un des premiers producteurs mondiaux), la harissa, les agrumes, l'eau de fleur d'oranger et les vins du cap Bon."
+  },
+  "monuments": {
+    "eyebrow": "Un patrimoine de pierre",
+    "title": "Monuments et lieux historiques",
+    "intro": "Des villes puniques et romaines aux médinas islamiques et aux forteresses du bord de mer.",
+    "items": [
+      {
+        "id": "carthage",
+        "title": "Carthage",
+        "text": "Thermes d'Antonin, ports puniques, Tophet, colline de Byrsa, théâtre romain et villas. Fondée en 814 av. J.-C. ; détruite en 146 av. J.-C. et reconstruite par les Romains."
+      },
+      {
+        "id": "medina-tunis",
+        "title": "Médina de Tunis",
+        "text": "Quelque 700 monuments, dont la mosquée Zitouna, Dar Ben Abdallah et les médersas."
+      },
+      {
+        "id": "bardo",
+        "title": "Musée national du Bardo",
+        "text": "Installé dans un ancien palais beylical ; il abrite l'une des plus grandes collections de mosaïques romaines au monde."
+      },
+      {
+        "id": "el-djem",
+        "title": "Amphithéâtre d'El Jem",
+        "text": "Amphithéâtre romain construit vers 238 apr. J.-C. pour quelque 35 000 spectateurs."
+      },
+      {
+        "id": "kairouan",
+        "title": "Grande Mosquée de Kairouan",
+        "text": "Fondée en 670 ; son minaret de 31 mètres compte parmi les plus anciens du monde."
+      },
+      {
+        "id": "sousse",
+        "title": "Médina de Sousse",
+        "text": "Ribat, Grande Mosquée, tour de la Kasbah et musée archéologique."
+      },
+      {
+        "id": "monastir",
+        "title": "Ribat de Monastir",
+        "text": "Forteresse-monastère du littoral datant de 796."
+      },
+      {
+        "id": "dougga",
+        "title": "Dougga",
+        "text": "Ville romaine avec un théâtre, le Capitole et des temples."
+      },
+      {
+        "id": "kerkouane",
+        "title": "Kerkouane",
+        "text": "La cité punique la mieux conservée ; abandonnée au IIIᵉ siècle av. J.-C. et jamais reconstruite."
+      },
+      {
+        "id": "bulla-regia",
+        "title": "Bulla Regia",
+        "text": "Ville romaine aux maisons construites sous terre pour échapper à la chaleur."
+      },
+      {
+        "id": "sbeitla",
+        "title": "Sbeïtla (Sufetula)",
+        "text": "Forum romain avec trois temples alignés."
+      },
+      {
+        "id": "zaghouan",
+        "title": "Aqueduc et temple des eaux de Zaghouan",
+        "text": "Aqueduc romain (IIᵉ siècle apr. J.-C.) qui acheminait l'eau sur environ 130 km jusqu'à Carthage, et le temple de la source."
+      },
+      {
+        "id": "thuburbo-majus",
+        "title": "Thuburbo Majus",
+        "text": "Ville romaine avec un capitole et des thermes."
+      },
+      {
+        "id": "ksar-ouled-soltane",
+        "title": "Ksar Ouled Soltane et Chenini",
+        "text": "Greniers fortifiés amazighs et villages perchés du sud."
+      },
+      {
+        "id": "borj-el-kebir",
+        "title": "Borj El Kébir, Djerba",
+        "text": "Un fort du XVᵉ siècle au bord de la mer."
+      },
+      {
+        "id": "bizerte-kasbah",
+        "title": "Kasbah et fort d'Espagne, Bizerte",
+        "text": "Les fortifications du vieux port."
+      },
+      {
+        "id": "hammamet-kasbah",
+        "title": "Kasbah de Hammamet",
+        "text": "Une forteresse du XVᵉ siècle surplombant la mer."
+      },
+      {
+        "id": "mahdia",
+        "title": "Mahdia",
+        "text": "Port fatimide avec la porte Skifa el-Kahla et la Grande Mosquée."
+      }
+    ]
+  }
+}
