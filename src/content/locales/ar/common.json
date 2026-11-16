@@ -52,7 +52,9 @@
     "tunisia": "تونس",
     "bahrain": "البحرين",
     "both": "كلاهما",
-    "other": "أخرى"
+    "other": "أخرى",
+    "continueJourney": "واصل الرحلة",
+    "unescoOnly": "مواقع اليونسكو فقط"
   },
   "alerts": {
     "more": "{count} إضافية",

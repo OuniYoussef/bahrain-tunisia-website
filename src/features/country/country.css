@@ -493,15 +493,23 @@
     border-block-end: 1px solid var(--color-line);
   }
   .country-continue {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px 64px;
     padding-block: 72px;
   }
+  .country-continue > div {
+    display: grid;
+    gap: 24px;
+    margin-block-start: 32px;
+  }
   .country-continue a {
-    min-block-size: 44px;
+    min-block-size: 144px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: clamp(24px, 4vw, 48px);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-lg);
+    background: var(--color-sand-50);
     color: var(--accent);
     font-family: var(--font-display);
     font-size: var(--text-h3);
@@ -509,6 +517,9 @@
     text-underline-offset: 8px;
   }
   @media (min-width: 640px) {
+    .country-continue > div {
+      grid-template-columns: 1fr 1fr;
+    }
     .country-facts {
       grid-template-columns: 1fr 1fr;
     }

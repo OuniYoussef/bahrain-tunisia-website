@@ -6,7 +6,7 @@ import { gsap, useGSAP } from '@/lib/gsap';
 import tunisia from '/images/svg/maps/map-tunisia.svg?raw';
 import bahrain from '/images/svg/maps/map-bahrain.svg?raw';
 import type { Country } from '../country.config';
-import type { Destination } from '../types';
+import type { MappedPlace } from '../details/PlaceMap';
 
 /** Controlled highlight API: activePlace is the media pin id, onSelect returns the linked content id. */
 export default function CountryMap({
@@ -15,12 +15,14 @@ export default function CountryMap({
   label,
   activePlace,
   onSelect,
+  cardPrefix = 'destination-',
 }: {
   country: Country;
-  items: Destination[];
+  items: MappedPlace[];
   label: string;
   activePlace?: string;
   onSelect: (id: string) => void;
+  cardPrefix?: string;
 }) {
   const root = useRef<HTMLFieldSetElement>(null);
   const locale = useLocale();
@@ -109,7 +111,7 @@ export default function CountryMap({
             }}
             aria-label={item.title}
             aria-pressed={activePlace === item.media.place}
-            aria-controls={`destination-${item.id}`}
+            aria-controls={`${cardPrefix}${item.id}`}
             data-label-hidden={hideLabel}
             onPointerEnter={() => setHideLabel(false)}
             onFocus={() => setHideLabel(false)}

@@ -52,7 +52,9 @@
     "tunisia": "Tunisie",
     "bahrain": "Bahreïn",
     "both": "Les deux",
-    "other": "Autre"
+    "other": "Autre",
+    "continueJourney": "Poursuivre le voyage",
+    "unescoOnly": "UNESCO uniquement"
   },
   "alerts": {
     "more": "{count} de plus",

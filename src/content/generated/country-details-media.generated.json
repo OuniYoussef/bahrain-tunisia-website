@@ -1,0 +1,765 @@
+{
+  "tunisia": {
+    "wear": {
+      "groups": {
+        "men": {
+          "items": {
+            "jebba": {
+              "image": "tn-wear-jebba"
+            },
+            "chechia": {
+              "image": "tn-wear-chechia"
+            },
+            "burnous": {
+              "image": "tn-wear-burnous"
+            },
+            "balgha": {
+              "image": "tn-wear-balgha"
+            }
+          }
+        },
+        "women": {
+          "items": {
+            "sefseri": {
+              "image": "tn-wear-sefseri"
+            },
+            "fouta": {
+              "image": "tn-wear-fouta"
+            }
+          }
+        },
+        "bridal": {
+          "items": {
+            "keswa": {
+              "image": "tn-wear-keswa"
+            }
+          }
+        },
+        "jewellery": {
+          "items": {
+            "khomsa": {
+              "image": "tn-wear-khomsa"
+            },
+            "silver": {
+              "image": "tn-wear-silver-jewellery"
+            },
+            "jasmine-posy": {
+              "image": "tn-wear-jasmine-posy"
+            }
+          }
+        }
+      },
+      "regional": {
+        "0": {
+          "place": "djerba"
+        },
+        "1": {
+          "place": "matmata"
+        },
+        "2": {
+          "place": "sousse"
+        }
+      }
+    },
+    "nature": {
+      "groups": {
+        "coast": {
+          "items": {
+            "bizerte-coast": {
+              "image": "tn-bizerte-cap-zbib",
+              "place": "bizerte"
+            },
+            "ras-angela": {
+              "image": "tn-nature-ras-angela",
+              "place": "ras-angela"
+            },
+            "cap-bon": {
+              "image": "tn-nature-cap-bon",
+              "place": "kelibia"
+            },
+            "tabarka": {
+              "image": "tn-nature-tabarka",
+              "place": "tabarka"
+            },
+            "djerba-kerkennah": {
+              "image": "tn-nature-kerkennah",
+              "place": "kerkennah"
+            }
+          }
+        },
+        "parks": {
+          "items": {
+            "ichkeul": {
+              "image": "tn-nature-ichkeul",
+              "place": "ichkeul",
+              "unesco": true
+            },
+            "chambi": {
+              "image": "tn-nature-chambi",
+              "place": "jebel-chambi"
+            },
+            "zaghouan": {
+              "image": "tn-nature-zaghouan",
+              "place": "zaghouan"
+            },
+            "boukornine": {
+              "image": "tn-nature-boukornine",
+              "place": "boukornine"
+            }
+          }
+        },
+        "desert": {
+          "items": {
+            "douz": {
+              "image": "tn-dest-douz-tozeur",
+              "place": "douz"
+            },
+            "ksar-ghilane": {
+              "image": "tn-nature-ksar-ghilane",
+              "place": "ksar-ghilane"
+            },
+            "chott-el-djerid": {
+              "image": "tn-nature-chott-el-djerid",
+              "place": "chott-el-djerid"
+            },
+            "mountain-oases": {
+              "image": "tn-nature-chebika",
+              "place": "chebika"
+            },
+            "matmata-tataouine": {
+              "image": "tn-nature-tataouine-landscape",
+              "place": "tataouine"
+            },
+            "tozeur-nefta": {
+              "image": "tn-nature-tozeur-oasis",
+              "place": "tozeur"
+            }
+          }
+        }
+      }
+    },
+    "cities": {
+      "items": {
+        "tunis": {
+          "image": "tn-city-tunis",
+          "place": "tunis"
+        },
+        "sousse": {
+          "image": "tn-city-sousse",
+          "place": "sousse"
+        },
+        "sfax": {
+          "image": "tn-city-sfax",
+          "place": "sfax"
+        },
+        "hammamet": {
+          "image": "tn-dest-hammamet",
+          "place": "hammamet"
+        },
+        "kairouan": {
+          "image": "tn-dest-kairouan",
+          "place": "kairouan"
+        },
+        "monastir": {
+          "image": "tn-city-monastir-mausoleum",
+          "place": "monastir"
+        },
+        "houmt-souk": {
+          "image": "tn-city-houmt-souk",
+          "place": "djerba"
+        },
+        "bizerte": {
+          "image": "tn-bizerte-night",
+          "place": "bizerte"
+        },
+        "tozeur": {
+          "image": "tn-city-tozeur",
+          "place": "tozeur"
+        }
+      }
+    },
+    "history": {
+      "timeline": {
+        "238": {
+          "image": "tn-dest-el-djem"
+        },
+        "670": {
+          "image": "tn-dest-kairouan"
+        },
+        "909": {
+          "image": "tn-mon-mahdia"
+        },
+        "1229": {
+          "image": "tn-mon-zitouna"
+        },
+        "1881": {
+          "image": "tn-mon-bardo"
+        },
+        "1956": {
+          "image": "tn-fest-independence"
+        },
+        "1100bc": {
+          "image": "tn-dest-bizerte"
+        },
+        "814bc": {
+          "image": "tn-hist-punic-ports"
+        },
+        "146bc": {
+          "image": "tn-hist-roman-mosaic"
+        }
+      }
+    },
+    "festive": {
+      "groups": {
+        "national": {
+          "items": {
+            "independence": {
+              "image": "tn-fest-independence"
+            }
+          }
+        },
+        "religious": {
+          "items": {
+            "ramadan": {
+              "image": "cg-ramadan-lanterns"
+            },
+            "mouled": {
+              "image": "tn-sweet-assidat-zgougou"
+            }
+          }
+        },
+        "festivals": {
+          "items": {
+            "carthage-festival": {
+              "image": "tn-fest-carthage-theatre"
+            },
+            "sahara-festival": {
+              "image": "tn-fest-sahara-festival"
+            },
+            "el-ghriba": {
+              "image": "tn-fest-el-ghriba"
+            }
+          }
+        }
+      },
+      "weddings": {
+        "image": "tn-fest-mezoued"
+      }
+    },
+    "food": {
+      "groups": {
+        "dishes": {
+          "items": {
+            "couscous": {
+              "image": "tn-food-couscous"
+            },
+            "brik": {
+              "image": "tn-food-brik"
+            },
+            "lablabi": {
+              "image": "tn-food-lablabi"
+            },
+            "ojja": {
+              "image": "tn-food-ojja"
+            },
+            "mechouia": {
+              "image": "tn-food-mechouia"
+            },
+            "tajine": {
+              "image": "tn-food-tajine"
+            },
+            "fricasse": {
+              "image": "tn-food-fricasse"
+            },
+            "kafteji": {
+              "image": "tn-food-kafteji"
+            },
+            "mloukhia": {
+              "image": "tn-food-mloukhia"
+            },
+            "mechoui": {
+              "image": "tn-food-mechoui"
+            },
+            "marqa": {
+              "image": "tn-food-marqa"
+            }
+          }
+        },
+        "sweets": {
+          "items": {
+            "makroudh": {
+              "image": "tn-sweet-makroudh"
+            },
+            "baklawa": {
+              "image": "tn-sweet-baklawa"
+            },
+            "zlebia": {
+              "image": "tn-sweet-zlebia"
+            },
+            "bambalouni": {
+              "image": "tn-sweet-bambalouni"
+            },
+            "assidat-zgougou": {
+              "image": "tn-sweet-assidat-zgougou"
+            },
+            "samsa-yoyo": {
+              "image": "tn-sweet-samsa"
+            },
+            "kaak-warka": {
+              "image": "tn-sweet-kaak-warka"
+            }
+          }
+        },
+        "drinks": {
+          "items": {
+            "mint-tea": {
+              "image": "tn-drink-mint-tea"
+            },
+            "kahwa-arbi": {
+              "image": "tn-drink-kahwa"
+            },
+            "legmi": {
+              "image": "tn-drink-legmi"
+            }
+          }
+        }
+      },
+      "productImages": [
+        "tn-product-deglet-nour",
+        "tn-product-olive-oil",
+        "tn-food-harissa"
+      ]
+    },
+    "monuments": {
+      "items": {
+        "carthage": {
+          "image": "tn-dest-carthage",
+          "place": "carthage",
+          "unesco": true
+        },
+        "medina-tunis": {
+          "image": "tn-mon-zitouna",
+          "place": "tunis",
+          "unesco": true
+        },
+        "bardo": {
+          "image": "tn-mon-bardo",
+          "place": "tunis"
+        },
+        "el-djem": {
+          "image": "tn-dest-el-djem",
+          "place": "el-djem",
+          "unesco": true
+        },
+        "kairouan": {
+          "image": "tn-dest-kairouan",
+          "place": "kairouan",
+          "unesco": true
+        },
+        "sousse": {
+          "image": "tn-city-sousse",
+          "place": "sousse",
+          "unesco": true
+        },
+        "monastir": {
+          "image": "tn-dest-monastir",
+          "place": "monastir"
+        },
+        "dougga": {
+          "image": "tn-dest-dougga",
+          "place": "dougga",
+          "unesco": true
+        },
+        "kerkouane": {
+          "image": "tn-mon-kerkouane",
+          "place": "kerkouane",
+          "unesco": true
+        },
+        "bulla-regia": {
+          "image": "tn-mon-bulla-regia",
+          "place": "bulla-regia"
+        },
+        "sbeitla": {
+          "image": "tn-mon-sbeitla",
+          "place": "sbeitla"
+        },
+        "zaghouan": {
+          "image": "tn-mon-zaghouan-temple",
+          "place": "zaghouan"
+        },
+        "thuburbo-majus": {
+          "image": "tn-mon-thuburbo-majus",
+          "place": "thuburbo-majus"
+        },
+        "ksar-ouled-soltane": {
+          "image": "tn-mon-ksar-ouled-soltane",
+          "place": "ksar-ouled-soltane"
+        },
+        "borj-el-kebir": {
+          "image": "tn-mon-borj-el-kebir",
+          "place": "djerba"
+        },
+        "bizerte-kasbah": {
+          "image": "tn-mon-bizerte-kasbah",
+          "place": "bizerte"
+        },
+        "hammamet-kasbah": {
+          "image": "tn-mon-hammamet-kasbah",
+          "place": "hammamet"
+        },
+        "mahdia": {
+          "image": "tn-mon-mahdia",
+          "place": "mahdia"
+        }
+      }
+    }
+  },
+  "bahrain": {
+    "wear": {
+      "groups": {
+        "men": {
+          "items": {
+            "thobe": {
+              "image": "bh-wear-thobe"
+            },
+            "ghutra": {
+              "image": "bh-wear-ghutra"
+            },
+            "bisht": {
+              "image": "bh-wear-bisht"
+            }
+          }
+        },
+        "women": {
+          "items": {
+            "thobe-nashal": {
+              "image": "bh-wear-thobe-nashal"
+            }
+          }
+        },
+        "jewellery": {
+          "items": {
+            "murtasha": {
+              "image": "bh-wear-gold-jewellery"
+            },
+            "habga": {
+              "image": "bh-wear-pearls"
+            }
+          }
+        },
+        "weddings": {
+          "items": {
+            "henna": {
+              "image": "cg-henna"
+            },
+            "feast": {
+              "image": "bh-food-quzi"
+            }
+          }
+        },
+        "crafts-clothes": {
+          "items": {
+            "bani-jamra": {
+              "image": "bh-craft-bani-jamra"
+            },
+            "kasheeda": {
+              "image": "cg-gold-embroidery"
+            },
+            "sadu": {
+              "image": "bh-craft-sadu"
+            }
+          }
+        },
+        "crafts": {
+          "items": {
+            "aali-pottery": {
+              "image": "bh-craft-aali-pottery"
+            },
+            "shipbuilding": {
+              "image": "bh-craft-dhow-building"
+            },
+            "basketry": {
+              "image": "cg-palm-weaving"
+            },
+            "rawazin": {
+              "image": "bh-craft-rawazin"
+            },
+            "perfumes": {
+              "image": "bh-craft-oud-bakhoor"
+            }
+          }
+        }
+      }
+    },
+    "nature": {
+      "groups": {
+        "all": {
+          "items": {
+            "tree-of-life": {
+              "image": "bh-dest-tree-of-life",
+              "place": "tree-of-life"
+            },
+            "springs": {
+              "image": "bh-nature-springs",
+              "place": "barbar"
+            },
+            "million-palms": {
+              "image": "bh-nature-palm-groves",
+              "place": "budaiya"
+            },
+            "hawar": {
+              "image": "bh-nature-socotra-cormorant",
+              "place": "hawar"
+            },
+            "al-areen": {
+              "image": "bh-nature-oryx",
+              "place": "al-areen"
+            },
+            "jebel-dukhan": {
+              "image": "bh-nature-jebel-dukhan",
+              "place": "jebel-dukhan"
+            },
+            "tubli-bay": {
+              "image": "bh-nature-tubli-mangroves",
+              "place": "tubli-bay"
+            },
+            "beaches": {
+              "image": "bh-nature-beach",
+              "place": "amwaj"
+            },
+            "desert": {
+              "image": "bh-nature-desert-sakhir",
+              "place": "sakhir"
+            }
+          }
+        }
+      }
+    },
+    "cities": {
+      "items": {
+        "manama": {
+          "image": "bh-city-financial-harbour",
+          "place": "manama"
+        },
+        "muharraq": {
+          "image": "bh-city-muharraq",
+          "place": "muharraq"
+        },
+        "riffa": {
+          "image": "bh-city-riffa-fort",
+          "place": "riffa"
+        },
+        "aali": {
+          "image": "bh-craft-aali-pottery",
+          "place": "aali"
+        },
+        "sitra": {
+          "image": "bh-city-sitra",
+          "place": "sitra"
+        },
+        "budaiya": {
+          "image": "bh-city-budaiya",
+          "place": "budaiya"
+        },
+        "sakhir": {
+          "image": "bh-dest-circuit",
+          "place": "sakhir"
+        }
+      },
+      "nightlifeImage": "bh-city-adliya"
+    },
+    "history": {
+      "timeline": {
+        "1521": {
+          "image": "bh-dest-qalat"
+        },
+        "1919": {
+          "image": "bh-hist-hidaya-school"
+        },
+        "1932": {
+          "image": "bh-hist-oil-well"
+        },
+        "2004": {
+          "image": "bh-dest-circuit"
+        },
+        "dilmun": {
+          "image": "bh-hist-dilmun-seal"
+        },
+        "khamis": {
+          "image": "bh-hist-al-khamis"
+        },
+        "unesco": {
+          "image": "bh-dest-pearling-path"
+        }
+      },
+      "pearl": {
+        "image": "bh-hist-pearl-divers"
+      }
+    },
+    "festive": {
+      "groups": {
+        "national": {
+          "items": {
+            "national-day": {
+              "image": "bh-fest-national-day"
+            }
+          }
+        },
+        "religious": {
+          "items": {
+            "eid-fitr": {
+              "image": "bh-food-khabeesa"
+            }
+          }
+        },
+        "ramadan": {
+          "items": {
+            "gargeean": {
+              "image": "bh-fest-gargeean"
+            },
+            "reyouq": {
+              "image": "bh-food-balaleet"
+            }
+          }
+        },
+        "social": {
+          "items": {
+            "majlis": {
+              "image": "bh-fest-majlis"
+            },
+            "grand-prix": {
+              "image": "bh-dest-circuit"
+            },
+            "camel-racing": {
+              "image": "bh-fest-camel-racing"
+            },
+            "sea-heritage": {
+              "image": "bh-fest-fijiri"
+            }
+          }
+        }
+      },
+      "weddings": {
+        "image": "cg-henna"
+      }
+    },
+    "food": {
+      "groups": {
+        "dishes": {
+          "items": {
+            "machboos": {
+              "image": "bh-food-machboos"
+            },
+            "muhammar": {
+              "image": "bh-food-muhammar"
+            },
+            "harees": {
+              "image": "bh-food-harees"
+            },
+            "balaleet": {
+              "image": "bh-food-balaleet"
+            },
+            "luqaimat": {
+              "image": "bh-food-luqaimat"
+            },
+            "quzi": {
+              "image": "bh-food-quzi"
+            },
+            "mahyawa": {
+              "image": "bh-food-mahyawa"
+            },
+            "mumawash": {
+              "image": "bh-food-mumawash"
+            },
+            "nakhi": {
+              "image": "bh-food-nakhi"
+            },
+            "bajela": {
+              "image": "bh-food-bajela"
+            },
+            "khabeesa": {
+              "image": "bh-food-khabeesa"
+            },
+            "halwa": {
+              "image": "bh-food-halwa"
+            }
+          }
+        }
+      },
+      "coffee": {
+        "image": "bh-drink-arabic-coffee"
+      },
+      "productImages": [
+        "bh-product-dates",
+        "bh-wear-pearls",
+        "bh-craft-oud-bakhoor"
+      ]
+    },
+    "monuments": {
+      "items": {
+        "qalat": {
+          "image": "bh-dest-qalat",
+          "place": "qalat-al-bahrain",
+          "unesco": true,
+          "badgeYear": "2005"
+        },
+        "pearling-path": {
+          "image": "bh-hist-siyadi-house",
+          "place": "pearling-path",
+          "unesco": true,
+          "badgeYear": "2012"
+        },
+        "dilmun-mounds": {
+          "image": "bh-dest-dilmun-mounds",
+          "place": "dilmun-mounds",
+          "unesco": true,
+          "badgeYear": "2019"
+        },
+        "barbar": {
+          "image": "bh-dest-barbar-temple",
+          "place": "barbar"
+        },
+        "saar": {
+          "image": "bh-mon-saar",
+          "place": "saar"
+        },
+        "ain-umm-al-sujur": {
+          "image": "bh-mon-ain-umm-al-sujur",
+          "place": "barbar"
+        },
+        "arad-fort": {
+          "image": "bh-dest-arad-fort",
+          "place": "arad-fort"
+        },
+        "riffa-fort": {
+          "image": "bh-city-riffa-fort",
+          "place": "riffa"
+        },
+        "bu-maher": {
+          "image": "bh-mon-bu-maher",
+          "place": "pearling-path"
+        },
+        "al-khamis": {
+          "image": "bh-hist-al-khamis",
+          "place": "al-khamis"
+        },
+        "bab-al-bahrain": {
+          "image": "bh-dest-bab-al-bahrain",
+          "place": "bab-al-bahrain"
+        },
+        "national-museum": {
+          "image": "bh-city-national-museum",
+          "place": "national-museum"
+        },
+        "beit-al-quran": {
+          "image": "bh-city-beit-al-quran",
+          "place": "beit-al-quran"
+        },
+        "al-fateh": {
+          "image": "bh-dest-al-fateh",
+          "place": "al-fateh"
+        }
+      }
+    }
+  }
+}

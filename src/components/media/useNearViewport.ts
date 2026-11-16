@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 /** Reserve layout in the caller; only fetch expensive artwork when it approaches the viewport. */
-export function useNearViewport<T extends HTMLElement>(waitForContent = false) {
+export function useNearViewport<T extends HTMLElement>(waitForContent = false, rootMargin = '200px') {
   const root = useRef<T>(null);
   const [near, setNear] = useState(false);
   useEffect(() => {
@@ -14,7 +14,7 @@ export function useNearViewport<T extends HTMLElement>(waitForContent = false) {
           observer.disconnect();
         }
       },
-      { rootMargin: '200px' },
+      { rootMargin },
     );
     const element = root.current;
     observer.observe(element);
@@ -32,6 +32,6 @@ export function useNearViewport<T extends HTMLElement>(waitForContent = false) {
       observer.disconnect();
       contentObserver?.disconnect();
     };
-  }, [waitForContent]);
+  }, [waitForContent, rootMargin]);
   return { root, near };
 }

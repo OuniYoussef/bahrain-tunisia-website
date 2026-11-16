@@ -316,16 +316,16 @@
       1440
     ],
     "width": 1440,
-    "height": 1421,
-    "lqip": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAABQBQCdASoYABgAPu1qqVAppiOiqA1RMB2JZgC06ywTlIX+pQcFTpDoFnXY5/sr0TdUgAAA/vQlIrHEMYdzP2VLRFphqbXl37V+fruL7iYOUseNmp4HqFg+1GGHkFyqutmuM2APXpPiNbUzV2g5Xys+RvwK+HsEqKCmdmb6kPjhvQ9AsYq9sS86dZ2Lim6In/wx2Po/NrMu7RpPGxAtz3pwstdb6BZOmlz9DMSYVs8U8Hj1X1h6/MtTMHR4gCwQAAA=",
-    "color": "#080808",
+    "height": 1551,
+    "lqip": "data:image/webp;base64,UklGRh4BAABXRUJQVlA4IBIBAACQBgCdASoYABoAPu1kq06ppaQiKA1RMB2JbACsKK85WGjiaACf1bSym26Y57rCFMCUKoTvNwGijoaYL21AAP65ye4bGZwkjnRhMtwMExXkHYc7OOThysI50qfvk4Pk607NsstrOey3nJnBVpNFcoX6EDK3ufz0xKNIIqBtV88sbM694+1pkd+0R68jwTJHMUB669vEuoGQVaRLwXJ+QV94HeT2iBR6xKCnm+GBcwAxq/yP5yO7sOnhrmx1BiowWJizzjyVVIPcc7gc7F95uOrQuTz7SJcb0er7PnHy9LuPLJ7adijwBjgx+e0dKKJTat1wZbknw8QtdfGewcmY9cggN4C8VUCOL+sN+m1+07bDAAAA",
+    "color": "#181818",
     "focal": "50% 50%",
     "credit": {
-      "title": "مسفوف تونسي بالرمان والزبيب.jpg",
+      "title": "Couscous aux légumes, kédid, Tunisie, 2020.jpg",
       "author": "Habib M'henni",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D9%85%D8%B3%D9%81%D9%88%D9%81_%D8%AA%D9%88%D9%86%D8%B3%D9%8A_%D8%A8%D8%A7%D9%84%D8%B1%D9%85%D8%A7%D9%86_%D9%88%D8%A7%D9%84%D8%B2%D8%A8%D9%8A%D8%A8.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Couscous_aux_l%C3%A9gumes,_k%C3%A9did,_Tunisie,_2020.jpg",
       "origin": "commons"
     }
   },
@@ -414,6 +414,28 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chechia_Maker_in_his_shop.jpg",
+      "origin": "commons"
+    }
+  },
+  "tn-wear-silver-jewellery": {
+    "group": "tunisia",
+    "src": "/images/photos/tunisia/tn-wear-silver-jewellery",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1149,
+    "lqip": "data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAACwBQCdASoYABMAPu1ur1IppiQiqAgBMB2JQBdg7wEEBrGSDroPxlpQLPdmZQk3c8eRjSP+QAAA/vM08SqmRRM7N60RcOzolChjMulH8yPg1eBXaebRI3F19oMK2jn2PDr28SeYXMZxQOwGR1XOLt1Hmyk3SCZtq5Hc8E7gRPsR5cA9IEa2pjBgld5ARMJ8x7AEMWC/xm5uPthAUUawsn5/2znCljTkf29utN0uTh1O9sETE8Euw4Xy7gsZnY/HENHkIblzS3vSjbTQ9wTA73EBEh1/0qhwAAA=",
+    "color": "#080808",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Bijoux traditionnels en Tunisie, 25 avril 2017.jpg",
+      "author": "Habib M'henni",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bijoux_traditionnels_en_Tunisie,_25_avril_2017.jpg",
       "origin": "commons"
     }
   },

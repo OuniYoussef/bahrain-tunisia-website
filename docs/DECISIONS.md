@@ -209,3 +209,33 @@ regenerated originals and WebPs with `--refresh --force`. Removed the obsolete 2
 because the replacement supports up to 1920px. Corrected five EN/FR/AR alt descriptions to match the
 actual amphitheatre passage, mosque interior, camel festival and coastal scenes. Added translated third
 column labels for Arabic script and a distinct featured-carousel label; canonical locale shapes stay equal.
+
+**D-040 — Complete country content with deferred delivery.** Keep P4's overview projection for the hero and
+destinations. Load the complete namespace with `useContent(country)` in a separate country-details chunk
+when the remaining sections approach within 1,600px, or immediately for their section hash. Real section
+titles remain anchor targets while loading; the completed section restores hash focus/position on mount.
+Image dimensions and aspect ratios reserve frames, and all detail photos stay lazy. Generated detail media
+and image catalogs use the canonical media file, including shared `cg-*` images. This keeps the ordinary
+Tunisia entry below 180 KiB while allowing every item to render. Shared components accept content/media and
+country theme; P6 supplies Bahrain-specific compositions and its image catalog.
+
+**D-041 — Country interactions and spec precedence.** Show ten timeline events initially, as required by
+the country spec and P5 prompt, overriding the generic design-system example of eight. All 25 entries remain
+in source order; the disclosure toggles their visibility and refreshes scroll measurements. GSAP implements
+hover lift/zoom as well as timeline line/dot/thumbnail motion, following AGENTS.md's GSAP-only rule rather than
+the older CSS-hover suggestion. Preference-context cleanup reverts active interaction tweens on live changes.
+Wear uses one rendered set of cards, tabs at >=768px and native disclosure groups below. Mobile food filters
+default to all groups; a resize restores all desktop groups. Filter counts use a live output.
+Nature, monument, city and regional map controls open the existing native dialog with one highlighted map
+pin. This covers pins outside the destination showcase without overcrowding its twelve controls; selecting
+the callout or closing returns focus to the original control. Regional pin annotations live in media.json.
+
+**D-042 — P5 image review and corrections.** Reviewed every distinct photo used by Tunisia's new sections.
+Replaced the moth and bird selected for Sbeitla and lablabi; replaced the sweet mesfouf image for the national
+couscous dish, bird closeups for Ichkeul/Boukornine landscapes, Moroccan jewellery for Tunisian silver ornaments,
+Algerian packaged dates for Tunisian Deglet Nour, a ruins view for olive oil, and Kolkata jalebi for Béja zlebia.
+Added the previously missing samsa image. All ten sources are pinned in overrides/selection.lock and credited;
+responsive images were regenerated and visually reviewed. The silver-jewellery hold is removed, also improving
+United's shared card. Updated eighteen image descriptions in all three languages to describe the actual subject,
+including the historic café, tapped palm, kafteji sandwich, Houmt Souk tomb, Sousse vault and festival drummers.
+No generated photo or invented cultural scene is used. Image-free editorial items still use the khatam panel.

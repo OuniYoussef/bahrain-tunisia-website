@@ -211,12 +211,6 @@
     },
     "history": {
       "timeline": {
-        "dilmun": {
-          "image": "bh-hist-dilmun-seal"
-        },
-        "khamis": {
-          "image": "bh-hist-al-khamis"
-        },
         "1521": {
           "image": "bh-dest-qalat"
         },
@@ -228,6 +222,12 @@
         },
         "2004": {
           "image": "bh-dest-circuit"
+        },
+        "dilmun": {
+          "image": "bh-hist-dilmun-seal"
+        },
+        "khamis": {
+          "image": "bh-hist-al-khamis"
         },
         "unesco": {
           "image": "bh-dest-pearling-path"
@@ -918,6 +918,17 @@
             }
           }
         }
+      },
+      "regional": {
+        "0": {
+          "place": "djerba"
+        },
+        "1": {
+          "place": "matmata"
+        },
+        "2": {
+          "place": "sousse"
+        }
       }
     },
     "nature": {
@@ -1039,15 +1050,6 @@
     },
     "history": {
       "timeline": {
-        "1100bc": {
-          "image": "tn-dest-bizerte"
-        },
-        "814bc": {
-          "image": "tn-hist-punic-ports"
-        },
-        "146bc": {
-          "image": "tn-hist-roman-mosaic"
-        },
         "238": {
           "image": "tn-dest-el-djem"
         },
@@ -1065,6 +1067,15 @@
         },
         "1956": {
           "image": "tn-fest-independence"
+        },
+        "1100bc": {
+          "image": "tn-dest-bizerte"
+        },
+        "814bc": {
+          "image": "tn-hist-punic-ports"
+        },
+        "146bc": {
+          "image": "tn-hist-roman-mosaic"
         }
       }
     },

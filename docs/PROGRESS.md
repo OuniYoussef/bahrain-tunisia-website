@@ -13,8 +13,10 @@
 - P3 implemented: United split hero, editorial welcome, scroll-drawn journey map, comparison table,
   twelve connecting cards and two feature teasers, with trilingual content and reduced-motion support.
 - P4 implemented: reusable country frame, Tunisia welcome, linked map and destination showcase, accessible
-  dialogs, more places and the Bizerte spotlight; later Tunisia sections retain their real titles for P5.
-- Next prompt: **P5 — Tunisia part 2**
+  dialogs, more places and the Bizerte spotlight.
+- P5 implemented: Tunisia's remaining seven sections and onward journey band, with reusable country components,
+  complete EN/FR/AR content, responsive controls, map dialogs and a scroll-drawn timeline.
+- Next prompt: **P6 — Bahrain**
 
 ## Checklist
 ### P0 — Bootstrap & tooling
@@ -187,8 +189,36 @@ Notes:
   Map-target, motion-fallback, content-loading and photo decisions are recorded in D-036–D-039.
 
 ### P5 — Tunisia part 2
-- [ ] Wear (tabs, regional), Nature (3 rows), Cities, History (timeline + figures), Celebrations, Food (+ products), Monuments
+- [x] Wear (tabs, regional), Nature (3 rows), Cities, History (timeline + figures), Celebrations, Food (+ products), Monuments
 Notes:
+- 2026-11-16: Reusable InfoCard, Timeline, FigureGrid, DishGrid, ProductStrip and MonumentGrid compose the
+  completed sections. All 15 wear items, three regional callouts, 15 nature places, nine cities, 25 timeline
+  events, 13 figures, 20 celebrations, 22 food items and 18 monuments render from canonical locale content.
+- Wear uses keyboard/RTL tabs at 768px and up and native accordions below; nature has three native snap rows.
+  The capital leads alternating city rows; celebrations use date chips, lunar notes and a wedding feature.
+  Food includes the two-column national dish, mobile filters and three circular product images. Seven monuments
+  pass the optional UNESCO filter. Empty descriptions produce no empty paragraphs.
+- Timeline starts with ten events (country spec and prompt), expands to all 25, and has nine media thumbnails.
+  Its line scrubs, dots enter once and images drift slightly. Scoped GSAP/matchMedia cleanup also reverts hover
+  transforms when reduced motion is enabled. Layout changes refresh ScrollTrigger; content stays visible.
+- Nature, city, regional and monument map controls open a focused, dismissible map dialog at the exact media pin,
+  including places absent from the destination showcase. Geography stays LTR; closing restores the initiating control.
+- The complete namespace, section code and photo catalog load before the lower sections enter view; direct
+  section hashes load immediately and restore focus/position. Initial country JavaScript is approximately
+  **177 KiB gzip**, below the 180 KiB budget. The Bahrain frame remains ready for P6.
+- Reviewed all Tunisia detail photo selections. Replaced nine unsuitable/weak selections and supplied the
+  previously missing samsa photo, with pinned sources, regenerated WebPs and credits. Removed the silver-jewellery
+  hold after reviewing Tunisian ornaments; corrected 18 EN/FR/AR image descriptions. No Tunisia photo ids remain missing.
+- `npm run verify` passes (65 tests), including three CountryPage renders that compare every section's item ids,
+  counts and text against each locale JSON, expand the timeline and verify filtering. Formatting, whitespace and
+  configured `/exchange/` base-path checks pass. All 180 browser regression cases pass across EN/FR/AR at
+  360/768/1280/1920px with normal/reduced motion, axe, keyboard paths and no browser errors/warnings or overflow.
+  Four additional live-motion checks verify timeline progress, hover reversion and a direct monuments hash.
+  Visual review covered the wear, nature, capital, history, celebrations, food and monument layouts; corrected
+  large-feature responsive image sizes after spotting an undersized capital image candidate.
+  The final 28-case country-details run passes after that correction, with an added check of selected photo
+  resolution against rendered width (accounting for available candidates and parallax scale).
+- Decisions and spec precedence are documented in D-040–D-042.
 
 ### P6 — Bahrain
 - [ ] Bahrain page with nicknames, crafts, jewellery note, pearl heritage, Ramadan traditions + chant, coffee, serrated/Sadu motifs
@@ -276,17 +306,17 @@ Recorded 2026-11-16 from the installed lockfile (Node 24.21.0; npm 12.2.0).
 | vitest | 5.1.0 | Development |
 
 ## Known issues / follow-ups
-- **Review photo subjects before using them in pages.** The supplied resolver finds eligible licences but can rank
+- **Review remaining photo subjects before using them in pages.** The supplied resolver finds eligible licences but can rank
   unrelated subjects highly. P3 corrected `un-hero-razji`, `tn-drink-mint-tea`, `bh-fest-majlis` and
-  `bh-food-luqaimat`. Source-title inspection still flags `tn-mon-sbeitla` (moth), `tn-food-lablabi` (bird),
-  `bh-craft-sadu` (Berlin courthouse), `bh-nature-springs` (Beijing Olympics), `bh-nature-beach` (Swedish parliament),
+  `bh-food-luqaimat`. P5 corrected `tn-mon-sbeitla` (moth), `tn-food-lablabi` (bird) and eight other selections.
+  Source-title inspection still flags `bh-craft-sadu` (Berlin courthouse), `bh-nature-springs` (Beijing Olympics), `bh-nature-beach` (Swedish parliament),
   `bh-mon-saar` (Spanish river), `bh-fest-national-day` (Singapore fireworks), `bh-food-harees` (hare),
   `bh-product-dates` (Georgian lake) and `cg-oud` (bridge). These examples are not an exhaustive review.
   Review the complete local contact sheet, then curate `scripts/images/overrides.json` and rerun affected ids;
-  the supplied scripts, manifest and overrides were preserved byte-for-byte in P0. The 13 missing ids above
-  also need curated sources; ResponsiveImage's P1 fallback must handle them.
-- United's five withheld selections need suitable replacements: `bh-hist-pearl-divers`,
-  `tn-wear-silver-jewellery`, `bh-wear-pearls`, `bh-craft-aali-pottery`, `bh-fest-fijiri`.
+  the supplied scripts, manifest and overrides were preserved byte-for-byte in P0. The 12 remaining missing
+  Bahrain ids above also need curated sources; `tn-sweet-samsa` was resolved in P5. ResponsiveImage handles fallbacks.
+- United's four withheld selections need suitable replacements: `bh-hist-pearl-divers`,
+  `bh-wear-pearls`, `bh-craft-aali-pottery`, `bh-fest-fijiri`. P5 resolved `tn-wear-silver-jewellery`.
   Remove their `image-review.json` holds only after reviewing replacement subjects. Nabeul's current
   image is a painting of pottery; prefer a workshop/wares photograph in the broader editorial pass.
 - Use Node 22.22.2+, 24.15.0+ or 26+ for tests; the requested `>=22.12` engine alone does not cover latest jsdom.

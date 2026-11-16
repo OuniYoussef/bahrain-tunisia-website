@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router';
+import { useLocation } from 'react-router';
 import { useContent, useLocale } from '@/i18n/content';
 import { PageHead } from '@/components/layout/PageHead';
 import { ImageCatalogContext } from '@/components/media/ImageCatalog';
@@ -8,15 +8,14 @@ import { SectionNav } from './SectionNav';
 import { CountryHero, Welcome } from './sections/Welcome';
 import { Destinations } from './sections/Destinations';
 import { CountryImages } from './CountryImages';
+import { DeferredDetails } from './DeferredDetails';
+import { ContinueJourney } from './ContinueJourney';
 import './country.css';
 
 export function CountryPage({ country }: { country: Country }) {
   const content = useContent(country, 'overview');
-  const { nav } = useContent('common');
-  const locale = useLocale();
   const config = COUNTRY[country];
   const sections = config.sectionOrder.filter((id) => id in content);
-  const other = country === 'tunisia' ? 'bahrain' : 'tunisia';
   return (
     <div className="country-page" data-theme={config.theme}>
       <PageHead {...content.meta} page={country} />
@@ -40,27 +39,26 @@ export function CountryPage({ country }: { country: Country }) {
           <CountryImages>
             <Destinations country={country} content={content.destinations} />
           </CountryImages>
+          <DeferredDetails country={country} />
         </>
       )}
-      {sections.map((id) =>
-        id !== 'welcome' && (id !== 'destinations' || country !== 'tunisia') ? (
-          <section
-            key={id}
-            id={id}
-            tabIndex={-1}
-            className="country-placeholder ui-container"
-            aria-labelledby={`${id}-title`}
-          >
-            <h2 id={`${id}-title`} className="text-h2">
-              {content[id].title}
-            </h2>
-          </section>
-        ) : null,
-      )}
-      <nav className="country-continue ui-container" aria-label={`${nav[other]} / ${nav.commonGrounds}`}>
-        <Link to={`/${locale}/${other}`}>{nav[other]}</Link>
-        <Link to={`/${locale}/common-grounds`}>{nav.commonGrounds}</Link>
-      </nav>
+      {country === 'bahrain' &&
+        sections.map((id) =>
+          id !== 'welcome' ? (
+            <section
+              key={id}
+              id={id}
+              tabIndex={-1}
+              className="country-placeholder ui-container"
+              aria-labelledby={`${id}-title`}
+            >
+              <h2 id={`${id}-title`} className="text-h2">
+                {content[id].title}
+              </h2>
+            </section>
+          ) : null,
+        )}
+      <ContinueJourney country={country} />
     </div>
   );
 }

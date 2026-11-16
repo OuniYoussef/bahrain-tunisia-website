@@ -28,8 +28,7 @@ for (const locale of ['en', 'fr', 'ar'] as const) {
         ).toHaveCount(1);
         await expect(page.locator('.country-facts [data-fact="flag"] svg')).toHaveCount(1);
         await expect(page.locator('.country-words tbody [lang="ar"][dir="rtl"]')).toHaveCount(10);
-        await expect(page.locator('.country-placeholder')).toHaveCount(7);
-        await expect(page.locator('.country-placeholder p')).toHaveCount(0);
+        await expect(page.locator('.country-section-nav a')).toHaveCount(9);
         await expect(page.locator('.destination-card')).toHaveCount(12);
         await expect(page.locator('.destination-card .ui-badge-unesco')).toHaveCount(5);
         await expect(page.locator('.spotlight-grid article')).toHaveCount(7);
