@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { ContentContext, type ContentContextValue } from './content';
 
-/** Small provider for P1 primitives; routing and persistence are owned by the future app shell. */
+/** Shared context; explicit content overrides support isolated specimens and component tests. */
 export function ContentProvider({
   locale,
   content,

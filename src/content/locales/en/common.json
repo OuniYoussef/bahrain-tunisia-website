@@ -55,6 +55,8 @@
     "other": "Other"
   },
   "alerts": {
+    "more": "{count} more",
+    "less": "Show fewer",
     "regionLabel": "Site announcements",
     "dismiss": "Dismiss announcement"
   },
@@ -133,6 +135,7 @@
     }
   },
   "contact": {
+    "unavailable": "Contact details will be available soon.",
     "metaTitle": "Contact",
     "metaDescription": "Contact the IEEE student team behind the Bahrain × Tunisia website.",
     "eyebrow": "Get in touch",

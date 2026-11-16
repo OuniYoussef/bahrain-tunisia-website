@@ -38,7 +38,11 @@ function Specimen() {
     </div>
   );
 }
-export function TypeSpecimens({ specimens }: { specimens: Record<Locale, Content> }) {
+export function TypeSpecimens({
+  specimens,
+}: {
+  specimens: Record<Locale, Pick<Content, 'common' | 'tunisia' | 'images'>>;
+}) {
   const { welcome } = useContent('tunisia');
   return (
     <Section id="type" aria-labelledby="type-heading">

@@ -1,5 +1,6 @@
 @import './fonts.css';
 @import 'tailwindcss';
+@import './shell.css';
 
 @theme {
   --color-pearl: #f8f5ef;

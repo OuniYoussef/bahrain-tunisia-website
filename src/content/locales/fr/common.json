@@ -55,6 +55,8 @@
     "other": "Autre"
   },
   "alerts": {
+    "more": "{count} de plus",
+    "less": "Afficher moins",
     "regionLabel": "Annonces du site",
     "dismiss": "Fermer l'annonce"
   },
@@ -133,6 +135,7 @@
     }
   },
   "contact": {
+    "unavailable": "Les coordonnées seront bientôt disponibles.",
     "metaTitle": "Contact",
     "metaDescription": "Contactez l'équipe étudiante de l'IEEE derrière le site Bahreïn × Tunisie.",
     "eyebrow": "Écrivez-nous",

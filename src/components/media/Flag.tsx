@@ -1,6 +1,9 @@
 import { useContent } from '@/i18n/content';
 import { cn } from '@/lib/cn';
-import { InlineSvg } from './InlineSvg';
+import { SvgArtwork } from './SvgArtwork';
+import tunisia from '/images/svg/flags/flag-tunisia.svg?raw';
+import bahrain from '/images/svg/flags/flag-bahrain.svg?raw';
+const flags = { tunisia, bahrain };
 export function Flag({
   country,
   size = 'md',
@@ -14,8 +17,8 @@ export function Flag({
 }) {
   const { ui } = useContent('common');
   return (
-    <InlineSvg
-      asset={country}
+    <SvgArtwork
+      source={flags[country]}
       title={decorative ? undefined : ui[country]}
       className={cn('aspect-[3/2] shrink-0', { sm: 'w-4', md: 'w-6', lg: 'w-8' }[size], className)}
     />

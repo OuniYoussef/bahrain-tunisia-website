@@ -101,3 +101,35 @@ AGENTS.md requires GSAP-only motion. Fade the separate LQIP/colour layer with GS
 under reduced motion; keep image dimensions/crops stable. All helpers use scoped useGSAP and matchMedia
 cleanup. InlineSvg accepts only bundled registry keys, parses approved shape attributes into React nodes,
 and prefixes ids/references per instance. Localised titles are text nodes; no user HTML is injected.
+
+**D-028 — P2 budget applies to the whole initial request set.** Measuring only the entry chunk misses lazy
+shell dependencies. Measure all scripts requested by the landing route (about 177 kB gzip in Arabic).
+Use the installed Zod 4 Mini API for optional environment validation, split the trusted SVG renderer from
+the map registry, and load the mobile dialog on demand. Core GSAP/ScrollTrigger/useGSAP stay registered in
+lib/gsap.ts; extra plugins register once in lib/gsap-plugins.ts when a feature imports them. This refines
+MOTION.md's eager registration example without changing the animation library or P1 primitive behavior.
+P2 alerts are explicitly an empty mock: defer the ARCHITECTURE.md QueryClientProvider and query hooks to P9,
+when real data is introduced, retaining the dependency and a typed five-minute alerts cache meanwhile.
+
+**D-029 — Optional configuration fails closed.** Invalid/blank optional environment values are treated as
+absent. Explicit supabase mode without both public credentials resolves to mock, so missing setup cannot
+crash the shell. Newsletter remains unavailable throughout P2. Add localised missing-contact text and
+announcement expansion labels in all three common namespaces. With no canonical domain configured,
+use the current origin plus the configured base path. OG URL conventions are emitted now; files and the
+optional sitemap link wait for P12 instead of introducing a broken visible sitemap link.
+
+**D-030 — IEEE geometry and responsive navigation.** IEEE_BRANDING.md requires a 36px meta-bar, which cannot
+also contain 44px-high targets. Keep its mandated 36px links and accessible horizontal keyboard scrolling;
+all ordinary shell controls retain 44px targets. Use the mobile sheet until 1280px, rather than the generic
+lg breakpoint, because the fixed brand positions plus all French links/language controls do not fit at
+1024px. The identifier remains at physical left and the Master Brand at physical right in Arabic.
+
+**D-031 — Motion, focus and skyline integration.** AGENTS.md's GSAP-only rule wins over global-shell.md's
+CSS-transition suggestion: animate header surface opacity and hide/show transforms with scoped useGSAP.
+The 0.5-second arch transition uses a 0.25-second cover before route commit and a 0.25-second uncover;
+reduced motion bypasses both. Focus h1 after client navigation; initial document loads keep the skip link
+first in the keyboard order. Hash anchors retain header clearance and ScrollRestoration owns history scroll.
+An absolutely positioned skyline overlaps the preceding section while its ground touches the ink footer;
+this avoids negative-margin collapse painting ink behind the silhouette. Focusable HTML hotspots outside
+the aria-hidden SVG provide tooltips; the hidden landmark list stays within bounds in RTL. Ordinary feature
+pages retain only their localised h1 until their planned prompts, with dark surfaces exercising overlay chrome.

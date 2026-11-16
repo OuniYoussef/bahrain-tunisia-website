@@ -1,6 +1,7 @@
 import { useRef, type ComponentProps } from 'react';
 import { useLocale } from '@/i18n/content';
-import { gsap, SplitText, useGSAP, DUR } from '@/lib/gsap';
+import { gsap, useGSAP, DUR } from '@/lib/gsap';
+import { SplitText } from '@/lib/gsap-plugins';
 type Props = Omit<ComponentProps<'h2'>, 'children' | 'ref'> & { as?: 'h1' | 'h2' | 'h3'; children: string };
 export function SplitHeading({ as: Tag = 'h2', children, ...props }: Props) {
   const root = useRef<HTMLHeadingElement>(null);

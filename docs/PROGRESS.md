@@ -7,8 +7,10 @@
 - P0 bootstrap implemented: Vite/React/TypeScript app, tooling, 15 project skills, folder skeleton, environment
   example and content safety net. Supplied content, scripts, SVGs and brand assets are preserved.
 - P1 foundation implemented: design tokens, script-specific fonts, UI/media/motion primitives and a
-  development-only `/dev/styleguide`. Product pages and the branded locale shell remain for P2 onward.
-- Next prompt: **P2 — i18n, routing & app shell**
+  development-only `/dev/styleguide`.
+- P2 implemented: lazy trilingual routing, IEEE header/footer, animated skyline, metadata, Contact/Credits/404,
+  locale formatting and validated optional environment settings. Feature pages intentionally contain only their h1.
+- Next prompt: **P3 — United page**
 
 ## Checklist
 ### P0 — Bootstrap & tooling
@@ -71,7 +73,7 @@ Notes:
 - Added ButtonLink, Sheet, compound Tabs, SegmentedControl/Pill, labelled form fields with hints/errors,
   textarea counter, UNESCO badges, Spinner/Skeleton, native dialog focus wrapping and nested scroll locks.
 - Small `ContentProvider` + typed `useContent`/`useLocale` support P1; the full loader, locale URL handling,
-  persistence and app shell are still P2. Styleguide samples use existing common/tunisia/images strings.
+  persistence and app shell were completed in P2. Styleguide samples use existing common/tunisia/images strings.
 - ResponsiveImage uses the generated width candidates, intrinsic dimensions, focal points, lazy/priority
   loading, GSAP LQIP fade, localised alt text, credits and a patterned fallback for missing/failed images.
   El Djem was visually checked in the styleguide. The wider P0 photo-curation follow-up remains open.
@@ -81,18 +83,48 @@ Notes:
   EN/FR/AR at 360/768/1280/1920px, both motion preferences, axe, dialog/sheet keyboard paths, RTL arrows,
   screenshots, theme/direction changes, live motion changes and failed-image recovery.
 - Production remains a minimal content-backed entry: 71.23 kB initial JS gzip; no styleguide route/code
-  in its bundle. Product pages, IEEE chrome and real locale navigation have not been introduced.
+  in its bundle. This was the P1 baseline before the P2 shell.
 - Contrast: ink/pearl 16.00:1; muted/sand-100 4.60:1; gold-deep/pearl-glow 6.08:1;
   IEEE-40/ink focus 8.66:1. Form borders use muted (5.60:1 on pearl-glow), because decorative line is only
   1.39:1. Spec clarifications and the GSAP-only LQIP fade are recorded in D-024–D-027.
 
 ### P2 — i18n, routing & app shell
-- [ ] locale config, LocaleProvider, content loader, useContent, format utils (+ tests)
-- [ ] router with lazy routes, LocaleRedirect, NotFound, RouteError, ScrollRestoration
-- [ ] MetaNav, SiteHeader (identifier, nav, switcher, Master Brand), MobileNav, SkipLink
-- [ ] SiteFooter (skyline, newsletter UI, columns, IEEE block), AlertBanner (mock data), CookieConsentSlot
-- [ ] Contact + Credits pages; per-page head/meta + hreflang; PageTransition
+- [x] locale config, LocaleProvider, content loader, useContent, format utils (+ tests)
+- [x] router with lazy routes, LocaleRedirect, NotFound, RouteError, ScrollRestoration
+- [x] MetaNav, SiteHeader (identifier, nav, switcher, Master Brand), MobileNav, SkipLink
+- [x] SiteFooter (skyline, newsletter UI, columns, IEEE block), AlertBanner (mock data), CookieConsentSlot
+- [x] Contact + Credits pages; per-page head/meta + hreflang; PageTransition
 Notes:
+- 2026-11-16: Namespace promises are lazy and cached; React 19 `use()` reads EN-inferred content types.
+  URL locales set html lang/dir and persist `bt.locale`; root redirect never infers browser language.
+  Number/date formatting uses Western Arabic digits; tests cover Arabic plural counts 0, 1, 2, 3, 11 and 100.
+- All architecture routes are lazy, including admin descendants and optional Matrix slide ids. Unknown slide ids
+  replace to welcome; invalid locales render the English 404. Navigation preserves query/hash, restores scroll,
+  offsets anchors and focuses h1. The arch transition covers before committing navigation and uncovers afterward.
+- IEEE meta-navigation and the identifier/Master Brand retain physical positions in RTL; site navigation mirrors.
+  Header overlay becomes solid after 24px, hides below 400px while scrolling down, and stays visible for keyboard
+  focus or reduced motion. Mobile dialog is lazy, mirrors its end side, traps focus and closes with Escape.
+- Skyline is inline trusted SVG with localised desktop hover/focus tooltips and a hidden landmark list.
+  Landmarks rise palm-first, turbines pause off-screen/when the tab is hidden, and reduced motion stays static.
+- Newsletter form stays disabled until P9, including with backend credentials. Alerts use a typed empty mock
+  with a five-minute cache; rendering/dismissal/levels are ready for P9. Optional cookie script loads once.
+- Contact hides unconfigured email/social links and explains unavailable contact details. Credits render all
+  170 generated entries as responsive cards with attribution/source links and stable image-id anchors.
+- React 19 metadata supplies title/description, canonical, four language alternatives, OG/Twitter and theme colour;
+  admin, 404 and error screens are noindex. Actual OG files and the optional sitemap link remain P12.
+- `npm run verify` passes: 62 unit/content/contrast tests. The existing 64-test browser suite passes across
+  EN/FR/AR, 360/768/1280/1920px and both motion preferences. Added eight checks for header/live motion,
+  keyboard skip navigation, transition/history, skyline tooltip dismissal and localised route-error recovery;
+  all 12 focused navigation/error checks pass. The final 24-test route/axe sweep also passes (264 route
+  visits), with no browser errors/warnings or horizontal overflow. There are now 72 browser tests in total.
+- `node scripts/check-shell-base.mjs` passes an isolated `/exchange/` production build, checking redirects,
+  translated navigation, canonical URLs, brand/photo assets, configured contact/social links and one-time
+  cookie-script injection. The script keeps its generated build under ignored `node_modules/.cache/`.
+- Measured Arabic landing request set: approximately **177 kB total initial JavaScript gzip** (including lazy
+  shell/content/GSAP chunks), within 180 kB. Zod Mini validates optional settings; unused maps, images, motion
+  plugins and the mobile dialog stay outside the initial route. Query provider/hooks are deferred until P9.
+- Visual review covered the complete EN mobile and AR desktop shell; the skyline remains west-to-east.
+  Spec clarifications are recorded in D-028–D-031.
 
 ### P3 — United page
 - [ ] split hero, welcome, journey map, glance table, connecting grid, teasers

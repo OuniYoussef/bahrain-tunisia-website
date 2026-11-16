@@ -2,7 +2,7 @@ import { createContext, use, useId, useLayoutEffect, useRef, type ReactNode, typ
 import { X } from 'lucide-react';
 import { useContent } from '@/i18n/content';
 import { cn } from '@/lib/cn';
-import { DUR, gsap, useGSAP } from '@/lib/gsap';
+import { dirSign, DUR, gsap, useGSAP } from '@/lib/gsap';
 import { Button, type ButtonProps } from './Button';
 import { lockScroll } from './scrollLock';
 
@@ -14,6 +14,7 @@ export type DialogProps = {
   children: ReactNode;
   initialFocus?: RefObject<HTMLElement | null>;
   className?: string;
+  slideFrom?: 'bottom' | 'end';
 };
 const DialogContext = createContext<(() => void) | null>(null);
 
@@ -26,6 +27,7 @@ function Modal({
   initialFocus,
   className,
   presentation,
+  slideFrom = 'bottom',
 }: DialogProps & { presentation: 'dialog' | 'sheet' }) {
   const root = useRef<HTMLDialogElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -59,7 +61,8 @@ function Modal({
         (ctx) => {
           if (!ctx.conditions?.motion) return;
           gsap.from(root.current, {
-            y: ctx.conditions.mobile || presentation === 'sheet' ? 64 : 16,
+            y: slideFrom === 'end' ? 0 : ctx.conditions.mobile || presentation === 'sheet' ? 64 : 16,
+            xPercent: slideFrom === 'end' ? 100 * dirSign() : 0,
             opacity: 0,
             duration: DUR.fast,
           });
@@ -67,7 +70,7 @@ function Modal({
       );
       return () => mm.revert();
     },
-    { scope: root, dependencies: [open, presentation], revertOnUpdate: true },
+    { scope: root, dependencies: [open, presentation, slideFrom], revertOnUpdate: true },
   );
 
   return (

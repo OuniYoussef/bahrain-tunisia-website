@@ -20,12 +20,14 @@ const loaders = {
       import('@/content/locales/ar/images.json'),
     ]),
 };
-export async function loadSpecimens(): Promise<Record<Locale, Content>> {
+export async function loadSpecimens(): Promise<
+  Record<Locale, Pick<Content, 'common' | 'tunisia' | 'images'>>
+> {
   const entries = await Promise.all(
     (['en', 'fr', 'ar'] as const).map(async (locale) => {
       const [common, tunisia, images] = await loaders[locale]();
       return [locale, { common: common.default, tunisia: tunisia.default, images: images.default }] as const;
     }),
   );
-  return Object.fromEntries(entries) as Record<Locale, Content>;
+  return Object.fromEntries(entries) as Record<Locale, Pick<Content, 'common' | 'tunisia' | 'images'>>;
 }
