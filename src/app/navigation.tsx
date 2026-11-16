@@ -2,8 +2,9 @@ import { useLayoutEffect, useRef } from 'react';
 import { useLocation } from 'react-router';
 import { ScrollTrigger } from '@/lib/gsap';
 export function NavigationEffects() {
-  const { key, hash } = useLocation();
+  const { key, hash, pathname } = useLocation();
   const initialKey = useRef(key);
+  const previousPath = useRef(pathname);
   useLayoutEffect(() => {
     const frame = requestAnimationFrame(() => {
       let id = '';
@@ -14,7 +15,11 @@ export function NavigationEffects() {
       }
       const target = id ? document.getElementById(id) : null;
       if (key !== initialKey.current)
-        document.querySelector<HTMLElement>('main h1')?.focus({ preventScroll: true });
+        (previousPath.current === pathname && target
+          ? target
+          : document.querySelector<HTMLElement>('main h1')
+        )?.focus({ preventScroll: true });
+      previousPath.current = pathname;
       if (target) target.scrollIntoView({ block: 'start', behavior: 'instant' });
       ScrollTrigger.refresh();
     });
@@ -26,6 +31,6 @@ export function NavigationEffects() {
       active = false;
       cancelAnimationFrame(frame);
     };
-  }, [key, hash]);
+  }, [key, hash, pathname]);
   return null;
 }

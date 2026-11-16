@@ -72,7 +72,8 @@
     "wordsIntro": "A few words of Tunisian Derja to start a conversation.",
     "wordsColumns": {
       "meaning": "English",
-      "local": "Tunisian"
+      "local": "Tunisian",
+      "script": "Arabic script"
     },
     "words": [
       {
@@ -280,7 +281,8 @@
           "text": "The old port and the lanes lit up at night."
         }
       ]
-    }
+    },
+    "featuredTitle": "Featured destinations"
   },
   "wear": {
     "eyebrow": "Heritage you can wear",

@@ -111,7 +111,8 @@
     "wordsIntro": "Quelques mots d'arabe bahreïni pour engager la conversation.",
     "wordsColumns": {
       "meaning": "Français",
-      "local": "Arabe bahreïni"
+      "local": "Arabe bahreïni",
+      "script": "Écriture arabe"
     },
     "words": [
       {
@@ -238,7 +239,8 @@
         "title": "Circuit international de Bahreïn, Sakhir",
         "text": "Inauguré en 2004, le premier circuit de Formule 1 du Moyen-Orient, qui accueille chaque année le Grand Prix de Bahreïn."
       }
-    ]
+    ],
+    "featuredTitle": "Destinations à la une"
   },
   "wear": {
     "eyebrow": "Un patrimoine qui se porte",

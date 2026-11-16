@@ -72,7 +72,8 @@
     "wordsIntro": "Quelques mots de derja tunisienne pour engager la conversation.",
     "wordsColumns": {
       "meaning": "Français",
-      "local": "Tunisien"
+      "local": "Tunisien",
+      "script": "Écriture arabe"
     },
     "words": [
       {
@@ -280,7 +281,8 @@
           "text": "Le vieux port et les ruelles illuminés la nuit."
         }
       ]
-    }
+    },
+    "featuredTitle": "Destinations à la une"
   },
   "wear": {
     "eyebrow": "Un patrimoine qui se porte",

@@ -3,8 +3,9 @@ import { useBlocker, useLocation } from 'react-router';
 import { gsap, useGSAP } from '@/lib/gsap';
 export function PageTransition({ children }: { children: ReactNode }) {
   const root = useRef<HTMLDivElement>(null);
-  const { key } = useLocation();
+  const { key, pathname } = useLocation();
   const previousKey = useRef(key);
+  const previousPath = useRef(pathname);
   const blocker = useBlocker(
     ({ currentLocation, nextLocation }) =>
       currentLocation.pathname !== nextLocation.pathname &&
@@ -19,6 +20,7 @@ export function PageTransition({ children }: { children: ReactNode }) {
           if (!ctx.conditions?.motion) {
             if (blocker.state === 'blocked') blocker.proceed();
             previousKey.current = key;
+            previousPath.current = pathname;
             return;
           }
           const panel = root.current?.querySelector('.page-wipe');
@@ -38,6 +40,8 @@ export function PageTransition({ children }: { children: ReactNode }) {
             gsap.set(panel, { clipPath: 'inset(0% 0% 0% 0%)' });
           } else if (previousKey.current !== key) {
             previousKey.current = key;
+            if (previousPath.current === pathname) return;
+            previousPath.current = pathname;
             gsap.fromTo(
               panel,
               { clipPath: 'inset(0% 0% 0% 0% round 0% 0% 0% 0%)' },
@@ -48,7 +52,11 @@ export function PageTransition({ children }: { children: ReactNode }) {
       );
       return () => mm.revert();
     },
-    { scope: root, dependencies: [key, blocker.state, blocker.location?.key], revertOnUpdate: true },
+    {
+      scope: root,
+      dependencies: [key, pathname, blocker.state, blocker.location?.key],
+      revertOnUpdate: true,
+    },
   );
   return (
     <div ref={root}>

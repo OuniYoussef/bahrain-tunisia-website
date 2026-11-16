@@ -1,0 +1,308 @@
+{
+  "meta": {
+    "title": "Découvrir la Tunisie",
+    "description": "Là où la Méditerranée rencontre le Sahara : destinations, habits traditionnels, nature, villes, histoire, fêtes, cuisine et monuments de Tunisie."
+  },
+  "sectionNav": {
+    "label": "Sections de la page Tunisie",
+    "welcome": "Bienvenue",
+    "destinations": "Destinations",
+    "wear": "Habits traditionnels",
+    "nature": "Nature",
+    "cities": "Villes",
+    "history": "Histoire",
+    "festive": "Fêtes",
+    "food": "Cuisine",
+    "monuments": "Monuments"
+  },
+  "welcome": {
+    "eyebrow": "Bienvenue en Tunisie",
+    "headline": "Partons à la découverte de la Tunisie",
+    "subheadline": "Là où la Méditerranée rencontre le Sahara.",
+    "intro": "La Tunisie est un État d'Afrique du Nord qui appartient au Maghreb ; sa capitale est Tunis. Elle est bordée par l'Algérie à l'ouest et au sud-ouest, par la Libye au sud-est, et par la mer Méditerranée au nord et à l'est. État libre, indépendant et souverain, la Tunisie a l'islam pour religion, la République pour régime et l'arabe pour langue, le français y étant largement parlé. Son dialecte mêle l'arabe, le français et l'italien. Dans ce pays compact, on passe des plages dorées de la Méditerranée et des villages blanchis à la chaux perchés sur les collines aux amphithéâtres romains, aux villes saintes et aux dunes du Sahara.",
+    "factsTitle": "En bref",
+    "facts": [
+      {
+        "id": "capital",
+        "label": "Capitale",
+        "value": "Tunis"
+      },
+      {
+        "id": "area",
+        "label": "Superficie et population",
+        "value": "Environ 163 000 kilomètres carrés et près de 12 millions d'habitants"
+      },
+      {
+        "id": "languages",
+        "label": "Langues",
+        "value": "L'arabe, avec un large usage du français ; le dialecte tunisien (derja)"
+      },
+      {
+        "id": "independence",
+        "label": "Indépendance",
+        "value": "20 mars 1956 ; République proclamée le 25 juillet 1957"
+      },
+      {
+        "id": "currency",
+        "label": "Monnaie",
+        "value": "Le dinar tunisien (DT). 1 dinar = 1 000 millimes. Neuf coupures et pièces : 10, 20, 50, 100, 200 et 500 millimes, et 1, 2 et 5 dinars."
+      },
+      {
+        "id": "flag",
+        "label": "Drapeau",
+        "value": "Rouge, avec un disque blanc portant un croissant et une étoile rouges"
+      },
+      {
+        "id": "flower",
+        "label": "Fleur",
+        "value": "Le jasmin"
+      },
+      {
+        "id": "climate",
+        "label": "Climat",
+        "value": "Méditerranéen au nord (étés chauds et secs, hivers doux et humides), semi-aride au centre, saharien au sud"
+      },
+      {
+        "id": "best-time",
+        "label": "Meilleure période pour visiter",
+        "value": "De mars à mai et de septembre à novembre"
+      }
+    ],
+    "wordsTitle": "Mots utiles",
+    "wordsIntro": "Quelques mots de derja tunisienne pour engager la conversation.",
+    "wordsColumns": {
+      "meaning": "Français",
+      "local": "Tunisien",
+      "script": "Écriture arabe"
+    },
+    "words": [
+      {
+        "id": "hello",
+        "meaning": "Bonjour",
+        "say": "Aslama",
+        "script": "عسلامة"
+      },
+      {
+        "id": "bye",
+        "meaning": "Au revoir",
+        "say": "Beslama",
+        "script": "بالسلامة"
+      },
+      {
+        "id": "how-are-you",
+        "meaning": "Comment vas-tu ?",
+        "say": "Chneya ahwelek",
+        "script": "شنية أحوالك"
+      },
+      {
+        "id": "fine",
+        "meaning": "Je vais bien",
+        "say": "Labes",
+        "script": "لاباس"
+      },
+      {
+        "id": "sorry",
+        "meaning": "Pardon",
+        "say": "Samahny",
+        "script": "سامحني"
+      },
+      {
+        "id": "thanks",
+        "meaning": "Merci",
+        "say": "Aychek",
+        "script": "يعيشك"
+      },
+      {
+        "id": "ok",
+        "meaning": "D'accord",
+        "say": "Mrigel",
+        "script": "مريقل"
+      },
+      {
+        "id": "good-night",
+        "meaning": "Bonne nuit",
+        "say": "Alekhyr",
+        "script": "على الخير"
+      },
+      {
+        "id": "how-much",
+        "meaning": "Combien ça coûte ?",
+        "say": "Bkadah hedhi",
+        "script": "بقداش هذي"
+      },
+      {
+        "id": "a-lot",
+        "meaning": "Beaucoup",
+        "say": "Barcha",
+        "script": "برشا"
+      }
+    ],
+    "didYouKnowTitle": "Le saviez-vous ?",
+    "didYouKnow": [
+      "La cuisine tunisienne repose sur une multitude d'épices.",
+      "La Tunisie est pionnière dans le monde arabe en matière de droits des femmes.",
+      "Les Tunisiens parlent beaucoup avec les mains.",
+      "De nombreuses scènes de Star Wars ont été tournées dans le désert tunisien.",
+      "Le dialecte tunisien mêle l'arabe, le français et l'italien.",
+      "Ras Angela, près de Bizerte, est le point le plus septentrional du continent africain."
+    ]
+  },
+  "destinations": {
+    "eyebrow": "Lieux incontournables",
+    "title": "Destinations à découvrir",
+    "intro": "Une vitrine immersive des lieux incontournables. Les six sites les plus connus de Tunisie sont Sidi Bou Saïd, El Jem, Bizerte, Monastir, la Médina et Kairouan.",
+    "mapLabel": "Carte des destinations en Tunisie",
+    "featured": [
+      {
+        "id": "sidi-bou-said",
+        "title": "Sidi Bou Saïd",
+        "text": "Un village perché sur une colline dominant le golfe de Tunis, à une vingtaine de kilomètres de la capitale, tout près de Carthage. Ses maisons blanchies à la chaux, aux portes bleues, aux grilles de fenêtres bleues et aux balcons en fer forgé, couvertes de bougainvilliers et de jasmin, regardent la mer et le golfe de Tunis. Le village porte le nom d'un saint musulman du XIIIᵉ siècle, Abou Saïd al-Béji. Gravissez les ruelles en escalier, sirotez un thé à la menthe aux pignons à la terrasse d'un café, goûtez des bambalouni tout chauds (beignets tunisiens), visitez le palais Ennejma Ezzahra, centre des musiques arabes et méditerranéennes, et admirez le coucher du soleil sur la baie.",
+        "tip": "Meilleur moment : en fin d'après-midi."
+      },
+      {
+        "id": "el-djem",
+        "title": "El Jem",
+        "text": "Une petite ville du Sahel dont l'amphithéâtre romain, construit vers 238 apr. J.-C. dans l'antique Thysdrus, est l'un des plus grands et des mieux conservés au monde ; il pouvait accueillir quelque 35 000 spectateurs. Il est inscrit au patrimoine mondial de l'UNESCO. Les visiteurs peuvent parcourir l'arène, les galeries souterraines et les gradins supérieurs. Chaque été, le Festival international de musique symphonique remplit l'arène de musique. Le musée voisin expose des mosaïques romaines.",
+        "tip": ""
+      },
+      {
+        "id": "bizerte",
+        "title": "Bizerte",
+        "text": "Fondée vers 1100 av. J.-C. par des colons phéniciens venus de Sidon, Bizerte se trouve à la pointe nord de l'Afrique, au bord de la Méditerranée, non loin de la frontière algérienne. C'est l'une des villes côtières les plus anciennes et les plus chargées d'histoire de Tunisie. Son vieux port aux barques de pêche colorées, sa médina, la Kasbah et le fort d'Espagne, ainsi que ses plages, en font une escapade très appréciée.",
+        "tip": "Voir le coup de projecteur sur Bizerte ci-dessous."
+      },
+      {
+        "id": "monastir",
+        "title": "Monastir",
+        "text": "Une ville balnéaire de la côte est, ville natale de Habib Bourguiba, premier président de la Tunisie. Le Ribat de Monastir, monastère fortifié du littoral construit en 796, domine la plage et offre un panorama depuis sa tour de guet. Le mausolée blanc de Bourguiba et sa coupole dorée, une marina animée et de longues plages de sable complètent le tableau.",
+        "tip": ""
+      },
+      {
+        "id": "medina-tunis",
+        "title": "La Médina (Médina de Tunis)",
+        "text": "La vieille ville fortifiée au cœur de la capitale, inscrite au patrimoine mondial de l'UNESCO. Son dédale de ruelles abrite quelque 700 monuments : mosquées, palais, médersas, mausolées et fontaines. La mosquée Zitouna se dresse en son centre, entourée de souks qui rayonnent autour d'elle : le souk El Attarine (parfums), le souk des Chéchias (bonnets rouges), les souks du cuir, du cuivre, de l'or, des tapis et des épices. Les visiteurs peuvent monter sur une terrasse pour boire un thé au-dessus des coupoles et des minarets.",
+        "tip": ""
+      },
+      {
+        "id": "kairouan",
+        "title": "Kairouan",
+        "text": "L'une des villes les plus saintes de l'islam et la première capitale arabo-musulmane du Maghreb, fondée en 670 apr. J.-C. Sa Grande Mosquée, avec son minaret de 31 mètres, sa vaste cour et sa forêt de colonnes antiques, est un chef-d'œuvre de l'architecture islamique des premiers siècles. La médina est inscrite au patrimoine mondial de l'UNESCO. Kairouan est célèbre pour ses tapis noués à la main, sa dinanderie et ses makroudh, ainsi que pour les bassins des Aghlabides et la mosquée des Trois Portes.",
+        "tip": ""
+      }
+    ],
+    "moreTitle": "D'autres lieux à explorer",
+    "more": [
+      {
+        "id": "carthage",
+        "title": "Carthage",
+        "text": "Les vestiges de l'ancienne capitale phénico-punique, devenue ensuite une ville romaine, près de Tunis, inscrits au patrimoine mondial de l'UNESCO. À ne pas manquer : les thermes d'Antonin, parmi les plus grands thermes romains du monde ; les ports puniques, dont le port militaire circulaire ; le Tophet ; la colline de Byrsa et son musée ; le théâtre romain, qui accueille le Festival international de Carthage ; et les villas romaines et leurs mosaïques."
+      },
+      {
+        "id": "djerba",
+        "title": "Djerba",
+        "text": "Une île ensoleillée du sud, reliée au continent par une chaussée, avec ses villages blanchis à la chaux, ses palmeraies, ses larges plages, la ville marchande de Houmt Souk, les potiers de Guellala, la forteresse de Borj El Kébir et la synagogue de la Ghriba, lieu de pèlerinage. Réputée pour son rythme paisible et sa mer chaude."
+      },
+      {
+        "id": "dougga",
+        "title": "Dougga",
+        "text": "La ville romaine la mieux conservée d'Afrique du Nord, à flanc de colline au milieu des oliviers, avec son théâtre, son Capitole, ses temples, ses thermes et son mausolée. Inscrite au patrimoine mondial de l'UNESCO."
+      },
+      {
+        "id": "douz-tozeur",
+        "title": "Douz et Tozeur",
+        "text": "Les portes du Sahara. Douz est le point de départ des randonnées à dos de dromadaire dans les dunes ; Tozeur est une oasis de palmiers dont la médina est ornée de briques jaunes à motifs, près des oasis de montagne de Chebika, Tamerza et Midès."
+      },
+      {
+        "id": "hammamet-tabarka-cap-bon",
+        "title": "Hammamet, Tabarka et le cap Bon",
+        "text": "Des côtes balnéaires aux plages blanches, une vieille ville fortifiée à Hammamet, des récifs coralliens pour la plongée à Tabarka, et les plages et orangeraies du cap Bon."
+      },
+      {
+        "id": "matmata-tataouine",
+        "title": "Matmata et Tataouine",
+        "text": "Des maisons berbères souterraines creusées dans la terre, des greniers fortifiés (ksour) et des paysages désertiques. De nombreuses scènes de Star Wars ont été tournées dans cette région."
+      }
+    ],
+    "spotlight": {
+      "eyebrow": "Coup de projecteur",
+      "title": "Coup de projecteur sur Bizerte",
+      "facts": [
+        {
+          "id": "where",
+          "title": "Où se trouve Bizerte",
+          "text": "Située à la pointe nord de l'Afrique, au bord de la Méditerranée, près de la frontière algérienne, Bizerte a été fondée vers 1100 av. J.-C. par des colons phéniciens venus de Sidon ; c'est l'une des villes côtières les plus anciennes et les plus chargées d'histoire de Tunisie."
+        },
+        {
+          "id": "about",
+          "title": "À propos de Bizerte",
+          "text": "Avec leur nature chaleureuse et pleine d'humour, les Bizertins forment une communauté vivante et accueillante. Ils sont décontractés, joyeux, sincères et connus pour leur amour du football."
+        },
+        {
+          "id": "climate",
+          "title": "Climat",
+          "text": "Les étés sont courts, très chauds et dégagés ; les hivers sont longs, frais et plutôt dégagés, avec du vent par moments. Les températures varient généralement de 8 °C à 33 °C, descendant rarement sous 5 °C ou dépassant rarement 37 °C."
+        }
+      ],
+      "placesTitle": "Lieux à visiter à Bizerte",
+      "places": [
+        {
+          "id": "al-madina",
+          "title": "La Médina",
+          "text": "La vieille ville, ses ruelles étroites, ses portes bleues et ses maisons traditionnelles."
+        },
+        {
+          "id": "old-port",
+          "title": "Le Vieux Port",
+          "text": "Des barques colorées, des cafés au bord de l'eau et la vue sur le vieux fort."
+        },
+        {
+          "id": "coco-beach",
+          "title": "Coco Beach",
+          "text": "Une plage pleine de couleurs sur la côte."
+        },
+        {
+          "id": "ras-serrat",
+          "title": "Ras Serrat",
+          "text": "Un littoral de sable doré aux eaux calmes."
+        },
+        {
+          "id": "cap-zbib",
+          "title": "Cap Zbib",
+          "text": "Des falaises rocheuses et une eau limpide."
+        },
+        {
+          "id": "rafraf",
+          "title": "Rafraf",
+          "text": "Un village côtier avec vue sur la mer."
+        },
+        {
+          "id": "night-walks",
+          "title": "Promenades nocturnes à Bizerte",
+          "text": "Le vieux port et les ruelles illuminés la nuit."
+        }
+      ]
+    },
+    "featuredTitle": "Destinations à la une"
+  },
+  "wear": {
+    "title": "Habits traditionnels"
+  },
+  "nature": {
+    "title": "La nature à ne pas manquer"
+  },
+  "cities": {
+    "title": "Les villes à ne pas manquer"
+  },
+  "history": {
+    "title": "Histoire"
+  },
+  "festive": {
+    "title": "Fêtes et célébrations"
+  },
+  "food": {
+    "title": "Les meilleurs plats"
+  },
+  "monuments": {
+    "title": "Monuments et lieux historiques"
+  }
+}

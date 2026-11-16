@@ -111,7 +111,8 @@
     "wordsIntro": "A few words of Bahraini Arabic to start a conversation.",
     "wordsColumns": {
       "meaning": "English",
-      "local": "Bahraini Arabic"
+      "local": "Bahraini Arabic",
+      "script": "Arabic script"
     },
     "words": [
       {
@@ -238,7 +239,8 @@
         "title": "Bahrain International Circuit, Sakhir",
         "text": "Opened in 2004, the first Formula 1 circuit in the Middle East, hosting the annual Bahrain Grand Prix."
       }
-    ]
+    ],
+    "featuredTitle": "Featured destinations"
   },
   "wear": {
     "eyebrow": "Heritage you can wear",

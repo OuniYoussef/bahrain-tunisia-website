@@ -1,0 +1,266 @@
+{
+  "meta": {
+    "title": "Discover Bahrain",
+    "description": "The Pearl of the Arabian Gulf: destinations, traditional wear and crafts, nature, cities, 5,000 years of history, celebrations, food and monuments of Bahrain."
+  },
+  "sectionNav": {
+    "label": "Sections of the Bahrain page",
+    "welcome": "Welcome",
+    "destinations": "Destinations",
+    "wear": "Traditional Wear",
+    "nature": "Nature",
+    "cities": "Cities",
+    "history": "History",
+    "festive": "Celebrations",
+    "food": "Food",
+    "monuments": "Monuments"
+  },
+  "welcome": {
+    "eyebrow": "Welcome to Bahrain",
+    "headline": "Discover Bahrain",
+    "subheadline": "The Pearl of the Arabian Gulf.",
+    "intro": "Bahrain is an Arab Muslim kingdom in the middle of the Arabian Gulf, an archipelago of natural islands and artificial islands, with Manama as its capital. Once the capital of the ancient Dilmun civilization, and for thousands of years the home of the world's finest natural pearls, it is a place where 5,000 years of history stand beside gleaming skylines. Its people are known for their generosity and hospitality, and the island is known for its religious tolerance, its poets, its palms and its fresh-water springs.",
+    "factsTitle": "Quick facts",
+    "facts": [
+      {
+        "id": "capital",
+        "label": "Capital",
+        "value": "Manama"
+      },
+      {
+        "id": "language",
+        "label": "Language",
+        "value": "Arabic (English widely spoken)"
+      },
+      {
+        "id": "religion",
+        "label": "Religion",
+        "value": "Islam"
+      },
+      {
+        "id": "government",
+        "label": "Government",
+        "value": "Constitutional monarchy; King Hamad bin Isa Al Khalifa"
+      },
+      {
+        "id": "independence",
+        "label": "Independence",
+        "value": "15 August 1971"
+      },
+      {
+        "id": "currency",
+        "label": "Currency",
+        "value": "Bahraini Dinar (BHD), divided into 1000 fils"
+      },
+      {
+        "id": "flag",
+        "label": "Flag",
+        "value": "Red and white, separated by a serrated edge of five white points"
+      },
+      {
+        "id": "flower",
+        "label": "Flower",
+        "value": "Al Razji (jasmine / arfaj)"
+      },
+      {
+        "id": "geography",
+        "label": "Geography",
+        "value": "On the western coast of the Arabian Gulf, linked to Saudi Arabia by the King Fahd Causeway (opened 1986). The kingdom includes Bahrain Island (the main island), Muharraq, Sitra, Umm an-Nasan, Hawar and others."
+      },
+      {
+        "id": "climate",
+        "label": "Climate",
+        "value": "Hot and humid summers and mild winters"
+      },
+      {
+        "id": "best-time",
+        "label": "Best time to visit",
+        "value": "November to March"
+      }
+    ],
+    "nicknamesTitle": "Nicknames",
+    "nicknames": [
+      {
+        "id": "pearl",
+        "title": "Pearl of the Gulf",
+        "text": "For its natural pearls."
+      },
+      {
+        "id": "immortality",
+        "title": "Land of Immortality",
+        "text": "From the Sumerian texts about Dilmun in the Epic of Gilgamesh."
+      },
+      {
+        "id": "paradise",
+        "title": "Land of the Great Paradise",
+        "text": "For its springs and gardens."
+      },
+      {
+        "id": "million-palms",
+        "title": "Island of a Million Palms",
+        "text": "For its palm groves."
+      },
+      {
+        "id": "awal",
+        "title": "Awal",
+        "text": "The ancient name of Bahrain."
+      }
+    ],
+    "nameOrigin": "Bahrain was named after its two types of water: fresh water from natural springs and wells, and the salt water of the surrounding sea.",
+    "wordsTitle": "Useful words",
+    "wordsIntro": "A few words of Bahraini Arabic to start a conversation.",
+    "wordsColumns": {
+      "meaning": "English",
+      "local": "Bahraini Arabic",
+      "script": "Arabic script"
+    },
+    "words": [
+      {
+        "id": "hello",
+        "meaning": "Hello",
+        "say": "Marhaba",
+        "script": "مرحبا"
+      },
+      {
+        "id": "welcome",
+        "meaning": "Welcome",
+        "say": "Ahlan wa sahlan",
+        "script": "أهلاً وسهلاً"
+      },
+      {
+        "id": "how-are-you",
+        "meaning": "How are you?",
+        "say": "Shlonak? (to a man) / Shlonich? (to a woman)",
+        "script": "شلونك؟ / شلونچ؟"
+      },
+      {
+        "id": "good",
+        "meaning": "Good / fine",
+        "say": "Zain",
+        "script": "زين"
+      },
+      {
+        "id": "thanks",
+        "meaning": "Thank you",
+        "say": "Shukran",
+        "script": "شكراً"
+      },
+      {
+        "id": "goodbye",
+        "meaning": "Goodbye",
+        "say": "Ma'a salama",
+        "script": "مع السلامة"
+      },
+      {
+        "id": "how-much",
+        "meaning": "How much is this?",
+        "say": "Kam hatha?",
+        "script": "كم هذا؟"
+      },
+      {
+        "id": "a-lot",
+        "meaning": "A lot",
+        "say": "Wayed",
+        "script": "وايد"
+      }
+    ],
+    "didYouKnowTitle": "Did you know?",
+    "didYouKnow": [
+      "Bahrain was the pearl capital of the world, and pearl diving is a 7,000-year-old profession.",
+      "Bahraini ships were built without a single iron nail.",
+      "The Bahrain World Trade Center was the first skyscraper in the world to integrate wind turbines.",
+      "A tree has survived alone in the Bahraini desert for over 400 years.",
+      "Beit Al-Quran holds both the smallest and the largest Quran in the world.",
+      "Bahrain was the first Gulf country to discover oil, in 1932."
+    ]
+  },
+  "destinations": {
+    "eyebrow": "Must-see places",
+    "title": "Interesting Destinations",
+    "intro": "An immersive showcase of must-see places. Six destination cards open the page: Qal'at al-Bahrain, the Tree of Life, the Pearling Path, Al-Fateh Grand Mosque, Bahrain World Trade Center and the Old Manama Souq.",
+    "mapLabel": "Map of the destinations in Bahrain",
+    "featured": [
+      {
+        "id": "qalat",
+        "title": "Qal'at al-Bahrain (Bahrain Fort)",
+        "text": "Located 4 km west of Manama, it is an archaeological tell: civilizations layered on top of one another for over 4,500 years, from 2300 BCE to the 16th century CE. The fort standing today was built by the Portuguese over the ruins of the Dilmun capital. Visitors see the massive walls, the watchtowers at all four corners and the site museum. A UNESCO World Heritage Site since 2005.",
+        "tip": "The fort glows at sunset and is lit at night."
+      },
+      {
+        "id": "tree-of-life",
+        "title": "Tree of Life",
+        "text": "A Prosopis cineraria tree over 400 years old that stands alone in the desert on a small hill, with no visible water source. Its survival remains a scientific mystery, and it draws tens of thousands of visitors every year. It stands near Jebel Dukhan, the highest point of Bahrain.",
+        "tip": ""
+      },
+      {
+        "id": "pearling-path",
+        "title": "Pearling Path, Muharraq",
+        "text": "A 3.5 km walking path through the old city of Muharraq, with 17 historical buildings: homes of pearl merchants (tawawish) and ship captains (nawakhida), Bu Maher Fort and three Hayrats (pearl oyster beds). Famous for authentic Bahraini mud architecture and wooden windows called rawazin. A UNESCO World Heritage Site since 2012.",
+        "tip": ""
+      },
+      {
+        "id": "al-fateh",
+        "title": "Al-Fateh Grand Mosque",
+        "text": "The national mosque of Bahrain, holding 7,000 worshippers. Built in 1988 on an area of 6,500 square metres. It has the largest fibreglass dome in the world (24 m), Kufic calligraphy decorating its walls, Italian marble and a luxurious Austrian chandelier.",
+        "tip": ""
+      },
+      {
+        "id": "bahrain-wtc",
+        "title": "Bahrain World Trade Center",
+        "text": "Twin towers 240 metres tall with 50 floors, opened in 2008. The first skyscraper in the world to integrate three massive wind turbines between its towers, generating 11 to 15% of the building's electricity. It won two international awards for sustainable architecture.",
+        "tip": ""
+      },
+      {
+        "id": "old-manama-souq",
+        "title": "Old Manama Souq and Bab Al-Bahrain",
+        "text": "Bab Al-Bahrain, a historic building from 1945, is the symbolic gateway to Manama and its souq. Behind it lies the traditional market famous for spices, incense and oud, perfumes, gold and traditional textiles, including a gold souk.",
+        "tip": ""
+      }
+    ],
+    "moreTitle": "More places to explore",
+    "more": [
+      {
+        "id": "barbar-mounds",
+        "title": "Barbar Temple and Dilmun Burial Mounds",
+        "text": "Barbar Temple, in Barbar village, dates to the third millennium BCE and was found in 1954 by a Danish expedition. The Dilmun Burial Mounds hold over 170,000 tombs, a UNESCO World Heritage Site since 2019."
+      },
+      {
+        "id": "arad-fort",
+        "title": "Arad Fort",
+        "text": "A 15th-century fort on Muharraq Island beside the sea, with a square shape and circular corner towers, lit at night."
+      },
+      {
+        "id": "hawar",
+        "title": "Hawar Islands",
+        "text": "A group of islands in the south, a protected nature reserve and bird haven."
+      },
+      {
+        "id": "circuit",
+        "title": "Bahrain International Circuit, Sakhir",
+        "text": "Opened in 2004, the first Formula 1 circuit in the Middle East, hosting the annual Bahrain Grand Prix."
+      }
+    ],
+    "featuredTitle": "Featured destinations"
+  },
+  "wear": {
+    "title": "Traditional Wear"
+  },
+  "nature": {
+    "title": "Best Go-To Nature"
+  },
+  "cities": {
+    "title": "Best Go-To City"
+  },
+  "history": {
+    "title": "History"
+  },
+  "festive": {
+    "title": "Festive Celebrations"
+  },
+  "food": {
+    "title": "Best Foods"
+  },
+  "monuments": {
+    "title": "Monuments & Historical Spots"
+  }
+}

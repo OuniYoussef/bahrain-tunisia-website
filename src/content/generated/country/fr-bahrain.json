@@ -1,0 +1,266 @@
+{
+  "meta": {
+    "title": "Découvrir Bahreïn",
+    "description": "La perle du golfe Arabique : destinations, habits et artisanat traditionnels, nature, villes, 5 000 ans d'histoire, fêtes, cuisine et monuments de Bahreïn."
+  },
+  "sectionNav": {
+    "label": "Sections de la page Bahreïn",
+    "welcome": "Bienvenue",
+    "destinations": "Destinations",
+    "wear": "Habits traditionnels",
+    "nature": "Nature",
+    "cities": "Villes",
+    "history": "Histoire",
+    "festive": "Fêtes",
+    "food": "Cuisine",
+    "monuments": "Monuments"
+  },
+  "welcome": {
+    "eyebrow": "Bienvenue à Bahreïn",
+    "headline": "Découvrir Bahreïn",
+    "subheadline": "La perle du golfe Arabique.",
+    "intro": "Bahreïn est un royaume arabe et musulman situé au milieu du golfe Arabique, un archipel d'îles naturelles et artificielles dont la capitale est Manama. Ancienne capitale de la civilisation de Dilmun et, pendant des millénaires, patrie des plus belles perles naturelles du monde, c'est un lieu où 5 000 ans d'histoire côtoient des gratte-ciel étincelants. Ses habitants sont réputés pour leur générosité et leur hospitalité, et l'île est connue pour sa tolérance religieuse, ses poètes, ses palmiers et ses sources d'eau douce.",
+    "factsTitle": "En bref",
+    "facts": [
+      {
+        "id": "capital",
+        "label": "Capitale",
+        "value": "Manama"
+      },
+      {
+        "id": "language",
+        "label": "Langue",
+        "value": "Arabe (anglais largement parlé)"
+      },
+      {
+        "id": "religion",
+        "label": "Religion",
+        "value": "Islam"
+      },
+      {
+        "id": "government",
+        "label": "Régime",
+        "value": "Monarchie constitutionnelle ; le roi Hamad ben Issa Al Khalifa"
+      },
+      {
+        "id": "independence",
+        "label": "Indépendance",
+        "value": "15 août 1971"
+      },
+      {
+        "id": "currency",
+        "label": "Monnaie",
+        "value": "Le dinar bahreïni (BHD), divisé en 1 000 fils"
+      },
+      {
+        "id": "flag",
+        "label": "Drapeau",
+        "value": "Rouge et blanc, séparés par une bordure dentelée de cinq pointes blanches"
+      },
+      {
+        "id": "flower",
+        "label": "Fleur",
+        "value": "Al Razji (jasmin / arfaj)"
+      },
+      {
+        "id": "geography",
+        "label": "Géographie",
+        "value": "Sur la côte occidentale du golfe Arabique, relié à l'Arabie saoudite par la chaussée du Roi-Fahd (ouverte en 1986). Le royaume comprend l'île de Bahreïn (l'île principale), Muharraq, Sitra, Umm an-Nasan, Hawar et d'autres îles."
+      },
+      {
+        "id": "climate",
+        "label": "Climat",
+        "value": "Étés chauds et humides, hivers doux"
+      },
+      {
+        "id": "best-time",
+        "label": "Meilleure période pour visiter",
+        "value": "De novembre à mars"
+      }
+    ],
+    "nicknamesTitle": "Surnoms",
+    "nicknames": [
+      {
+        "id": "pearl",
+        "title": "Perle du Golfe",
+        "text": "Pour ses perles naturelles."
+      },
+      {
+        "id": "immortality",
+        "title": "Terre de l'immortalité",
+        "text": "D'après les textes sumériens sur Dilmun dans l'Épopée de Gilgamesh."
+      },
+      {
+        "id": "paradise",
+        "title": "Terre du grand paradis",
+        "text": "Pour ses sources et ses jardins."
+      },
+      {
+        "id": "million-palms",
+        "title": "L'île au million de palmiers",
+        "text": "Pour ses palmeraies."
+      },
+      {
+        "id": "awal",
+        "title": "Awal",
+        "text": "L'ancien nom de Bahreïn."
+      }
+    ],
+    "nameOrigin": "Bahreïn doit son nom à ses deux eaux : l'eau douce de ses sources naturelles et de ses puits, et l'eau salée de la mer qui l'entoure.",
+    "wordsTitle": "Mots utiles",
+    "wordsIntro": "Quelques mots d'arabe bahreïni pour engager la conversation.",
+    "wordsColumns": {
+      "meaning": "Français",
+      "local": "Arabe bahreïni",
+      "script": "Écriture arabe"
+    },
+    "words": [
+      {
+        "id": "hello",
+        "meaning": "Bonjour",
+        "say": "Marhaba",
+        "script": "مرحبا"
+      },
+      {
+        "id": "welcome",
+        "meaning": "Bienvenue",
+        "say": "Ahlan wa sahlan",
+        "script": "أهلاً وسهلاً"
+      },
+      {
+        "id": "how-are-you",
+        "meaning": "Comment vas-tu ?",
+        "say": "Shlonak? (to a man) / Shlonich? (to a woman)",
+        "script": "شلونك؟ / شلونچ؟"
+      },
+      {
+        "id": "good",
+        "meaning": "Bien",
+        "say": "Zain",
+        "script": "زين"
+      },
+      {
+        "id": "thanks",
+        "meaning": "Merci",
+        "say": "Shukran",
+        "script": "شكراً"
+      },
+      {
+        "id": "goodbye",
+        "meaning": "Au revoir",
+        "say": "Ma'a salama",
+        "script": "مع السلامة"
+      },
+      {
+        "id": "how-much",
+        "meaning": "Combien ça coûte ?",
+        "say": "Kam hatha?",
+        "script": "كم هذا؟"
+      },
+      {
+        "id": "a-lot",
+        "meaning": "Beaucoup",
+        "say": "Wayed",
+        "script": "وايد"
+      }
+    ],
+    "didYouKnowTitle": "Le saviez-vous ?",
+    "didYouKnow": [
+      "Bahreïn était la capitale mondiale de la perle, et la pêche des perles y est un métier vieux de 7 000 ans.",
+      "Les navires bahreïnis étaient construits sans un seul clou en fer.",
+      "Le Bahrain World Trade Center a été le premier gratte-ciel au monde à intégrer des éoliennes.",
+      "Un arbre survit seul dans le désert bahreïni depuis plus de 400 ans.",
+      "Beit Al-Quran abrite à la fois le plus petit et le plus grand Coran du monde.",
+      "Bahreïn a été le premier pays du Golfe à découvrir du pétrole, en 1932."
+    ]
+  },
+  "destinations": {
+    "eyebrow": "Lieux incontournables",
+    "title": "Destinations à découvrir",
+    "intro": "Une vitrine immersive des lieux incontournables. Six destinations ouvrent la page : Qal'at al-Bahreïn, l'Arbre de vie, le Chemin des perles, la Grande Mosquée Al-Fateh, le Bahrain World Trade Center et le vieux souk de Manama.",
+    "mapLabel": "Carte des destinations à Bahreïn",
+    "featured": [
+      {
+        "id": "qalat",
+        "title": "Qal'at al-Bahreïn (fort de Bahreïn)",
+        "text": "Situé à 4 km à l'ouest de Manama, c'est un tell archéologique : des civilisations superposées depuis plus de 4 500 ans, de 2300 av. J.-C. au XVIᵉ siècle. Le fort actuel a été construit par les Portugais sur les ruines de la capitale de Dilmun. On y découvre des murailles massives, des tours de guet aux quatre angles et le musée du site. Inscrit au patrimoine mondial de l'UNESCO depuis 2005.",
+        "tip": "Le fort s'embrase au coucher du soleil et s'illumine la nuit."
+      },
+      {
+        "id": "tree-of-life",
+        "title": "L'Arbre de vie",
+        "text": "Un Prosopis cineraria de plus de 400 ans, seul dans le désert sur une petite colline, sans source d'eau visible. Sa survie reste un mystère scientifique, et il attire des dizaines de milliers de visiteurs chaque année. Il se dresse près du Jebel Dukhan, le point culminant de Bahreïn.",
+        "tip": ""
+      },
+      {
+        "id": "pearling-path",
+        "title": "Le Chemin des perles, Muharraq",
+        "text": "Un parcours piéton de 3,5 km dans la vieille ville de Muharraq, jalonné de 17 bâtiments historiques : maisons de marchands de perles (tawawish) et de capitaines de navires (nawakhida), le fort de Bu Maher et trois hayrat (bancs d'huîtres perlières). Célèbre pour son authentique architecture bahreïnie en terre et ses fenêtres en bois appelées rawazin. Inscrit au patrimoine mondial de l'UNESCO depuis 2012.",
+        "tip": ""
+      },
+      {
+        "id": "al-fateh",
+        "title": "Grande Mosquée Al-Fateh",
+        "text": "La mosquée nationale de Bahreïn, qui accueille 7 000 fidèles. Construite en 1988 sur une surface de 6 500 mètres carrés, elle possède la plus grande coupole en fibre de verre du monde (24 m), des calligraphies coufiques sur ses murs, du marbre italien et un somptueux lustre autrichien.",
+        "tip": ""
+      },
+      {
+        "id": "bahrain-wtc",
+        "title": "Bahrain World Trade Center",
+        "text": "Des tours jumelles de 240 mètres et 50 étages, inaugurées en 2008. Le premier gratte-ciel au monde à intégrer trois immenses éoliennes entre ses tours, qui produisent 11 à 15 % de l'électricité du bâtiment. Il a remporté deux prix internationaux d'architecture durable.",
+        "tip": ""
+      },
+      {
+        "id": "old-manama-souq",
+        "title": "Le vieux souk de Manama et Bab Al-Bahreïn",
+        "text": "Bab Al-Bahreïn, bâtiment historique de 1945, est la porte symbolique de Manama et de son souk. Derrière elle s'étend le marché traditionnel réputé pour ses épices, son encens et son oud, ses parfums, son or et ses textiles traditionnels, avec un souk de l'or.",
+        "tip": ""
+      }
+    ],
+    "moreTitle": "D'autres lieux à explorer",
+    "more": [
+      {
+        "id": "barbar-mounds",
+        "title": "Temple de Barbar et tumulus de Dilmun",
+        "text": "Le temple de Barbar, dans le village du même nom, date du IIIᵉ millénaire av. J.-C. et a été découvert en 1954 par une expédition danoise. Les tumulus de Dilmun comptent plus de 170 000 tombes ; ils sont inscrits au patrimoine mondial de l'UNESCO depuis 2019."
+      },
+      {
+        "id": "arad-fort",
+        "title": "Fort d'Arad",
+        "text": "Un fort du XVᵉ siècle sur l'île de Muharraq, au bord de la mer, de plan carré avec des tours d'angle circulaires, illuminé la nuit."
+      },
+      {
+        "id": "hawar",
+        "title": "Îles Hawar",
+        "text": "Un groupe d'îles au sud, réserve naturelle protégée et refuge pour les oiseaux."
+      },
+      {
+        "id": "circuit",
+        "title": "Circuit international de Bahreïn, Sakhir",
+        "text": "Inauguré en 2004, le premier circuit de Formule 1 du Moyen-Orient, qui accueille chaque année le Grand Prix de Bahreïn."
+      }
+    ],
+    "featuredTitle": "Destinations à la une"
+  },
+  "wear": {
+    "title": "Habits traditionnels"
+  },
+  "nature": {
+    "title": "La nature à ne pas manquer"
+  },
+  "cities": {
+    "title": "Les villes à ne pas manquer"
+  },
+  "history": {
+    "title": "Histoire"
+  },
+  "festive": {
+    "title": "Fêtes et célébrations"
+  },
+  "food": {
+    "title": "Les meilleurs plats"
+  },
+  "monuments": {
+    "title": "Monuments et lieux historiques"
+  }
+}

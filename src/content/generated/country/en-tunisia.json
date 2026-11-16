@@ -1,0 +1,308 @@
+{
+  "meta": {
+    "title": "Discover Tunisia",
+    "description": "Where the Mediterranean meets the Sahara: destinations, traditional wear, nature, cities, history, celebrations, food and monuments of Tunisia."
+  },
+  "sectionNav": {
+    "label": "Sections of the Tunisia page",
+    "welcome": "Welcome",
+    "destinations": "Destinations",
+    "wear": "Traditional Wear",
+    "nature": "Nature",
+    "cities": "Cities",
+    "history": "History",
+    "festive": "Celebrations",
+    "food": "Food",
+    "monuments": "Monuments"
+  },
+  "welcome": {
+    "eyebrow": "Welcome to Tunisia",
+    "headline": "Let's Discover Tunisia",
+    "subheadline": "Where the Mediterranean meets the Sahara.",
+    "intro": "Tunisia is a state in North Africa that belongs to the Maghreb, and its capital is Tunis. It is bordered by Algeria to the west and southwest, Libya to the southeast, and the Mediterranean Sea to the north and east. A free, independent and sovereign state, Tunisia has Islam as its religion, the Republic as its system and Arabic as its language, with French widely spoken. Its dialect is a mixture of Arabic, French and Italian. In a compact country, visitors travel from golden Mediterranean beaches and whitewashed hilltop villages to Roman amphitheatres, holy cities and the dunes of the Sahara.",
+    "factsTitle": "Quick facts",
+    "facts": [
+      {
+        "id": "capital",
+        "label": "Capital",
+        "value": "Tunis"
+      },
+      {
+        "id": "area",
+        "label": "Area and people",
+        "value": "About 163,000 square kilometres, with about 12 million people"
+      },
+      {
+        "id": "languages",
+        "label": "Languages",
+        "value": "Arabic, with French widely used; Tunisian dialect (Derja)"
+      },
+      {
+        "id": "independence",
+        "label": "Independence",
+        "value": "20 March 1956; Republic proclaimed 25 July 1957"
+      },
+      {
+        "id": "currency",
+        "label": "Currency",
+        "value": "Tunisian Dinar (dt). 1 dinar = 1000 millimes. Nine denominations: 10, 20, 50, 100, 200 and 500 millimes, and 1, 2 and 5 dinars."
+      },
+      {
+        "id": "flag",
+        "label": "Flag",
+        "value": "Red with a white disc holding a red crescent and star"
+      },
+      {
+        "id": "flower",
+        "label": "Flower",
+        "value": "Jasmine"
+      },
+      {
+        "id": "climate",
+        "label": "Climate",
+        "value": "Mediterranean in the north (hot dry summers, mild wet winters), semi-arid in the centre, Saharan in the south"
+      },
+      {
+        "id": "best-time",
+        "label": "Best time to visit",
+        "value": "March to May and September to November"
+      }
+    ],
+    "wordsTitle": "Useful words",
+    "wordsIntro": "A few words of Tunisian Derja to start a conversation.",
+    "wordsColumns": {
+      "meaning": "English",
+      "local": "Tunisian",
+      "script": "Arabic script"
+    },
+    "words": [
+      {
+        "id": "hello",
+        "meaning": "Hello",
+        "say": "Aslama",
+        "script": "عسلامة"
+      },
+      {
+        "id": "bye",
+        "meaning": "Bye",
+        "say": "Beslama",
+        "script": "بالسلامة"
+      },
+      {
+        "id": "how-are-you",
+        "meaning": "How are you?",
+        "say": "Chneya ahwelek",
+        "script": "شنية أحوالك"
+      },
+      {
+        "id": "fine",
+        "meaning": "I'm fine",
+        "say": "Labes",
+        "script": "لاباس"
+      },
+      {
+        "id": "sorry",
+        "meaning": "Sorry",
+        "say": "Samahny",
+        "script": "سامحني"
+      },
+      {
+        "id": "thanks",
+        "meaning": "Thanks",
+        "say": "Aychek",
+        "script": "يعيشك"
+      },
+      {
+        "id": "ok",
+        "meaning": "OK",
+        "say": "Mrigel",
+        "script": "مريقل"
+      },
+      {
+        "id": "good-night",
+        "meaning": "Good night",
+        "say": "Alekhyr",
+        "script": "على الخير"
+      },
+      {
+        "id": "how-much",
+        "meaning": "How much does this cost?",
+        "say": "Bkadah hedhi",
+        "script": "بقداش هذي"
+      },
+      {
+        "id": "a-lot",
+        "meaning": "So much / a lot",
+        "say": "Barcha",
+        "script": "برشا"
+      }
+    ],
+    "didYouKnowTitle": "Did you know?",
+    "didYouKnow": [
+      "Tunisian cuisine is heavily based on a plethora of spices.",
+      "Tunisia is a pioneer in the Arab world for women's rights.",
+      "Tunisians use a lot of hand gestures when talking.",
+      "Many Star Wars scenes were filmed in the Tunisian desert.",
+      "The Tunisian dialect is a mixture of Arabic, French and Italian.",
+      "Ras Angela, near Bizerte, is the northernmost point of the African continent."
+    ]
+  },
+  "destinations": {
+    "eyebrow": "Must-see places",
+    "title": "Interesting Destinations",
+    "intro": "An immersive showcase of must-see places. The six most known places in Tunisia are Sidi Bou Said, El Djem, Bizerte, Monastir, Al Medina and Kairouan.",
+    "mapLabel": "Map of the destinations in Tunisia",
+    "featured": [
+      {
+        "id": "sidi-bou-said",
+        "title": "Sidi Bou Said",
+        "text": "A hilltop village on the Gulf of Tunis, about 20 km from the capital, close to Carthage. Its whitewashed houses with blue doors, blue window grilles and wrought-iron balconies, draped in bougainvillea and jasmine, look over the sea and the Gulf of Tunis. The village takes its name from a 13th-century Muslim saint, Abu Said al-Baji. Climb the stepped lanes, sip mint tea with pine nuts at a terrace cafe, taste warm bambalouni (Tunisian doughnuts), visit the Ennejma Ezzahra palace, a centre for Arab and Mediterranean music, and watch the sunset over the bay.",
+        "tip": "Best time: late afternoon."
+      },
+      {
+        "id": "el-djem",
+        "title": "El Djem",
+        "text": "A small town in the Sahel whose Roman amphitheatre, built around AD 238 in ancient Thysdrus, is one of the largest and best preserved in the world and could seat around 35,000 spectators. It is a UNESCO World Heritage Site. Visitors can walk the arena, underground passages and upper tiers. Each summer the International Festival of Symphonic Music fills the arena with music. The nearby museum displays Roman mosaics.",
+        "tip": ""
+      },
+      {
+        "id": "bizerte",
+        "title": "Bizerte",
+        "text": "Founded around 1100 BC by Phoenician settlers from Sidon, Bizerte sits at the northern tip of Africa, positioned along the Mediterranean Sea near the Algerian border. It is one of Tunisia's oldest and most historic coastal cities. Its old port with colourful fishing boats, its medina (Al Madina), the Kasbah and Spanish Fort, and the beaches along the coast make it a favourite getaway.",
+        "tip": "See the Bizerte spotlight below."
+      },
+      {
+        "id": "monastir",
+        "title": "Monastir",
+        "text": "A seaside city on the east coast and the birthplace of Habib Bourguiba, the first president of Tunisia. The Ribat of Monastir, a fortified coastal monastery built in 796, rises above the beach and offers a panorama from its watchtower. The white Bourguiba Mausoleum with its golden dome, a lively marina and long sandy beaches complete the picture.",
+        "tip": ""
+      },
+      {
+        "id": "medina-tunis",
+        "title": "Al Medina (Medina of Tunis)",
+        "text": "The old walled city at the heart of the capital and a UNESCO World Heritage Site. Its maze of lanes holds around 700 monuments, including mosques, palaces, madrasas, mausoleums and fountains. The Zitouna Mosque stands at its centre, with souks radiating around it: Souk el-Attarine (perfumes), Souk des Chechias (red caps), the leather, brass, gold, carpet and spice souks. Visitors can climb to a rooftop terrace for tea over the domes and minarets.",
+        "tip": ""
+      },
+      {
+        "id": "kairouan",
+        "title": "Kairouan",
+        "text": "One of the holiest cities of Islam and the first Arab-Muslim capital in the Maghreb, founded in AD 670. Its Great Mosque, with a 31-metre minaret, vast courtyard and forest of ancient columns, is a masterpiece of early Islamic architecture. The medina is a UNESCO World Heritage Site. Kairouan is famous for hand-knotted carpets, copperwork and its makroudh pastry, and for the Aghlabid water basins and the Mosque of the Three Doors.",
+        "tip": ""
+      }
+    ],
+    "moreTitle": "More places to explore",
+    "more": [
+      {
+        "id": "carthage",
+        "title": "Carthage",
+        "text": "The ruins of the ancient Phoenician-Carthaginian capital and later Roman city near Tunis, a UNESCO World Heritage Site. Highlights: the Antonine Baths, among the largest Roman baths in the world; the Punic ports, including the circular naval harbour; the Tophet; the Byrsa hill and museum; the Roman theatre, which hosts the Carthage International Festival; and Roman villas with mosaics."
+      },
+      {
+        "id": "djerba",
+        "title": "Djerba",
+        "text": "A sunny island in the south, linked by a causeway, with whitewashed villages, palm groves, wide beaches, the market town of Houmt Souk, the potters of Guellala, the fortress of Borj el Kebir and the El Ghriba synagogue, a place of pilgrimage. Known for its relaxed pace and warm sea."
+      },
+      {
+        "id": "dougga",
+        "title": "Dougga",
+        "text": "The best preserved Roman town in North Africa, set on a hillside among olive groves, with a theatre, the Capitol, temples, baths and a mausoleum. A UNESCO World Heritage Site."
+      },
+      {
+        "id": "douz-tozeur",
+        "title": "Douz and Tozeur",
+        "text": "Gateways to the Sahara. Douz is the starting point for camel treks into the dunes; Tozeur is a palm oasis with a medina of patterned yellow brick, and the nearby mountain oases of Chebika, Tamerza and Mides."
+      },
+      {
+        "id": "hammamet-tabarka-cap-bon",
+        "title": "Hammamet, Tabarka and Cap Bon",
+        "text": "Resort coasts with white beaches, a fortified old town in Hammamet, coral reefs for diving in Tabarka, and the beaches and orange groves of Cap Bon."
+      },
+      {
+        "id": "matmata-tataouine",
+        "title": "Matmata and Tataouine",
+        "text": "Underground Berber houses carved into the earth, fortified granaries (ksour) and desert landscapes. Many Star Wars scenes were filmed in this region."
+      }
+    ],
+    "spotlight": {
+      "eyebrow": "Spotlight",
+      "title": "Bizerte spotlight",
+      "facts": [
+        {
+          "id": "where",
+          "title": "Where is Bizerte",
+          "text": "Situated at the northern tip of Africa, positioned along the Mediterranean Sea near the Algerian border, Bizerte was founded around 1100 BC by Phoenician settlers from Sidon and stands as one of Tunisia's oldest and most historic coastal cities."
+        },
+        {
+          "id": "about",
+          "title": "About Bizerte",
+          "text": "Bizertians, with their friendly and humorous nature, create a vibrant and welcoming community in the city of Bizerte. They are easygoing, joyful, honest and well-known for their love of football."
+        },
+        {
+          "id": "climate",
+          "title": "Climate",
+          "text": "Summers are short, very hot and clear, while winters are long, cool and mostly clear with occasional winds. Temperatures typically range from 8 °C to 33 °C, rarely falling below 5 °C or rising above 37 °C."
+        }
+      ],
+      "placesTitle": "Places to visit in Bizerte",
+      "places": [
+        {
+          "id": "al-madina",
+          "title": "Al Madina",
+          "text": "The old town with narrow lanes, blue doors and traditional houses."
+        },
+        {
+          "id": "old-port",
+          "title": "The Old Port",
+          "text": "Colourful boats, waterfront cafes and views of the old fort."
+        },
+        {
+          "id": "coco-beach",
+          "title": "Coco Beach",
+          "text": "A colourful beach spot on the coast."
+        },
+        {
+          "id": "ras-serrat",
+          "title": "Ras Serrat",
+          "text": "A coastal area with golden sand and calm waters."
+        },
+        {
+          "id": "cap-zbib",
+          "title": "Cap Zbib",
+          "text": "Rocky cliffs and clear water."
+        },
+        {
+          "id": "rafraf",
+          "title": "Rafraf",
+          "text": "A coastal village with sea views."
+        },
+        {
+          "id": "night-walks",
+          "title": "Night walks in Bizerte",
+          "text": "The old port and the lanes lit up at night."
+        }
+      ]
+    },
+    "featuredTitle": "Featured destinations"
+  },
+  "wear": {
+    "title": "Traditional Wear"
+  },
+  "nature": {
+    "title": "Best Go-To Nature"
+  },
+  "cities": {
+    "title": "Best Go-To City"
+  },
+  "history": {
+    "title": "History"
+  },
+  "festive": {
+    "title": "Festive Celebrations"
+  },
+  "food": {
+    "title": "Best Foods"
+  },
+  "monuments": {
+    "title": "Monuments & Historical Spots"
+  }
+}

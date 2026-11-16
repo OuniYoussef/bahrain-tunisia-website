@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T17:28:29.376Z",
+  "generatedAt": "2026-11-16T18:15:04.044Z",
   "images": {
     "bh-city-adliya": {
       "group": "bahrain",
@@ -1592,15 +1592,15 @@
       ],
       "width": 1440,
       "height": 960,
-      "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYwCdEf/gPKvS5c9+LZZdUU4ZAAD+Uh86bi3ZrCdSSNxY9tqfe7ANetoQY6wDPsyZ7TJUjQTsOxTxa7Vm9dzJwV6G3vwLxg5rhhNowKRkKXUE4vbzy2YDyJqTTsmz30AAAA==",
-      "color": "#98a8b8",
+      "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAACwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JZgCdMoMYJn/AeQE7GaPCRz5MWUmAAP7FOp2cY8WnYb+18Es1/uPJRiHeLkbE34If4vHHptgK1WxvRgGCEGuVWVGxlpERJL0droNhg6S2pe/43/WrUB/53O8iae/94cUKh3u4R8gokHKUAFpGGzmfpWPCgAAA",
+      "color": "#b8d8e8",
       "focal": "50% 50%",
       "credit": {
-        "title": "Errimel Bizerte.jpg",
+        "title": "Coco Beach Sidi Ali el Makki.jpg",
         "author": "Smailtn",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Errimel_Bizerte.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coco_Beach_Sidi_Ali_el_Makki.jpg",
         "origin": "commons"
       }
     },
@@ -1635,16 +1635,16 @@
         1440
       ],
       "width": 1440,
-      "height": 961,
-      "lqip": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYwC7ACKersbcqHxAI9qRGZgA/u7mRAik+llsKqyh7usZ2cRnod89BMjAGfpKAVpkUeAMSQ3VrQewJId4ZiI+0moSykjAAAA=",
-      "color": "#282838",
+      "height": 1080,
+      "lqip": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACQBACdASoYABIAPu1iqE2ppaOiMAgBMB2JQBfMr/QMyvHxSbZ4C9glo82x3AAA8dVStn5viJr4kbN/wE8n55B2dnM09uuc3V8Ia+3YHKTKDT6spjPEGuX669Zjl6sLLh5u1l9B5AAAAA==",
+      "color": "#080808",
       "focal": "50% 50%",
       "credit": {
-        "title": "Coup de foudre et bateaux amarrées aux cotes de la Galite.jpg",
-        "author": "Atef Ouni",
+        "title": "Vieux port by night.JPG",
+        "author": "Gigi sorrentino",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coup_de_foudre_et_bateaux_amarr%C3%A9es_aux_cotes_de_la_Galite.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vieux_port_by_night.JPG",
         "origin": "commons"
       }
     },
@@ -1680,15 +1680,15 @@
       ],
       "width": 1440,
       "height": 960,
-      "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAABwAwCdASoYABAALrV2u12jqampiYC0SxAE6ZQANS9NkcJDSEAA/u19CG9K0b2wN/LiH29iob9FrqncEGByO9J0mwg5QiAKuAWM0ZobE/dH+ZMv5ykK1Bvo1mdy6AAA",
-      "color": "#c8d8e8",
+      "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwAwCdASoYABAAPu1kqk4ppaQiMAgBMB2JZQCdIP8DAi5pQJRNZwgAAP7UG+EBTlHfaWctlm8RPisod7/uWIJ/uQ8RlnAswAQNUwDmL90bCggT5tg9uUzLCU5L2XsJjH9MtBs5EskGJjBFvhUAAA==",
+      "color": "#d8d8e8",
       "focal": "50% 50%",
       "credit": {
-        "title": "Ain damous Tunisia pic 2.jpg",
-        "author": "Med taher sellami",
+        "title": "Cap Serrat plage.jpg",
+        "author": "Smailtn",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ain_damous_Tunisia_pic_2.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cap_Serrat_plage.jpg",
         "origin": "commons"
       }
     },
@@ -2620,20 +2620,19 @@
       "widths": [
         640,
         1280,
-        1920,
-        2560
+        1920
       ],
-      "width": 2560,
-      "height": 1700,
-      "lqip": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAgCdASoYABAAPu1iqU2ppaOiMAgBMB2JYwCdADbQAAD+f/ZygM/TZQJxZtYa7AA=",
-      "color": "#987858",
+      "width": 1920,
+      "height": 1280,
+      "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAAAQBACdASoYABAAPu1krU6ppaSiMAgBMB2JZgCdICXCrNptsj80sF0LQAD+xcOKgah/UgFUBC7wVXiCe8ktpGZr45c9fKo09Ssuu49KEskrEbfYZ0UJq6c/I3Cy1Fuy1J6M2eIcuAUb4LpgAAA=",
+      "color": "#b8c8d8",
       "focal": "50% 50%",
       "credit": {
-        "title": "ISS020-E-9252 - View of Tunisia.jpg",
-        "author": "Earth Science and Remote Sensing Unit , Lyndon B. Johnson Space Center",
-        "license": "Public domain",
-        "licenseUrl": "",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:ISS020-E-9252_-_View_of_Tunisia.jpg",
+        "title": "SAHARA DOUZ.jpg",
+        "author": "Ena Tounes",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:SAHARA_DOUZ.jpg",
         "origin": "commons"
       }
     },

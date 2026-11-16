@@ -171,3 +171,41 @@ the native comparison table inside a labelled, focusable scroll section, includi
 scans wait for the hero CTA opacity to reach one so they assess the settled interface rather than a
 transient fade. Dedicated checks cover live reduced-motion changes, keyboard navigation and physical
 country-edge positions in all four viewport sizes.
+
+**D-036 — Country maps preserve geography and usable targets.** The supplied map pins cluster around
+Tunis and cannot each have a non-overlapping 44px target at the showcase's size. Keep the original inline
+SVG and its geographic dots, and connect twelve spaced HTML pin buttons to the corresponding points.
+Buttons take their accessible names from destination content, expose pressed state and card relationships,
+and show dismissible name labels on hover/focus. The controlled `activePlace`/`onSelect` interface links
+featured and more-place cards in both directions. Map geometry stays LTR in the Arabic page.
+
+**D-037 — Country browsing and focus.** Pin only at width >=1024px, height >=700px, with a fine hover
+pointer, no coarse touch pointer and no reduced-motion preference. The additional height condition keeps
+the map, text and controls accessible on short desktop windows. All other cases use the native snap
+carousel and collapsible map. Arrow keys follow reading direction; Home/End, previous/next buttons and
+ordinary Tab paths work in both modes. Absolute carousel positions prevent duplicate focus/scroll events
+from advancing twice. Preserve focused controls during image/font-triggered ScrollTrigger refreshes without
+reselecting their cards and overriding the user's scroll position.
+SectionNav uses router Links to avoid native hash-history warnings from the existing navigation blocker;
+same-page anchors focus their sections without a page wipe, while route changes still focus the h1.
+The skip link focuses/scrolls main directly without adding a native hash-history entry.
+
+**D-038 — Country content and asset payloads.** `useContent(country, 'overview')` loads a deterministic
+projection of the canonical locale namespace: complete meta/navigation/welcome/destinations and only the
+real titles of later sections. It does not rewrite or discard the original P5/P6 content; the normal
+`useContent(country)` still returns that complete namespace. `scripts/prepare-content.mjs` generates
+these projections, country media and scoped image catalogs before dev/build and after fetching photos.
+P5 must add its section content explicitly instead of reading bodies from the title-only overview.
+Header animation, maps, destination photo metadata and dialogs load when needed. Visible destination
+titles/descriptions and the hero's Mediterranean/Sahara copy describe their adjacent decorative photos;
+dialogs retain the detailed localised image alts. This keeps all initial country JS requests below 180 KiB.
+Bahrain uses the shared theme/navigation/title frame, with its detailed content still scheduled for P6.
+
+**D-039 — P4 photo corrections.** Reviewed all twenty distinct Tunisia welcome/destination/spotlight
+selections. Replaced the satellite image with `SAHARA DOUZ.jpg`, the Errimel shipwreck with
+`Coco Beach Sidi Ali el Makki.jpg`, Ain Damous with `Cap Serrat plage.jpg`, and La Galite lightning with
+`Vieux port by night.JPG`. Pinned sources and licences remain in overrides, selection.lock and credits;
+regenerated originals and WebPs with `--refresh --force`. Removed the obsolete 2560px dunes derivative
+because the replacement supports up to 1920px. Corrected five EN/FR/AR alt descriptions to match the
+actual amphitheatre passage, mosque interior, camel festival and coastal scenes. Added translated third
+column labels for Arabic script and a distinct featured-carousel label; canonical locale shapes stay equal.

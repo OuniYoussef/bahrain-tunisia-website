@@ -1,6 +1,7 @@
 import { createBrowserRouter, type LoaderFunctionArgs } from 'react-router';
 import { DEFAULT_LOCALE, isLocale } from '@/i18n/config';
 import { loadNamespace } from '@/i18n/content';
+import { loadCountryOverview, type CountryNamespace } from '@/i18n/countryOverview';
 import { env } from '@/lib/env';
 import type { Content } from '@/content/types';
 import { LocaleRedirect, LocaleGate, ErrorBoundary, RouteSkeleton } from './RouteBoundary';
@@ -13,6 +14,12 @@ const preload =
         loadNamespace(locale, ns),
       ),
     );
+    return null;
+  };
+const preloadCountry =
+  (country: CountryNamespace) =>
+  async ({ params }: LoaderFunctionArgs) => {
+    await loadCountryOverview(isLocale(params.lang) ? params.lang : DEFAULT_LOCALE, country);
     return null;
   };
 export const router = createBrowserRouter(
@@ -46,12 +53,12 @@ export const router = createBrowserRouter(
             {
               path: 'tunisia',
               lazy: () => import('@/features/country/CountryPage'),
-              loader: preload('tunisia'),
+              loader: preloadCountry('tunisia'),
             },
             {
               path: 'bahrain',
               lazy: () => import('@/features/country/CountryPage'),
-              loader: preload('bahrain'),
+              loader: preloadCountry('bahrain'),
             },
             {
               path: 'common-grounds/:slideId?',
