@@ -20,6 +20,8 @@ for (const reducedMotion of ['no-preference', 'reduce'] as const) {
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
       expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
       expect(errors).toEqual([]);
+      await page.goto('/dev/styleguide');
+      await expect(page.getByRole('radio')).toHaveCount(0);
     });
   });
 }

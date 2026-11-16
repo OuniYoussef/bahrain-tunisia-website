@@ -76,3 +76,28 @@ by the user; product copy, locale routing, font imports/subsets and branding fol
 `engines.node >=22.12`; jsdom 31.0.1 requires `^22.22.2 || ^24.15.0 || >=26.0.0` → retain both requested
 settings and document the stricter test-tool requirement. Bootstrap is verified on Node 24.21.0; use
 Node 22.22.2+ or 24.15.0+ (or 26+) for the complete test suite.
+
+**D-024 — P1 content prerequisite without product routing.** The P1 components require localised labels
+through `useContent`, while the full locale infrastructure is scheduled for P2. Introduce a small typed
+ContentProvider with explicitly loaded namespaces; the dev route loads existing common/tunisia/images
+content for EN/FR/AR. Locale persistence, URL redirects, interpolation/plurals, branded chrome and product
+routes remain P2. Technical token names/direction values in the styleguide are specimen metadata; native
+language names follow I18N_RTL.md. No new translated copy is invented.
+
+**D-025 — Explicit variable-font subsets.** Installed Fontsource variable packages expose whole-family
+CSS, not subset-specific CSS entry points. Declare only their Latin/Latin Extended/Arabic WOFF2 faces
+in fonts.css using package file URLs and the supplied unicode ranges; import Amiri's Arabic 400/700 CSS
+directly. Keep swap and the requested weight ranges, Fraunces optical sizing/SOFT axes, and preload the
+Latin Fraunces/Readex files through Vite-resolved HTML links. No Vietnamese or Cyrillic faces are loaded.
+
+**D-026 — Control contrast takes precedence over decorative borders.** DESIGN_SYSTEM.md specifies line
+for input borders, but line against pearl-glow measures 1.39:1, below the 3:1 non-text contrast needed to
+identify an unfilled control. Use muted (5.60:1) on inputs/selects/textareas, radio cards and pills; retain
+line for decorative separators and card outlines. Text pairs are checked against the actual theme tokens
+and rendered components with axe. The lowest used small-text pair is muted/sand-100 at 4.60:1.
+
+**D-027 — One motion system and trusted inline SVGs.** ASSETS.md suggests a CSS LQIP transition, while
+AGENTS.md requires GSAP-only motion. Fade the separate LQIP/colour layer with GSAP, and remove it instantly
+under reduced motion; keep image dimensions/crops stable. All helpers use scoped useGSAP and matchMedia
+cleanup. InlineSvg accepts only bundled registry keys, parses approved shape attributes into React nodes,
+and prefixes ids/references per instance. Localised titles are text nodes; no user HTML is injected.

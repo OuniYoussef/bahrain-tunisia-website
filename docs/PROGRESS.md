@@ -6,8 +6,9 @@
 ## Current state
 - P0 bootstrap implemented: Vite/React/TypeScript app, tooling, 15 project skills, folder skeleton, environment
   example and content safety net. Supplied content, scripts, SVGs and brand assets are preserved.
-- Temporary diagnostic screen only; product UI, fonts and locale routing begin in P1/P2.
-- Next prompt: **P1 — Design system & primitives**
+- P1 foundation implemented: design tokens, script-specific fonts, UI/media/motion primitives and a
+  development-only `/dev/styleguide`. Product pages and the branded locale shell remain for P2 onward.
+- Next prompt: **P2 — i18n, routing & app shell**
 
 ## Checklist
 ### P0 — Bootstrap & tooling
@@ -58,12 +59,32 @@ bh-food-mumawash
 ```
 
 ### P1 — Design system & primitives
-- [ ] tokens in `@theme`, fonts per script, base styles, focus ring, logical utilities
-- [ ] ui primitives (Button, Container, Section, SectionHeader, Eyebrow, Badge, Card, Dialog, Tabs, fields, VisuallyHidden, LiveRegion)
-- [ ] media components (ResponsiveImage + placeholder, ArchFrame, Flag, Pattern, Ornament, InlineSvg)
-- [ ] `src/lib/gsap.ts`, `motion/` helpers (SplitHeading, Reveal)
-- [ ] `/dev/styleguide` route (dev only) showing everything in EN/FR/AR
+- [x] tokens in `@theme`, fonts per script, base styles, focus ring, logical utilities
+- [x] ui primitives (Button, Container, Section, SectionHeader, Eyebrow, Badge, Card, Dialog, Tabs, fields, VisuallyHidden, LiveRegion)
+- [x] media components (ResponsiveImage + placeholder, ArchFrame, Flag, Pattern, Ornament, InlineSvg)
+- [x] `src/lib/gsap.ts`, `motion/` helpers (SplitHeading, Reveal, Parallax)
+- [x] `/dev/styleguide` route (dev only) showing everything in EN/FR/AR
+- [x] typed image/srcset and media helpers; image/media/Dialog focus tests and contrast checks
 Notes:
+- 2026-11-16: All design-system colour, type, font, radius and shadow tokens are implemented. Fonts use
+  only Latin, Latin Extended and Arabic subsets; the initial Latin display/body files are preloaded.
+- Added ButtonLink, Sheet, compound Tabs, SegmentedControl/Pill, labelled form fields with hints/errors,
+  textarea counter, UNESCO badges, Spinner/Skeleton, native dialog focus wrapping and nested scroll locks.
+- Small `ContentProvider` + typed `useContent`/`useLocale` support P1; the full loader, locale URL handling,
+  persistence and app shell are still P2. Styleguide samples use existing common/tunisia/images strings.
+- ResponsiveImage uses the generated width candidates, intrinsic dimensions, focal points, lazy/priority
+  loading, GSAP LQIP fade, localised alt text, credits and a patterned fallback for missing/failed images.
+  El Djem was visually checked in the styleguide. The wider P0 photo-curation follow-up remains open.
+- SVGs use a fixed raw-import registry and React nodes (no HTML injection); instance-prefixed ids preserve
+  skyline masks, and original path ids remain in `data-svg-id` for scoped DrawSVG use.
+- `npm run verify` and formatting checks pass: 46 unit/content/contrast tests. All 36 browser tests pass, covering
+  EN/FR/AR at 360/768/1280/1920px, both motion preferences, axe, dialog/sheet keyboard paths, RTL arrows,
+  screenshots, theme/direction changes, live motion changes and failed-image recovery.
+- Production remains a minimal content-backed entry: 71.23 kB initial JS gzip; no styleguide route/code
+  in its bundle. Product pages, IEEE chrome and real locale navigation have not been introduced.
+- Contrast: ink/pearl 16.00:1; muted/sand-100 4.60:1; gold-deep/pearl-glow 6.08:1;
+  IEEE-40/ink focus 8.66:1. Form borders use muted (5.60:1 on pearl-glow), because decorative line is only
+  1.39:1. Spec clarifications and the GSAP-only LQIP fade are recorded in D-024–D-027.
 
 ### P2 — i18n, routing & app shell
 - [ ] locale config, LocaleProvider, content loader, useContent, format utils (+ tests)

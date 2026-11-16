@@ -20,10 +20,18 @@ export default defineConfig({
       viewport: { width, height: width >= 1280 ? 1080 : 900 },
     },
   })),
-  webServer: {
-    command: 'npm run preview -- --host 127.0.0.1 --port 4173 --strictPort',
-    url: 'http://127.0.0.1:4173',
-    reuseExistingServer: !process.env.CI,
-    timeout: 30_000,
-  },
+  webServer: [
+    {
+      command: 'npm run preview -- --host 127.0.0.1 --port 4173 --strictPort',
+      url: 'http://127.0.0.1:4173',
+      reuseExistingServer: !process.env.CI,
+      timeout: 30_000,
+    },
+    {
+      command: 'npm run dev -- --host 127.0.0.1 --port 5173 --strictPort',
+      url: 'http://127.0.0.1:5173',
+      reuseExistingServer: !process.env.CI,
+      timeout: 30_000,
+    },
+  ],
 });
