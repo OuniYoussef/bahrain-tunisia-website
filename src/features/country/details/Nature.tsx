@@ -4,6 +4,26 @@ import { media } from '../detail-media';
 import { InfoCard } from './InfoCard';
 
 export function Nature({ country, content }: { country: Country; content: CountryContent['nature'] }) {
+  if (country === 'bahrain') {
+    const group = content.groups[0]!;
+    const card = (item: (typeof group.items)[number]) => (
+      <InfoCard
+        key={item.id}
+        id={`nature-${group.id}-${item.id}`}
+        item={item}
+        country={country}
+        media={media(`${country}.nature.groups.${group.id}.items`, item.id)}
+        headingLevel={3}
+        sizes={item.id === 'tree-of-life' ? '(min-width: 1024px) 60vw, 90vw' : undefined}
+      />
+    );
+    return (
+      <div className={`nature-group nature-${group.id} nature-masonry`}>
+        <div className="nature-lead">{group.items.slice(0, 2).map(card)}</div>
+        <div className="nature-columns">{group.items.slice(2).map(card)}</div>
+      </div>
+    );
+  }
   return content.groups.map((group) => (
     <div key={group.id} className={`nature-group nature-${group.id}`}>
       {group.title && (

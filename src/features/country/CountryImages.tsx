@@ -1,18 +1,21 @@
 import { useEffect, useState, type ReactNode } from 'react';
 import { ImageCatalogContext, type ImageCatalog } from '@/components/media/ImageCatalog';
 import { useNearViewport } from '@/components/media/useNearViewport';
+import type { Country } from './country.config';
 const empty: ImageCatalog = {};
-let catalog: Promise<ImageCatalog> | undefined;
-export function CountryImages({ children }: { children: ReactNode }) {
+const catalogs: Partial<Record<Country, Promise<ImageCatalog>>> = {};
+export function CountryImages({ children, country }: { children: ReactNode; country: Country }) {
   const { root, near } = useNearViewport<HTMLDivElement>();
   const [images, setImages] = useState(empty);
   useEffect(() => {
     if (!near) return;
     let mounted = true;
-    catalog ??= import('@/content/generated/tunisia-destinations.generated.json').then(
-      (module) => module.default,
-    );
-    void catalog
+    catalogs[country] ??= (
+      country === 'tunisia'
+        ? import('@/content/generated/tunisia-destinations.generated.json')
+        : import('@/content/generated/bahrain-destinations.generated.json')
+    ).then((module) => module.default);
+    void catalogs[country]
       .then((value) => {
         if (mounted) setImages(value);
       })
@@ -22,7 +25,7 @@ export function CountryImages({ children }: { children: ReactNode }) {
     return () => {
       mounted = false;
     };
-  }, [near]);
+  }, [near, country]);
   return (
     <div ref={root}>
       <ImageCatalogContext value={images}>{children}</ImageCatalogContext>

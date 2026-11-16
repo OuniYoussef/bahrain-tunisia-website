@@ -1,0 +1,1091 @@
+{
+  "bh-city-beit-al-quran": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-city-beit-al-quran",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 977,
+    "lqip": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAADQBACdASoYABAAPu1iqU2ppaQiMAgBMB2JbACdMoGv/3bcBgawio6wYUu/BMXUQAD+D7WTk2I+ac6bFRWs88mO8TNj3aXUaMaptrfhQdt4ULe0jpP4obCf9aZrW+jqj/i3nqD6s+kKziPJsRbm6VPz9vxiN01R47jkrs1CVendIwRokx/PQRlfvXe5gvyD/b93tRN7+latH8o6mszINFPP/YCL4yP95mZqAAAA",
+    "color": "#0878b8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Beit Al Quran 001.tiff",
+      "author": "Mohamsuraj",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beit_Al_Quran_001.tiff",
+      "origin": "commons"
+    }
+  },
+  "bh-city-budaiya": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-city-budaiya",
+    "widths": [
+      480,
+      960
+    ],
+    "width": 960,
+    "height": 720,
+    "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwBACdASoYABIAPu1eq02ppKQiMBgMATAdiWIAuwAJ4Ytx89N6kyoHecAA/RBP2NBlkmOAkCWckfNGF3r3eTcTI2eI4W/K9sbHYisdPnvj7vdcLjSgjilxJrfr560SKS1AAA==",
+    "color": "#080808",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "BudaiyaBeach.JPG",
+      "author": "Unknown author",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BudaiyaBeach.JPG",
+      "origin": "commons"
+    }
+  },
+  "bh-city-financial-harbour": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-city-financial-harbour",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 761,
+    "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADwAwCdASoYAA0APu1kqU2ppaOiMAgBMB2JQBOgBER0m45YH1S74L8AAP7TeicBGgw0/HUXbXQYItGFsIW9O15uZzUJK4k386+fBWfiedoiISH2ih2qvTKnfxgE+0LkISZF1RPeO2AOSIBW9Pk0IAAA",
+    "color": "#c8c8d8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Manama Bahrain World Trade Centre & Bahrain Financial Harbour 2.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manama_Bahrain_World_Trade_Centre_%26_Bahrain_Financial_Harbour_2.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-city-muharraq": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-city-muharraq",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 710,
+    "lqip": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACQAwCdASoYAAwAPu1iqk2ppaQiMAgBMB2JQAALetg9Q7x0n7cQAP7ThM9H4AKKRshwRCTQSe+5OrTNZscdpmlNWngXMmgLcL0Yb1ShYn2khNNdc/sAAA==",
+    "color": "#c8d8c8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Muharraq and Manama.jpg",
+      "author": "No machine-readable author provided. Leshonai assumed (based on copyright claims).",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Muharraq_and_Manama.jpg",
+      "origin": "wikipedia"
+    }
+  },
+  "bh-city-national-museum": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-city-national-museum",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1080,
+    "lqip": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAABQBQCdASoYABIAPu1qrVCppaQiqAqpMB2JZAB4/gIwPepVFdBcp3TERloo0dZQVWwVXQAA/uxFbl+UZlifq5XId17MBH8+x66m/4rUjBDA2rFHQOCbzkd/glKM1W/4mfCeQ4T+CQg/8fBlGLyBfu97bnVVCmkYfbdP3ienAg7pbuBNLtaWdXLShLYjd4U1COWq0C2KT1vdu3RnYLKhT/GxeT1+KhNq8FzLkxlDwDeyUbZX1+9g9c5Pg+7idJoYGEAAAA==",
+    "color": "#682808",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Manama Bahrain National Museum Interior Traditional Trades & Crafts Hall 02.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manama_Bahrain_National_Museum_Interior_Traditional_Trades_%26_Crafts_Hall_02.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-city-riffa-fort": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-city-riffa-fort",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 716,
+    "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAwBACdASoYAAwAPu1kqk4ppaQiMAgBMB2JYgCdEf/gJ/nZoX7H+xCYorgA/sRR2eMKYkFPjJI427VhZLsNlZjLAhBnXdAegnIzksIXvB3tPJgbV90SXCQk4X+GnpuwtuIpKuyc033PZ6br58wOHyfVKauApqn6RO+WgCU+uXAAAA==",
+    "color": "#88a8c8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Riffa Riffa Fort Exterior 03.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Riffa_Riffa_Fort_Exterior_03.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-craft-dhow-building": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-craft-dhow-building",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1080,
+    "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAADwBACdASoYABIAPu1mq0+ppaOiKA1RMB2JQBdgAiL69wdT/QldicJshTJPnblbusAA/nYTOY/Jtc6hVKrKoee+6T0u5kdhgysecaVZ2s9k2afYkdSDnxr0/M9ALd8C6QfI3WYcg63vHyREnPie7sinzT52vti4Urp8mOUanyo6cphiv2AAAA==",
+    "color": "#386898",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Dhows at BFC - panoramio.jpg",
+      "author": "abcdz2000",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dhows_at_BFC_-_panoramio.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-craft-sadu": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-craft-sadu",
+    "widths": [
+      480,
+      960
+    ],
+    "width": 960,
+    "height": 485,
+    "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBACdASoYAAwAPu1iqU2ppaQiMAgBMB2JZACw/f/gPJNE4sNgJIDUKgD5E3fXgb+zo0a5aifQNJrjWk7+07YjcZd8cpc9pVsjEOkYfknlPS9L/F0f3SpZ+IssGRwK3QDNrZVccLJFhGu+N+rIFXx8I3W67+/3Ly+TjAVAAAA=",
+    "color": "#f8f8e8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Majlis in Sadu style.jpg",
+      "author": "Ashley Columbus",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Majlis_in_Sadu_style.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-dest-al-fateh": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-dest-al-fateh",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 971,
+    "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAQBACdASoYABAAPu1orU6ppiSiMAgBMB2JYwCsACHfE3t9f5xteICdAAD+6pEpRgU1nIPmV/JLpWn0yXPszB0PxNM0XYrHWk+p93t4Ht/8qHgIq+kQbymLJBZh72vmhbduTtYhyVeSmY0X8xbhmWZ6f4T7wEnpNi0l4naKqOAAAA==",
+    "color": "#e8e8f8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Manama al-Fateh Grand Mosque Exterior Norden 3.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manama_al-Fateh_Grand_Mosque_Exterior_Norden_3.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-dest-arad-fort": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-dest-arad-fort",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 947,
+    "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAQBACdASoYABAAPu1kqU2ppaQiMAgBMB2JbACdMoACpi8DSvWFDBq4UAD+83+fLmAI1Au/BkHDEQh3eWJtxS1Xgjlr210slaBc9JSl9QPoQjjhy6tNgWXrX8c2gAd477/X93m9PEkDdwxhZ+lx+vrqecPD0CJfRmO+dG16ugCRBfTlyNrUj75mRTbERo3IAAA=",
+    "color": "#f8f8f8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Arad Fort at Noon.jpg",
+      "author": "WikiLover3000",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arad_Fort_at_Noon.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-dest-bab-al-bahrain": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-dest-bab-al-bahrain",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1065,
+    "lqip": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAADQBACdASoYABIAPu1qrlCppaQiqAqpMB2JYgCnFAorDJbEyxGbH1A4x7DeewpCGAD9G+kTiz3yW+hQNWrT6laPY6wKOdINChAZCKSmargVoHR9b3OFo4A7WJjEdXFUjHQ4dsVN/5BdQO7xELkJybzH5suKCOZ2NZ4ukRjJPk5UljPvbgcrwOSBagPh6ZNnV5IqTZxfuiDTTVBxwfg4lKMiocEAmw6J6OYAxSuhHdSUAA==",
+    "color": "#3878b8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Bab Al Bahrain, Manama, Baréin, 2024-08-18, DD 72.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bab_Al_Bahrain,_Manama,_Bar%C3%A9in,_2024-08-18,_DD_72.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-dest-barbar-temple": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-dest-barbar-temple",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1080,
+    "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABwBACdASoYABIAPu1qrFEppaQiqAqpMB2JYwC+SBEX8K1OUizKVF/7ITADAAD+w45xCgJ3udLiRUYDUBOGk3fZncSaOo8D0QxWhfLDpsWjiyCWtBq5Bemvk2M+CT/RX6rqlFXYKTfvFZ59eg0BHMErQecJ4riugyYSePRdmKISBmwI3qgjsbg8AAA=",
+    "color": "#98c8f8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Barbar temple, Dilmun culture, ca. 3000-2000 BCE; Bahrain (14).jpg",
+      "author": "Richard Mortel",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barbar_temple,_Dilmun_culture,_ca._3000-2000_BCE;_Bahrain_(14).jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-dest-circuit": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-dest-circuit",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 960,
+    "lqip": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAAAwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JQBOkDgQVIiaq5wub/KzqpEAA/fsJwD874zwhkD4C8V4To8YD79WhiGwLBqfU2eZIP5hxlHtDFlVzGjajUUQx2KFKR2bzBOwKgfpKbP92kB8cKAN7xYAbx5srKlh/EgO5/ZBoM/UBD8kno+MqhfoV293Aozu27hNsw2L5GPrju7586jvkFW8rLMXTwymdayCHDgAA",
+    "color": "#181818",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Bahrain International Circuit.jpg",
+      "author": "United Autosports",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bahrain_International_Circuit.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-dest-dilmun-mounds": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-dest-dilmun-mounds",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1080,
+    "lqip": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAACwBQCdASoYABIAPu1grFAppSQisBgIATAdiWQAnTLT/bgk0ThAOAp/JgbEzKKRX9hG5Z5ZkAAA/u1YBloTx+lLf/1q4/R9iyzWQXrhI+cZZH/NbGDupMmD1CscitwnKK12iv97W7EcEfVO9c5jDE0IuvRP6InzhiFbY59i/B2cMyPSqBx8WoWIYQJbkKfpq3XPxuYAAAA=",
+    "color": "#88d8f8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Bahrein-site 1542 0002.jpg",
+      "author": "© Think Heritage Author: Melanie Münzner",
+      "license": "CC BY-SA 1.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/1.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bahrein-site_1542_0002.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-dest-pearling-path": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-dest-pearling-path",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1035,
+    "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAADwBACdASoYABEAPu1qr1CppaQiqAqpMB2JQBOmWiHAAhfzrtZ1MYlzcEmu8tgQGsAA/pnbqopoCmr5NJYDDp6eQ18/vIIvOm4ojeXxkrRt18p8/bqtT1kralDHjO30JSNbOF0jj+Zv2dHajjWN2J/EkKIhps+ffxjSJYKfpvDRUBDr/9H9C81bg3oHvM6DxlOPM4XyG4ovvWnTylpTwAAA",
+    "color": "#b8c8e8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Muharraq Bayt Siyadi 1.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Muharraq_Bayt_Siyadi_1.jpg",
+      "origin": "wikipedia"
+    }
+  },
+  "bh-dest-qalat": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-dest-qalat",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 806,
+    "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQBACdASoYAA0APu1yrU+pp6QiMAgBMB2JZgCdMoADVNhEu9dcMfr1oAD6Wm4x+o/D7FG90YxalfZZOict6XzYeXxR6MnufC8nKjsTuv93xRStDZjVwqGa5H4ZoCMUX/U7w0cTSNyuKhG5baOMQAAA",
+    "color": "#5878b8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Bahrain Fort March 2015.JPG",
+      "author": "Martin Falbisoner",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bahrain_Fort_March_2015.JPG",
+      "origin": "commons"
+    }
+  },
+  "bh-dest-tree-of-life": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-dest-tree-of-life",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1080,
+    "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAwBQCdASoYABIAPu1grFAppSQisBgIATAdiUAXZmHHZQJGzDmiQGeOayS18oLW8uULQAD6YMgNsLUyjuh4sL9EfoLlrs4AT+oy5VmpqPTGI+qvPfhsPfvjCr6xWOkCNuXKyCLkfBZFgCkEMJBmLo0lf65qhO8X9CJJHuYuhvWrRBqII36q23+tkfk6QwGOQ+WTzjvUFACWAAAA",
+    "color": "#98b8d8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Tree of Life, Bahrain - ജീവന്റെ മരം, ബഹ്റൈൻ 01.JPG",
+      "author": "കാക്കര",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tree_of_Life,_Bahrain_-_%E0%B4%9C%E0%B5%80%E0%B4%B5%E0%B4%A8%E0%B5%8D%E0%B4%B1%E0%B5%86_%E0%B4%AE%E0%B4%B0%E0%B4%82,_%E0%B4%AC%E0%B4%B9%E0%B5%8D%E0%B4%B1%E0%B5%88%E0%B5%BB_01.JPG",
+      "origin": "wikipedia"
+    }
+  },
+  "bh-drink-arabic-coffee": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-drink-arabic-coffee",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1080,
+    "lqip": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAACQBACdASoYABIAPu1orlCppaQiqAqpMB2JZQDH5BEZiKR2rp0h/pqVJp400cAA/vK5cIranNyht9SSVis/IMRxjsXHACZmcmYGjFAksuKofnfbHVEzLyEoKNDVQgDuO5VgMTopbEQ1Q+tKJuL4vwenHNHb7gnWbrwovJuQJ1oMZ2fPaViaEL4eTHjCHsU0my+SNmd4AI/WFr75KoWyEYUdVXUDNQtK0h+AAA==",
+    "color": "#080808",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Syria, Damascus, Dallah, Arabic teapots.jpg",
+      "author": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Syria,_Damascus,_Dallah,_Arabic_teapots.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-fest-camel-racing": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-fest-camel-racing",
+    "widths": [
+      480,
+      960
+    ],
+    "width": 960,
+    "height": 540,
+    "lqip": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAwBACdASoYAA4APu1iqk2ppaQiMAgBMB2JZgCdMoADUEhZ9bsAjiMeEgAA/UOA0z6zDUKpwU8TnIoVsHOj2k14KFJtdJvvpsDH/oZbjsBTb45zfYePH+soPO6+YAPRfIYwCUQWdpQXZ6WM40o8lxJ0TK0eNFc0wk2LDAAA",
+    "color": "#5888b8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "DSC 5340 Camel race 2.jpg",
+      "author": "Lightartistdxb",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:DSC_5340_Camel_race_2.jpg",
+      "origin": "wikipedia"
+    }
+  },
+  "bh-fest-fijiri": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-fest-fijiri",
+    "widths": [
+      480
+    ],
+    "width": 480,
+    "height": 360,
+    "lqip": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4IMQAAACwBACdASoYABIAPu1ur1IppiQiqAgBMB2JYwC36y/vQAoAyl3exlCloOdvDZAAAP7k7+izSlaMllPQjJ7b4mGDTMBPl+Yn2lfhf1UtD4tXN5MXVJ2Yfd1PIG/P0BBq7FmVYizPDxpkyZGeNSlwQNtXZfAVAygwPQWXveKbJbf4mmYXOfUpifo9RVn/pT/NSwt9OnGtb7IRNxgvAMU6bmAGqf7A9NMCKoaUiFSZ9E9spXgK/5y5MUIrhZrzZ5cQ3tYiYAAA",
+    "color": "#181818",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Fijiri music being performed on a dhow in Qatar.png",
+      "author": "alittleoryx @ youtube",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fijiri_music_being_performed_on_a_dhow_in_Qatar.png",
+      "origin": "commons"
+    }
+  },
+  "bh-fest-majlis": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-fest-majlis",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 810,
+    "lqip": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAAAwBACdASoYAA4APu1iqU2ppaOiMAgBMB2JQBOmUABlGx8Ab+2KYzW+dwAA/mbYKOjH0Negpuy/xEXWhjAkBCaiqwqiepdQchBb7I1pbthUVakm5Qn8jItFB2+aXhZQrl0Lz0zBL6AVhRy7/3o1NWT8hGtXq6Q4wXlTlrg7fnB0t2kgCR1D4q9X1Wyd/6w33WyhEWKM8Lod6I24AAA=",
+    "color": "#e8d8c8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "مجلس بحريني قديم.jpg",
+      "author": "Muneer-119",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D9%85%D8%AC%D9%84%D8%B3_%D8%A8%D8%AD%D8%B1%D9%8A%D9%86%D9%8A_%D9%82%D8%AF%D9%8A%D9%85.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-fest-national-day": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-fest-national-day",
+    "widths": [
+      480,
+      960
+    ],
+    "width": 960,
+    "height": 960,
+    "lqip": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAACwBQCdASoYABgAPu1irFAppSQisBgIATAdiWMAtRuhwaoJRo5gT9oh7YLEvBvjCZ+Y3IR0S4AA/uvx0qxI0nhUql2EpWr4fkfx0OrY1nPWibZO3ljqO58kjnVPMQDGXwtf8ec/EVs8jc+mNYYbgqEnQT0uGsLSIPROXESWbrBKy5eXLv6KUVMocPkW6RysAbCCbnwKzN4FVujt+60t6dTtIkNHz35aHKWRZbC/GAAAAA==",
+    "color": "#080808",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "IMG-2018 Light arrangements to celebrate national day in Bahrain 1.jpg",
+      "author": "KrizNair",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:IMG-2018_Light_arrangements_to_celebrate_national_day_in_Bahrain_1.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-food-balaleet": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-food-balaleet",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1080,
+    "lqip": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAACwBQCdASoYABIAPu1kq0+ppSOiMBgIATAdiWQAtOgR+HRhtJYypGFHz5cN/nnIknPjzmth9AAA/sBrL/4nwpj0rXyLJsSfhw+ICgFxv+AlYvylMEY2W4vuL8pWnxnSaaisJSpg1QhbtVA5m5idXOXSKMEXBI2qsS40VTdoc9fVu63tbJHoLBiEyNXS1z1BOvUZjfPIOM2jUpFlUkkvU4tr56aplu9nxt7+aAjqTS+Rp4QCsqAAAA==",
+    "color": "#281818",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Balaleet plate, 2018.png",
+      "author": "Droodkin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Balaleet_plate,_2018.png",
+      "origin": "commons"
+    }
+  },
+  "bh-food-halwa": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-food-halwa",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1920,
+    "lqip": "data:image/webp;base64,UklGRkIBAABXRUJQVlA4IDYBAAAwBgCdASoYACAAPu1iqE2ppaOiMAgBMB2JbACdMy/vXzRoxeeixhecgCB8gEYCYmL6nS7BIPlSQxwAAP47U9guLnPZUBvGzZY0V1l+fbLsT0dE+kMG2Rij5zlroqrTqwZBeLkRflcrND1n11+APrBH1afGTwbJzKIvPPEgIDOuyOArI5bYr0hNvWQF+jOgTvV4fBa4RlzEHbdwUaKkAAwTqnHrAh6yCBRe4j2sVcLckYyDKgRau3FH6RHfOiCEnpjPibflpsY07qjZNgdiqTHD8afbtXMJa2WL7WK2yXJLOUkc3eT0hw4bH7tLltOnfAsIOM4Gjatg90GIrjhHQ40VN43nSabhl2N5TtOsG9XfZFgNcURZoq0cZ3ND9Y8c/SwPA2bVrGYh5xU5U5DufsbCBaDA4AAA",
+    "color": "#080808",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Bahraini Halwa maker.jpg",
+      "author": "Slayym",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bahraini_Halwa_maker.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-food-harees": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-food-harees",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 899,
+    "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAABQBACdASoYAA8APu1iqU2ppaQiMAgBMB2JZQAD5AoGw6c/LV+uvMlBUvhoAP7DY5armcou6NDg/Kwd5/KG854kQXKD80hEfJb9mtmGESke1K7x9q275VlI5d2QpdvxGlZbUc3NovB5xB2XNqMhMimlfwwqiS5r77YeH7s1woGFXBbV0sfKZDbFfyzLJQUp2tQAAA==",
+    "color": "#c8c8c8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Harressa or Harees.jpeg",
+      "author": "Haisameldawi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harressa_or_Harees.jpeg",
+      "origin": "commons"
+    }
+  },
+  "bh-food-khabeesa": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-food-khabeesa",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1234,
+    "lqip": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAAAwBQCdASoYABUAPu1sq1EppaOiqAqpMB2JaACdMtDBxdfHEc20fO0QTmzmLbOog/2T8ADypzZGxVKk8C9ilqiCbKAGM0SPxjt+JrMyhgZpvWf/6X4RTqrJkTu3M7iXY8wMwrAG4qeAvRm0uaUSPHBwGCMOVFRV/CQANzDqUheioKd2pvdc3lm8fsCqVfFfalIL+kILpIZCGqMAAAA=",
+    "color": "#c8c8b8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Khabees.jpg",
+      "author": "Fabiorahamim",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Khabees.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-food-luqaimat": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-food-luqaimat",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1268,
+    "lqip": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAAAwBQCdASoYABUAPu1urlIppiQiqAgBMB2JbAC/OBDc75N+8lKj6HgxX4/gl+19RZw4AAD6n+Rz8bKxmWFz5ZiuZgOE51OJQxwMgZBDp+4FkBPCoQco5Z59JG7WDvnKhs1FUwjxP5tJwYa3K4GL/KYRhY8yhwc3L66prbRwtDiASPVzuzo2a6uFn/xH3AngP2mi5wpXTfOrupY59RinJsuDcJBItiIFjtTrHGJx0TB9KEJAAAA=",
+    "color": "#d8d8d8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Lugaimat Riyadh 2024.jpg",
+      "author": "Hamza A. Durrani",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lugaimat_Riyadh_2024.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-food-machboos": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-food-machboos",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 960,
+    "lqip": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAACQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYgCdAywYYJoINksgaC1t3U0h4QAA/kijhexX5pEYfi2Ww9WEujL/vv6CZdlN7sn2ENJpMfGq5qX4HjgVczimHTeATKUEDVP+ZseH2a5cj+QyUIAAsN0lra7JIF33gIDESJPPy/gSIZYMZoHl8II6ufDVe8+2StGGhKGhv/xQYBuurhKcuj4Rp3eHpuTfLUUsCselManZ00xDCJSvqJzTPqwAAA==",
+    "color": "#282818",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Kabsa (6486384335).jpg",
+      "author": "Sammy Six",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kabsa_(6486384335).jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-food-mahyawa": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-food-mahyawa",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1080,
+    "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADQBACdASoYABIAPu1osFAppaSiqAqpMB2JYwC2yBGqmlV9yNO3RN84b3WVUwURcAD+Foyl4ZvWa6ktQiIjcFjQP4kL5/BFX+jzIvBnSQiTS60bD0RmwdxnfA1TawxQwUB92/YVxNvpoyShDFTfxwY/O+hfTw5jd1KOY6JIpHn/Rpp6AdT31KEAAAA=",
+    "color": "#889898",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Mahyawa 2.jpg",
+      "author": "Unknown author",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mahyawa_2.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-food-quzi": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-food-quzi",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 960,
+    "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAABwBACdASoYABAAPu1iqU2ppaOiMAgBMB2JQBOmUAS3QrP+dENTpAkRZTQjAAD9PRLOOf0KqHjtbWbmDBQ6CNppPcJO52mSJUzIHj6Fvnr1MW9pdTI3aAG4vm9Aw9t/oQSk7k+9BLbVJ57sq14eMSG77/VWcLpX5+mYDAJ3J0Rx9txr1xjtDCsC4dq6zZSfBgAAAA==",
+    "color": "#a8a8a8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Qouzi (Iraqi grilled lamb) - Flickr - Al Jazeera English.jpg",
+      "author": "Omar Chatriwala of Al Jazeera English",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qouzi_(Iraqi_grilled_lamb)_-_Flickr_-_Al_Jazeera_English.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-hist-al-khamis": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-hist-al-khamis",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1920,
+    "lqip": "data:image/webp;base64,UklGRuIAAABXRUJQVlA4INYAAACQBQCdASoYACAAPu1urlKppiQiqAgBMB2JbACdMt6496MFWAS2XabQcwqguEqPSj09GTC8YADUGtQ6x5JPg5u7MvzxQ9/WPFmzhFT3CCVo6Vb+GHusVj2HuY0KJ/Vym+20iztYZgYoY+7mHqCb23qfqMukH0FOJnb8zlA+Za1leede4HovWivXibjmhVq3ropoS/H7fq6lXxRkWTP7mYJPCHCPeOfCMHnlOtv8HjfzACB4ejxTyg/YbaEAYNfMfnrY/cYwN9vlJBmOYCeq8YSiQcHrQAAA",
+    "color": "#5898d8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Khamis Mosque 2019.jpg",
+      "author": "Mohamed Toorani",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Khamis_Mosque_2019.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-hist-dilmun-seal": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-hist-dilmun-seal",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 890,
+    "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAwCdASoYAA8APu1iqk4ppaQiMAgBMB2JYwCsAB2Q9lxRmdE1gwAAANcomonqUWrrtMQSJQfitEQrlSfk/S7sneupI/cHwRD9kG8S6eXAiKNTsaYndob/5ygjxsH02TgAAA==",
+    "color": "#988878",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Sceau Dilmun A11690.jpg",
+      "author": "Zunkir",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sceau_Dilmun_A11690.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-hist-hidaya-school": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-hist-hidaya-school",
+    "widths": [
+      480
+    ],
+    "width": 480,
+    "height": 286,
+    "lqip": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASoYAA4APu1iqk2ppaQiMAgBMB2JaQDKACHcaxg7NfRp0cwAAP7fQhW3CHYGyu7b8NPhwdFhJ1eyTIwOgPYxSCK1uPbiApCaUQO37/842n/lynT1OOMAXz7vgAA=",
+    "color": "#c8c8c8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Hidaya Al Khalifa Boys School Bahrain 1919.jpg",
+      "author": "Anonymous photographer",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hidaya_Al_Khalifa_Boys_School_Bahrain_1919.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-hist-oil-well": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-hist-oil-well",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1080,
+    "lqip": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQBACdASoYABIAPu1mqU2ppaQiMBgMATAdiWUAwzQNwwBI1G+HTlsf4Drmzl9cIAD3KvXDTmm+OaBylcDGY9+BeGIVAZAcbl3WC+61QNXhhdC8z2gAAA==",
+    "color": "#685858",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Bahrain first oil well plaque.jpg",
+      "author": "David Brossard",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bahrain_first_oil_well_plaque.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-hist-pearl-divers": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-hist-pearl-divers",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1074,
+    "lqip": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAAAwBQCdASoYABIAPu1sqlEppaOiqAqpMB2JaQAD5RDYm/Lh/eZ+K7jegQZEVxEfieGLgAD+wHsr4LfHWaDeQDKuzgh52YgJtUfiiQAAZAXjGmf0ow7bWXTEy68/pIwERrTDngs8PgTxiU0sRwRCzkDoZzI5mvmDtzuv8D14qamzn8WbdPAdRszttxmaGZsJiUVfFqyP6lS2TmgXeIJgifOrhXdxV30zRkaBAeP+J1TGNIkUmMJ3wDPWBZlK1gAA",
+    "color": "#d8d8d8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "طواشة.jpg",
+      "author": "Muharraq Forever",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D8%B7%D9%88%D8%A7%D8%B4%D8%A9.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-hist-siyadi-house": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-hist-siyadi-house",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1055,
+    "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAwBQCdASoYABIAPu1qr1AppaSiqAqpMB2JYgCxHtDBpy6/xB1jq28z8hJUcv6eSIFRQADxHePKpOrsHd+ICK+BRDy0r8wcHeXxcLB2rpH/w7n1p6UDqWfL8S+cksfsLldgBs/7iDMKWGr718CxgXnRhIyDywNxk0ozXW2NTbHtq25+LaS66alYtkBDeLkLRcyT3Vt3pHqAAA==",
+    "color": "#6888a8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Muharraq Bayt Siyadi Minarett.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Muharraq_Bayt_Siyadi_Minarett.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-mon-bu-maher": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-mon-bu-maher",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1440,
+    "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAADwBACdASoYABgAPu1iqE4ppSOiMBgMATAdiWQAsOw0b8lURi9EMz78phPA5ygE1YAA/ucGbENzJjZEPfR7BePn2Hs0Emukr6/xYVaMDpEREpdRXmIvDhZOdn/A3xjadS+wf6VIL3jK2lYHZTeItAQwFAUpTcOVBShRiBwLW6z4eY7ErsMwLKu3ReloXymXxmtQAA==",
+    "color": "#c8d8e8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Fuerte Bu Maher, Manama, Baréin, 2024-08-18, DD 32.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fuerte_Bu_Maher,_Manama,_Bar%C3%A9in,_2024-08-18,_DD_32.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-mon-saar": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-mon-saar",
+    "widths": [
+      480
+    ],
+    "width": 480,
+    "height": 360,
+    "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBQCdASoYABIAPu1qqU8ppiOiMBgIATAdiWMAwzQREe2Gr4YzKDWNCMgXUPN6MBIAAPzRecHgiB+v53wRT1hystWMuGsjKK7RCoePLAQvF6lgYKsLNgqmc4F89174a6WYAA==",
+    "color": "#b8b8c8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Dilmun period (3200-320 BC) burial chambers at Saar, Bahrain.JPG",
+      "author": "Rapid Travel Chai",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dilmun_period_(3200-320_BC)_burial_chambers_at_Saar,_Bahrain.JPG",
+      "origin": "commons"
+    }
+  },
+  "bh-nature-beach": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-nature-beach",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 206,
+    "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAwCdASoYAAMAPu1iqU2ppaOiMAgBMB2JZQCdABuFfQARtG1SAADLGmMkORNC+I84j3balP7p6RcHNTmX0CW+IGm4N6NAAAA=",
+    "color": "#a8a8a8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Hawar Islands banner.png",
+      "author": "Petr Kadlec",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hawar_Islands_banner.png",
+      "origin": "commons"
+    }
+  },
+  "bh-nature-jebel-dukhan": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-nature-jebel-dukhan",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1080,
+    "lqip": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAwCdASoYABIAPuVepk2pJSOiN/VYASAciWUAvzgMB+secOAhALs+AP7TiBzZTczwdjCu4GngMAkvCvKJ4kw27tQeELS+uwBmhImMNqTP550LfYdQF10Z5IQAAA==",
+    "color": "#080808",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Jabal Ad Dukhan.jpg",
+      "author": "Eric Gilbertson",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jabal_Ad_Dukhan.jpg",
+      "origin": "wikipedia"
+    }
+  },
+  "bh-nature-oryx": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-nature-oryx",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1240,
+    "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAADwBACdASoYABUAPu1iqE4ppaOiMAgBMB2JaACdMyRT9A42u2/SBI7WBvUOaewH+KAA/sLgWsL+2bufs0RzAZInv91QM3+fcIWzJUuzw/VIeOTlWZapcX6mVFXKWr1Osg28DrNJ0StoMCynTtauiTzacJdBxah1BOJO0EBdskJy8qEEICv/PLO5AKc0bz52+hiI4bIjXkqUAAAA",
+    "color": "#a8c8e8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Arabian oryx (oryx leucoryx).jpg",
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arabian_oryx_(oryx_leucoryx).jpg",
+      "origin": "wikipedia"
+    }
+  },
+  "bh-nature-palm-groves": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-nature-palm-groves",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 811,
+    "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZAC06BdBuN/LpMfZq2IAAPr+vNXwHwwQlcsX1Qrl9/c5HXH7kQpWMi/t2+He9LK7WhsyDvF95DIUlSdyNWfRFLYEOb/R1vsBNpqzma1cfwU/2Gv841J2wlVLV0jtAzI6rGbBAAA=",
+    "color": "#585838",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Unripe dates on a palm tree in Bahrain.jpg",
+      "author": "Mohamed Toorani",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Unripe_dates_on_a_palm_tree_in_Bahrain.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-nature-socotra-cormorant": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-nature-socotra-cormorant",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 962,
+    "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAQBACdASoYABAAPu1iqU2ppaQiMAgBMB2JZQCsAYzQZVRH04BPIkMH2AD83VhMvHc5spv51gdVYm3S1nXMNfDfVuVCPoTAYU1er4aVdQ4xgBnwHIQb8ixJe2hYn45YwtDw16TNt4VZdUIj87TWnQdBu5bTaER+dAN2PF7aJJ8fLaGtINiWB9zOBnaG0Pe312DIjqmAa74LR+rAzJjTUqAA",
+    "color": "#888898",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Socotra cormorant Drying his feathers.jpg",
+      "author": "Josephyousry",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Socotra_cormorant_Drying_his_feathers.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-nature-tubli-mangroves": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-nature-tubli-mangroves",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 845,
+    "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAACwAwCdASoYAA4APu1kqU2ppaQiMAgBMB2JYgCdABbPU4lnvd7TAAD8bvaLEq7oxeyoLVYBE7m1G1tZ1t15NdaAA4thwYerviaNAATcYNqGJWiFjvRKNhgq5PMKX7TlAGYjRMkMwAA=",
+    "color": "#080808",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "RAS SANAD MANGROVE FOREST (cropped).jpg",
+      "author": "Nkssrinivas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:RAS_SANAD_MANGROVE_FOREST_(cropped).jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-product-dates": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-product-dates",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 811,
+    "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZAC06BdBuN/LpMfZq2IAAPr+vNXwHwwQlcsX1Qrl9/c5HXH7kQpWMi/t2+He9LK7WhsyDvF95DIUlSdyNWfRFLYEOb/R1vsBNpqzma1cfwU/2Gv841J2wlVLV0jtAzI6rGbBAAA=",
+    "color": "#585838",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Unripe dates on a palm tree in Bahrain.jpg",
+      "author": "Mohamed Toorani",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Unripe_dates_on_a_palm_tree_in_Bahrain.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-wear-ghutra": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-wear-ghutra",
+    "widths": [
+      480,
+      960
+    ],
+    "width": 960,
+    "height": 1401,
+    "lqip": "data:image/webp;base64,UklGRnwBAABXRUJQVlA4IHABAAAwBwCdASoYACMAPu1qrFCppaQiqqgBMB2JZQDDrzEYipm8Q1rwXP4mH0h5+UwKt5jYUUROh1QcaojWwl2E/WFsUvwA/ty4qNAo1x1YN7tJ1m5O+UGwhv/oiCUfi1iDM2QjwYTCnQ2hKjRQzsmf2HX5fBB70E1u1OKiLOW8/vApag0zIxSHqOEd/ET0qlRYk9Wss27OkbGiPR/mvCrBuHaRkSNsFMMg0VDk61Cxa/fFjPL5PK3mTTg8xaPpPKqy8PEtUvA7nvrVhirqb1d62zE2j028VbBZSOe8+2KKYxof7+lEJubR+8lyDtOmetwqbTkdW6cNN+lFW6ZoIR+eploMowqj4mndLjtL1Xbgs30V6WpCw77o1BnCWC0BRs9nwjMrOBLubrlTO+1PcX6SApPeu/fFpfmahrlSkU7c3LX/UxrJCANJTTzxv2xq7b9V6vM1QCufKcouOE9cwkNEEKp2wXU5qqd6tELIU7IKpRUAAA==",
+    "color": "#f8f8e8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "The Pearl Harvester.jpg",
+      "author": "Jayson De Leon",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Pearl_Harvester.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-wear-gold-jewellery": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-wear-gold-jewellery",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1006,
+    "lqip": "data:image/webp;base64,UklGRuwAAABXRUJQVlA4IOAAAABQBgCdASoYABEAPu1sqlEppaOiqAqpMB2JQBYj2n4VJHtQDJAJhyA+1AN8/GQbrKu2001D+/966UcCAAD+TrcI5qG/imaR1Ef9uQ9SMDSbcmAR30CncPtePoiWjWQF5HOMa7TuBfk4dXWl1Phk5malUCvqTgbgPQURjurE8YA/aSRDXS8xo512xMMFIluO0r1vh99aJkXkPz2Y9RKeNRR1w9m6WtkdLTc83xcd6zSwLKv1dOv9mShQGD5L7heULqXkH8wcG32yayVzM1TWHdMvUNPmBE4hiTlv2GkYKAAAAA==",
+    "color": "#080808",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Bahrain jeweler.jpg",
+      "author": "Shane T. McCoy",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bahrain_jeweler.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-wear-thobe-nashal": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-wear-thobe-nashal",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 810,
+    "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADQAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JbACdMoADg57gNvUQYyAA/un1RZ5sQC23tAdOAulp8h6IxCxThoIqVi9uax7e6Ckym0tfhSBtzX9tGd7G/17j7qChhZoR4XI/yxlq5bRIemB/+dIEsgmfGy65MDsBtwx1cZKMjvDLjohDAAA=",
+    "color": "#585868",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Robes thob al-nashal.png",
+      "author": "Yappeuse",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Robes_thob_al-nashal.png",
+      "origin": "commons"
+    }
+  },
+  "cg-henna": {
+    "group": "common",
+    "src": "/images/photos/common/cg-henna",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 948,
+    "lqip": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAAAQBQCdASoYABAAPu1iqU2ppaOiMAgBMB2JbACdMoHgz5/8Wx21Wi++d4+majdXaV5QAP68iH2yqjogSfBDPG0wqVAzZxzSwvzfK5+6caYY385HOLYaEUUK4GRHnlltOMpsvqQCLpFVitIOCpVrvK9TArUllXfNxXZf6bGBfJaIcCnaT8scd+3PA6pri01EF2HTpzDfp84o/djv2lztNRffaMNkTHkw5FElaX/pjOiFKm64bGOILwIWQpH9Y5xaks8INm9pKWOOIkwAAAA=",
+    "color": "#080808",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "1Feb10 ~ Henna (4330093808).jpg",
+      "author": "grace_kat",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1Feb10_~_Henna_(4330093808).jpg",
+      "origin": "commons"
+    }
+  },
+  "cg-palm-weaving": {
+    "group": "common",
+    "src": "/images/photos/common/cg-palm-weaving",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 956,
+    "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAQBACdASoYABAAPu1iqU2ppaOiMAgBMB2JYgCw7BK55ky2DOi7nmbUgAD+LmiBleatyscwy+7VDCl2NujnX/Ev9SBNZ4CR79FM2RkCfdJcFqqjlJXzuJUaUGfSt2trpyjIsV/dWphke8+KEhZOVcs5Z3UX6q98MimPWt6NpbIG4+5BO89OFfouaeyewwAA",
+    "color": "#685848",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Making of bamboo and palm leaf handicarft products.jpg",
+      "author": "Name - Sagnik Samanta Email Address - sagniksamanta1@gmail.com",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Making_of_bamboo_and_palm_leaf_handicarft_products.jpg",
+      "origin": "commons"
+    }
+  }
+}

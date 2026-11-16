@@ -439,7 +439,8 @@
         ]
       }
     ],
-    "jewelleryNote": "Jewellery is made in 21- and 22-karat gold with natural Bahraini pearls and precious stones, using melting, drawing, soldering, engraving and inlaying. Goldsmiths work in Manama and Muharraq, and the Manama gold souk is the traditional centre."
+    "jewelleryNote": "Jewellery is made in 21- and 22-karat gold with natural Bahraini pearls and precious stones, using melting, drawing, soldering, engraving and inlaying. Goldsmiths work in Manama and Muharraq, and the Manama gold souk is the traditional centre.",
+    "craftsTitle": "Crafts"
   },
   "nature": {
     "eyebrow": "Springs, palms and islands",
@@ -661,7 +662,14 @@
           "title": "Sea arts",
           "text": "Fijiri: the sailors' chanted art with drums and tambourine. Sawt: traditional music with the oud. Tanboura: an ancient lyre. Liwa: a communal dance with African-infused rhythms."
         }
-      ]
+      ],
+      "scale": [
+        "Danah",
+        "Hasbaa",
+        "Badla",
+        "Yakka"
+      ],
+      "scaleNote": "Illustrative sizes, not actual measurements."
     },
     "figuresTitle": "Most important figures",
     "figures": [

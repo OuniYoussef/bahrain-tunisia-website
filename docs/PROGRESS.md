@@ -16,7 +16,9 @@
   dialogs, more places and the Bizerte spotlight.
 - P5 implemented: Tunisia's remaining seven sections and onward journey band, with reusable country components,
   complete EN/FR/AR content, responsive controls, map dialogs and a scroll-drawn timeline.
-- Next prompt: **P6 — Bahrain**
+- P6 implemented: complete Bahrain page using the shared country components, with teal/gold museum labels,
+  crafts, pearl heritage, Ramadan traditions, Arabic coffee and serrated/Sadu motifs in EN/FR/AR.
+- Next prompt: **P7 — Common Grounds Media Matrix**
 
 ## Checklist
 ### P0 — Bootstrap & tooling
@@ -49,7 +51,7 @@ Notes:
   (53.5 MiB), attribution credits and `selection.lock.json`. All 170 contact-sheet previews load successfully.
   The report remains at `scripts/images/report.html` (gitignored). Resolution does not establish subject suitability.
 
-Missing image ids:
+Missing image ids at P0 (see Known issues for the current list):
 ```text
 tn-sweet-samsa
 bh-dest-bahrain-wtc
@@ -221,8 +223,36 @@ Notes:
 - Decisions and spec precedence are documented in D-040–D-042.
 
 ### P6 — Bahrain
-- [ ] Bahrain page with nicknames, crafts, jewellery note, pearl heritage, Ramadan traditions + chant, coffee, serrated/Sadu motifs
+- [x] Bahrain page with nicknames, crafts, jewellery note, pearl heritage, Ramadan traditions + chant, coffee, serrated/Sadu motifs
 Notes:
+- 2026-11-16: Reused P4/P5's country frame, destination controls/dialogs, tabs, cards, timeline, figures,
+  food/product and monument components. Bahrain adds the skyline/dhow hero with serrated edge, five nickname
+  museum labels, the sweet/salt waters pull-quote, four wear tabs and a separate two-group Crafts subsection
+  divided by a Sadu band. The jewellery note stays with its tab/accordion.
+- All 31 wear/craft items, nine nature places, seven cities, 17 timeline events, 14 figures, 19 celebrations
+  plus weddings, 12 dishes and 14 monuments render from the canonical content. Nature uses asymmetric masonry
+  with a large Tree of Life; Manama includes an Adliya inset. History adds a dark-teal museum wall with five
+  gold-numbered labels and a translated, illustrative Danah-to-Yakka pearl scale. Gargee'an has a chant quote
+  card; Arabic coffee has its own photo/etiquette feature. UNESCO badges show 2005, 2012 and 2019.
+- Six featured and four additional destinations use the full, unmirrored Bahrain map. Its responsive height is
+  capped at 550px, keeping Hawar's actual southern position visible without an inset; map controls retain 44px
+  targets. Bahrain has no spotlight. National dates remain 16 and 17 December.
+- Generated hero/destination/detail image catalogs now support each country separately. Full content and detail
+  images remain deferred; measured Bahrain entry JavaScript is approximately **177 KiB gzip**, below 180 KiB.
+  Global ScrollTrigger refreshes now preserve pinned-panel focus, including refreshes caused by lower sections.
+  The onward journey band reserves the footer skyline's height so the last link stays clickable.
+- Reviewed all Bahrain photo selections. Pinned/replaced 17 image ids, including five previously missing photos,
+  and corrected 23 image descriptions in each language. Removed the pearl-diver and Fijiri holds after reviewing
+  their replacements; credits and responsive WebPs are regenerated. Seven unresolved and eleven withheld image
+  ids still use patterned placeholders, including the Adliya inset; the source follow-ups are listed below.
+- `npm run verify` passes (68 unit tests), including complete content/count checks for both countries in all
+  three languages. Formatting, whitespace and configured `/exchange/` base-path checks pass. The full browser
+  run passed 243/244 cases; the final failure exposed a footer skyline overlap. After correcting it, all eight
+  affected country navigation checks pass at 360/768/1280/1920px with an explicit overlap assertion.
+  The suite now covers Bahrain with the same EN/FR/AR, normal/reduced motion, axe, keyboard, touch, map/dialog,
+  image-resolution and overflow checks as Tunisia, with no browser console errors/warnings in passing cases.
+  Visual review covered the English desktop and Arabic mobile hero, nicknames, crafts, masonry, capital,
+  pearl museum and coffee feature. Decisions and editorial follow-ups are documented in D-043–D-045.
 
 ### P7 — Common Grounds Media Matrix
 - [ ] intro, deck, 4 layouts, navigation (keys/wheel/touch/buttons), URL sync, index, autoplay, video slot, a11y
@@ -306,19 +336,18 @@ Recorded 2026-11-16 from the installed lockfile (Node 24.21.0; npm 12.2.0).
 | vitest | 5.1.0 | Development |
 
 ## Known issues / follow-ups
-- **Review remaining photo subjects before using them in pages.** The supplied resolver finds eligible licences but can rank
-  unrelated subjects highly. P3 corrected `un-hero-razji`, `tn-drink-mint-tea`, `bh-fest-majlis` and
-  `bh-food-luqaimat`. P5 corrected `tn-mon-sbeitla` (moth), `tn-food-lablabi` (bird) and eight other selections.
-  Source-title inspection still flags `bh-craft-sadu` (Berlin courthouse), `bh-nature-springs` (Beijing Olympics), `bh-nature-beach` (Swedish parliament),
-  `bh-mon-saar` (Spanish river), `bh-fest-national-day` (Singapore fireworks), `bh-food-harees` (hare),
-  `bh-product-dates` (Georgian lake) and `cg-oud` (bridge). These examples are not an exhaustive review.
-  Review the complete local contact sheet, then curate `scripts/images/overrides.json` and rerun affected ids;
-  the supplied scripts, manifest and overrides were preserved byte-for-byte in P0. The 12 remaining missing
-  Bahrain ids above also need curated sources; `tn-sweet-samsa` was resolved in P5. ResponsiveImage handles fallbacks.
-- United's four withheld selections need suitable replacements: `bh-hist-pearl-divers`,
-  `bh-wear-pearls`, `bh-craft-aali-pottery`, `bh-fest-fijiri`. P5 resolved `tn-wear-silver-jewellery`.
-  Remove their `image-review.json` holds only after reviewing replacement subjects. Nabeul's current
-  image is a painting of pottery; prefer a workshop/wares photograph in the broader editorial pass.
+- **Photo sourcing remains unfinished:** 176/183 ids are resolved. The seven missing Bahrain ids are
+  `bh-wear-thobe`, `bh-wear-bisht`, `bh-craft-bani-jamra`, `bh-craft-rawazin`, `bh-mon-ain-umm-al-sujur`,
+  `bh-food-muhammar` and `bh-food-mumawash`. Eleven resolved but unsuitable selections are withheld in
+  `src/content/image-review.json`: `bh-wear-pearls`, `bh-craft-aali-pottery`, `cg-gold-embroidery`,
+  `bh-craft-oud-bakhoor`, `bh-nature-springs`, `bh-nature-desert-sakhir`, `bh-city-sitra`, `bh-city-adliya`,
+  `bh-food-nakhi`, `bh-food-bajela` and `bh-fest-gargeean`. These render graceful patterned placeholders;
+  all requested media ids remain wired. Remove holds only after reviewing suitable replacements.
+- **Review new page photo subjects before use.** The resolver can rank unrelated subjects highly despite eligible
+  licences; `cg-oud` still depicts a bridge and needs correction for Common Grounds. P6 corrected the other
+  previously flagged Bahrain sources or withheld them, and restored United's pearl-diver/Fijiri cards.
+  Pin curated sources in `scripts/images/overrides.json` and regenerate originals with `--refresh --force` when
+  changing selections. Nabeul's image remains a painting of pottery; prefer a workshop/wares photo in a later pass.
 - Use Node 22.22.2+, 24.15.0+ or 26+ for tests; the requested `>=22.12` engine alone does not cover latest jsdom.
 - Official IEEE files needed: Master Brand (white/black), favicon set, approved site identifier wordmark, cookie script (if required).
 - Organising IEEE units' names/logos for the footer "Organised by" strip.

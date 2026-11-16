@@ -1,0 +1,225 @@
+@layer components {
+  .jewellery-note {
+    border-inline-start: 3px solid var(--color-gold-deep);
+    padding-inline-start: 24px;
+    margin-block: 32px;
+  }
+  .bahrain-crafts {
+    margin-block-start: 80px;
+  }
+  .sadu-band {
+    block-size: 28px;
+    background: url('/images/svg/patterns/band-sadu.svg') 50% / auto 28px repeat-x;
+    margin-block-end: 48px;
+  }
+  .bahrain-crafts > section {
+    margin-block-start: 48px;
+  }
+  .nature-lead {
+    display: grid;
+    align-items: start;
+    gap: 32px;
+  }
+  .nature-columns {
+    margin-block-start: 40px;
+    column-gap: 32px;
+  }
+  .nature-columns .info-card {
+    break-inside: avoid;
+    margin-block-end: 40px;
+  }
+  .nature-masonry .info-card {
+    border-radius: 0;
+    background: transparent;
+  }
+  .nature-masonry .info-card-copy {
+    padding-inline: 0;
+  }
+  .nature-masonry .info-card > figure {
+    border-radius: 12px;
+  }
+  .city-capital-images {
+    position: relative;
+    min-inline-size: 0;
+  }
+  .city-capital-images > div:first-child {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .city-nightlife {
+    position: relative;
+    inline-size: 65%;
+    margin-inline-start: auto;
+    margin-block-start: -18%;
+    border: 6px solid var(--color-pearl-glow);
+    border-radius: 16px;
+    background: var(--color-pearl-glow);
+  }
+  .city-capital .city-nightlife .ui-image {
+    aspect-ratio: 3 / 2;
+  }
+  .pearl-museum {
+    background: var(--accent-deep);
+    color: var(--color-pearl-glow);
+    margin-block-start: 88px;
+    padding: clamp(24px, 4vw, 64px);
+    border-radius: 20px;
+  }
+  .pearl-museum-intro {
+    display: grid;
+    align-items: center;
+    gap: 40px;
+  }
+  .pearl-museum-intro p {
+    margin-block-start: 24px;
+  }
+  .pearl-museum-intro .ui-image {
+    aspect-ratio: 4 / 3;
+    border-radius: 8px;
+  }
+  .pearl-labels {
+    display: grid;
+    gap: 40px 32px;
+    margin-block-start: 64px;
+  }
+  .pearl-labels article {
+    border-block-start: 1px solid var(--color-gold);
+    padding-block-start: 20px;
+  }
+  .pearl-number {
+    display: block;
+    color: var(--color-gold);
+    font-family: var(--font-display);
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-block-end: 24px;
+    font-variant-numeric: tabular-nums;
+  }
+  .pearl-labels p {
+    font-size: var(--text-small);
+    margin-block-start: 16px;
+  }
+  .pearl-scale {
+    margin-block-start: 32px;
+  }
+  .pearl-scale ol {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+  }
+  .pearl-scale li {
+    display: grid;
+    grid-template-rows: 60px auto;
+    align-items: center;
+    justify-items: center;
+    font-size: 0.8125rem;
+  }
+  .pearl-scale li > span:first-child {
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, white, var(--color-pearl) 45%, var(--color-gold));
+  }
+  .pearl-scale figcaption {
+    font-size: 0.8125rem;
+    color: var(--color-sand-100);
+    margin-block-start: 16px;
+  }
+  .gargeean-quote {
+    background: var(--color-sand-100);
+    border-inline-start: 3px solid var(--color-gold-deep);
+    padding: clamp(24px, 3vw, 40px);
+    border-start-end-radius: 12px;
+    border-end-end-radius: 12px;
+  }
+  .gargeean-quote > .ui-inline-svg {
+    color: var(--accent);
+    margin-block-end: 24px;
+  }
+  .gargeean-quote blockquote {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin-block-start: 24px;
+  }
+  .coffee-feature {
+    display: grid;
+    align-items: center;
+    gap: clamp(32px, 5vw, 72px);
+    margin-block-start: 100px;
+    padding-block: 48px;
+    border-block: 1px solid var(--color-sand-300);
+  }
+  .coffee-feature .ui-image {
+    aspect-ratio: 4 / 5;
+    border-radius: var(--radius-arch);
+  }
+  .coffee-feature h3 + p {
+    margin-block-start: 24px;
+  }
+  .coffee-etiquette {
+    display: flex;
+    align-items: start;
+    gap: 16px;
+    margin-block-start: 32px;
+    border-inline-start: 3px solid var(--color-gold-deep);
+    padding-inline-start: 20px;
+  }
+  .coffee-etiquette svg {
+    flex-shrink: 0;
+    color: var(--color-gold-deep);
+  }
+  @media (min-width: 640px) {
+    .pearl-labels {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .nature-columns {
+      column-count: 2;
+    }
+    .nature-columns .info-card:nth-child(3n + 1) .ui-image {
+      aspect-ratio: 4 / 5;
+    }
+    .pearl-labels article:last-child {
+      grid-column: 1 / -1;
+    }
+  }
+  @media (min-width: 768px) {
+    .coffee-feature {
+      grid-template-columns: 1fr 1fr;
+    }
+    .city-nightlife {
+      inline-size: 34%;
+      margin-block-start: -15%;
+      margin-inline-end: 32px;
+      border-width: 8px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .nature-lead {
+      grid-template-columns: 2fr 1fr;
+      gap: 48px 32px;
+    }
+    .nature-lead .info-card:first-child .ui-image {
+      aspect-ratio: 16 / 10;
+    }
+    .nature-lead .info-card:last-child {
+      margin-block-start: 64px;
+    }
+    .nature-columns {
+      column-count: 3;
+    }
+    .pearl-museum-intro {
+      grid-template-columns: 1fr 1.1fr;
+    }
+    .pearl-labels {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+    .pearl-labels article {
+      grid-column: span 2;
+    }
+    .pearl-labels article:nth-last-child(-n + 2) {
+      grid-column: span 3;
+    }
+  }
+}

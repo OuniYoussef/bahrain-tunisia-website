@@ -1,4 +1,5 @@
 import { Badge } from '@/components/ui/Badge';
+import { Ornament } from '@/components/media/Ornament';
 import type { CountryContent } from '../types';
 import type { Country } from '../country.config';
 import { media } from '../detail-media';
@@ -27,6 +28,12 @@ export function Celebrations({ country, content }: { country: Country; content: 
                   <h4 className="text-h4">{item.title}</h4>
                   {item.text && <p>{item.text}</p>}
                   {picture.image && <CardImage country={country} media={picture} />}
+                </article>
+              ) : item.id === 'gargeean-chant' ? (
+                <article key={item.id} data-item-id={item.id} className="gargeean-quote">
+                  <Ornament kind="razji" />
+                  <h4 className="text-h4">{item.title}</h4>
+                  <blockquote>{item.text}</blockquote>
                 </article>
               ) : (
                 <InfoCard

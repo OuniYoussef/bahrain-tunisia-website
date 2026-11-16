@@ -439,7 +439,8 @@
         ]
       }
     ],
-    "jewelleryNote": "Les bijoux sont façonnés en or 21 et 22 carats, avec des perles naturelles de Bahreïn et des pierres précieuses, par fonte, étirage, soudure, gravure et incrustation. Les orfèvres travaillent à Manama et à Muharraq, et le souk de l'or de Manama en est le centre traditionnel."
+    "jewelleryNote": "Les bijoux sont façonnés en or 21 et 22 carats, avec des perles naturelles de Bahreïn et des pierres précieuses, par fonte, étirage, soudure, gravure et incrustation. Les orfèvres travaillent à Manama et à Muharraq, et le souk de l'or de Manama en est le centre traditionnel.",
+    "craftsTitle": "Artisanat"
   },
   "nature": {
     "eyebrow": "Sources, palmiers et îles",
@@ -661,7 +662,14 @@
           "title": "Les arts de la mer",
           "text": "Fijiri : l'art chanté des marins, avec tambours et tambourins. Sawt : musique traditionnelle au oud. Tanboura : une lyre ancienne. Liwa : une danse collective aux rythmes d'influence africaine."
         }
-      ]
+      ],
+      "scale": [
+        "Danah",
+        "Hasbaa",
+        "Badla",
+        "Yakka"
+      ],
+      "scaleNote": "Tailles indicatives, sans échelle réelle."
     },
     "figuresTitle": "Les grandes figures",
     "figures": [

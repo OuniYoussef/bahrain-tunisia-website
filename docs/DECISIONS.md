@@ -239,3 +239,33 @@ responsive images were regenerated and visually reviewed. The silver-jewellery h
 United's shared card. Updated eighteen image descriptions in all three languages to describe the actual subject,
 including the historic café, tapped palm, kafteji sandwich, Houmt Souk tomb, Sousse vault and festival drummers.
 No generated photo or invented cultural scene is used. Image-free editorial items still use the khatam panel.
+
+**D-043 — Bahrain composition and geography.** Reuse the P4/P5 country components and defer each country's
+detail image catalog separately. Add only Bahrain's nickname museum labels/two-waters quote, four clothing
+tabs plus two separate Crafts groups, asymmetric nature masonry, Adliya inset, pearl museum wall, Gargee'an
+quote and Arabic coffee feature. Keep the full map, including Hawar at its true southern coordinates, within
+a responsive 550px height; this avoids needing an inset while retaining the shared accessible callouts.
+Geography never mirrors in RTL. History initially shows ten of 17 entries, following the country spec.
+The Danah-to-Yakka graphic illustrates relative size only; its translated note explicitly disclaims physical
+measurements. Omit the mobile food filter when only one group exists. UNESCO years accept the canonical
+media's string values as well as numeric values, preserving the exact 2005/2012/2019 labels.
+
+**D-044 — Bahrain editorial image safeguards.** Pinned 17 reviewed image selections, adding the previously
+missing World Trade Center, thobe nashal, palm grove, Hidaya School and Bu Maher images, and replacing twelve
+incorrect or weak selections. Refresh originals as well as derivatives when changing a source: `--force`
+alone reuses the id-keyed cached original; use `--refresh --force`. Updated source locks, credits and WebPs,
+removed obsolete oversized derivatives, and corrected 23 image alts in all three languages to describe the
+actual subjects. Regional illustrative images disclose their location where relevant (including Fijiri in
+Qatar, coffee dallahs in Damascus and palm craft in India). Restore the pearl-diver and Fijiri cards after
+review. Seven missing and eleven unsuitable image ids remain placeholders under the project's graceful
+fallback rule; their exact ids and sourcing needs are in PROGRESS and image-review.json. In particular,
+the required Adliya inset is implemented but still awaits a suitable nightlife photo. Do not display the
+resolver's unrelated architecture, events or dishes to imply the requested Bahraini subject.
+
+**D-045 — Refresh focus and country footer clearance.** ScrollTrigger can temporarily reparent a pinned
+panel during any global refresh, including a refresh from the deferred details' ResizeObserver. Preserve
+focus through global refreshInit/refresh listeners and suppress card selection while restoring it; remove
+listeners on cleanup. Country journey bands reserve the footer skyline's full responsive height in addition
+to their normal bottom spacing, preventing skyline controls from intercepting the last onward link. Browser
+regressions exercise live motion preference changes, pin focus, navigation cleanup and explicit skyline/link
+separation for both countries at all four supported widths.

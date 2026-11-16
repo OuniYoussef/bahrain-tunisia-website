@@ -52,6 +52,69 @@
     gap: 32px;
     padding-block: 140px 64px;
   }
+  .country-hero[data-divider='serrated']::after {
+    block-size: 24px;
+    background: var(--color-pearl);
+    mask: url('/images/svg/patterns/divider-serrated.svg') 0 100% / 160px 24px repeat-x;
+    transform: rotate(180deg);
+  }
+  .country-nicknames {
+    margin-block: 16px;
+  }
+  .nickname-labels {
+    display: grid;
+    gap: 28px;
+    margin-block: 32px 56px;
+  }
+  .nickname-labels article {
+    border-block-start: 2px solid var(--accent-2);
+    padding-block-start: 20px;
+  }
+  .nickname-labels h3 {
+    font-style: italic;
+    color: var(--accent-deep);
+  }
+  .nickname-labels p {
+    font-size: var(--text-small);
+    margin-block-start: 12px;
+  }
+  .two-waters {
+    display: grid;
+    gap: 24px;
+    align-items: center;
+    background: var(--color-sand-50);
+    padding: clamp(24px, 4vw, 56px);
+    border-radius: 20px;
+  }
+  .two-waters svg {
+    inline-size: min(100%, 200px);
+  }
+  .sweet-water {
+    fill: var(--color-pearl-glow);
+    stroke: var(--accent);
+    stroke-width: 2;
+  }
+  .salt-water {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 3;
+  }
+  .water-seam {
+    stroke: var(--color-gold-deep);
+  }
+  .two-waters blockquote {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+    line-height: 1.55;
+    color: var(--accent-deep);
+  }
+  .bahrain-reference {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .country-page[data-theme='bahrain'] .country-map {
+    max-inline-size: min(330px, calc((100svh - 260px) * 0.6));
+    min-inline-size: 230px;
+  }
   .country-hero-copy {
     max-inline-size: 800px;
   }
@@ -494,6 +557,7 @@
   }
   .country-continue {
     padding-block: 72px;
+    padding-block-end: calc(72px + clamp(100px, 10.56vw, 204px));
   }
   .country-continue > div {
     display: grid;
@@ -517,6 +581,12 @@
     text-underline-offset: 8px;
   }
   @media (min-width: 640px) {
+    .nickname-labels {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .two-waters {
+      grid-template-columns: 1fr 3fr;
+    }
     .country-continue > div {
       grid-template-columns: 1fr 1fr;
     }
@@ -567,6 +637,22 @@
     }
     .country-reference {
       grid-template-columns: 1fr 1fr;
+    }
+    .bahrain-reference {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .bahrain-reference .country-facts {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .bahrain-reference .country-facts > div:first-child {
+      grid-column: auto;
+      grid-row: span 2;
+    }
+    .bahrain-reference .country-words-scroll {
+      max-inline-size: 1000px;
+    }
+    .nickname-labels {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
     }
     .country-welcome {
       padding-block-start: 112px;

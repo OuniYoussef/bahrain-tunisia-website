@@ -80,22 +80,34 @@ export function useDestinationTrack(count: number, onActive: (index: number) => 
         },
       );
       let mounted = true;
-      const refresh = () => {
-        if (!mounted) return;
-        const focused =
+      let refreshedFocus: HTMLElement | null = null;
+      // A refresh temporarily reparents pinned DOM. Preserve focus even when a
+      // different section, font, or viewport change initiates that refresh.
+      const captureFocus = () => {
+        refreshedFocus =
           document.activeElement instanceof HTMLElement && panel.contains(document.activeElement)
             ? document.activeElement
             : null;
-        ScrollTrigger.refresh();
         restoringFocus.current = true;
-        focused?.focus({ preventScroll: true });
+      };
+      const restoreFocus = () => {
+        if (refreshedFocus?.isConnected) refreshedFocus.focus({ preventScroll: true });
+        refreshedFocus = null;
         restoringFocus.current = false;
+      };
+      ScrollTrigger.addEventListener('refreshInit', captureFocus);
+      ScrollTrigger.addEventListener('refresh', restoreFocus);
+      const refresh = () => {
+        if (!mounted) return;
+        ScrollTrigger.refresh();
       };
       void document.fonts.ready.then(refresh);
       panel.addEventListener('load', refresh, true);
       return () => {
         mounted = false;
         panel.removeEventListener('load', refresh, true);
+        ScrollTrigger.removeEventListener('refreshInit', captureFocus);
+        ScrollTrigger.removeEventListener('refresh', restoreFocus);
         mm.revert();
         delete panel.dataset.pinned;
       };

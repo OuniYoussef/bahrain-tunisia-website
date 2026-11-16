@@ -9,6 +9,7 @@ import type { CountryContent } from '../types';
 import { media } from '../media';
 import { FactList } from '../welcome/FactList';
 import { WordTable } from '../welcome/WordTable';
+import { Nicknames } from '../welcome/Nicknames';
 
 export function CountryHero({ country, content }: { country: Country; content: CountryContent['welcome'] }) {
   const { ui } = useContent('common');
@@ -44,26 +45,11 @@ export function Welcome({ country, content }: { country: Country; content: Count
   return (
     <div className="country-welcome ui-container">
       <p className="country-intro">{content.intro}</p>
-      <div className="country-reference">
+      <div className={`country-reference ${'nicknames' in content ? 'bahrain-reference' : ''}`}>
         <FactList country={country} title={content.factsTitle} facts={content.facts} />
+        {'nicknames' in content && <Nicknames content={content} />}
         <WordTable content={content} />
       </div>
-      {'nicknames' in content && (
-        <section className="country-nicknames" aria-labelledby="nicknames-title">
-          <h2 id="nicknames-title" className="text-h3">
-            {content.nicknamesTitle}
-          </h2>
-          <div>
-            {content.nicknames.map((item) => (
-              <article key={item.id}>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </article>
-            ))}
-          </div>
-          <blockquote>{content.nameOrigin}</blockquote>
-        </section>
-      )}
       <section className="country-trivia" aria-labelledby="trivia-title">
         <h2 id="trivia-title" className="text-h3">
           {content.didYouKnowTitle}

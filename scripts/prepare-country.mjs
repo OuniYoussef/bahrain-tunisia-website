@@ -6,10 +6,12 @@ await writeFile(new URL('src/content/generated/country-media.generated.json', ro
 const rejected = JSON.parse(await readFile(new URL('src/content/image-review.json', root)));
 const details = (country) => Object.fromEntries(Object.entries(country).filter(([key]) => !['welcome', 'destinations'].includes(key)));
 await writeFile(new URL('src/content/generated/country-details-media.generated.json', root), JSON.stringify({ tunisia: details(tunisia), bahrain: details(bahrain) }, null, 2) + '\n');
-for (const [name, content] of [['hero', tunisia.welcome], ['destinations', tunisia.destinations], ['details', details(tunisia)]]) {
-  const ids = new Set(JSON.stringify(content).match(/(?:tn|cg)-[a-z-]+/g));
+for (const [country, data] of Object.entries({ tunisia, bahrain })) {
+for (const [name, content] of [['hero', data.welcome], ['destinations', data.destinations], ['details', details(data)]]) {
+  const ids = new Set(JSON.stringify(content).match(/(?:tn|bh|cg)-[a-z-]+/g));
   const catalog = Object.fromEntries(Object.entries(images).filter(([id]) => ids.has(id) && !Object.hasOwn(rejected, id)));
-  await writeFile(new URL(`src/content/generated/tunisia-${name}.generated.json`, root), JSON.stringify(catalog, null, 2) + '\n');
+  await writeFile(new URL(`src/content/generated/${country}-${name}.generated.json`, root), JSON.stringify(catalog, null, 2) + '\n');
+}
 }
 await mkdir(new URL('src/content/generated/country/', root), { recursive: true });
 for (const locale of ['en', 'fr', 'ar']) {

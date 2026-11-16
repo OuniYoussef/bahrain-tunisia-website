@@ -1,8 +1,7 @@
-import { useRef } from 'react';
+import { use, useRef } from 'react';
 import { useContent } from '@/i18n/content';
 import { SectionHeader } from '@/components/ui/SectionHeader';
-import { ImageCatalogContext } from '@/components/media/ImageCatalog';
-import catalog from '@/content/generated/tunisia-details.generated.json';
+import { ImageCatalogContext, type ImageCatalog } from '@/components/media/ImageCatalog';
 import type { Country } from './country.config';
 import { Wear } from './details/Wear';
 import { Nature } from './details/Nature';
@@ -14,9 +13,21 @@ import { MonumentGrid } from './details/MonumentGrid';
 import { PlaceMapProvider } from './details/PlaceMap';
 import { useDetailLayout } from './details/useDetailLayout';
 import './details.css';
+import './bahrain-details.css';
+
+const catalogs: Partial<Record<Country, Promise<ImageCatalog>>> = {};
+function loadCatalog(country: Country) {
+  catalogs[country] ??= (
+    country === 'tunisia'
+      ? import('@/content/generated/tunisia-details.generated.json')
+      : import('@/content/generated/bahrain-details.generated.json')
+  ).then((module) => module.default);
+  return catalogs[country];
+}
 
 export default function CountryDetails({ country }: { country: Country }) {
   const content = useContent(country);
+  const catalog = use(loadCatalog(country));
   const root = useRef<HTMLDivElement>(null);
   useDetailLayout(root);
   const sections = [

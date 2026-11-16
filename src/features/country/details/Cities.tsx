@@ -1,4 +1,5 @@
 import { Parallax } from '@/components/motion/Parallax';
+import { ResponsiveImage } from '@/components/media/ResponsiveImage';
 import type { CountryContent } from '../types';
 import type { Country } from '../country.config';
 import { media } from '../detail-media';
@@ -18,9 +19,19 @@ export function Cities({ country, content }: { country: Country; content: Countr
             className={`city-row ${index === 0 ? 'city-capital' : ''}`}
           >
             {index === 0 ? (
-              <Parallax>
-                <CardImage media={image} country={country} sizes="(min-width: 1440px) 1312px, 92vw" />
-              </Parallax>
+              <div className="city-capital-images">
+                <Parallax>
+                  <CardImage media={image} country={country} sizes="(min-width: 1440px) 1312px, 92vw" />
+                </Parallax>
+                {country === 'bahrain' && (
+                  <div className="city-nightlife">
+                    <ResponsiveImage
+                      id={media('bahrain.cities').nightlifeImage}
+                      sizes="(min-width: 768px) 30vw, 60vw"
+                    />
+                  </div>
+                )}
+              </div>
             ) : (
               <CardImage media={image} country={country} sizes="(min-width: 768px) 44vw, 90vw" />
             )}

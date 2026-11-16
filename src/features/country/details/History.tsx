@@ -2,6 +2,7 @@ import type { CountryContent } from '../types';
 import type { Country } from '../country.config';
 import { media } from '../detail-media';
 import { Timeline } from './Timeline';
+import { PearlHeritage } from './PearlHeritage';
 
 export function FigureGrid({ figures }: { figures: CountryContent['history']['figures'] }) {
   return (
@@ -27,6 +28,7 @@ export function History({ country, content }: { country: Country; content: Count
           media: media(`${country}.history.timeline`, event.id),
         }))}
       />
+      {'pearl' in content && <PearlHeritage content={content.pearl} />}
       <section className="history-figures" aria-labelledby="figures-title">
         <h3 id="figures-title" className="text-h3">
           {content.figuresTitle}

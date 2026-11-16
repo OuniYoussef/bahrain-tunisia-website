@@ -8,11 +8,11 @@
     "origin": "commons"
   },
   "bh-city-budaiya": {
-    "title": "File:Budaiya highway protest 07.JPG",
+    "title": "File:BudaiyaBeach.JPG",
     "origin": "commons"
   },
   "bh-city-financial-harbour": {
-    "title": "File:Bahrain Financial Harbor (157291233).jpg",
+    "title": "File:Manama Bahrain World Trade Centre & Bahrain Financial Harbour 2.jpg",
     "origin": "commons"
   },
   "bh-city-muharraq": {
@@ -44,7 +44,7 @@
     "origin": "commons"
   },
   "bh-craft-sadu": {
-    "title": "File:Landgericht Berlin, Littenstraße, Eingangshalle (2), 160906, ako.jpg",
+    "title": "File:Majlis in Sadu style.jpg",
     "origin": "commons"
   },
   "bh-dest-al-fateh": {
@@ -57,6 +57,10 @@
   },
   "bh-dest-bab-al-bahrain": {
     "title": "File:Bab Al Bahrain, Manama, Baréin, 2024-08-18, DD 72.jpg",
+    "origin": "commons"
+  },
+  "bh-dest-bahrain-wtc": {
+    "title": "File:Manama Bahrain World Trade Centre & Bahrain Financial Harbour 1.jpg",
     "origin": "commons"
   },
   "bh-dest-barbar-temple": {
@@ -96,7 +100,7 @@
     "origin": "wikipedia"
   },
   "bh-fest-fijiri": {
-    "title": "File:طواشة.jpg",
+    "title": "File:Fijiri music being performed on a dhow in Qatar.png",
     "origin": "commons"
   },
   "bh-fest-gargeean": {
@@ -108,7 +112,7 @@
     "origin": "commons"
   },
   "bh-fest-national-day": {
-    "title": "File:1 singapore national day parade 2011 fireworks.jpg",
+    "title": "File:IMG-2018 Light arrangements to celebrate national day in Bahrain 1.jpg",
     "origin": "commons"
   },
   "bh-food-bajela": {
@@ -124,7 +128,7 @@
     "origin": "commons"
   },
   "bh-food-harees": {
-    "title": "File:021 African savanna hare in the Serengeti National Park Photo by Giles Laurent.jpg",
+    "title": "File:Harressa or Harees.jpeg",
     "origin": "commons"
   },
   "bh-food-khabeesa": {
@@ -160,11 +164,15 @@
     "origin": "commons"
   },
   "bh-hist-al-khamis": {
-    "title": "File:Sultan Omar Ali Saifuddin Mosque 02.jpg",
+    "title": "File:Khamis Mosque 2019.jpg",
     "origin": "commons"
   },
   "bh-hist-dilmun-seal": {
     "title": "File:Sceau Dilmun A11690.jpg",
+    "origin": "commons"
+  },
+  "bh-hist-hidaya-school": {
+    "title": "File:Hidaya Al Khalifa Boys School Bahrain 1919.jpg",
     "origin": "commons"
   },
   "bh-hist-oil-well": {
@@ -172,8 +180,8 @@
     "origin": "commons"
   },
   "bh-hist-pearl-divers": {
-    "title": "File:Ama2.jpg",
-    "origin": "wikipedia"
+    "title": "File:طواشة.jpg",
+    "origin": "commons"
   },
   "bh-hist-shaikh-isa-house": {
     "title": "File:Muharraq Bayt Shaikh Isa bin Ali & Masjid Shaikh Isa bin Ali.jpg",
@@ -183,12 +191,16 @@
     "title": "File:Muharraq Bayt Siyadi Minarett.jpg",
     "origin": "commons"
   },
+  "bh-mon-bu-maher": {
+    "title": "File:Fuerte Bu Maher, Manama, Baréin, 2024-08-18, DD 32.jpg",
+    "origin": "commons"
+  },
   "bh-mon-saar": {
-    "title": "File:2026. Río Sar. Padrón. Galiza.jpg",
+    "title": "File:Dilmun period (3200-320 BC) burial chambers at Saar, Bahrain.JPG",
     "origin": "commons"
   },
   "bh-nature-beach": {
-    "title": "File:Riksdagen September 2014 02.jpg",
+    "title": "File:Hawar Islands banner.png",
     "origin": "commons"
   },
   "bh-nature-desert-sakhir": {
@@ -203,6 +215,10 @@
     "title": "File:Arabian oryx (oryx leucoryx).jpg",
     "origin": "wikipedia"
   },
+  "bh-nature-palm-groves": {
+    "title": "File:Unripe dates on a palm tree in Bahrain.jpg",
+    "origin": "commons"
+  },
   "bh-nature-socotra-cormorant": {
     "title": "File:Socotra cormorant Drying his feathers.jpg",
     "origin": "commons"
@@ -216,7 +232,7 @@
     "origin": "commons"
   },
   "bh-product-dates": {
-    "title": "File:Lake Grdzeli, Lagodekhi Protected Area, Georgia.jpg",
+    "title": "File:Unripe dates on a palm tree in Bahrain.jpg",
     "origin": "commons"
   },
   "bh-souq-manama": {
@@ -224,7 +240,7 @@
     "origin": "commons"
   },
   "bh-wear-ghutra": {
-    "title": "File:FeisalPartyAtVersaillesCopy.jpg",
+    "title": "File:The Pearl Harvester.jpg",
     "origin": "commons"
   },
   "bh-wear-gold-jewellery": {
@@ -233,6 +249,10 @@
   },
   "bh-wear-pearls": {
     "title": "File:Colours of the Persian Gulf ESA353290.jpg",
+    "origin": "commons"
+  },
+  "bh-wear-thobe-nashal": {
+    "title": "File:Robes thob al-nashal.png",
     "origin": "commons"
   },
   "cg-blue-quran": {

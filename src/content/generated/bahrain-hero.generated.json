@@ -1,0 +1,48 @@
+{
+  "bh-hero-dhow-sea": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-hero-dhow-sea",
+    "widths": [
+      640,
+      1280,
+      1920,
+      2560
+    ],
+    "width": 2560,
+    "height": 1920,
+    "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADQBACdASoYABIAPu1qq08ppiOiMBgIATAdiWQAsR8chCAVHFyqI57jteAgDIxUwAD8fEJnIagMvseCowhoNYemfDz9TAJC60vjIgPf6Uv7EZBn/zBNgMoqgLkdXadv8vBtdVrLiqsp8SwgHd0jq8WQ/FbVRuJytNwnkOGaddwOJ+uKLlE7BjirMnT6NgAA",
+    "color": "#78a8b8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Dhow and the Bahrain National Museum.jpg",
+      "author": "Slywire",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dhow_and_the_Bahrain_National_Museum.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-hero-manama-skyline": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-hero-manama-skyline",
+    "widths": [
+      640,
+      1280,
+      1920,
+      2560
+    ],
+    "width": 2560,
+    "height": 1913,
+    "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAABQBQCdASoYABIAPu1iqE4ppSOiMBgMATAdiWMArDMvwai9SZ922lRwYp8EVO8L/Lyd6wAA/taBQK3JjX2sKM0Se38nCkq/maD9ynRmHEejA7O7meIN77j6yYDp7+rUR7xNNMmb+0eR79b27pQlLsVHhjHNqFrT+zWRz72JOa62DnjUVo0BUuaZ8WclUoAA",
+    "color": "#d8e8e8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Manama Manama Skyline 05.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manama_Manama_Skyline_05.jpg",
+      "origin": "commons"
+    }
+  }
+}

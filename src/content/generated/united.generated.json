@@ -87,6 +87,26 @@
       "origin": "commons"
     }
   },
+  "bh-fest-fijiri": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-fest-fijiri",
+    "widths": [
+      480
+    ],
+    "width": 480,
+    "height": 360,
+    "lqip": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4IMQAAACwBACdASoYABIAPu1ur1IppiQiqAgBMB2JYwC36y/vQAoAyl3exlCloOdvDZAAAP7k7+izSlaMllPQjJ7b4mGDTMBPl+Yn2lfhf1UtD4tXN5MXVJ2Yfd1PIG/P0BBq7FmVYizPDxpkyZGeNSlwQNtXZfAVAygwPQWXveKbJbf4mmYXOfUpifo9RVn/pT/NSwt9OnGtb7IRNxgvAMU6bmAGqf7A9NMCKoaUiFSZ9E9spXgK/5y5MUIrhZrzZ5cQ3tYiYAAA",
+    "color": "#181818",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Fijiri music being performed on a dhow in Qatar.png",
+      "author": "alittleoryx @ youtube",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fijiri_music_being_performed_on_a_dhow_in_Qatar.png",
+      "origin": "commons"
+    }
+  },
   "bh-fest-majlis": {
     "group": "bahrain",
     "src": "/images/photos/bahrain/bh-fest-majlis",
@@ -128,6 +148,50 @@
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lugaimat_Riyadh_2024.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-hist-pearl-divers": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-hist-pearl-divers",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1074,
+    "lqip": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAAAwBQCdASoYABIAPu1sqlEppaOiqAqpMB2JaQAD5RDYm/Lh/eZ+K7jegQZEVxEfieGLgAD+wHsr4LfHWaDeQDKuzgh52YgJtUfiiQAAZAXjGmf0ow7bWXTEy68/pIwERrTDngs8PgTxiU0sRwRCzkDoZzI5mvmDtzuv8D14qamzn8WbdPAdRszttxmaGZsJiUVfFqyP6lS2TmgXeIJgifOrhXdxV30zRkaBAeP+J1TGNIkUmMJ3wDPWBZlK1gAA",
+    "color": "#d8d8d8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "طواشة.jpg",
+      "author": "Muharraq Forever",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D8%B7%D9%88%D8%A7%D8%B4%D8%A9.jpg",
+      "origin": "commons"
+    }
+  },
+  "bh-nature-palm-groves": {
+    "group": "bahrain",
+    "src": "/images/photos/bahrain/bh-nature-palm-groves",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 811,
+    "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwAwCdASoYAA4APu1iqU2ppaOiMAgBMB2JZAC06BdBuN/LpMfZq2IAAPr+vNXwHwwQlcsX1Qrl9/c5HXH7kQpWMi/t2+He9LK7WhsyDvF95DIUlSdyNWfRFLYEOb/R1vsBNpqzma1cfwU/2Gv841J2wlVLV0jtAzI6rGbBAAA=",
+    "color": "#585838",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Unripe dates on a palm tree in Bahrain.jpg",
+      "author": "Mohamed Toorani",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Unripe_dates_on_a_palm_tree_in_Bahrain.jpg",
       "origin": "commons"
     }
   },

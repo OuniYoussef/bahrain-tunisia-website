@@ -11,7 +11,7 @@
   .country-details article {
     min-inline-size: 0;
   }
-  .country-details :is(h3, h4) {
+  .country-details :is(h3, h4, h5) {
     overflow-wrap: anywhere;
   }
   .detail-card-grid {

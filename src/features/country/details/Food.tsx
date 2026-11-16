@@ -7,6 +7,7 @@ import type { Country } from '../country.config';
 import { media, type CardMedia } from '../detail-media';
 import { CardImage } from './InfoCard';
 import { useDesktop } from './useDesktop';
+import { ArabicCoffee } from './ArabicCoffee';
 
 export function DishGrid({
   items,
@@ -58,7 +59,7 @@ export function Food({ country, content }: { country: Country; content: CountryC
   const { ui } = useContent('common');
   return (
     <>
-      {!desktop && (
+      {!desktop && content.groups.length > 1 && (
         <fieldset className="food-filters">
           <legend className="sr-only">{content.title}</legend>
           {[{ id: 'all', title: ui.seeAll }, ...content.groups].map((group) => (
@@ -95,6 +96,7 @@ export function Food({ country, content }: { country: Country; content: CountryC
           />
         </section>
       ))}
+      {'coffee' in content && <ArabicCoffee content={content.coffee} />}
       <ProductStrip
         title={content.productsTitle}
         text={content.products}

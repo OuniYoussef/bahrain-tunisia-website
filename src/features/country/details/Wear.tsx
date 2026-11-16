@@ -11,32 +11,40 @@ import { useDesktop } from './useDesktop';
 export function Wear({ country, content }: { country: Country; content: CountryContent['wear'] }) {
   const [active, setActive] = useState(content.groups[0]?.id ?? '');
   const desktop = useDesktop();
+  const crafts = content.groups.filter((group) => group.id === 'crafts-clothes' || group.id === 'crafts');
+  const groups = content.groups.filter((group) => !crafts.includes(group));
   const cards = (group: CountryContent['wear']['groups'][number]) => (
-    <div className="detail-card-grid wear-grid" data-wear-group={group.id}>
-      {group.items.map((item) => (
-        <InfoCard
-          key={item.id}
-          id={`wear-${group.id}-${item.id}`}
-          item={item}
-          country={country}
-          media={media(`${country}.wear.groups.${group.id}.items`, item.id)}
-          portrait
-        />
-      ))}
-    </div>
+    <>
+      <div className="detail-card-grid wear-grid" data-wear-group={group.id}>
+        {group.items.map((item) => (
+          <InfoCard
+            key={item.id}
+            id={`wear-${group.id}-${item.id}`}
+            item={item}
+            country={country}
+            media={media(`${country}.wear.groups.${group.id}.items`, item.id)}
+            portrait
+            headingLevel={crafts.includes(group) ? 5 : 4}
+          />
+        ))}
+      </div>
+      {group.id === 'jewellery' && 'jewelleryNote' in content && (
+        <p className="jewellery-note">{content.jewelleryNote}</p>
+      )}
+    </>
   );
   return (
     <>
       {desktop ? (
         <Tabs value={active} onValueChange={setActive}>
           <TabList aria-label={content.title}>
-            {content.groups.map((group) => (
+            {groups.map((group) => (
               <Tab key={group.id} value={group.id}>
                 {group.title}
               </Tab>
             ))}
           </TabList>
-          {content.groups.map((group) => (
+          {groups.map((group) => (
             <TabPanel key={group.id} value={group.id}>
               <h3 className="sr-only">{group.title}</h3>
               {cards(group)}
@@ -45,7 +53,7 @@ export function Wear({ country, content }: { country: Country; content: CountryC
         </Tabs>
       ) : (
         <div className="wear-accordions">
-          {content.groups.map((group, index) => (
+          {groups.map((group, index) => (
             <details key={group.id} open={index === 0}>
               <summary>
                 <h3>{group.title}</h3>
@@ -55,6 +63,22 @@ export function Wear({ country, content }: { country: Country; content: CountryC
             </details>
           ))}
         </div>
+      )}
+      {'craftsTitle' in content && (
+        <section className="bahrain-crafts" aria-labelledby="crafts-title">
+          <div className="sadu-band" aria-hidden="true" />
+          <h3 className="text-h2" id="crafts-title">
+            {content.craftsTitle}
+          </h3>
+          {crafts.map((group) => (
+            <section key={group.id} aria-labelledby={`crafts-${group.id}-title`}>
+              <h4 className="text-h3" id={`crafts-${group.id}-title`}>
+                {group.title}
+              </h4>
+              {cards(group)}
+            </section>
+          ))}
+        </section>
       )}
       {'regional' in content && (
         <aside className="wear-regional" aria-labelledby="regional-title">

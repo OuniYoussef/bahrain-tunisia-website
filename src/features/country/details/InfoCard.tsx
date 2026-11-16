@@ -39,18 +39,20 @@ export function InfoCard({
   id,
   portrait,
   headingLevel = 4,
+  sizes,
 }: {
   item: PlaceText;
   media: CardMedia;
   country: Country;
   id: string;
   portrait?: boolean;
-  headingLevel?: 3 | 4;
+  headingLevel?: 3 | 4 | 5;
+  sizes?: string;
 }) {
-  const Heading = headingLevel === 3 ? 'h3' : 'h4';
+  const Heading = headingLevel === 3 ? 'h3' : headingLevel === 5 ? 'h5' : 'h4';
   return (
     <article id={id} className="info-card" data-item-id={item.id}>
-      <CardImage media={media} country={country} portrait={portrait} />
+      <CardImage media={media} country={country} portrait={portrait} sizes={sizes} />
       <div className="info-card-copy">
         {media.unesco && <UnescoBadge year={media.badgeYear} />}
         <Heading className="text-h4">{item.title}</Heading>
