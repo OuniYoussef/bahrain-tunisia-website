@@ -67,6 +67,7 @@ create index stories_feed_idx     on public.stories (approved_at desc, id desc) 
 create index stories_country_idx  on public.stories (country, approved_at desc, id desc)  where status = 'approved';
 create index stories_category_idx on public.stories (category, approved_at desc, id desc) where status = 'approved';
 create index stories_queue_idx    on public.stories (status, created_at);
+create index stories_moderated_by_idx on public.stories (moderated_by);
 
 create table public.story_photos (
   id uuid primary key default gen_random_uuid(),
@@ -102,6 +103,7 @@ create table public.reports (
   unique (story_id, reporter_hash)
 );
 create index reports_open_idx on public.reports (story_id) where status = 'open';
+create index reports_resolved_by_idx on public.reports (resolved_by);
 
 create table public.site_alerts (
   id uuid primary key default gen_random_uuid(),
@@ -116,6 +118,8 @@ create table public.site_alerts (
   created_by uuid references auth.users(id) on delete set null,
   created_at timestamptz not null default now()
 );
+
+create index site_alerts_created_by_idx on public.site_alerts (created_by);
 
 create table public.newsletter_subscribers (
   id uuid primary key default gen_random_uuid(),
@@ -136,6 +140,8 @@ create table public.moderation_log (
   story_id uuid, report_id uuid, note text,
   created_at timestamptz not null default now()
 );
+
+create index moderation_log_admin_id_idx on public.moderation_log (admin_id);
 
 create table private.rate_events (
   id bigint generated always as identity primary key,
@@ -244,11 +250,16 @@ create policy photos_admin  on public.story_photos for select to authenticated u
 create policy reports_admin on public.reports for select to authenticated using ((select public.is_admin()));
 create policy subs_admin    on public.newsletter_subscribers for select to authenticated using ((select public.is_admin()));
 create policy modlog_admin  on public.moderation_log for select to authenticated using ((select public.is_admin()));
-create policy alerts_public on public.site_alerts for select to anon, authenticated
+create policy alerts_public on public.site_alerts for select to anon
   using (active and starts_at <= now() and (expires_at is null or expires_at > now()));
-create policy alerts_admin_read  on public.site_alerts for select to authenticated using ((select public.is_admin()));
-create policy alerts_admin_write on public.site_alerts for all    to authenticated
+create policy alerts_authenticated on public.site_alerts for select to authenticated
+  using ((active and starts_at <= now() and (expires_at is null or expires_at > now())) or (select public.is_admin()));
+create policy alerts_admin_insert on public.site_alerts for insert to authenticated
+  with check ((select public.is_admin()));
+create policy alerts_admin_update on public.site_alerts for update to authenticated
   using ((select public.is_admin())) with check ((select public.is_admin()));
+create policy alerts_admin_delete on public.site_alerts for delete to authenticated
+  using ((select public.is_admin()));
 -- Stories/photos/reports have NO update/insert/delete policies: every state change goes through the
 -- `moderate` Edge Function (service role) so photos move correctly and moderation_log is always written.
 
@@ -293,9 +304,8 @@ idempotency key; require `success`), `ip.ts` (client IP from `x-forwarded-for` f
 3+ newlines, trim, count URLs), `webp.ts` (magic bytes `RIFF....WEBP` + dimensions from VP8/VP8L/VP8X header),
 `respond.ts` (JSON helpers with generic error codes: `invalid_input`, `captcha_failed`, `rate_limited`,
 `payload_too_large`, `not_found`, `forbidden`, `server_error`; never leak internals).
-Use the official Supabase server helpers if available (`npm:@supabase/server` → `withSupabase({ auth: 'none' | 'user' })`,
-`ctx.supabaseAdmin` for privileged work) — check the current docs with the `$supabase` skill; otherwise create a client
-with the secret key from `JSON.parse(Deno.env.get('SUPABASE_SECRET_KEYS')!)['default']`.
+Use the official Supabase server helpers (`npm:@supabase/server@1.9.2` → `withSupabase({ auth: 'none' | 'user' })`,
+`ctx.supabaseAdmin` for privileged work). The helpers read the platform-managed key maps; no legacy key fallback is used.
 
 `supabase/config.toml`: `verify_jwt = false` for `submit-story`, `react`, `report-post`, `subscribe` (public, protected
 by Turnstile/rate limits/validation); `verify_jwt = true` for `moderate`.
@@ -330,9 +340,9 @@ Pending photos in admin: `createSignedUrl(path, 300)` (5 min) via the admin's se
 ## Local development
 - With Docker: `npx supabase start` → local stack; `npx supabase db reset` applies migrations + seed;
   `npx supabase functions serve --env-file supabase/functions/.env`.
-- Without Docker: create a free cloud project, `npx supabase login`, `npx supabase link --project-ref <ref>`,
-  `npx supabase db push`, `npx supabase functions deploy <name>`, `npx supabase secrets set KEY=value`.
-- Types: `npx supabase gen types typescript --linked > src/lib/database.types.ts` (or `--local`).
+- Without Docker: use the CLI v3 cloud commands below. Database commands default to **local**, not the linked project.
+- Types: `node scripts/backend-types.mjs` (local), or `node scripts/backend-types.mjs --remote` (linked).
+  This preserves the existing file on failure and writes UTF-8 consistently on Windows.
 - Turnstile **test keys** for development: site `1x00000000000000000000AA` (always passes),
   secret `1x0000000000000000000000000000000AA`. Never use them in production.
 - `VITE_VAULT_MODE=mock` runs the entire Vault UI without Supabase.
@@ -343,3 +353,106 @@ Pending photos in admin: `createSignedUrl(path, 300)` (5 min) via the admin's se
   anon cannot insert anywhere; `get_stories` never returns non-approved rows; authenticated non-admin sees nothing;
   admin without aal2 sees nothing; `hit_rate_limit` blocks after the limit.
 - Function tests (Deno test) for validation, honeypot, WebP check, error mapping.
+
+## P8 implementation notes (2026-11-17)
+
+Current references checked before implementation:
+[Edge Function auth helpers](https://supabase.com/docs/guides/functions/auth),
+[publishable/secret keys](https://supabase.com/docs/guides/getting-started/api-keys),
+[CLI v3 changes](https://supabase.com/changelog/supabase-cli-v3).
+`withSupabase` uses `none` for visitor endpoints and `user` for moderation. Its built-in CORS is disabled;
+the project wrapper applies exact allowed origins, bounded streamed bodies and generic errors, including
+helper failures. Keep `verify_jwt=true` on moderate; never serve all functions with `--no-verify-jwt`.
+The platform supplies `SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEYS`, `SUPABASE_SECRET_KEYS`, and `SUPABASE_JWKS`.
+The browser client is initialized only when backend mode and both public settings are configured.
+
+- Submission counters use separate `submit-hour` and `submit-day` actions so each submission counts once
+  per window. Denied attempts can consume a slot in the first window; limits fail closed.
+- The server validates RIFF chunk boundaries, image headers/dimensions and size, and rejects animated,
+  EXIF and XMP chunks. This is header validation, not a full image decoder. It bounds streamed JSON to
+  16 KiB and multipart data to 6 MiB even without a Content-Length header.
+- Unsubscribe navigations may omit Origin; the unguessable UUID token authorizes that one operation.
+  Supplied origins must still be allowed. Confirmation text comes from `common.footer.newsletter.unsubscribed`
+  in the three locale files, escaped into a fixed HTML shell (there is no React hook on the server).
+- `admins_self` intentionally lets an authenticated moderator read their own membership before MFA.
+  The “aal1 sees nothing” assertion applies to queues, photos, reports, subscribers and logs; public
+  approved RPC reads and active alerts remain public for every role. All privileged data requires aal2.
+- Moderation reserves a story using `updated_at` compare-and-swap and a server-only
+  `[vault-operation:<uuid>] <action>` marker in `moderation_note`, hiding it from the public feed first.
+  Another moderator cannot start work while the marker exists. Each operation writes its log before
+  committing its final visibility. Storage and Postgres cannot share a transaction: logs can describe an
+  attempted operation if later Storage/DB work fails. A failed transition stays hidden/reserved. Approved
+  files are copied before originals are removed; private originals remain until the DB result is saved.
+  A private-copy cleanup failure after successful publication leaves the logged approved result intact.
+- Recovery after a failed moderation operation: inspect the log, story and both buckets using the
+  service/admin tooling; reconcile `story_photos.bucket` with the surviving files; remove any unintended
+  public copies; then clear the reservation via SQL and restore the appropriate status. Never clear a
+  reservation while the original worker is still running. Submission cleanup removes uploaded paths
+  before deleting its row; if Storage itself is unavailable, retain the row for operator cleanup.
+- Public URLs use the specified immutable one-year cache. Hiding/deleting removes the origin object
+  and feed entry, but cannot recall copies already downloaded or cached by browsers/CDNs.
+- `0003` skips scheduling with a notice when pg_cron is unavailable, unprivileged or not preloaded.
+  In that case schedule the four retention statements from that migration with an external trusted job.
+  No Storage files are removed by SQL retention: rejected stories have already had their files removed.
+- Generate samples with `node scripts/seed-samples.mjs`; verify exact SQL/mock parity with `--check`.
+  All six bodies are 60–90 words. The sample photo category uses `sample_image_id`, not uploaded files.
+
+### Repeatable local checks
+
+Verified on 2026-11-17 with CLI 3.1.0, local Postgres 17.11 and Edge Runtime 1.78.1:
+clean start/reset, 70 pgTAP assertions, clean public/private lint, no advisor warnings/errors,
+11 Deno tests, full function typechecks, 22 curl integration requests and `npm run verify` (75 tests).
+Slow first-time downloads can be reduced with
+`npx supabase start --exclude realtime,imgproxy,studio,logflare,vector,supavisor`.
+Let the functions watcher settle after file edits before running the smoke script; a runtime restart
+can interrupt requests with a transient gateway 502. Do not retry failed writes blindly.
+
+```sh
+npx supabase start
+npx supabase db reset
+npx supabase test db
+npx supabase db lint --schema public,private --fail-on warning
+npx supabase db advisors --type all --fail-on error
+npx deno check --config supabase/functions/deno.json supabase/functions/*/index.ts
+npx deno test --config supabase/functions/deno.json --allow-env supabase/functions/_shared
+node scripts/backend-types.mjs
+```
+
+Copy `supabase/functions/.env.example` to `.env`, set a fresh random local salt, and keep the documented
+Turnstile test secret only for local development. Start the functions in a second terminal:
+
+```sh
+npx supabase functions serve --env-file supabase/functions/.env
+node scripts/backend-smoke.mjs
+```
+
+The smoke script refuses non-local API URLs. It uses curl, creates a temporary moderator, enrolls TOTP,
+exercises aal1/aal2, submits a real WebP, runs all moderation actions and auto-hide, checks reaction
+deduplication and subscription/unsubscribe, and removes its records and files. Credentials stay in memory
+and curl auth headers travel through stdin. Rate-limit events remain until retention/reset.
+
+### Exact cloud deployment commands (CLI 3)
+
+Use a scoped access token in `SUPABASE_ACCESS_TOKEN` and a project owned by the team. Replace the ref
+placeholder; prepare an ignored `.env.production` file under `supabase/functions` containing real
+`TURNSTILE_SECRET_KEY`, a long random `IP_HASH_SALT`, production-only `ALLOWED_ORIGINS`, and
+`AUTO_HIDE_THRESHOLD=3`. Do not put Supabase secret keys in Vite variables or manually override the
+platform-managed Supabase environment variables.
+
+```sh
+npx supabase link --project-ref <project-ref>
+npx supabase db push --remote --dry-run
+npx supabase db push --remote
+npx supabase secrets set --env-file supabase/functions/.env.production
+npx supabase functions deploy submit-story react report-post subscribe moderate --use-api
+npx supabase db lint --remote --schema public,private --fail-on warning
+npx supabase db advisors --remote --type all --fail-on error
+node scripts/backend-types.mjs --remote
+```
+
+Hosted mutations ask for confirmation in CLI 3; use `--yes` only in an authorized deployment pipeline.
+Do not add `--include-seed` in production. Configure hosted Auth signups/MFA/password policy as described
+under provisioning; local config alone does not update hosted Auth. Review `npx supabase config diff`
+before `npx supabase config push` because the generated local config also contains local URLs and unrelated
+service settings. SQL access tests run in a transaction and roll back; run `npx supabase test db --remote`
+against a staging project before release. No cloud deployment is implicit in local verification.

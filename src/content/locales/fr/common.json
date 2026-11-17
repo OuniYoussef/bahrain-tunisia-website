@@ -74,7 +74,8 @@
       "already": "Cette adresse est déjà inscrite.",
       "invalid": "Veuillez saisir une adresse e-mail valide.",
       "error": "L'inscription a échoué. Veuillez réessayer plus tard.",
-      "unavailable": "La newsletter ouvrira bientôt."
+      "unavailable": "La newsletter ouvrira bientôt.",
+      "unsubscribed": "Votre désinscription est confirmée."
     },
     "columns": {
       "quickLinks": {

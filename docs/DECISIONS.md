@@ -292,3 +292,36 @@ explicit file playback; YouTube always requires activation. Ambient timelines pa
 but withhold `cg-oud`: its selected source is the Fergusonbrug bridge in Oud-Zevenaar, not a musical instrument.
 It joins the existing embroidery and Bahrain photo holds and renders the established patterned placeholder.
 Regional illustrative shared photographs retain their source-specific alt descriptions and attribution.
+
+**D-049 — Current Supabase auth and local tooling.** P8 uses the verified official `@supabase/server@1.9.2`
+helpers, exact CORS allowlists and generic errors. Public endpoints disable gateway JWT checking;
+moderation retains it and checks `is_admin()` through the user's client before using privileged access.
+Publishable keys stay in the browser; platform-managed secret key maps stay in the Edge runtime.
+CLI 3 defaults DB commands to local, so BACKEND's old linked commands are replaced with explicit `--remote`.
+The three numbered migration stages use CLI-generated timestamp filenames. No hosted deployment is performed.
+
+**D-050 — Storage failure recovery within the supplied schema.** Storage and table writes cannot be one
+transaction. Moderation uses the existing updated_at/moderation_note fields to reserve work and prevent
+overlapping transitions, hides the feed record before moving files, and logs before final visibility.
+Failed operations remain hidden and reserved for reconciliation rather than automatically republishing
+partial files. Logs record attempts if subsequent work fails. Private originals survive until publication
+commits. Cleanup failure after commit can leave private duplicates; BACKEND records the recovery procedure
+and the limit of immutable public caches. This adds no visitor grants or schema columns.
+
+**D-051 — Backend validation and content exceptions.** Separate hourly/daily submission actions avoid
+double-counting rate events. Bound actual streamed bytes as well as declared length; reject WebP animation,
+EXIF/XMP and inconsistent headers. Token-based unsubscribe navigation is the sole no-Origin exception.
+Its server-rendered confirmation reads/escapes canonical locale JSON because useContent is a React hook.
+The explicitly requested neutral samples are the single authored source for generated seed SQL, with
+word-count/parity tests. The specified admins_self policy exposes only one's own membership at aal1;
+private operational data remains gated on aal2. Tests and BACKEND clarify that public reads remain public.
+
+**D-052 — Advisor-required alert policy consolidation.** Supabase's performance advisor reported
+multiple_permissive_policies for authenticated SELECT on site_alerts: alerts_public, alerts_admin_read
+and the SELECT part of alerts_admin_write overlapped. Migration 0002 and the BACKEND SQL now use one
+SELECT policy per role and separate admin INSERT/UPDATE/DELETE policies. Public active/time-window
+visibility and MFA-gated administration are unchanged. Its INFO scan also identified four uncovered
+moderator foreign keys; migration 0001 adds covering indexes on stories.moderated_by, reports.resolved_by,
+site_alerts.created_by and moderation_log.admin_id. These are the only changes to the supplied SQL blocks.
+Unused-index INFO findings on a fresh seed are expected; story_reactions intentionally has RLS with no
+visitor policies because only the service role writes reactions.

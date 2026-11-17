@@ -19,7 +19,9 @@
 - P6 implemented: complete Bahrain page using the shared country components, with teal/gold museum labels,
   crafts, pearl heritage, Ramadan traditions, Arabic coffee and serrated/Sadu motifs in EN/FR/AR.
 - P7 implemented: 24-slide Common Grounds deck, translated layouts, gestures, index, autoplay and optional video slots.
-- Next prompt: **P8 — Supabase backend**
+- P8 implemented and verified: Supabase schema/RLS/Storage, five Edge Functions, sample seed, generated types,
+  configured browser client, SQL/Deno tests and real local Auth/Storage integration.
+- Next prompt: **P9 — Vault frontend**
 
 ## Checklist
 ### P0 — Bootstrap & tooling
@@ -281,10 +283,34 @@ Notes:
 - Decisions D-046–D-048 document responsive navigation, loading/video contracts and photo safeguards.
 
 ### P8 — Supabase backend
-- [ ] migrations 0001–0003, seed, config.toml, storage buckets/policies
-- [ ] Edge Functions: submit-story, react, report-post, subscribe, moderate (+ _shared, tests)
-- [ ] SQL security tests; advisors clean; types generated; BACKEND setup notes verified
+- [x] migrations 0001–0003, seed, config.toml, storage buckets/policies
+- [x] Edge Functions: submit-story, react, report-post, subscribe, moderate (+ _shared, tests)
+- [x] SQL security tests; advisors clean; types generated; BACKEND setup notes verified
 Notes:
+- 2026-11-17: Initialized Supabase without replacing existing files; local signups disabled, TOTP enabled,
+  password minimum 12, visitor function JWT checks disabled and moderation JWT checking retained.
+- Official `@supabase/server@1.9.2` helpers and new publishable/secret-key documentation verified. Shared
+  handlers implement exact CORS, streamed payload bounds, validation/normalization, Turnstile, salted
+  hashes, separate rate windows, WebP header/metadata checks, generic errors and cleanup. Moderation
+  reserves records across Storage moves and retains failed work for recovery (D-049–D-051).
+- Six 60–90-word neutral sample notes in EN/FR/AR are mirrored exactly into generated seed SQL. Browser
+  client stays absent when unconfigured/in mock mode. Unsubscribe confirmation uses canonical locale text.
+- `npm run verify` passes: 75 frontend/content tests and production build. Eleven Deno tests and Deno checks
+  pass, including streamed limits and moderation copy failure/order. `npm run audit`: zero vulnerabilities.
+- Full local Supabase (Postgres 17) starts and resets successfully; 70 pgTAP access assertions pass,
+  db lint on public/private is clean, and types were regenerated from the real local stack (not a stub).
+  CLI security/performance advisors have no warnings/errors after D-052's consolidated alert
+  policies and four moderator-FK indexes. Expected INFOs: fresh unused indexes and service-only reactions.
+- All 22 curl integration requests pass with Turnstile test keys: real WebP submission and bucket moves,
+  invited-style local user provisioning and TOTP enrolment, aal1 denial/aal2 permission, every moderation
+  action, unique hearts, three-reporter auto-hide, subscribe/already/unsubscribe and CORS/input/honeypot checks.
+  Test users, subscriber rows, stories, logs and uploaded files are cleaned up. Rate events remain for cron/reset.
+- Docker image downloads were slow; an isolated Postgres 16 harness additionally verified SQL and the
+  unavailable-pg_cron guard while waiting. Local stack excluded Studio, analytics, realtime, image proxy
+  and pooler services unused by these tests. Windows filesystem watcher restarts caused transient 502s
+  during edits; the final stable run passed. Production code contains no test-key bypass.
+- BACKEND includes exact local/cloud CLI 3 commands, real-key deployment notes and failure recovery
+  instructions. No cloud project was modified. P8 adds no visible Vault UI; responsive UI work remains P9.
 
 ### P9 — Vault frontend (+ newsletter & alerts wiring)
 - [ ] vaultApi (supabase + mock), hooks, wall + filters + infinite + dialog + hearts + report

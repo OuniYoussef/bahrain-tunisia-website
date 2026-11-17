@@ -10,6 +10,7 @@ test-results/
 .agents/
 skills-lock.json
 package-lock.json
+supabase/functions/deno.lock
 
 # Preserve the supplied kit and upstream skill sources without formatting churn.
 AGENTS.md
