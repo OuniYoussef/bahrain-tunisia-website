@@ -1,0 +1,7 @@
+# Narrow rewrites preserve static page metadata on both Netlify and Cloudflare.
+/en/admin /index.html 200
+/en/admin/* /index.html 200
+/fr/admin /index.html 200
+/fr/admin/* /index.html 200
+/ar/admin /index.html 200
+/ar/admin/* /index.html 200

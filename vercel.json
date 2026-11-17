@@ -1,0 +1,443 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://challenges.cloudflare.com; frame-src https://challenges.cloudflare.com https://www.youtube-nocookie.com https://player.vimeo.com; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/images/photos/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/en",
+      "destination": "/en/index.html"
+    },
+    {
+      "source": "/en/tunisia",
+      "destination": "/en/tunisia/index.html"
+    },
+    {
+      "source": "/en/bahrain",
+      "destination": "/en/bahrain/index.html"
+    },
+    {
+      "source": "/en/common-grounds",
+      "destination": "/en/common-grounds/index.html"
+    },
+    {
+      "source": "/en/vault",
+      "destination": "/en/vault/index.html"
+    },
+    {
+      "source": "/en/contact",
+      "destination": "/en/contact/index.html"
+    },
+    {
+      "source": "/en/credits",
+      "destination": "/en/credits/index.html"
+    },
+    {
+      "source": "/en/common-grounds/welcome",
+      "destination": "/en/common-grounds/welcome/index.html"
+    },
+    {
+      "source": "/en/common-grounds/families",
+      "destination": "/en/common-grounds/families/index.html"
+    },
+    {
+      "source": "/en/common-grounds/language",
+      "destination": "/en/common-grounds/language/index.html"
+    },
+    {
+      "source": "/en/common-grounds/written-word",
+      "destination": "/en/common-grounds/written-word/index.html"
+    },
+    {
+      "source": "/en/common-grounds/poets",
+      "destination": "/en/common-grounds/poets/index.html"
+    },
+    {
+      "source": "/en/common-grounds/sea",
+      "destination": "/en/common-grounds/sea/index.html"
+    },
+    {
+      "source": "/en/common-grounds/ships-songs",
+      "destination": "/en/common-grounds/ships-songs/index.html"
+    },
+    {
+      "source": "/en/common-grounds/dates-sweets",
+      "destination": "/en/common-grounds/dates-sweets/index.html"
+    },
+    {
+      "source": "/en/common-grounds/culinary",
+      "destination": "/en/common-grounds/culinary/index.html"
+    },
+    {
+      "source": "/en/common-grounds/welcome-art",
+      "destination": "/en/common-grounds/welcome-art/index.html"
+    },
+    {
+      "source": "/en/common-grounds/palms",
+      "destination": "/en/common-grounds/palms/index.html"
+    },
+    {
+      "source": "/en/common-grounds/dress",
+      "destination": "/en/common-grounds/dress/index.html"
+    },
+    {
+      "source": "/en/common-grounds/jewellery",
+      "destination": "/en/common-grounds/jewellery/index.html"
+    },
+    {
+      "source": "/en/common-grounds/weddings",
+      "destination": "/en/common-grounds/weddings/index.html"
+    },
+    {
+      "source": "/en/common-grounds/crafts",
+      "destination": "/en/common-grounds/crafts/index.html"
+    },
+    {
+      "source": "/en/common-grounds/windows",
+      "destination": "/en/common-grounds/windows/index.html"
+    },
+    {
+      "source": "/en/common-grounds/forts-waters",
+      "destination": "/en/common-grounds/forts-waters/index.html"
+    },
+    {
+      "source": "/en/common-grounds/civilizations",
+      "destination": "/en/common-grounds/civilizations/index.html"
+    },
+    {
+      "source": "/en/common-grounds/faith",
+      "destination": "/en/common-grounds/faith/index.html"
+    },
+    {
+      "source": "/en/common-grounds/learning",
+      "destination": "/en/common-grounds/learning/index.html"
+    },
+    {
+      "source": "/en/common-grounds/sport-talent",
+      "destination": "/en/common-grounds/sport-talent/index.html"
+    },
+    {
+      "source": "/en/common-grounds/independence",
+      "destination": "/en/common-grounds/independence/index.html"
+    },
+    {
+      "source": "/en/common-grounds/differences",
+      "destination": "/en/common-grounds/differences/index.html"
+    },
+    {
+      "source": "/en/common-grounds/cta",
+      "destination": "/en/common-grounds/cta/index.html"
+    },
+    {
+      "source": "/fr",
+      "destination": "/fr/index.html"
+    },
+    {
+      "source": "/fr/tunisia",
+      "destination": "/fr/tunisia/index.html"
+    },
+    {
+      "source": "/fr/bahrain",
+      "destination": "/fr/bahrain/index.html"
+    },
+    {
+      "source": "/fr/common-grounds",
+      "destination": "/fr/common-grounds/index.html"
+    },
+    {
+      "source": "/fr/vault",
+      "destination": "/fr/vault/index.html"
+    },
+    {
+      "source": "/fr/contact",
+      "destination": "/fr/contact/index.html"
+    },
+    {
+      "source": "/fr/credits",
+      "destination": "/fr/credits/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/welcome",
+      "destination": "/fr/common-grounds/welcome/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/families",
+      "destination": "/fr/common-grounds/families/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/language",
+      "destination": "/fr/common-grounds/language/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/written-word",
+      "destination": "/fr/common-grounds/written-word/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/poets",
+      "destination": "/fr/common-grounds/poets/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/sea",
+      "destination": "/fr/common-grounds/sea/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/ships-songs",
+      "destination": "/fr/common-grounds/ships-songs/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/dates-sweets",
+      "destination": "/fr/common-grounds/dates-sweets/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/culinary",
+      "destination": "/fr/common-grounds/culinary/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/welcome-art",
+      "destination": "/fr/common-grounds/welcome-art/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/palms",
+      "destination": "/fr/common-grounds/palms/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/dress",
+      "destination": "/fr/common-grounds/dress/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/jewellery",
+      "destination": "/fr/common-grounds/jewellery/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/weddings",
+      "destination": "/fr/common-grounds/weddings/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/crafts",
+      "destination": "/fr/common-grounds/crafts/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/windows",
+      "destination": "/fr/common-grounds/windows/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/forts-waters",
+      "destination": "/fr/common-grounds/forts-waters/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/civilizations",
+      "destination": "/fr/common-grounds/civilizations/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/faith",
+      "destination": "/fr/common-grounds/faith/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/learning",
+      "destination": "/fr/common-grounds/learning/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/sport-talent",
+      "destination": "/fr/common-grounds/sport-talent/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/independence",
+      "destination": "/fr/common-grounds/independence/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/differences",
+      "destination": "/fr/common-grounds/differences/index.html"
+    },
+    {
+      "source": "/fr/common-grounds/cta",
+      "destination": "/fr/common-grounds/cta/index.html"
+    },
+    {
+      "source": "/ar",
+      "destination": "/ar/index.html"
+    },
+    {
+      "source": "/ar/tunisia",
+      "destination": "/ar/tunisia/index.html"
+    },
+    {
+      "source": "/ar/bahrain",
+      "destination": "/ar/bahrain/index.html"
+    },
+    {
+      "source": "/ar/common-grounds",
+      "destination": "/ar/common-grounds/index.html"
+    },
+    {
+      "source": "/ar/vault",
+      "destination": "/ar/vault/index.html"
+    },
+    {
+      "source": "/ar/contact",
+      "destination": "/ar/contact/index.html"
+    },
+    {
+      "source": "/ar/credits",
+      "destination": "/ar/credits/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/welcome",
+      "destination": "/ar/common-grounds/welcome/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/families",
+      "destination": "/ar/common-grounds/families/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/language",
+      "destination": "/ar/common-grounds/language/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/written-word",
+      "destination": "/ar/common-grounds/written-word/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/poets",
+      "destination": "/ar/common-grounds/poets/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/sea",
+      "destination": "/ar/common-grounds/sea/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/ships-songs",
+      "destination": "/ar/common-grounds/ships-songs/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/dates-sweets",
+      "destination": "/ar/common-grounds/dates-sweets/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/culinary",
+      "destination": "/ar/common-grounds/culinary/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/welcome-art",
+      "destination": "/ar/common-grounds/welcome-art/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/palms",
+      "destination": "/ar/common-grounds/palms/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/dress",
+      "destination": "/ar/common-grounds/dress/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/jewellery",
+      "destination": "/ar/common-grounds/jewellery/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/weddings",
+      "destination": "/ar/common-grounds/weddings/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/crafts",
+      "destination": "/ar/common-grounds/crafts/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/windows",
+      "destination": "/ar/common-grounds/windows/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/forts-waters",
+      "destination": "/ar/common-grounds/forts-waters/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/civilizations",
+      "destination": "/ar/common-grounds/civilizations/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/faith",
+      "destination": "/ar/common-grounds/faith/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/learning",
+      "destination": "/ar/common-grounds/learning/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/sport-talent",
+      "destination": "/ar/common-grounds/sport-talent/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/independence",
+      "destination": "/ar/common-grounds/independence/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/differences",
+      "destination": "/ar/common-grounds/differences/index.html"
+    },
+    {
+      "source": "/ar/common-grounds/cta",
+      "destination": "/ar/common-grounds/cta/index.html"
+    },
+    {
+      "source": "/:lang(en|fr|ar)/admin/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

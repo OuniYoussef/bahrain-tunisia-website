@@ -1,0 +1,23 @@
+{
+  "adaptations": "Cropped, darkened and overlaid with localized text. Photo adaptations retain their source licences.",
+  "photos": [
+    {
+      "id": "tn-hero-sidi-bou-said-sea",
+      "title": "Tunis-Sidi Bou Said 3.JPG",
+      "author": "Kamoun Alaeddinne",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tunis-Sidi_Bou_Said_3.JPG",
+      "origin": "commons"
+    },
+    {
+      "id": "bh-hero-manama-skyline",
+      "title": "Manama Manama Skyline 05.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manama_Manama_Skyline_05.jpg",
+      "origin": "commons"
+    }
+  ]
+}

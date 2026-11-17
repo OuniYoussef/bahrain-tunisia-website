@@ -21,7 +21,7 @@ export function PageHead({
   const text = description ?? site.defaultDescription;
   const origin = env.VITE_SITE_URL ?? window.location.origin;
   const url = (path: string) => new URL(`${env.basePath.replace(/\/$/, '')}${path}`, origin).href;
-  const canonical = url(pathname);
+  const canonical = url(pathname.replace(/\/$/, ''));
   const image = new URL(`${env.basePath}og/${page}-${locale}.jpg`, origin).href;
   return (
     <>
@@ -32,7 +32,6 @@ export function PageHead({
         <link key={lang} rel="alternate" hrefLang={lang} href={url(localizePath(pathname, lang))} />
       ))}
       <link rel="alternate" hrefLang="x-default" href={url(localizePath(pathname, 'en'))} />
-      <meta name="theme-color" content="#0B1B2B" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={site.name} />
       <meta property="og:title" content={fullTitle} />

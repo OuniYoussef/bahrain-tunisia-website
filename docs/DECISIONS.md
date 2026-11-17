@@ -419,3 +419,26 @@ the full results, including regressions, in PROGRESS rather than equating lifecy
 zero long tasks. Hosted/other-locale/interaction measurements remain follow-ups. Matrix mosaic sizes now
 match its actual two-column mobile and three-column desktop frames; its existing animation is retained
 because the measured LCP element was text, not a cycling photo.
+
+**D-064 — Static metadata ownership.** United remains at `/:lang`, matching the router, rather than
+inventing `/united`. All 24 Matrix slides receive their own localized metadata and OG image. Build tags
+carry `data-prerender` and are removed at module startup before React owns the head, preventing stale
+canonical/description tags on client navigation. Missing SITE_URL uses the existing documented example
+domain; deployment must supply the actual canonical origin.
+
+**D-065 — Host differences and security.** Cloudflare proxy rules can replace static responses, so the
+spec's blanket `_redirects` rewrite is narrowed to admin routes. Unknown URLs receive the host's 404.html;
+Vercel keeps the specified SPA fallback (HTTP 200 with a client-rendered noindex 404). GitHub Pages serves
+dynamic admin routes with HTTP 404 while the SPA still boots. CSP meta omits frame-ancestors and
+upgrade-insecure-requests, which are not enforced via meta; Pages cannot supply anti-framing, HSTS or
+the other HTTP headers. HTML and immutable asset cache patterns do not overlap in `_headers`.
+Vercel reads project configuration before building, so its build also emits `.vercel/output` with current
+environment-derived headers and explicit static route mappings. The generated vercel.json remains
+reviewable. References: https://developers.cloudflare.com/pages/configuration/redirects/ and
+https://vercel.com/docs/build-output-api . Production host behavior must still be checked after deployment.
+
+**D-066 — Portable OG typography.** Sharp composites and encodes the JPGs; Chromium rasterizes the SVG
+text overlays with embedded @fontsource Fraunces/Amiri WOFF2 data, avoiding platform font substitution
+and preserving Arabic shaping. Photo adaptations and source licences are recorded in public/og/credits.json.
+OG generation is explicit (npm run og:generate); ordinary offline builds consume committed images and
+fail if a required image is absent. No synthetic IEEE logo is used; the favicon placeholder is a neutral arch.

@@ -66,6 +66,7 @@ export function SiteFooter() {
               </a>
             ))}
             <Link to={`${home}/credits`}>{ieeeLinks.credits}</Link>
+            <a href={`${import.meta.env.BASE_URL}sitemap.xml`}>{ieeeLinks.sitemap}</a>
           </nav>
           <div className="ieee-copy" lang="en" dir="ltr">
             <p>© Copyright {year} IEEE – All rights reserved.</p>

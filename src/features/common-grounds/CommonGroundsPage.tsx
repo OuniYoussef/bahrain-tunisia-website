@@ -46,7 +46,11 @@ function MatrixPage({ preloads }: { preloads: PreloadImage[] }) {
     return <Navigate replace to={`/${locale}/common-grounds/${slides[0]!.id}${search}${hash}`} />;
   return (
     <ImageCatalogContext value={catalog}>
-      <PageHead {...meta} page="common-grounds" />
+      <PageHead
+        title={slides[index]?.title ?? meta.title}
+        description={slides[index]?.text ?? meta.description}
+        page={slides[index] ? `common-grounds-${slides[index].id}` : 'common-grounds'}
+      />
       <div className="matrix-page tone-ink">
         {slideId ? (
           <SlideDeck

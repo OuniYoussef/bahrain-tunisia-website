@@ -24,7 +24,8 @@
 - P9 implemented: trilingual community wall, sharing/reporting, browser compression, newsletter and alerts.
 - P10 implemented: lazy moderation dashboard with TOTP MFA, protected queues, reports, alerts and newsletter export.
 - P11 motion polish implemented; final verification and performance measurements recorded below.
-- Next prompt: **P12 — SEO, headers & hosting**
+- P12 implemented: localized static metadata, OG images, sitemap, security headers and host configurations.
+- Next prompt: **P13 — QA & hardening**
 
 ## Checklist
 ### P0 — Bootstrap & tooling
@@ -418,8 +419,13 @@ P12/P13 work; no claim of zero long tasks or Lighthouse ≥90 is made. Tunisia's
 the low-TBT variation are retained rather than selecting a favourable rerun. Decisions: D-060–D-063.
 
 ### P12 — SEO, headers & hosting
-- [ ] prerender-meta script (route HTML, sitemap, 404), OG images, robots, security headers, vercel.json/_redirects/_headers, GitHub Pages fallback
+- [x] prerender-meta script (route HTML, sitemap, 404), OG images, robots, security headers, vercel.json/_redirects/_headers, GitHub Pages fallback
 Notes:
+- 2026-11-17: 93 localized static heads (7 pages + 24 slides × 3), matching client metadata, canonical/hreflang sitemap, robots, noindex 404, and 93 committed 1200×630 OG JPGs with photo credits.
+- Build generates environment-specific security/cache headers and Vercel config; Vercel builds also emit Build Output API artifacts so current environment values take effect. GitHub Pages workflow includes subpath CSP fallback.
+- Sharp composes existing photos with SVG overlays rasterized by Chromium using bundled Fraunces/Amiri fonts; regenerate with npm run og:generate. Official favicon set is selected when present; a neutral arch placeholder ships meanwhile.
+- npm run verify passes (114 tests). Production checks cover all 93 static heads, 30 browser deep links, client metadata replacement, EN/FR/AR, 404/noindex, and zero CSP violations at root and /exchange/ with meta-only CSP. Contact/footer checks cover four widths and both motion preferences.
+- Hosting limitations and corrections are recorded in D-064–D-066 and DEPLOYMENT.md. Real host header verification and configured external-service runtime checks remain deployment QA.
 
 ### P13 — QA & hardening
 - [ ] web-design-guidelines review, axe e2e, RTL/visual screenshots, Lighthouse ≥ 90, security checklist, bug fixes
