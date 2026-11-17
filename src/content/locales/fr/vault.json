@@ -165,7 +165,9 @@
         "remove": "Retirer la photo {n}",
         "processing": "Optimisation de la photo…",
         "altLabel": "Décrire la photo {n} (facultatif)",
-        "altHint": "Une courte description aide les visiteurs qui utilisent un lecteur d'écran."
+        "altHint": "Une courte description aide les visiteurs qui utilisent un lecteur d'écran.",
+        "movePrevious": "Déplacer la photo avant",
+        "moveNext": "Déplacer la photo après"
       },
       "consent": {
         "label": "Je confirme que les photos et le texte sont les miens et j'accepte les règles de la communauté."
@@ -217,5 +219,10 @@
   "unavailable": {
     "title": "Le Coffre se repose",
     "text": "Le partage d'histoires n'est pas encore activé sur cette version du site. Revenez bientôt."
+  },
+  "pending": {
+    "title": "Vos contributions",
+    "note": "Ces récits attendent une validation. Cette liste est visible uniquement dans ce navigateur.",
+    "status": "En attente de validation"
   }
 }

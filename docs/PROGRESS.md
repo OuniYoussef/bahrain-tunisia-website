@@ -21,7 +21,8 @@
 - P7 implemented: 24-slide Common Grounds deck, translated layouts, gestures, index, autoplay and optional video slots.
 - P8 implemented and verified: Supabase schema/RLS/Storage, five Edge Functions, sample seed, generated types,
   configured browser client, SQL/Deno tests and real local Auth/Storage integration.
-- Next prompt: **P9 — Vault frontend**
+- P9 implemented: trilingual community wall, sharing/reporting, browser compression, newsletter and alerts.
+- Next prompt: **P10 — Admin dashboard**
 
 ## Checklist
 ### P0 — Bootstrap & tooling
@@ -313,10 +314,34 @@ Notes:
   instructions. No cloud project was modified. P8 adds no visible Vault UI; responsive UI work remains P9.
 
 ### P9 — Vault frontend (+ newsletter & alerts wiring)
-- [ ] vaultApi (supabase + mock), hooks, wall + filters + infinite + dialog + hearts + report
-- [ ] share form + PhotoPicker + compression + Turnstile + success/error states
-- [ ] newsletter + alerts wired to API
+- [x] vaultApi (supabase + mock), hooks, wall + filters + infinite + dialog + hearts + report
+- [x] share form + PhotoPicker + compression + Turnstile + success/error states
+- [x] newsletter + alerts wired to API
 Notes:
+- 2026-11-17: Typed lazy adapters use approved-only RPCs, multipart/JSON Edge Function calls and public
+  error codes. Mock mode includes latency, pagination, validation, rate windows, idempotent hearts,
+  subscriptions and a browser-local pending receipt list; pending stories never enter public reads.
+- URL filters, prefetched story dialogs, photo carousel, reporting, optimistic hearts with rollback,
+  masonry/Flip transitions, infinite sentinel plus keyboard Load more, skeletons and empty/error states.
+  Query-only navigation preserves focus so closing dialogs returns to the initiating control.
+- Share sheet uses RHF/Zod, translated errors/counters/guidelines, session text drafts, category cards,
+  consent, honeypot/start time, Turnstile token reset and success/unavailable states. Native file input
+  supports dropped files; photos have accessible reorder/remove controls and optional descriptions.
+- Browser re-encoding strips metadata, preserves orientation and bounds full WebPs to 1600px/900 KiB
+  and thumbnails to 480px/150 KiB. Oversize/decode/type failures are rejected; object URLs are revoked.
+  Newsletter requires consent/Turnstile; announcements use the real adapter and five-minute cache.
+- npm run verify passes (107 unit/content tests). Adapter tests cover RPC cursor arguments, FormData,
+  error codes and alerts; mock tests cover pending isolation, pagination and unique hearts. Browser checks
+  cover filtering, dialogs, hearts, reporting, validation, two-photo submission, newsletter, EN/FR/AR,
+  all four widths, normal/reduced motion, axe, keyboard focus, screenshots and console errors/warnings.
+  The combined Vault/shell run passed 68 tests; the subsequent explicit-mock Vault run passed 32 tests.
+- Vault photo metadata is projected from the canonical catalog. Wall/query/Flip code and footer newsletter
+  are deferred until needed; explicit story/share deep links load immediately. Vault initial JavaScript
+  passes the 180 KiB budget; all four United budget regressions also pass. Desktop/mobile hero and wall
+  screenshots were reviewed.
+- D-053–D-055 record explicit-mode behavior, dynamic user media, mock limits, and loading/focus choices.
+  Production Turnstile/domain and deployed Supabase end-to-end checks remain release QA; this prompt
+  tests the adapter contract and mock UI, and does not claim a new hosted backend deployment.
 
 ### P10 — Admin dashboard
 - [ ] login, MFA enrol/verify, guard, queue, approved/rejected, reports, alerts CRUD, newsletter export, idle logout

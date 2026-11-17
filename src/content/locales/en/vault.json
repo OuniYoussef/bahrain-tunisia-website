@@ -165,7 +165,9 @@
         "remove": "Remove photo {n}",
         "processing": "Optimising photo…",
         "altLabel": "Describe photo {n} (optional)",
-        "altHint": "A short description helps visitors who use screen readers."
+        "altHint": "A short description helps visitors who use screen readers.",
+        "movePrevious": "Move photo earlier",
+        "moveNext": "Move photo later"
       },
       "consent": {
         "label": "I confirm that the photos and text are mine and I agree to the community guidelines."
@@ -217,5 +219,10 @@
   "unavailable": {
     "title": "The Vault is resting",
     "text": "Story sharing is not connected yet on this version of the site. Please come back soon."
+  },
+  "pending": {
+    "title": "Your submissions",
+    "note": "These stories are waiting for review. Only this browser can see this list.",
+    "status": "Pending review"
   }
 }

@@ -2,3 +2,4 @@
 import './images/united-catalog.mjs';
 import './prepare-country.mjs';
 import './prepare-matrix.mjs';
+import './prepare-vault.mjs';

@@ -75,7 +75,8 @@
       "invalid": "Veuillez saisir une adresse e-mail valide.",
       "error": "L'inscription a échoué. Veuillez réessayer plus tard.",
       "unavailable": "La newsletter ouvrira bientôt.",
-      "unsubscribed": "Votre désinscription est confirmée."
+      "unsubscribed": "Votre désinscription est confirmée.",
+      "captchaLabel": "Vérification de sécurité"
     },
     "columns": {
       "quickLinks": {

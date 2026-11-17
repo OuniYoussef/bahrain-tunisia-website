@@ -14,7 +14,7 @@ function Shell({ children }: { children?: ReactNode }) {
   const { a11y } = useContent('common');
   const location = useLocation();
   const section = location.pathname.split('/')[2];
-  const hero = !children && (!section || ['tunisia', 'bahrain', 'common-grounds', 'vault'].includes(section));
+  const hero = !children && (!section || ['tunisia', 'bahrain', 'common-grounds'].includes(section));
   return (
     <>
       <SkipLink />

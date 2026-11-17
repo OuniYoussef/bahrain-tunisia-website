@@ -325,3 +325,28 @@ moderator foreign keys; migration 0001 adds covering indexes on stories.moderate
 site_alerts.created_by and moderation_log.admin_id. These are the only changes to the supplied SQL blocks.
 Unused-index INFO findings on a fresh seed are expected; story_reactions intentionally has RLS with no
 visitor policies because only the service role writes reactions.
+
+**D-053 — Explicit backend mode and mock boundaries.** An explicit VITE_VAULT_MODE=supabase now remains
+Supabase mode when credentials are missing, allowing the specified unavailable screen rather than
+silently accepting mock submissions. Auto mode still chooses the local mock when unconfigured.
+Mock uses the same limits, public-feed separation and operation shapes, with local rate windows and
+idempotency. It cannot simulate independent IPs, real moderation or Cloudflare verification: its local
+token never reaches the real adapter, and its pending list stores text/metadata rather than full image
+blobs. Real Turnstile uses the configured site key; the documented test key is a development-only fallback.
+The Supabase changelog and official JavaScript RPC/functions-invoke references were checked.
+
+**D-054 — User media and compression.** Static hero/sample photos retain ResponsiveImage and a generated
+Vault-only catalog. Uploaded photos and temporary picker previews have no build-time manifest id, so
+StoryPhoto/PhotoPicker render bounded native images with intrinsic dimensions and author-provided alt
+text; this is a narrow exception to the static-manifest image rule. Public URLs are constructed only
+from the configured Supabase origin and encoded vault-public paths; pending URLs are never public.
+Canvas/OffscreenCanvas re-encoding follows BACKEND's sizes and retries, and rejects an output still above
+900 KiB (full) or 150 KiB (thumb). It never sends an oversize best-effort result.
+
+**D-055 — Vault loading, focus and presentation.** The light sand hero requires the solid IEEE header.
+Its two decorative polaroids keep Tunisia physically west and Bahrain east in Arabic. Wall/query/Flip
+code loads when the wall enters view, or immediately for story/share links; reserved space and an anchor
+keep browsing usable. Newsletter code loads near the footer, with skeleton-aware observation. Query-only
+URL changes no longer move focus to h1, allowing native dialog focus restoration. shareCategory selects
+the form category independently of the wall's category filter. A separate translated browser-local
+pending section avoids presenting unapproved mock submissions as community stories.

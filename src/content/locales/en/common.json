@@ -75,7 +75,8 @@
       "invalid": "Please enter a valid email address.",
       "error": "We could not subscribe you. Please try again later.",
       "unavailable": "The newsletter will open soon.",
-      "unsubscribed": "You have been unsubscribed."
+      "unsubscribed": "You have been unsubscribed.",
+      "captchaLabel": "Security check"
     },
     "columns": {
       "quickLinks": {

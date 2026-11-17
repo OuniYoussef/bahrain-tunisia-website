@@ -25,6 +25,8 @@ export function parseEnv(input: Record<string, unknown>) {
   return {
     ...values,
     basePath: `/${(values.VITE_BASE_PATH ?? '/').replace(/^\/+|\/+$/g, '')}`.replace(/\/?$/, '/'),
-    vaultMode: (values.VITE_VAULT_MODE !== 'mock' && configured ? 'supabase' : 'mock') as 'supabase' | 'mock',
+    vaultMode: (values.VITE_VAULT_MODE === 'supabase' || (values.VITE_VAULT_MODE !== 'mock' && configured)
+      ? 'supabase'
+      : 'mock') as 'supabase' | 'mock',
   };
 }

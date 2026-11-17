@@ -18,7 +18,7 @@ describe('optional environment configuration', () => {
     });
   });
   it.each(['auto', 'supabase', 'mock'])('resolves %s without credentials safely', (mode) => {
-    expect(parseEnv({ VITE_VAULT_MODE: mode }).vaultMode).toBe('mock');
+    expect(parseEnv({ VITE_VAULT_MODE: mode }).vaultMode).toBe(mode === 'supabase' ? 'supabase' : 'mock');
   });
   it('resolves auto and explicit modes with a complete backend configuration', () => {
     const input = {

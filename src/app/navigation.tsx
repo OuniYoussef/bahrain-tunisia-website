@@ -15,7 +15,11 @@ export function NavigationEffects() {
         /* Malformed hash has no target. */
       }
       const target = id ? document.getElementById(id) : null;
-      if (key !== initialKey.current && !sameDeck(previousPath.current, pathname))
+      if (
+        key !== initialKey.current &&
+        (previousPath.current !== pathname || target) &&
+        !sameDeck(previousPath.current, pathname)
+      )
         (previousPath.current === pathname && target
           ? target
           : document.querySelector<HTMLElement>('main h1')

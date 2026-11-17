@@ -17,15 +17,21 @@ export function AlertBanner() {
   const [data, setData] = useState<SiteAlert[]>([]);
   useEffect(() => {
     let active = true;
-    void loadAlerts()
-      .then((alerts) => {
-        if (active) setData(alerts);
-      })
-      .catch(() => {
-        /* The shell remains usable if announcements are unavailable. */
-      });
+    const refresh = () =>
+      void loadAlerts()
+        .then((alerts) => {
+          if (active) setData(alerts);
+        })
+        .catch(() => {
+          /* The shell remains usable if announcements are unavailable. */
+        });
+    refresh();
+    const interval = window.setInterval(refresh, 300_000);
+    window.addEventListener('focus', refresh);
     return () => {
       active = false;
+      window.clearInterval(interval);
+      window.removeEventListener('focus', refresh);
     };
   }, []);
   const [dismissed, setDismissed] = useState<string[]>([]);
