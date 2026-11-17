@@ -269,3 +269,26 @@ listeners on cleanup. Country journey bands reserve the footer skyline's full re
 to their normal bottom spacing, preventing skyline controls from intercepting the last onward link. Browser
 regressions exercise live motion preference changes, pin focus, navigation cleanup and explicit skyline/link
 separation for both countries at all four supported widths.
+
+**D-046 — Matrix navigation and responsive reading.** Slide changes use React Router's replace navigation
+(which calls history.replaceState), preserving router state, language-switch links and canonical metadata.
+Same-locale Matrix transitions skip the global page wipe and focus reset; Start focuses the keyboard region,
+deep links and language changes focus the h1, and the index restores its trigger. Desktop wheel input has an 850 ms cooldown; mobile
+vertical gestures scroll the stacked slide and horizontal swipes navigate with mirrored Arabic direction.
+This resolves the full-screen/long-copy conflict without hiding captions or the word board. Progress uses
+scaleX, rather than the width tween mentioned in MOTION, to follow that document's transform-only rule.
+Reserve the footer skyline's height below the deck so its hotspots cannot overlap navigation.
+
+**D-047 — Matrix loading and optional video.** Generate current-slide locale projections and photo catalogs
+from canonical matrix/image/media JSON; retain the 24 stable ids for navigation, load complete index titles
+only when requested, and preload adjacent photo URLs without downloading their attribution/LQIP metadata.
+Generated views are verified against every canonical slide in all three languages. The index, intro and
+video player have separate code chunks; Observer is registered independently of unrelated GSAP plugins.
+File video and privacy-enhanced YouTube are supported as requested; the page spec's incidental Vimeo mention
+does not define a Vimeo contract and is not implemented. There are no real videos. Reduced motion requires
+explicit file playback; YouTube always requires activation. Ambient timelines pause offscreen/when hidden.
+
+**D-048 — Matrix photo safeguard.** Reviewed the shared-image contact sheet. Preserve the table's image ids,
+but withhold `cg-oud`: its selected source is the Fergusonbrug bridge in Oud-Zevenaar, not a musical instrument.
+It joins the existing embroidery and Bahrain photo holds and renders the established patterned placeholder.
+Regional illustrative shared photographs retain their source-specific alt descriptions and attribution.

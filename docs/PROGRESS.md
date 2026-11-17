@@ -18,7 +18,8 @@
   complete EN/FR/AR content, responsive controls, map dialogs and a scroll-drawn timeline.
 - P6 implemented: complete Bahrain page using the shared country components, with teal/gold museum labels,
   crafts, pearl heritage, Ramadan traditions, Arabic coffee and serrated/Sadu motifs in EN/FR/AR.
-- Next prompt: **P7 — Common Grounds Media Matrix**
+- P7 implemented: 24-slide Common Grounds deck, translated layouts, gestures, index, autoplay and optional video slots.
+- Next prompt: **P8 — Supabase backend**
 
 ## Checklist
 ### P0 — Bootstrap & tooling
@@ -255,8 +256,29 @@ Notes:
   pearl museum and coffee feature. Decisions and editorial follow-ups are documented in D-043–D-045.
 
 ### P7 — Common Grounds Media Matrix
-- [ ] intro, deck, 4 layouts, navigation (keys/wheel/touch/buttons), URL sync, index, autoplay, video slot, a11y
+- [x] intro, deck, 4 layouts, navigation (keys/wheel/touch/buttons), URL sync, index, autoplay, video slot, a11y
 Notes:
+- 2026-11-17: Cinematic six-tile intro and all 24 canonical slides, with country flags/captions, Ken Burns,
+  thumbnail crossfades, shared circular insets, split-merge timelines, the translated word board and Vault CTA.
+- Replace navigation preserves deep links, queries, language-switch links and metadata without adding history
+  entries. Keyboard arrows mirror in Arabic; Home/End, PageUp/PageDown, Space, buttons, index dialog and
+  fullscreen are supported. Mobile vertical scrolling preserves long text; horizontal swipes mirror in RTL.
+- Autoplay is opt-in, advances every nine seconds, pauses for hover/focus/hidden tabs and stops at the end.
+  Scoped GSAP timelines/Observer clean up on unmount; ambient imagery pauses offscreen and in hidden tabs.
+  Reduced motion skips transitions/Ken Burns and leaves content visible. Only the active slide is accessible.
+- File and privacy-enhanced YouTube video slots have muted loops, sound controls, captions support and inactive
+  cleanup. YouTube is click-to-load; reduced-motion file video requires explicit playback. No real videos added.
+- Generated per-slide locale/photo projections avoid full catalog loading; adjacent photo URLs preload.
+  The index, intro and video player load separately. Reviewed shared photos and withheld the unrelated
+  cg-oud bridge photo; existing missing/held photos retain graceful placeholders.
+- npm run verify passes (71 unit/content tests). All 40 Matrix browser cases and four language/focus
+  regressions pass across EN/FR/AR, 360/768/1280/1920px and both motion preferences. The 32 remaining
+  shell checks passed in the broader run; the final eight intro/language checks pass after loading polish.
+  Checks cover all 24 slides, deep links, index/escape/focus, RTL touch, wheel cooldown, autoplay, axe,
+  overflow and no browser errors/warnings. Shared-image, mobile and desktop screenshots were reviewed.
+- Formatting, whitespace and the configured /exchange/ base-path check pass. Matrix entry bundles stay
+  below 180 KiB gzip; actual deployed LCP and video-provider playback with real media remain release QA.
+- Decisions D-046–D-048 document responsive navigation, loading/video contracts and photo safeguards.
 
 ### P8 — Supabase backend
 - [ ] migrations 0001–0003, seed, config.toml, storage buckets/policies
@@ -338,13 +360,13 @@ Recorded 2026-11-16 from the installed lockfile (Node 24.21.0; npm 12.2.0).
 ## Known issues / follow-ups
 - **Photo sourcing remains unfinished:** 176/183 ids are resolved. The seven missing Bahrain ids are
   `bh-wear-thobe`, `bh-wear-bisht`, `bh-craft-bani-jamra`, `bh-craft-rawazin`, `bh-mon-ain-umm-al-sujur`,
-  `bh-food-muhammar` and `bh-food-mumawash`. Eleven resolved but unsuitable selections are withheld in
-  `src/content/image-review.json`: `bh-wear-pearls`, `bh-craft-aali-pottery`, `cg-gold-embroidery`,
+  `bh-food-muhammar` and `bh-food-mumawash`. Twelve resolved but unsuitable selections are withheld in
+  `src/content/image-review.json`: `bh-wear-pearls`, `bh-craft-aali-pottery`, `cg-gold-embroidery`, `cg-oud`,
   `bh-craft-oud-bakhoor`, `bh-nature-springs`, `bh-nature-desert-sakhir`, `bh-city-sitra`, `bh-city-adliya`,
   `bh-food-nakhi`, `bh-food-bajela` and `bh-fest-gargeean`. These render graceful patterned placeholders;
   all requested media ids remain wired. Remove holds only after reviewing suitable replacements.
 - **Review new page photo subjects before use.** The resolver can rank unrelated subjects highly despite eligible
-  licences; `cg-oud` still depicts a bridge and needs correction for Common Grounds. P6 corrected the other
+  licences; `cg-oud` is now withheld because it depicts a bridge and needs a suitable instrument photo. P6 corrected the other
   previously flagged Bahrain sources or withheld them, and restored United's pearl-diver/Fijiri cards.
   Pin curated sources in `scripts/images/overrides.json` and regenerate originals with `--refresh --force` when
   changing selections. Nabeul's image remains a painting of pottery; prefer a workshop/wares photo in a later pass.

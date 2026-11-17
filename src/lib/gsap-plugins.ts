@@ -5,4 +5,4 @@ import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin';
 gsap.registerPlugin(SplitText, DrawSVGPlugin);
 export { SplitText, DrawSVGPlugin };
 export { Flip } from 'gsap/Flip';
-export { Observer } from 'gsap/Observer';
+export { Observer } from './gsap-observer';

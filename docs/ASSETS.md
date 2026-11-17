@@ -67,5 +67,16 @@ or `{ "provider": "youtube", "id": "<videoId>" }` (rendered with `youtube-nocook
 File naming: `public/media/video/cg-<NN>-<slide-id>.(mp4|webm)`, ≤ 8 MB, H.264/AV1, 1080p, muted loop, no audio
 required; captions `.vtt` per language if there is speech. `VideoSlot` respects reduced motion (shows poster, play button).
 
+```jsonc
+// Future example only: replace matrix.slides.sea.video after adding rights-cleared files.
+// No video files or external players are enabled in the current media data.
+// "video": { "provider": "file", "src": "/media/video/cg-06-sea.mp4", "poster": "tn-hist-punic-ports", "captions": "/media/video/cg-06-sea.en.vtt" }
+```
+
+P7 supports local files and click-to-load YouTube (`youtube-nocookie.com`), with muted looping,
+an explicit sound toggle, captions for files, and inactive/hidden-tab playback cleanup. The optional
+caption URL is a single authored track: supply the language-appropriate file when configuring a video.
+No Vimeo provider is implemented. Regenerate Matrix route catalogs with `npm run build` after changing media.
+
 ## Brand files (IEEE)
 `public/brand/` holds placeholders; replace with official files (see `public/brand/README.md` and `IEEE_BRANDING.md`).

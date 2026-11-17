@@ -63,7 +63,6 @@ export const router = createBrowserRouter(
             {
               path: 'common-grounds/:slideId?',
               lazy: () => import('@/features/common-grounds/CommonGroundsPage'),
-              loader: preload('matrix'),
             },
             {
               path: 'vault',

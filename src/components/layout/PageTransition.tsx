@@ -1,6 +1,7 @@
 import { useRef, type ReactNode } from 'react';
 import { useBlocker, useLocation } from 'react-router';
 import { gsap, useGSAP } from '@/lib/gsap';
+import { sameDeck } from '@/app/sameDeck';
 export function PageTransition({ children }: { children: ReactNode }) {
   const root = useRef<HTMLDivElement>(null);
   const { key, pathname } = useLocation();
@@ -9,6 +10,7 @@ export function PageTransition({ children }: { children: ReactNode }) {
   const blocker = useBlocker(
     ({ currentLocation, nextLocation }) =>
       currentLocation.pathname !== nextLocation.pathname &&
+      !sameDeck(currentLocation.pathname, nextLocation.pathname) &&
       !window.matchMedia('(prefers-reduced-motion: reduce)').matches,
   );
   useGSAP(
@@ -40,7 +42,10 @@ export function PageTransition({ children }: { children: ReactNode }) {
             gsap.set(panel, { clipPath: 'inset(0% 0% 0% 0%)' });
           } else if (previousKey.current !== key) {
             previousKey.current = key;
-            if (previousPath.current === pathname) return;
+            if (previousPath.current === pathname || sameDeck(previousPath.current, pathname)) {
+              previousPath.current = pathname;
+              return;
+            }
             previousPath.current = pathname;
             gsap.fromTo(
               panel,

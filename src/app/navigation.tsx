@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef } from 'react';
 import { useLocation } from 'react-router';
 import { ScrollTrigger } from '@/lib/gsap';
+import { sameDeck } from './sameDeck';
 export function NavigationEffects() {
   const { key, hash, pathname } = useLocation();
   const initialKey = useRef(key);
@@ -14,7 +15,7 @@ export function NavigationEffects() {
         /* Malformed hash has no target. */
       }
       const target = id ? document.getElementById(id) : null;
-      if (key !== initialKey.current)
+      if (key !== initialKey.current && !sameDeck(previousPath.current, pathname))
         (previousPath.current === pathname && target
           ? target
           : document.querySelector<HTMLElement>('main h1')
