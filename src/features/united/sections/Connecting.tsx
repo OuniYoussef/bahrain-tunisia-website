@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import { Link } from 'react-router';
 import { ArrowUpRight } from 'lucide-react';
 import { useContent, useLocale } from '@/i18n/content';
@@ -6,8 +5,9 @@ import { Section } from '@/components/ui/Section';
 import { Flag } from '@/components/media/Flag';
 import { ResponsiveImage } from '@/components/media/ResponsiveImage';
 import { media } from '../media';
-import { gsap, useGSAP } from '@/lib/gsap';
+import { DUR, EASE, gsap, useGSAP } from '@/lib/gsap';
 import { UnitedSectionHeader } from '../UnitedSectionHeader';
+import { useNearViewport } from '@/components/media/useNearViewport';
 
 const slides = {
   family: 'families',
@@ -66,17 +66,17 @@ function ConnectingCard({ item }: { item: Item }) {
 }
 export function Connecting() {
   const { connecting } = useContent('united');
-  const root = useRef<HTMLElement>(null);
+  const { root, near } = useNearViewport<HTMLElement>();
   useGSAP(
     () => {
       const mm = gsap.matchMedia();
       mm.add(
         { motion: '(prefers-reduced-motion: no-preference)', reduce: '(prefers-reduced-motion: reduce)' },
         (ctx) => {
-          if (!ctx.conditions?.motion) return;
+          if (!near || !ctx.conditions?.motion) return;
           const cleanups = gsap.utils.toArray<HTMLElement>('.connecting-card', root.current).map((card) => {
             const tween = gsap
-              .timeline({ paused: true, defaults: { duration: 0.35, ease: 'power3.inOut' } })
+              .timeline({ paused: true, defaults: { duration: DUR.fast, ease: EASE.move } })
               .to(card.querySelector('.connecting-photo-tn'), { clipPath: 'inset(0 42% 0 0)' }, 0)
               .to(card.querySelector('.connecting-photo-bh'), { clipPath: 'inset(0 0 0 58%)' }, 0)
               .to(card.querySelector('.connecting-seam'), { x: () => card.clientWidth * 0.08 }, 0);
@@ -102,7 +102,7 @@ export function Connecting() {
       );
       return () => mm.revert();
     },
-    { scope: root },
+    { scope: root, dependencies: [near], revertOnUpdate: true },
   );
   return (
     <Section ref={root} id="connecting" tone="sand">

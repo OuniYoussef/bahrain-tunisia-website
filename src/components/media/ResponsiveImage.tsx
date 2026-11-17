@@ -4,7 +4,6 @@ import { buildSrcSet, imageSrc, assetUrl, type ImageId } from '@/lib/images';
 import { useImage } from './ImageCatalog';
 import { cn } from '@/lib/cn';
 import { DUR, gsap, useGSAP } from '@/lib/gsap';
-import { Ornament } from './Ornament';
 import { Pattern } from './Pattern';
 
 export type ResponsiveImageProps = {
@@ -78,7 +77,10 @@ function ImageContent({
         {placeholder ? (
           <>
             <Pattern kind="khatam" className="absolute inset-0 h-full w-full" />
-            <Ornament kind={id.startsWith('bh-') ? 'razji' : 'jasmine'} />
+            <span
+              aria-hidden="true"
+              className={`ui-placeholder-ornament ${id.startsWith('bh-') ? 'is-razji' : ''}`}
+            />
           </>
         ) : (
           <>
@@ -109,16 +111,18 @@ function ImageContent({
                 onError={() => setFailed(true)}
               />
             </picture>
-            <span
-              data-lqip=""
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-0 bg-cover"
-              style={{
-                backgroundColor: image.color,
-                backgroundImage: `url("${image.lqip}")`,
-                backgroundPosition: image.focal,
-              }}
-            />
+            {!priority && (
+              <span
+                data-lqip=""
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 bg-cover"
+                style={{
+                  backgroundColor: image.color,
+                  backgroundImage: `url("${image.lqip}")`,
+                  backgroundPosition: image.focal,
+                }}
+              />
+            )}
           </>
         )}
       </div>

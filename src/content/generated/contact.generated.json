@@ -1,0 +1,24 @@
+{
+  "tn-sbs-blue-door": {
+    "group": "tunisia",
+    "src": "/images/photos/tunisia/tn-sbs-blue-door",
+    "widths": [
+      480,
+      960,
+      1440
+    ],
+    "width": 1440,
+    "height": 1924,
+    "lqip": "data:image/webp;base64,UklGRvIAAABXRUJQVlA4IOYAAADQBQCdASoYACAAPu1oqVAppiOiqA1RMB2JbACuHd0VhjOFvLUSaesj/azZdAhNLdqDJfdp1UAAAP7U0b3a1APfxcjAzgzcys0dHB+4o5hUu2Omt2TakIsF4Kga97ZtHWGBjlkcVGVdpdSd3VinoVU0QG6tTQhhiR5CmnJ79R9IKyWWpy6GEGtcgsX92XkACLFq1TgKmEUSat1NOAqwgdXEKRsyoC4od/HlgR8tPrnNFMtz/mLhEqp5+UdlpSugVPCrNO/WRe4xNKzLzncQQFBPosX3sMSBO4i01YrmM3rRjiDfUTagAA==",
+    "color": "#e8e8e8",
+    "focal": "50% 50%",
+    "credit": {
+      "title": "Door Sidi Bou Said.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Door_Sidi_Bou_Said.jpg",
+      "origin": "commons"
+    }
+  }
+}

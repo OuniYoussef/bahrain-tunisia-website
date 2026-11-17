@@ -2,7 +2,7 @@ import { useLayoutEffect, useRef, useState } from 'react';
 import { SvgArtwork } from '@/components/media/SvgArtwork';
 import artwork from '/images/svg/skyline/skyline-tunisia-bahrain.svg?raw';
 import { useContent, useLocale } from '@/i18n/content';
-import { gsap, ScrollTrigger, useGSAP } from '@/lib/gsap';
+import { DUR, STAGGER, gsap, ScrollTrigger, useGSAP } from '@/lib/gsap';
 type Landmark = { id: string; x: number; width: number; y: number };
 export function Skyline() {
   const { skyline } = useContent('common').footer;
@@ -34,15 +34,18 @@ export function Skyline() {
         (ctx) => {
           if (!ctx.conditions?.motion || !root.current) return;
           const buildings = Array.from(root.current.querySelectorAll<SVGGraphicsElement>('[data-landmark]'));
-          const ordered = buildings.sort(
-            (a, b) =>
-              Math.abs(a.getBBox().x + a.getBBox().width / 2 - 1499) -
-              Math.abs(b.getBBox().x + b.getBBox().width / 2 - 1499),
-          );
+          // Read each SVG box once, before writing animation styles.
+          const ordered = buildings
+            .map((element) => {
+              const box = element.getBBox();
+              return { element, distance: Math.abs(box.x + box.width / 2 - 1499) };
+            })
+            .sort((a, b) => a.distance - b.distance)
+            .map((item) => item.element);
           gsap.from(ordered, {
             y: 310,
-            duration: 1.1,
-            stagger: 0.07,
+            duration: DUR.slow,
+            stagger: STAGGER,
             scrollTrigger: { trigger: root.current, start: 'top 95%', once: true },
           });
           const turbines = root.current.querySelectorAll<SVGElement>('.turbine');

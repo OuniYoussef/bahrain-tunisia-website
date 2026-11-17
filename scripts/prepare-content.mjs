@@ -4,3 +4,4 @@ import './prepare-united-media.mjs';
 import './prepare-country.mjs';
 import './prepare-matrix.mjs';
 import './prepare-vault.mjs';
+import './prepare-contact.mjs';

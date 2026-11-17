@@ -1,6 +1,6 @@
 import { use, useRef } from 'react';
 import { useContent } from '@/i18n/content';
-import { SectionHeader } from '@/components/ui/SectionHeader';
+import { CountrySectionHeader } from './CountrySectionHeader';
 import { ImageCatalogContext, type ImageCatalog } from '@/components/media/ImageCatalog';
 import type { Country } from './country.config';
 import { Wear } from './details/Wear';
@@ -54,7 +54,7 @@ export default function CountryDetails({ country }: { country: Country }) {
                 aria-labelledby={`${id}-title`}
               >
                 <div className="ui-container">
-                  <SectionHeader
+                  <CountrySectionHeader
                     id={`${id}-title`}
                     title={section.title}
                     eyebrow={section.eyebrow}

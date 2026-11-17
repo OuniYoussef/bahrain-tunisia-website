@@ -1,7 +1,8 @@
 import { useEffect, type RefObject } from 'react';
 import { useLocation } from 'react-router';
 import { useLocale } from '@/i18n/content';
-import { gsap, ScrollTrigger, useGSAP } from '@/lib/gsap';
+import { DUR, gsap, useGSAP } from '@/lib/gsap';
+import { scheduleMotionRefresh } from '@/lib/motionRefresh';
 
 export function useDetailLayout(root: RefObject<HTMLDivElement | null>) {
   const locale = useLocale();
@@ -19,7 +20,7 @@ export function useDetailLayout(root: RefObject<HTMLDivElement | null>) {
     const refresh = () => {
       if (!mounted) return;
       cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => ScrollTrigger.refresh());
+      frame = requestAnimationFrame(scheduleMotionRefresh);
     };
     const observer = new ResizeObserver(refresh);
     if (root.current) observer.observe(root.current);
@@ -45,7 +46,7 @@ export function useDetailLayout(root: RefObject<HTMLDivElement | null>) {
             const card =
               event.target instanceof Element ? event.target.closest('.info-card, .dish-card') : null;
             if (!card || (event.relatedTarget instanceof Node && card.contains(event.relatedTarget))) return;
-            gsap.to(card, { y: entering ? -4 : 0, duration: 0.25, overwrite: 'auto' });
+            gsap.to(card, { y: entering ? -4 : 0, duration: DUR.fast, overwrite: 'auto' });
             const image = card.querySelector('img');
             if (image) gsap.to(image, { scale: entering ? 1.04 : 1, duration: 0.35, overwrite: 'auto' });
           };

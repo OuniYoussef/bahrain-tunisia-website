@@ -10,7 +10,13 @@ export function MatrixIntro({ onStart }: { onStart: () => void }) {
     <section className="matrix-intro tone-ink">
       <div className="matrix-mosaic" aria-hidden="true">
         {photos.map((id, i) => (
-          <PhotoSequence key={id} ids={[id, photos[(i + 1) % photos.length]!]} active priority={i === 0} />
+          <PhotoSequence
+            key={id}
+            ids={[id, photos[(i + 1) % photos.length]!]}
+            sizes="(min-width: 900px) 34vw, 50vw"
+            active
+            priority={i === 0}
+          />
         ))}
       </div>
       <div className="matrix-intro-copy">

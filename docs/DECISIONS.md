@@ -382,3 +382,40 @@ United-only JSON payload during the existing content preparation step, keeping t
 and canonical source. Both public budget tests pass without changing their thresholds. Mock admin loads no Auth
 SDK/query implementation; the dashboard module is deferred until the guard succeeds. No public motion changes
 are included.
+
+**D-060 — Motion signatures and numeric prose.** P11 keeps the established geographic orientation of
+United's halves, connecting-card photographs, maps and skyline. Reading-direction icon translation now
+uses dirSign on an unmirrored wrapper; the icon itself mirrors separately. Measured nav coordinates are
+converted to reading-direction space and back once. Bahrain's gold museum ordinals count up with Intl,
+and a decorative scaleX grade line accompanies the existing labelled illustrative pearls. Fact paragraphs
+contain dates, mixed units and currency denominations, not structured numeric metrics; these stay static
+instead of parsing and temporarily changing historical dates or prices. The journey distance remains the
+structured numeric counter. Page wipes now take the specified 0.5 seconds for each leg.
+
+**D-061 — Motion lifecycle and loading.** Font/image/deferred-layout refresh requests coalesce for 120ms;
+destination pin refreshes retain their existing focus protection. Country detail headers now share the
+deferred header signature. United headers, connecting interactions, timelines and parallax initialize
+near the viewport; the pearl sequence is created on entry. Ambient mosaic/slide/spinner work shares an
+off-screen/hidden-tab pause helper. Heart particles complete independently of request latency. Matrix
+view/catalog/intro loading runs in parallel, and wheel cooldown restarts when the slide commits so slow
+loading cannot consume the transition's cooldown. Reduced motion restores final content and removes
+interaction transforms; progress and grade bars animate scale rather than layout width (the transform-only
+rule takes precedence over MOTION's progress-width wording). GSAP handles all animated interactions,
+including the hovers that the motion table describes as CSS.
+
+**D-062 — Layout and image performance.** Priority photos render directly without the additional LQIP fade;
+lazy photos retain it. Static missing-photo ornaments use the original SVG as CSS masks, keeping the same
+motif without repeated SVG DOM trees. Contact receives a generated two-id catalog rather than the full
+photo catalog. Route loading reserves one viewport so a prematurely visible footer does not shift; IEEE
+meta-navigation reserves link slots and the shell preloads its Open Sans font. Existing Latin display/body
+preloads and script subsets remain. Bahrain's skyline focal point is 76% 50%, selected after comparing the
+mobile crop with the original, and is persisted through overrides and the normal image pipeline.
+
+**D-063 — Performance evidence and remaining target.** Before/after measurements use the same pinned
+Lighthouse 12.8.2/Chromium 159 setup and default simulated mobile throttling against the production preview.
+The intermediate run concurrent with Playwright is excluded; the final run is uncontended. All six final
+navigation audits measure CLS 0, but startup long tasks and LCP remain above the requested targets. Preserve
+the full results, including regressions, in PROGRESS rather than equating lifecycle tests or low TBT with
+zero long tasks. Hosted/other-locale/interaction measurements remain follow-ups. Matrix mosaic sizes now
+match its actual two-column mobile and three-column desktop frames; its existing animation is retained
+because the measured LCP element was text, not a cycling photo.

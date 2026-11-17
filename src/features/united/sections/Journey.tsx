@@ -3,7 +3,7 @@ import { useContent, useLocale } from '@/i18n/content';
 import { formatNumber, t } from '@/i18n/format';
 import { Section } from '@/components/ui/Section';
 import { useNearViewport } from '@/components/media/useNearViewport';
-import { gsap, useGSAP } from '@/lib/gsap';
+import { DUR, EASE, gsap, useGSAP } from '@/lib/gsap';
 import { DrawSVGPlugin } from '@/lib/gsap-plugins';
 import { media } from '../media';
 import { UnitedSectionHeader } from '../UnitedSectionHeader';
@@ -32,7 +32,7 @@ export function Journey() {
           if (!map || !route) return;
           gsap.from('.rm-country', {
             opacity: 0,
-            duration: 1,
+            duration: DUR.base,
             scrollTrigger: { trigger: map, start: 'top 85%', once: true },
           });
           gsap.set(route, { strokeDasharray: 'none' });
@@ -54,13 +54,14 @@ export function Journey() {
               repeat: 1,
               yoyo: true,
               duration: 0.65,
+              ease: EASE.ambient,
               scrollTrigger: { trigger: map, start: 'center 65%', once: true },
             },
           );
           const counter = { value: 0 };
           gsap.to(counter, {
             value: distance,
-            duration: 1.4,
+            duration: DUR.slow,
             onUpdate: () => {
               if (count.current) count.current.textContent = label(counter.value);
             },

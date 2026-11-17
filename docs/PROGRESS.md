@@ -23,7 +23,8 @@
   configured browser client, SQL/Deno tests and real local Auth/Storage integration.
 - P9 implemented: trilingual community wall, sharing/reporting, browser compression, newsletter and alerts.
 - P10 implemented: lazy moderation dashboard with TOTP MFA, protected queues, reports, alerts and newsletter export.
-- Next prompt: **P11 — Motion & polish**
+- P11 motion polish implemented; final verification and performance measurements recorded below.
+- Next prompt: **P12 — SEO, headers & hosting**
 
 ## Checklist
 ### P0 — Bootstrap & tooling
@@ -367,8 +368,54 @@ Notes:
   modules load only after authorisation. Decisions are recorded in D-056–D-059.
 
 ### P11 — Motion & polish
-- [ ] signature animations per MOTION.md, page transitions, micro-interactions, reduced-motion audit, perf pass
+- [x] signature animations per MOTION.md, page transitions, micro-interactions, reduced-motion audit, perf pass
 Notes:
+- 2026-11-17: Audited United, Tunisia, Bahrain, Common Grounds, Vault and the shell against the complete
+  motion spec and design signatures. Added the missing country-detail header reveals and Bahrain pearl
+  count-up/grade fill. Shared durations/eases/staggers now drive the polished interactions; page wipes use
+  0.5s per leg. Fact prose stays static rather than counting dates/denominations (D-060).
+- Buttons press gently and nudge reading-direction icons; nav underlines respond to hover/focus and route
+  changes. Heart pops and six particles finish even when the reaction request returns quickly. Header hide,
+  keyboard visibility and live reduced-motion cleanup remain supported. Geography stays unmirrored.
+- Shared debounced refresh handles fonts/images and deferred country layout; pin focus is preserved.
+  Heavy header/timeline/parallax/connecting setup waits until near view. Ambient mosaic, deck and spinner
+  animations pause off screen/in hidden tabs; skyline turbines retain their existing pause lifecycle.
+- Priority images avoid a second fade, placeholder ornaments avoid repeated SVG DOM, Contact uses a tiny
+  generated catalog, Matrix view/catalog loading is parallel and mosaic sizes match its 2/3-column layout.
+  Loading placeholders reserve a viewport, IEEE meta-nav slots are stable, and Open Sans is preloaded with
+  the existing Latin heading/body fonts. Route splitting, deferred country sections and Vault wall remain.
+- Reviewed mobile/desktop image and section screenshots. Shifted Bahrain's skyline focal point to 76% 50%
+  through overrides and regenerated catalogs, keeping the prominent towers in the narrow hero crop.
+- Reproducible Lighthouse runner: `node scripts/lighthouse-mobile.mjs before|after <lighthouse-cli>`.
+  Raw reports live in ignored `node_modules/.cache/motion-audit/`; results below use Lighthouse 12.8.2,
+  Chromium 159, default simulated mobile throttling, local production preview, EN routes and fresh profiles.
+  Lighthouse's latest install hit a registry tarball 404; the pinned working version was used for both runs.
+  This is laboratory evidence, not deployed/field performance. A contended intermediate run is excluded.
+- Validation: `npm run verify` passes (114 unit/content tests), formatting and whitespace checks pass,
+  and the configured `/exchange/` build/navigation check passes. The broad browser run passed 300/316;
+  after fixing hash/font alignment and slide cooldown and updating changed markup assertions, all 96
+  focused regressions pass across EN/FR/AR and 360/768/1280/1920px. These include all earlier failures,
+  16 new pearl/ambient lifecycle cases, keyboard/header/RTL/live motion checks, Vault mutations and the
+  United/Tunisia/Bahrain/Vault 180 KiB initial-JavaScript budgets. Two unit timeouts under concurrent
+  browser load disappeared in the isolated final verify run; no assertions or timeouts were weakened.
+
+Lighthouse mobile before/after (one uncontended run per version; scores vary with host scheduling):
+
+| EN route | Performance before → after | CLS before → after | LCP ms before → after | TBT ms before → after |
+| --- | --- | --- | --- | --- |
+| United | 75 → 78 | 0.000062 → 0 | 4547 → 4580 | 212 → 205 |
+| Tunisia | 69 → 68 | 0.000062 → 0 | 6081 → 6315 | 91 → 105 |
+| Bahrain | 68 → 70 | 0.000062 → 0 | 6006 → 6001 | 120 → 102 |
+| Common Grounds | 69 → 77 | 0.076801 → 0 | 8334 → 5392 | 67 → 50 |
+| Vault | 78 → 78 | 0.000062 → 0 | 4622 → 4710 | 23 → 42 |
+| Contact / shell | 83 → 87 | 0.053795 → 0 | 4007 → 3850 | 2 → 26 |
+
+Accessibility **100**, best practices **100**, SEO **92** on all six routes before and after. Every final
+mobile navigation audit measured exact CLS 0; this is not a guarantee for all routes, locales, network
+conditions or arbitrary interactions. The largest reported final tasks are 214/141/138/86/98/94ms in
+table order. The strict no-task-over-50ms target is **not met**: startup work and mobile LCP still need
+P12/P13 work; no claim of zero long tasks or Lighthouse ≥90 is made. Tunisia's single-run regression and
+the low-TBT variation are retained rather than selecting a favourable rerun. Decisions: D-060–D-063.
 
 ### P12 — SEO, headers & hosting
 - [ ] prerender-meta script (route HTML, sitemap, 404), OG images, robots, security headers, vercel.json/_redirects/_headers, GitHub Pages fallback
@@ -428,6 +475,10 @@ Recorded 2026-11-16 from the installed lockfile (Node 24.21.0; npm 12.2.0).
 | vitest | 5.1.0 | Development |
 
 ## Known issues / follow-ups
+- **P11 performance target remains open:** the six audited EN mobile routes have CLS 0, but Lighthouse
+  reports 54–214ms startup tasks and performance scores 68–87. Prioritize initial rendering/data waterfalls
+  and LCP in P12/P13, repeat on deployed/mobile hardware, and measure other locales and interaction CLS.
+  The supplied task's no-long-task requirement is not established by passing animation lifecycle tests.
 - **Photo sourcing remains unfinished:** 176/183 ids are resolved. The seven missing Bahrain ids are
   `bh-wear-thobe`, `bh-wear-bisht`, `bh-craft-bani-jamra`, `bh-craft-rawazin`, `bh-mon-ain-umm-al-sujur`,
   `bh-food-muhammar` and `bh-food-mumawash`. Twelve resolved but unsuitable selections are withheld in

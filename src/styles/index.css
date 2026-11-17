@@ -390,6 +390,15 @@
     justify-content: center;
     color: var(--color-gold-deep);
   }
+  .ui-placeholder-ornament {
+    inline-size: 96px;
+    block-size: 96px;
+    background: currentColor;
+    mask: url('/images/svg/ornaments/ornament-jasmine-tunisia.svg') center / contain no-repeat;
+  }
+  .ui-placeholder-ornament.is-razji {
+    mask-image: url('/images/svg/ornaments/ornament-razji-bahrain.svg');
+  }
   .ui-inline-svg {
     display: inline-block;
     vertical-align: middle;

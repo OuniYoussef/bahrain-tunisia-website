@@ -1,8 +1,9 @@
-import { useId, useRef, useState } from 'react';
+import { useId, useState } from 'react';
 import { useContent, useLocale } from '@/i18n/content';
 import { Button } from '@/components/ui/Button';
 import { ResponsiveImage } from '@/components/media/ResponsiveImage';
-import { gsap, useGSAP } from '@/lib/gsap';
+import { DUR, gsap, useGSAP } from '@/lib/gsap';
+import { useNearViewport } from '@/components/media/useNearViewport';
 import type { CardMedia } from '../detail-media';
 
 type Event = { id: string; date: string; text: string; media: CardMedia };
@@ -10,7 +11,7 @@ export function Timeline({ events, title }: { events: Event[]; title: string }) 
   const { ui } = useContent('common');
   const locale = useLocale();
   const [expanded, setExpanded] = useState(false);
-  const root = useRef<HTMLDivElement>(null);
+  const { root, near } = useNearViewport<HTMLDivElement>();
   const listId = useId();
   useGSAP(
     () => {
@@ -18,7 +19,7 @@ export function Timeline({ events, title }: { events: Event[]; title: string }) 
       mm.add(
         { motion: '(prefers-reduced-motion: no-preference)', reduce: '(prefers-reduced-motion: reduce)' },
         (ctx) => {
-          if (!ctx.conditions?.motion) return;
+          if (!near || !ctx.conditions?.motion) return;
           gsap.from('.timeline-line', {
             scaleY: 0,
             transformOrigin: 'center top',
@@ -28,7 +29,7 @@ export function Timeline({ events, title }: { events: Event[]; title: string }) 
           root.current?.querySelectorAll<HTMLElement>('li:not([hidden])').forEach((event) => {
             gsap.from(event.querySelector('.timeline-dot'), {
               scale: 0.4,
-              duration: 0.4,
+              duration: DUR.fast,
               scrollTrigger: { trigger: event, start: 'top 85%', once: true },
             });
             const image = event.querySelector('.timeline-photo');
@@ -47,7 +48,7 @@ export function Timeline({ events, title }: { events: Event[]; title: string }) 
       );
       return () => mm.revert();
     },
-    { scope: root, dependencies: [expanded, locale], revertOnUpdate: true },
+    { scope: root, dependencies: [expanded, locale, near], revertOnUpdate: true },
   );
   return (
     <div className="country-timeline" ref={root}>

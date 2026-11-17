@@ -1,6 +1,6 @@
 import type { RefObject } from 'react';
 import { useLocale } from '@/i18n/content';
-import { gsap, useGSAP, DUR } from '@/lib/gsap';
+import { gsap, useGSAP, DUR, EASE, STAGGER } from '@/lib/gsap';
 import { SplitText, DrawSVGPlugin } from '@/lib/gsap-plugins';
 
 gsap.registerPlugin(SplitText, DrawSVGPlugin);
@@ -28,7 +28,7 @@ export function useHeroMotion(root: RefObject<HTMLElement | null>) {
             )
             .from(
               '.hero-eyebrow, .hero-subheadline, .hero-actions',
-              { opacity: 0, y: 16, stagger: 0.12, duration: 0.8 },
+              { opacity: 0, y: 16, stagger: 0.12, duration: DUR.base },
               0.3,
             );
           const heading = root.current.querySelector('h1');
@@ -38,7 +38,12 @@ export function useHeroMotion(root: RefObject<HTMLElement | null>) {
                 mask: 'lines',
                 autoSplit: true,
                 onSplit(self) {
-                  return gsap.from(self.lines, { yPercent: 100, opacity: 0, duration: 1.1, stagger: 0.1 });
+                  return gsap.from(self.lines, {
+                    yPercent: 100,
+                    opacity: 0,
+                    duration: DUR.slow,
+                    stagger: STAGGER,
+                  });
                 },
               })
             : undefined;
@@ -47,7 +52,7 @@ export function useHeroMotion(root: RefObject<HTMLElement | null>) {
             for (const country of ['tunisia', 'bahrain'] as const) {
               const tn = country === 'tunisia';
               const tween = gsap
-                .timeline({ paused: true, defaults: { duration: DUR.fast, ease: 'power3.inOut' } })
+                .timeline({ paused: true, defaults: { duration: DUR.fast, ease: EASE.move } })
                 .to(
                   '.hero-photo-tn',
                   { clipPath: `inset(0 ${tn ? 42 : 58}% 0 0)`, opacity: tn ? 1 : 0.68 },

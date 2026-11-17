@@ -1,11 +1,12 @@
-import { useRef, type ComponentProps } from 'react';
+import { type ComponentProps } from 'react';
 import { SectionHeader } from '@/components/ui/SectionHeader';
-import { gsap, useGSAP } from '@/lib/gsap';
+import { DUR, STAGGER, gsap, useGSAP } from '@/lib/gsap';
+import { useNearViewport } from '@/components/media/useNearViewport';
 import { SplitText } from '@/lib/gsap-plugins';
 import { useLocale } from '@/i18n/content';
 
 export function UnitedSectionHeader(props: ComponentProps<typeof SectionHeader>) {
-  const root = useRef<HTMLDivElement>(null);
+  const { root, near } = useNearViewport<HTMLDivElement>();
   const locale = useLocale();
   useGSAP(
     () => {
@@ -13,7 +14,7 @@ export function UnitedSectionHeader(props: ComponentProps<typeof SectionHeader>)
       mm.add(
         { motion: '(prefers-reduced-motion: no-preference)', reduce: '(prefers-reduced-motion: reduce)' },
         (ctx) => {
-          if (!ctx.conditions?.motion || !root.current) return;
+          if (!near || !ctx.conditions?.motion || !root.current) return;
           const heading = root.current.querySelector('h2');
           if (!heading) return;
           const split = SplitText.create(heading, {
@@ -24,8 +25,8 @@ export function UnitedSectionHeader(props: ComponentProps<typeof SectionHeader>)
               return gsap.from(self.lines, {
                 yPercent: 100,
                 opacity: 0,
-                stagger: 0.08,
-                duration: 0.8,
+                stagger: STAGGER,
+                duration: DUR.base,
                 scrollTrigger: { trigger: root.current, start: 'top 88%', once: true },
               });
             },
@@ -47,7 +48,7 @@ export function UnitedSectionHeader(props: ComponentProps<typeof SectionHeader>)
       );
       return () => mm.revert();
     },
-    { scope: root, dependencies: [locale], revertOnUpdate: true },
+    { scope: root, dependencies: [locale, near], revertOnUpdate: true },
   );
   return (
     <div ref={root} className="united-section-header">

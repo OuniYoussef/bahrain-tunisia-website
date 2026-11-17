@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { NavLink, useLocation } from 'react-router';
 import { useContent, useLocale } from '@/i18n/content';
-import { gsap, useGSAP } from '@/lib/gsap';
+import { DUR, EASE, dirSign, gsap, useGSAP } from '@/lib/gsap';
 const mainLinks = [
   ['united', ''],
   ['tunisia', '/tunisia'],
@@ -21,23 +21,60 @@ export function MainNav({ mobile = false, onNavigate }: { mobile?: boolean; onNa
       mm.add(
         { motion: '(prefers-reduced-motion: no-preference)', reduce: '(prefers-reduced-motion: reduce)' },
         (ctx) => {
+          if (mobile || !root.current) return;
+          const cleanups: (() => void)[] = [];
+          if (ctx.conditions?.motion) {
+            for (const link of root.current.querySelectorAll('a:not([aria-current="page"])')) {
+              const line = link.querySelector('.nav-underline');
+              const tween = gsap.fromTo(
+                line,
+                { scaleX: 0 },
+                {
+                  scaleX: 1,
+                  duration: DUR.fast,
+                  ease: EASE.move,
+                  paused: true,
+                  transformOrigin: dirSign() === -1 ? '100% 50%' : '0% 50%',
+                },
+              );
+              const enter = () => {
+                tween.play();
+              };
+              const leave = () => {
+                tween.reverse();
+              };
+              link.addEventListener('pointerenter', enter);
+              link.addEventListener('pointerleave', leave);
+              link.addEventListener('focus', enter);
+              link.addEventListener('blur', leave);
+              cleanups.push(() => {
+                link.removeEventListener('pointerenter', enter);
+                link.removeEventListener('pointerleave', leave);
+                link.removeEventListener('focus', enter);
+                link.removeEventListener('blur', leave);
+              });
+            }
+          }
           const active = root.current?.querySelector<HTMLElement>('[aria-current="page"]');
-          if (!active || mobile) return;
-          const next = { x: active.offsetLeft, width: active.offsetWidth };
+          if (!active) return () => cleanups.forEach((cleanup) => cleanup());
+          // Store reading-direction coordinates; convert back to physical translation once.
+          const next = { x: active.offsetLeft * dirSign(), width: active.offsetWidth };
           const before = previous.current;
           previous.current = next;
           if (ctx.conditions?.motion && before)
             gsap.from(active.querySelector('.nav-underline'), {
-              x: before.x - next.x,
+              x: (before.x - next.x) * dirSign(),
               scaleX: before.width / next.width,
               transformOrigin: '0 50%',
-              duration: 0.35,
+              duration: DUR.fast,
+              ease: EASE.move,
             });
+          return () => cleanups.forEach((cleanup) => cleanup());
         },
       );
       return () => mm.revert();
     },
-    { scope: root, dependencies: [pathname, mobile], revertOnUpdate: true },
+    { scope: root, dependencies: [pathname, mobile, locale], revertOnUpdate: true },
   );
   return (
     <nav ref={root} aria-label={a11y.mainNav} className={mobile ? 'mobile-main-nav' : 'main-nav'}>

@@ -7,6 +7,8 @@ import { hasSocialLinks } from '@/components/layout/socials';
 import { ResponsiveImage } from '@/components/media/ResponsiveImage';
 import { ButtonLink } from '@/components/ui/Button';
 import { Eyebrow } from '@/components/ui/Eyebrow';
+import { ImageCatalogContext } from '@/components/media/ImageCatalog';
+import catalog from '@/content/generated/contact.generated.json';
 export function Component() {
   const { contact } = useContent('common');
   return (
@@ -35,10 +37,12 @@ export function Component() {
           </>
         )}
       </div>
-      <div className="contact-images" dir="ltr">
-        <ResponsiveImage id="tn-sbs-blue-door" alt="" priority sizes="(min-width:1024px) 22vw, 44vw" />
-        <ResponsiveImage id="bh-craft-rawazin" alt="" sizes="(min-width:1024px) 22vw, 44vw" />
-      </div>
+      <ImageCatalogContext value={catalog}>
+        <div className="contact-images" dir="ltr">
+          <ResponsiveImage id="tn-sbs-blue-door" alt="" priority sizes="(min-width:1024px) 22vw, 44vw" />
+          <ResponsiveImage id="bh-craft-rawazin" alt="" sizes="(min-width:1024px) 22vw, 44vw" />
+        </div>
+      </ImageCatalogContext>
     </section>
   );
 }

@@ -1,6 +1,6 @@
 import { useRef, type ReactNode } from 'react';
 import { useBlocker, useLocation } from 'react-router';
-import { gsap, useGSAP } from '@/lib/gsap';
+import { EASE, gsap, useGSAP } from '@/lib/gsap';
 import { sameDeck } from '@/app/sameDeck';
 export function PageTransition({ children }: { children: ReactNode }) {
   const root = useRef<HTMLDivElement>(null);
@@ -33,8 +33,8 @@ export function PageTransition({ children }: { children: ReactNode }) {
               { clipPath: 'inset(100% 0% 0% 0% round 50% 50% 0% 0%)' },
               {
                 clipPath: 'inset(0% 0% 0% 0% round 0% 0% 0% 0%)',
-                duration: 0.25,
-                ease: 'power3.inOut',
+                duration: 0.5,
+                ease: EASE.move,
                 onComplete: () => blocker.proceed(),
               },
             );
@@ -50,7 +50,7 @@ export function PageTransition({ children }: { children: ReactNode }) {
             gsap.fromTo(
               panel,
               { clipPath: 'inset(0% 0% 0% 0% round 0% 0% 0% 0%)' },
-              { clipPath: 'inset(0% 0% 100% 0% round 0% 0% 50% 50%)', duration: 0.25, ease: 'power3.inOut' },
+              { clipPath: 'inset(0% 0% 100% 0% round 0% 0% 50% 50%)', duration: 0.5, ease: EASE.move },
             );
           }
         },

@@ -63,13 +63,14 @@ export const router = createBrowserRouter(
             {
               path: 'common-grounds/:slideId?',
               lazy: () => import('@/features/common-grounds/CommonGroundsPage'),
+              loader: async (args) => (await import('@/features/common-grounds/loader')).loader(args),
             },
             {
               path: 'vault',
               lazy: () => import('@/features/vault/VaultPage'),
               loader: preload('vault'),
             },
-            { path: 'contact', lazy: () => import('@/features/misc/ContactPage'), loader: preload('images') },
+            { path: 'contact', lazy: () => import('@/features/misc/ContactPage') },
             { path: 'credits', lazy: () => import('@/features/misc/CreditsPage'), loader: preload('images') },
             {
               path: 'admin/*',

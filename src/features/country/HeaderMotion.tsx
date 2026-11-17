@@ -1,5 +1,5 @@
 import type { RefObject } from 'react';
-import { gsap, useGSAP } from '@/lib/gsap';
+import { DUR, STAGGER, gsap, useGSAP } from '@/lib/gsap';
 import { SplitText } from '@/lib/gsap-plugins';
 import { useLocale } from '@/i18n/content';
 export default function HeaderMotion({
@@ -26,8 +26,8 @@ export default function HeaderMotion({
               return gsap.from(self.lines, {
                 yPercent: 100,
                 opacity: 0,
-                stagger: 0.08,
-                duration: 0.8,
+                stagger: STAGGER,
+                duration: DUR.base,
                 scrollTrigger: { trigger: root.current, start: 'top 88%', once: true },
               });
             },

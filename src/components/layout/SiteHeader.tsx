@@ -2,7 +2,7 @@ import { lazy, Suspense, useRef, useState } from 'react';
 import { Menu } from 'lucide-react';
 import { useLocation } from 'react-router';
 import { useContent } from '@/i18n/content';
-import { gsap, useGSAP } from '@/lib/gsap';
+import { DUR, EASE, gsap, useGSAP } from '@/lib/gsap';
 import { SiteIdentifier } from './SiteIdentifier';
 import { IeeeMasterBrand } from './IeeeMasterBrand';
 import { MainNav } from './MainNav';
@@ -23,7 +23,7 @@ export function SiteHeader({ hero = false }: { hero?: boolean }) {
         (ctx) => {
           const surface = root.current?.querySelector('.header-surface');
           if (surface && ctx.conditions?.motion && previousSolid.current !== solid) {
-            gsap.fromTo(surface, { opacity: solid ? 0 : 1 }, { opacity: solid ? 1 : 0, duration: 0.25 });
+            gsap.fromTo(surface, { opacity: solid ? 0 : 1 }, { opacity: solid ? 1 : 0, duration: DUR.fast });
           }
           previousSolid.current = solid;
         },
@@ -42,7 +42,8 @@ export function SiteHeader({ hero = false }: { hero?: boolean }) {
           let hidden = false;
           const tween = gsap.to(root.current, {
             yPercent: -110,
-            duration: ctx.conditions?.motion ? 0.25 : 0,
+            duration: ctx.conditions?.motion ? DUR.fast : 0,
+            ease: EASE.move,
             paused: true,
           });
           const show = () => {

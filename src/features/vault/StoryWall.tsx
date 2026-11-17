@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router';
-import { Flip } from 'gsap/Flip';
-import { gsap, useGSAP } from '@/lib/gsap';
+import { Flip } from '@/lib/gsap-flip';
+import { DUR, EASE, STAGGER, gsap, useGSAP } from '@/lib/gsap';
 import { useContent, useLocale } from '@/i18n/content';
 import { plural } from '@/i18n/format';
 import { useStories } from './hooks';
@@ -9,7 +9,6 @@ import { PendingStories } from './PendingStories';
 import { StoryCard } from './StoryCard';
 import { Ornament } from '@/components/media/Ornament';
 import type { Country, Category } from './api/types';
-gsap.registerPlugin(Flip);
 export function StoryWall() {
   const { wall, hero } = useContent('vault');
   const locale = useLocale();
@@ -39,16 +38,21 @@ export function StoryWall() {
             Flip.from(state.current, {
               targets: root.current?.querySelectorAll('.story-card'),
               scale: true,
-              duration: 0.45,
-              ease: 'power3.inOut',
+              duration: DUR.base,
+              ease: EASE.move,
               onEnter: (elements) =>
-                gsap.fromTo(elements, { opacity: 0, scale: 0.95 }, { opacity: 1, scale: 1, duration: 0.35 }),
+                gsap.fromTo(
+                  elements,
+                  { opacity: 0, scale: 0.95 },
+                  { opacity: 1, scale: 1, duration: DUR.fast },
+                ),
             });
           else {
             const entering = Array.from(
               root.current?.querySelectorAll<HTMLElement>('.story-card') ?? [],
             ).filter((node) => !previous.current.has(node.dataset.flipId ?? ''));
-            if (entering.length) gsap.from(entering, { opacity: 0, y: 16, stagger: 0.06, duration: 0.4 });
+            if (entering.length)
+              gsap.from(entering, { opacity: 0, y: 16, stagger: STAGGER, duration: DUR.base });
           }
         },
       );
@@ -72,7 +76,10 @@ export function StoryWall() {
   }, [hasNextPage, isFetching, isError, fetchNextPage]);
   function change(key: string, value: string) {
     const cards = root.current?.querySelectorAll('.story-card');
-    state.current = cards?.length ? Flip.getState(cards) : null;
+    state.current =
+      cards?.length && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ? Flip.getState(cards)
+        : null;
     const next = new URLSearchParams(params);
     if (value === 'all') next.delete(key);
     else next.set(key, value);

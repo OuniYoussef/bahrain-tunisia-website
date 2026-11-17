@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef, useState } from 'react';
 import { useLocale } from '@/i18n/content';
 import { dirSign, gsap, ScrollTrigger, useGSAP } from '@/lib/gsap';
+import { scheduleMotionRefresh } from '@/lib/motionRefresh';
 
 export function useDestinationTrack(count: number, onActive: (index: number) => void) {
   const root = useRef<HTMLDivElement>(null);
@@ -99,7 +100,7 @@ export function useDestinationTrack(count: number, onActive: (index: number) => 
       ScrollTrigger.addEventListener('refresh', restoreFocus);
       const refresh = () => {
         if (!mounted) return;
-        ScrollTrigger.refresh();
+        scheduleMotionRefresh();
       };
       void document.fonts.ready.then(refresh);
       panel.addEventListener('load', refresh, true);

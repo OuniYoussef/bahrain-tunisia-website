@@ -1,8 +1,8 @@
 import { useRef, type RefObject } from 'react';
-import { gsap, useGSAP, dirSign } from '@/lib/gsap';
+import { gsap, useGSAP, dirSign, DUR, EASE } from '@/lib/gsap';
 import { Observer } from '@/lib/gsap-observer';
 import { motionQueries } from './model';
-import { pauseOutside } from './ambient';
+import { pauseOutside } from '@/lib/ambient';
 
 export function useDeckMotion(
   root: RefObject<HTMLElement | null>,
@@ -14,13 +14,15 @@ export function useDeckMotion(
   const cooldown = useRef(0);
   useGSAP(
     () => {
+      // Keep momentum from advancing again while a lazily loaded slide is settling.
+      if (previous.current !== index) cooldown.current = performance.now() + DUR.base * 1000 + 50;
       const mm = gsap.matchMedia();
       mm.add(motionQueries, (ctx) => {
         const current = root.current?.querySelector<HTMLElement>(`[data-slide-index="${index}"]`);
         const outgoing = root.current?.querySelector<HTMLElement>(`[data-slide-index="${previous.current}"]`);
         if (!current) return;
         if (ctx.conditions?.motion) {
-          const tl = gsap.timeline({ defaults: { duration: 0.65, ease: 'power3.inOut' } });
+          const tl = gsap.timeline({ paused: true, defaults: { duration: DUR.base, ease: EASE.move } });
           if (outgoing && outgoing !== current)
             tl.fromTo(outgoing, { opacity: 1, scale: 1 }, { opacity: 0, scale: 0.96 }, 0);
           tl.fromTo(current, { opacity: 0 }, { opacity: 1 }, 0);
@@ -39,14 +41,14 @@ export function useDeckMotion(
             tl.fromTo(
               current.querySelectorAll('.matrix-half'),
               { clipPath: 'inset(0 5% 0 5%)' },
-              { clipPath: 'inset(0 0% 0 0%)', duration: 1.4 },
+              { clipPath: 'inset(0 0% 0 0%)', duration: DUR.slow },
               1.2,
             ).fromTo(current.querySelector('.matrix-copy'), { opacity: 0 }, { opacity: 1 }, 1.2);
           }
           gsap.fromTo(
             root.current!.querySelector('[data-progress-current]'),
             { scaleX: 0 },
-            { scaleX: 1, duration: 0.65 },
+            { scaleX: 1, duration: DUR.base },
           );
           previous.current = index;
           return pauseOutside(root.current!, tl);
