@@ -31,5 +31,7 @@ it('initializes the configured client with the publishable key', async () => {
   settings.VITE_SUPABASE_URL = 'https://example.supabase.co';
   settings.VITE_SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_test';
   expect((await import('./supabase')).supabase).not.toBeNull();
-  expect(createClient).toHaveBeenCalledExactlyOnceWith(settings.VITE_SUPABASE_URL, 'sb_publishable_test');
+  expect(createClient).toHaveBeenCalledExactlyOnceWith(settings.VITE_SUPABASE_URL, 'sb_publishable_test', {
+    auth: { persistSession: false, detectSessionInUrl: false },
+  });
 });

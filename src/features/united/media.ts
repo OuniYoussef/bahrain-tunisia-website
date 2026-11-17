@@ -1,4 +1,4 @@
-import { united } from '@/content/media.json';
+import united from '@/content/generated/united-media.generated.json';
 import type { media as lookup } from '@/lib/media';
 type Paths = 'united.hero' | 'united.journey' | 'united.connecting.items' | 'united.teasers';
 type Values = {

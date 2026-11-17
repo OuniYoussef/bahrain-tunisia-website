@@ -350,3 +350,35 @@ keep browsing usable. Newsletter code loads near the footer, with skeleton-aware
 URL changes no longer move focus to h1, allowing native dialog focus restoration. shareCategory selects
 the form category independently of the wall's category filter. A separate translated browser-local
 pending section avoids presenting unapproved mock submissions as community stories.
+
+**D-056 — Admin sessions and authorisation.** The shared browser Supabase client disables session persistence
+and automatic URL session detection: credentials never enter localStorage, and a full reload requires sign-in.
+Provisioned moderators must already have a password, as specified in BACKEND; invitation/password setup remains
+the project owner's provisioning flow. Admin data mounts only after session, aal2 and `is_admin` checks succeed.
+An isolated ephemeral QueryClient is cleared on sign-out and route unmount. The idle clock survives token-refresh
+checks and compares wall time when the tab resumes. No migrations or backend privilege changes are needed.
+The implementation follows the current [Supabase TOTP guide](https://supabase.com/docs/guides/auth/auth-mfa/totp)
+and [assurance-level reference](https://supabase.com/docs/reference/javascript/auth-mfa-getauthenticatorassurancelevel).
+
+**D-057 — Moderation interaction and private media.** A/R/J/K shortcuts work only on the explicit story-selection
+button, avoiding conflicts with forms, links, screen readers and ordinary browsing. All state changes receive a
+confirmation; rejection requires a private reason. Signing photo URLs does not create public objects. Private
+uploaded photos and the provider's QR code use bounded native images because they have no static manifest id,
+extending the narrow user-media exception in D-054. QR SVG is an image source, never injected markup.
+Enrolment is explicitly started by a button to avoid duplicate factors from React development effect replay;
+stale unverified TOTP factors are removed before retrying enrolment. Verified factors are never removed.
+
+**D-058 — Admin data and browser checks.** Report batches are combined before grouping/paginating by story,
+so counts are not split at API page boundaries. Subscriber export reads batches without retaining email rows in
+the query cache, quotes CSV fields, neutralises formula prefixes and uses the actual subscribe function URL for
+unsubscribe links. Tests use a separate `playwright.admin.config.ts` and `npm run test:admin` so mock and configured
+login states are deterministic without production credentials. Controlled API browser tests complement the real
+local RLS suite; they do not assert hosted Auth provisioning or a new hosted deployment.
+
+**D-059 — Route payload isolation after adding admin.** The public United budget check exceeded 180 KiB by
+less than 0.5 KiB after the chunk graph changed. Inspection showed that its named import from the canonical media
+JSON also pulled unrelated route metadata into the initial request set. `prepare-united-media.mjs` now derives a
+United-only JSON payload during the existing content preparation step, keeping the same media lookup contract
+and canonical source. Both public budget tests pass without changing their thresholds. Mock admin loads no Auth
+SDK/query implementation; the dashboard module is deferred until the guard succeeds. No public motion changes
+are included.

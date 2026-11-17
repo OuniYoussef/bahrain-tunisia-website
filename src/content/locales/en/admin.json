@@ -59,7 +59,8 @@
       "other": "{count} reports"
     },
     "resolve": "Mark as resolved",
-    "viewPost": "View post"
+    "viewPost": "View post",
+    "autoHidden": "This post is hidden. Review its moderation log before restoring it."
   },
   "alerts": {
     "title": "Site alerts",
@@ -75,7 +76,8 @@
     "expires": "Expires on (optional)",
     "active": "Active",
     "save": "Save alert",
-    "remove": "Remove"
+    "remove": "Remove",
+    "confirmRemove": "Remove this alert?"
   },
   "newsletter": {
     "title": "Newsletter subscribers",
@@ -87,12 +89,74 @@
       "few": "{count} active subscribers",
       "many": "{count} active subscribers",
       "other": "{count} active subscribers"
-    }
+    },
+    "warning": "This CSV contains personal data and private unsubscribe links. Store it securely, share only with authorised people, and delete it when no longer needed."
   },
   "status": {
     "pending": "Pending",
     "approved": "Approved",
     "rejected": "Rejected",
     "hidden": "Hidden"
+  },
+  "ui": {
+    "requiresSupabase": "Admin requires Supabase. Configure the backend to sign in.",
+    "denied": "This account is not authorised to moderate.",
+    "idle": "You were signed out after 30 minutes of inactivity.",
+    "loading": "Please wait…",
+    "saved": "Changes saved.",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "log": "Moderation log",
+    "zoom": "Enlarge photo",
+    "body": {
+      "zero": "Read story ({count} words)",
+      "one": "Read story ({count} word)",
+      "two": "Read story ({count} words)",
+      "few": "Read story ({count} words)",
+      "many": "Read story ({count} words)",
+      "other": "Read story ({count} words)"
+    },
+    "shortcuts": "Focus a story: A approve, R reject, J next, K previous. Actions require confirmation.",
+    "search": "Search title or author",
+    "previous": "Previous page",
+    "next": "Next page",
+    "preview": "Live preview",
+    "new": "New alert",
+    "edit": "Edit",
+    "notFound": "This admin page does not exist.",
+    "selectStory": "Select story for shortcuts"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "French",
+    "ar": "Arabic"
+  },
+  "countries": {
+    "tunisia": "Tunisia",
+    "bahrain": "Bahrain",
+    "both": "Both countries",
+    "other": "Other"
+  },
+  "categories": {
+    "story": "Story",
+    "photo": "Photo",
+    "diary": "Diary",
+    "anecdote": "Anecdote"
+  },
+  "reasons": {
+    "not-owner": "Ownership concern",
+    "offensive": "Offensive content",
+    "private": "Private information",
+    "spam": "Spam",
+    "other": "Other"
+  },
+  "actions": {
+    "approve": "Approve",
+    "reject": "Reject",
+    "hide": "Hide",
+    "restore": "Restore",
+    "delete": "Delete permanently",
+    "resolve-report": "Mark as resolved",
+    "auto-hide": "Automatically hidden"
   }
 }

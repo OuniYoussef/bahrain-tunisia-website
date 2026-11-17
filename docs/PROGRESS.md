@@ -22,7 +22,8 @@
 - P8 implemented and verified: Supabase schema/RLS/Storage, five Edge Functions, sample seed, generated types,
   configured browser client, SQL/Deno tests and real local Auth/Storage integration.
 - P9 implemented: trilingual community wall, sharing/reporting, browser compression, newsletter and alerts.
-- Next prompt: **P10 — Admin dashboard**
+- P10 implemented: lazy moderation dashboard with TOTP MFA, protected queues, reports, alerts and newsletter export.
+- Next prompt: **P11 — Motion & polish**
 
 ## Checklist
 ### P0 — Bootstrap & tooling
@@ -344,8 +345,26 @@ Notes:
   tests the adapter contract and mock UI, and does not claim a new hosted backend deployment.
 
 ### P10 — Admin dashboard
-- [ ] login, MFA enrol/verify, guard, queue, approved/rejected, reports, alerts CRUD, newsletter export, idle logout
+- [x] login, MFA enrol/verify, guard, queue, approved/rejected, reports, alerts CRUD, newsletter export, idle logout
 Notes:
+- 2026-11-17: Admin remains lazy and noindexed at `/:lang/admin/*`, with an explicit translated Supabase-required
+  screen in mock mode. Password login, TOTP QR/manual-secret enrolment and verification precede the aal2 and
+  `is_admin` gate. Sessions and protected queries stay in memory; sign-out clears the admin cache and unmounts
+  sensitive views. Idle expiry checks elapsed time (including background tabs), without resetting on token refresh.
+- Pending stories use oldest-first pages of 20, five-minute signed photo URLs refreshed before expiry, zoom,
+  expandable bodies, word counts, private rejection notes and focused-card A/R/J/K shortcuts. All moderation
+  writes use `moderate`, require confirmation and open the last-50-entry log drawer after success.
+- Approved search/hide/delete, rejected delete, grouped reports with hide/restore/resolve, trilingual alert CRUD
+  and preview, active-subscriber count and paged CSV export are implemented. Exports warn about personal data,
+  neutralise spreadsheet formulas and stop if the screen unmounts. Direct alert writes retain existing RLS.
+- `npm run verify` passes (114 unit/content tests); local `supabase test db` passes all 70 access assertions.
+  `npm run test:admin` runs isolated mock/configured servers with controlled Auth/API responses. It covers login,
+  MFA enrol/verify, non-admin denial, rejection/logging, alert creation, sign-out and idle expiry, plus EN/FR/AR,
+  360/768/1280/1920px, reduced motion and axe. Hosted provisioning/deployment is unchanged and not claimed tested.
+- The final complete admin browser run passes all 44 cases. The public United/Vault
+  JavaScript-budget checks pass. United now uses a generated media namespace to avoid loading unrelated route
+  metadata; its content and motion are unchanged. Auth SDK/query code is deferred in mock mode, and dashboard
+  modules load only after authorisation. Decisions are recorded in D-056–D-059.
 
 ### P11 — Motion & polish
 - [ ] signature animations per MOTION.md, page transitions, micro-interactions, reduced-motion audit, perf pass
