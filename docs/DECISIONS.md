@@ -487,3 +487,31 @@ Screenshot review includes every route/locale/width through contact sheets, with
 Long pages use stitched viewport captures to avoid Chromium full-page texture limits and offscreen
 rendering omissions. Original photographer attribution metadata and participant stories retain their
 source language; translated interface labels surround them. These are not untranslated interface copy.
+
+**D-070 — v1.0.0 handover versus public launch.** Mark implementation/handover complete and
+tag the reviewed local code as requested, while retaining unmet P13 performance and
+human/hosted gates. The release tag does not assert IEEE approval, production deployment,
+official assets, native-speaker review or a passing Lighthouse performance target.
+Deployment commands were checked against CLI 3.1.0 help and the official v3 changelog;
+remote database commands explicitly use --remote. Generated hosting artifacts replace
+the obsolete static public/_headers and public/_redirects references. Node 24.15.0+ is
+the handover prerequisite because the package engine floor alone does not satisfy jsdom.
+
+**D-071 — Conservative final cleanup.** Remove empty P0 scaffold modules and confirmed
+unused compatibility/plugin exports. Keep the dev styleguide behind its existing
+import.meta.env.DEV guard; inspect production output rather than deleting useful dev
+coverage. Knip's CLI, Deno and dynamic font-path findings are reviewed false positives:
+Supabase and Fraunces remain required. Do not hand-prune regeneration-owned database types.
+GitHub Pages accepts all documented public settings, including contact/social/Vault mode.
+
+**D-072 — Document actual onboarding and video limits.** The admin app has password/TOTP
+login but no invitation/recovery completion UI. Correct the provisioning instructions
+to require owner-managed password provisioning or a separately tested completion flow.
+The file video API accepts one shared caption URL; record localized tracks as a follow-up
+before publishing spoken file media, instead of claiming trilingual captions already work.
+
+**D-073 — Audit settled Matrix contrast.** The final browser run exposed FR/AR
+normal-motion contrast failures while axe sampled a partially faded-in slide. Wait for
+the active slide and copy to reach opacity 1 before the contrast audit, using retrying
+CSS assertions rather than a fixed delay or disabling a rule. Keep the motion tests
+and reduced-motion checks intact.

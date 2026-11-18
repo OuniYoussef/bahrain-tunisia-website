@@ -333,7 +333,11 @@ Pending photos in admin: `createSignedUrl(path, 300)` (5 min) via the admin's se
 
 ## Admin provisioning (project owner, once)
 1. Auth → Providers → Email: enable; **disable "Allow new users to sign up"**. Auth → MFA: TOTP enabled.
-2. Auth → Users → **Invite** each moderator. They set a password (min 12 characters).
+2. Provision each moderator with a password (min 12 characters) using trusted Auth
+   administration (Dashboard/Admin API), or invite them through a separately configured
+   invitation/password completion flow. The website implements password login and TOTP,
+   **not** an invitation/recovery callback screen; an invite redirected to its login page
+   does not itself let the moderator set a password. Test onboarding before sending invites.
 3. SQL editor: `insert into public.admins (user_id) select id from auth.users where email in ('mod1@…','mod2@…');`
 4. First login in `/en/admin` forces TOTP enrolment; afterwards every session must verify the code (aal2).
 

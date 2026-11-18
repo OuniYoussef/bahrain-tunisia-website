@@ -49,7 +49,6 @@ export interface VaultApi {
   subscribe(input: SubscribeInput): Promise<{ status: 'subscribed' | 'already' }>;
   getAlerts(): Promise<SiteAlert[]>;
 }
-export type AlertsApi = Pick<VaultApi, 'getAlerts'>;
 export class VaultError extends Error {
   code: string;
   constructor(code: string) {

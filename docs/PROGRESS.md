@@ -4,6 +4,8 @@
 > move unfinished items to "Known issues / follow-ups", and set "Next prompt".
 
 ## Current state
+- **Complete — v1.0.0 implementation and handover (2026-11-18).** Public launch is pending
+  the performance, human review and hosted-service follow-ups below; this is not launch approval.
 - P0 bootstrap implemented: Vite/React/TypeScript app, tooling, 15 project skills, folder skeleton, environment
   example and content safety net. Supplied content, scripts, SVGs and brand assets are preserved.
 - P1 foundation implemented: design tokens, script-specific fonts, UI/media/motion primitives and a
@@ -26,7 +28,7 @@
 - P11 motion polish implemented; final verification and performance measurements recorded below.
 - P12 implemented: localized static metadata, OG images, sitemap, security headers and host configurations.
 - P13 automated QA and interface fixes implemented; performance and human/hosted release gates remain open below.
-- Next prompt: **Resolve P13 performance gate, then P14 deployment & handover**
+- Next prompt: **Operator launch checklist and P13 performance remediation** (handover complete).
 
 ## Checklist
 ### P0 — Bootstrap & tooling
@@ -472,8 +474,34 @@ LCP delay despite early hero downloads. The requested ≥90 performance gate is 
 INP, deployed/mobile measurements and zero-long-task claims are also unverified.
 
 ### P14 — Deployment & handover
-- [ ] README, DEPLOYMENT.md verified end-to-end, IEEE review checklist, final cleanup
+- [x] Human README, deployment commands/artifacts checked against final code and installed CLI help
+- [x] Launch-day checklist including official IEEE assets, sample cleanup, production keys and booked review
+- [x] Remove unused scaffolding/exports; confirm production excludes the dev styleguide
+- [x] Final verification and complete browser suite; v1.0.0 handover ready for commit/tag
 Notes:
+- 2026-11-18: README covers mock/local Supabase setup, scripts, content/photos, video wiring,
+  moderation and documentation. DEPLOYMENT consolidates formerly contradictory host instructions,
+  uses explicit CLI 3 remote database targets and secret env files, and documents rollback.
+- GitHub Pages now accepts Vault mode and contact/social variables alongside the existing public settings.
+  Package/lockfile versions are 1.0.0. No hosted project was linked or deployed.
+- Knip review removed 22 empty scaffold modules, the unused useContent re-export, mock alert alias/type
+  and unused GSAP plugin re-exports. Retained the CLI, Deno functions/tests and standalone maintenance
+  scripts. Fraunces is used by OG generation and font subsetting; the apparent unused dependencies
+  are false positives, so no dependency was removed. No TODO/FIXME markers remained in runtime,
+  scripts, tests or Supabase code. Generated database helper exports remain regeneration-owned.
+- Production manifest and JavaScript were inspected: no Styleguide chunk or /dev/styleguide route.
+- Initial final browser run exposed a Matrix axe timing race: FR/AR normal-motion scans
+  sampled the entrance fade. The test now waits for full slide/copy opacity before auditing
+  contrast, retaining all axe rules; the complete suite is rerun on this correction.
+- Final validation: npm run verify passes (19 files / 114 unit/content tests, typecheck,
+  lint and production build). npm run test:e2e -- --workers=4 passes all **348 cases**
+  in 17.2 minutes across EN/FR/AR and 360/768/1280/1920px, normal/reduced motion,
+  keyboard, axe, browser-console and layout checks. No retries were enabled.
+- npm run test:seo passes 93 static heads and 30 browser deep links with zero CSP violations.
+  npm run audit reports zero production vulnerabilities. Formatting, diff whitespace,
+  README link existence and tracked credential/environment checks pass.
+- Handover is complete; deployment, IEEE review/registration, official assets, editorial
+  review and the existing P13 performance target remain explicit operator follow-ups.
 
 ## Installed versions
 
@@ -521,6 +549,12 @@ Recorded 2026-11-16 from the installed lockfile (Node 24.21.0; npm 12.2.0).
 | vitest | 5.1.0 | Development |
 
 ## Known issues / follow-ups
+- **Video captions:** the file-video API currently accepts one shared caption URL and labels it with
+  the active locale. Add locale-specific caption tracks before publishing speech in file videos;
+  use language-neutral clips or a captioned YouTube upload meanwhile. No real video is supplied.
+- **Moderator onboarding:** the site supplies password login and TOTP, not invitation/password-reset
+  completion screens. Owners must provision a password through trusted Auth administration or a
+  separate configured completion flow; implement and test a dedicated callback/recovery UI if needed.
 - **P13 human/hosted gates:** NVDA/VoiceOver smoke test and real 200% browser-zoom session; IEEE review
   and official assets; native-speaker editorial review; deployed HTTP headers/securityheaders.com;
   hosted Supabase advisors/RLS/signup/MFA settings, production Turnstile/origin restrictions, backups/PITR

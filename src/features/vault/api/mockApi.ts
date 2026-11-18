@@ -107,4 +107,3 @@ export const mockApi: VaultApi = {
     return [];
   },
 };
-export const mockAlertsApi = mockApi;

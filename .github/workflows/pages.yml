@@ -20,6 +20,12 @@ jobs:
       VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.VITE_SUPABASE_PUBLISHABLE_KEY }}
       VITE_TURNSTILE_SITE_KEY: ${{ vars.VITE_TURNSTILE_SITE_KEY }}
       VITE_IEEE_COOKIE_SCRIPT_URL: ${{ vars.VITE_IEEE_COOKIE_SCRIPT_URL }}
+      VITE_VAULT_MODE: ${{ vars.VITE_VAULT_MODE || 'auto' }}
+      VITE_CONTACT_EMAIL: ${{ vars.VITE_CONTACT_EMAIL }}
+      VITE_SOCIAL_INSTAGRAM: ${{ vars.VITE_SOCIAL_INSTAGRAM }}
+      VITE_SOCIAL_FACEBOOK: ${{ vars.VITE_SOCIAL_FACEBOOK }}
+      VITE_SOCIAL_LINKEDIN: ${{ vars.VITE_SOCIAL_LINKEDIN }}
+      VITE_SOCIAL_YOUTUBE: ${{ vars.VITE_SOCIAL_YOUTUBE }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

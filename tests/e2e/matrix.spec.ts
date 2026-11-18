@@ -44,6 +44,9 @@ for (const [lang, content] of Object.entries({ en, fr, ar })) {
       await page.getByRole('button', { name: content.ui.allSlides, exact: true }).click();
       await page.keyboard.press('Escape');
       await expect(page.getByRole('button', { name: content.ui.allSlides, exact: true })).toBeFocused();
+      // Audit the settled slide, not a transient low-contrast frame of its entrance fade.
+      await expect(page.locator('[data-active="true"]')).toHaveCSS('opacity', '1');
+      await expect(page.locator('[data-active="true"] .matrix-copy')).toHaveCSS('opacity', '1');
       expect((await new AxeBuilder({ page }).include('.matrix-deck').analyze()).violations).toEqual([]);
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
       await page.screenshot({
