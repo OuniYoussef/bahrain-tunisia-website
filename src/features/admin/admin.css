@@ -8,7 +8,7 @@
   background: var(--color-ink);
   color: var(--color-pearl);
   padding: 1.25rem;
-  border-radius: var(--radius-card);
+  border-radius: var(--radius-md);
 }
 .admin-layout nav {
   display: grid;
@@ -87,6 +87,12 @@
 .admin-form button:disabled {
   opacity: 0.55;
   cursor: default;
+}
+.admin-auth button:hover:not(:disabled),
+.admin-layout button:hover:not(:disabled),
+.admin-form button:hover:not(:disabled),
+.admin-layout nav a:hover {
+  background: color-mix(in srgb, currentColor 10%, transparent);
 }
 .admin-toolbar {
   display: flex;

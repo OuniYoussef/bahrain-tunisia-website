@@ -29,6 +29,7 @@ export function FormSpecimens() {
           <form className="grid min-w-0 gap-6 lg:col-span-7" onSubmit={(event) => event.preventDefault()}>
             <Input
               type="email"
+              spellCheck={false}
               label={newsletter.emailLabel}
               autoComplete="email"
               name="email"
@@ -36,13 +37,15 @@ export function FormSpecimens() {
               hint={newsletter.text}
             />
             <Textarea
+              name="message"
+              autoComplete="off"
               label={common.contact.title}
               value={text}
               onChange={(event) => setText(event.target.value)}
               maxLength={240}
               hint={common.contact.responseNote}
             />
-            <Select label={common.nav.commonGrounds} defaultValue="tunisia">
+            <Select name="country" label={common.nav.commonGrounds} defaultValue="tunisia">
               <option value="tunisia">{common.ui.tunisia}</option>
               <option value="bahrain">{common.ui.bahrain}</option>
             </Select>

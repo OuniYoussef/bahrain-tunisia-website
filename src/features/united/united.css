@@ -421,7 +421,7 @@
   }
   @media (min-width: 1024px) {
     .united-hero {
-      min-block-size: max(820px, calc(100svh - 36px));
+      min-block-size: max(820px, calc(100svh - 44px));
       padding-block: 230px 200px;
     }
     .hero-photo {

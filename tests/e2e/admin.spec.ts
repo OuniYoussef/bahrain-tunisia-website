@@ -4,6 +4,7 @@ import en from '../../src/content/locales/en/admin.json' with { type: 'json' };
 import fr from '../../src/content/locales/fr/admin.json' with { type: 'json' };
 import ar from '../../src/content/locales/ar/admin.json' with { type: 'json' };
 import { adminFixture } from './admin-fixture';
+import { mkdir } from 'node:fs/promises';
 for (const [lang, c] of Object.entries({ en, fr, ar })) {
   for (const reducedMotion of ['reduce', 'no-preference'] as const) {
     test(`${lang} ${reducedMotion} configured login and mock guard`, async ({ page }, testInfo) => {
@@ -123,7 +124,7 @@ test('aal2 non-admin is denied; authenticated idle session expires', async ({ pa
   await expect(page.locator('.admin-layout')).toHaveCount(0);
 });
 
-for (const [lang, c] of Object.entries({ fr, ar })) {
+for (const [lang, c] of Object.entries({ en, fr, ar })) {
   test(`${lang} dashboard navigation and RTL`, async ({ page }, testInfo) => {
     await adminFixture(page);
     await page.emulateMedia({ reducedMotion: 'reduce' });
@@ -134,11 +135,24 @@ for (const [lang, c] of Object.entries({ fr, ar })) {
     await page.getByLabel(c.mfa.code, { exact: true }).fill('123456');
     await page.getByRole('button', { name: c.mfa.verify, exact: true }).click();
     await expect(page.locator('.admin-layout')).toBeVisible();
-    for (const section of ['approved', 'rejected', 'reports', 'alerts', 'newsletter'] as const) {
+    const errors: string[] = [];
+    page.on('pageerror', (error) => errors.push(error.message));
+    page.on('console', (message) => {
+      if (['warning', 'error'].includes(message.type())) errors.push(message.text());
+    });
+    await mkdir('test-results/screens', { recursive: true });
+    for (const section of ['pending', 'approved', 'rejected', 'reports', 'alerts', 'newsletter'] as const) {
       await page.getByRole('link', { name: c.nav[section], exact: true }).click();
       await expect(page.locator('.admin-content > section > h2')).toBeVisible();
+      await page.waitForLoadState('networkidle');
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+      expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+      await page.screenshot({
+        path: `test-results/screens/${lang}-authenticated-admin-${section}-${page.viewportSize()!.width}.png`,
+        fullPage: true,
+      });
     }
+    expect(errors).toEqual([]);
     await page.getByRole('link', { name: c.nav.pending, exact: true }).click();
     expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
     await page.screenshot({ path: testInfo.outputPath('dashboard-localised.png'), fullPage: true });

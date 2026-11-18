@@ -12,6 +12,7 @@ import { Captcha } from './Captcha';
 import { PhotoPicker } from './PhotoPicker';
 import type { CompressedPhoto } from '@/lib/compress';
 import { useSubmitStory } from './hooks';
+import { useUnsavedChanges } from '@/lib/useUnsavedChanges';
 const empty: StoryFields = {
   name: '',
   country: 'both',
@@ -55,8 +56,9 @@ export function ShareStoryForm({ category, onClose }: { category?: Category; onC
     subscribe,
     setValue,
     reset,
-    formState: { errors },
+    formState: { errors, isDirty },
   } = useForm<StoryFields>({ resolver: zodResolver(storySchema), defaultValues: initial });
+  useUnsavedChanges((isDirty || photos.length > 0) && !mutation.isSuccess);
   const values = { ...empty, ...useWatch({ control }) };
   useEffect(() => {
     const unsubscribe = subscribe({

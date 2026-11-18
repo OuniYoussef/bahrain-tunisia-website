@@ -442,3 +442,48 @@ text overlays with embedded @fontsource Fraunces/Amiri WOFF2 data, avoiding plat
 and preserving Arabic shaping. Photo adaptations and source licences are recorded in public/og/credits.json.
 OG generation is explicit (npm run og:generate); ordinary offline builds consume committed images and
 fail if a required image is absent. No synthetic IEEE logo is used; the favicon placeholder is a neutral arch.
+
+**D-067 — P13 interface review scope and exceptions.** Reviewed the complete application UI (shell,
+country, United, Matrix, Vault, admin, miscellaneous and development specimens), shared controls,
+styles and motion against Web Interface Guidelines and the React performance skill. Fixed input
+metadata, icon semantics, hover states, safe-area spacing, touch targets, loading-region semantics,
+Arabic map-label positioning, localized alert summaries and untranslated Bahrain conversation hints.
+Native reload/close protection covers dirty story and alert forms; Vault's existing session draft
+also preserves text. Decorative motion now has a keyboard-operable pause/resume control; pausing
+does not prevent navigation transitions from revealing a new slide. Native video controls provide
+pause as well as mute. Offscreen credit cards skip rendering until needed.
+
+Project-specific exceptions: required IEEE English wording and brand/proper names remain unchanged
+and language-tagged; EN remains the default. Editorial cultural prose is not mechanically rewritten
+for generic title-case/punctuation preferences. Geographic art remains LTR; Arabic text inside it
+uses isolated RTL runs. Project-approved clip-path/DrawSVG motion remains. User-uploaded photos,
+brand assets and MFA QR codes retain their dedicated rendering paths rather than the static photo
+catalog. Main routes, slide position and Vault filters are URL-addressable; ephemeral dialog/control
+state need not all become URL parameters. Vault's incremental cards retain Flip-compatible DOM;
+windowing requires a separate measured design for focus and back-navigation restoration. No speculative
+CDN preconnects or framework-specific Next.js changes were added to this self-hosted Vite application.
+
+**D-068 — Route startup and typography.** Static localized HTML now preloads only its own startup
+module graph and hero photos, retaining route/admin splitting. Vite preview resolves localized
+directory HTML for extensionless URLs, matching the generated production host routes. Fulfilled
+locale resources are read synchronously after loaders finish instead of resuspending on resolved
+promises. Fraunces is subset to the axes actually used (SOFT 40, WONK 1, weights 400–700, optical
+size retained); the OFL is included and optional FontTools regeneration is documented in the script.
+Brand discovery generates filenames without importing public assets through Vite. These changes
+improve delivery but do not establish the Lighthouse ≥90 performance release gate; measured results
+and remaining work are recorded in PROGRESS. A broad rendering-architecture replacement is not
+represented as a verified QA fix.
+
+**D-069 — Release evidence boundaries.** The old literal secret grep cannot be empty: legitimate
+Edge Function variable names, SQL role names and documentation contain its patterns. Review those
+references and scan credential formats/tracked environment files with scripts/check-secrets.mjs;
+never print matched secret values. This scan is a heuristic, not proof against arbitrary credentials.
+Local generated-header/CSP checks do not replace deployed HTTP/header review. No linked hosted
+Supabase project is configured, so hosted advisors, production keys, MFA membership, backups and
+sample cleanup remain operator checks. Automated axe and screenshots do not substitute for a
+human screen-reader session or official IEEE approval.
+
+Screenshot review includes every route/locale/width through contact sheets, with native PNGs retained.
+Long pages use stitched viewport captures to avoid Chromium full-page texture limits and offscreen
+rendering omissions. Original photographer attribution metadata and participant stories retain their
+source language; translated interface labels surround them. These are not untranslated interface copy.

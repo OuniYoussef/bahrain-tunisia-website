@@ -21,7 +21,9 @@
     "backToTop": "Retour en haut",
     "breadcrumb": "Fil d'Ariane",
     "loadingPage": "Chargement de la page",
-    "decorative": ""
+    "decorative": "",
+    "pauseMotion": "Mettre les animations en pause",
+    "resumeMotion": "Reprendre les animations"
   },
   "nav": {
     "united": "Ensemble",

@@ -7,6 +7,7 @@ import { SocialLinks } from './SocialLinks';
 import { hasSocialLinks } from './socials';
 import { useState } from 'react';
 import { unitLogos } from './brand';
+import { MotionToggle } from '@/components/ui/MotionToggle';
 const policies = [
   ['accessibility', 'https://www.ieee.org/accessibility_statement.html'],
   ['nondiscrimination', 'https://www.ieee.org/about/corporate/governance/p9-26.html'],
@@ -76,6 +77,7 @@ export function SiteFooter() {
             </p>
           </div>
           <div className="footer-bottom">
+            <MotionToggle className="back-to-top" />
             <p>{footer.projectLine}</p>
             <button
               type="button"

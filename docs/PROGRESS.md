@@ -25,7 +25,8 @@
 - P10 implemented: lazy moderation dashboard with TOTP MFA, protected queues, reports, alerts and newsletter export.
 - P11 motion polish implemented; final verification and performance measurements recorded below.
 - P12 implemented: localized static metadata, OG images, sitemap, security headers and host configurations.
-- Next prompt: **P13 — QA & hardening**
+- P13 automated QA and interface fixes implemented; performance and human/hosted release gates remain open below.
+- Next prompt: **Resolve P13 performance gate, then P14 deployment & handover**
 
 ## Checklist
 ### P0 — Bootstrap & tooling
@@ -428,8 +429,47 @@ Notes:
 - Hosting limitations and corrections are recorded in D-064–D-066 and DEPLOYMENT.md. Real host header verification and configured external-service runtime checks remain deployment QA.
 
 ### P13 — QA & hardening
-- [ ] web-design-guidelines review, axe e2e, RTL/visual screenshots, Lighthouse ≥ 90, security checklist, bug fixes
+- [x] Full web-design-guidelines and React performance code review; fixes and exceptions D-067–D-069.
+- [x] Route/locale axe, RTL and console checks; keyboard and reduced-motion journeys; 320px reflow.
+- [x] Capture and visually review every route/locale at 360/768/1280/1920, including authenticated mock admin screens (528 captures, reviewed through image-viewer contact sheets).
+- [x] Root and `/exchange/` SEO, routing, configured shell and asset checks pass.
+- [ ] Lighthouse performance ≥90 and field Web Vitals.
+- [ ] Human accessibility/IEEE approval and hosted security release checks.
 Notes:
+- 2026-11-18: final `npm run verify` passes (19 files / 114 unit tests); content parity and production build pass. Final focused release suite passes 16/16 after the timing adjustment.
+- Public/browser suite: 343/348 passed on the full run; all five failures passed in the isolated rerun.
+  Three development-styleguide captures timed out under concurrent screenshot work; Matrix cooldown and
+  the four-second decorative sequence were timing-sensitive. The new sequence assertion allows a full
+  cycle. Do not interpret the combined result as a single flawless run. Admin suite: 48/48 passed.
+- `scripts/qa-browser.py`: 38 routes (including all 24 slides, admin guards and 404) × 3 locales ×
+  4 widths = 456 axe/RTL/heading/overflow/console cases, plus 72 authenticated admin captures/audits.
+  Artifacts are in `test-results/screens` (ignored build/test outputs); individual JSON results accompany
+  captures. Very long pages use viewport tiles to avoid Chromium compositor limits and stale offscreen
+  content. `scripts/qa-contact-sheets.mjs` produces review sheets; shared footers are shown once per size/locale.
+- Corrected Arabic map city labels (text direction no longer reverses geographic positions), missing
+  form metadata, loading region semantics, hover states, safe-area padding, small meta-nav/consent targets,
+  localised alert summaries and Bahrain conversation hints. Added decorative pause/resume, native video
+  controls and dirty-form reload/close protection. Performance work includes route/image hints, resolved
+  locale caches and smaller licensed Fraunces assets. No new runtime dependency.
+- FR/AR source comparison and rendered checks found no remaining untranslated interface sentences;
+  retained matches are ids, proper names, Arabic transliterations and exact IEEE wording (D-067).
+- `npm run audit`: zero vulnerabilities. Tracked credential/environment scan passes; variable-name grep
+  references were reviewed rather than misreported as leaked values. Root static-head/CSP harness:
+  93 static heads and 30 browser deep links pass with zero CSP violations.
+- Final uncontended Lighthouse 12.8.2 / Chromium 159, default simulated mobile throttling:
+
+| Route | Performance | Accessibility | Best Practices | SEO | LCP | CLS | TBT |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| United | 80 | 100 | 100 | 100 | 4.29s | 0 | 162ms |
+| Tunisia | 71 | 100 | 100 | 100 | 5.51s | 0 | 91ms |
+| Bahrain | 72 | 100 | 100 | 100 | 5.42s | 0 | 108ms |
+| Common Grounds | 79 | 100 | 100 | 100 | 4.51s | 0 | 47ms |
+| Vault | 80 | 100 | 100 | 100 | 4.36s | 0 | 55ms |
+| Contact | 85 | 100 | 100 | 100 | 3.91s | 0 | 32ms |
+
+Raw reports: `node_modules/.cache/motion-audit/qa-release/`. Startup rendering remains the dominant
+LCP delay despite early hero downloads. The requested ≥90 performance gate is **not met**; real-user
+INP, deployed/mobile measurements and zero-long-task claims are also unverified.
 
 ### P14 — Deployment & handover
 - [ ] README, DEPLOYMENT.md verified end-to-end, IEEE review checklist, final cleanup
@@ -481,6 +521,14 @@ Recorded 2026-11-16 from the installed lockfile (Node 24.21.0; npm 12.2.0).
 | vitest | 5.1.0 | Development |
 
 ## Known issues / follow-ups
+- **P13 human/hosted gates:** NVDA/VoiceOver smoke test and real 200% browser-zoom session; IEEE review
+  and official assets; native-speaker editorial review; deployed HTTP headers/securityheaders.com;
+  hosted Supabase advisors/RLS/signup/MFA settings, production Turnstile/origin restrictions, backups/PITR
+  and removal of sample posts. No hosted Supabase project is linked locally. Local mocks and generated
+  header tests do not establish these production properties. Optional Matrix video still needs real media.
+- **P13 performance gate remains open:** see the final six-route table above. No route reaches ≥90
+  performance; accessibility, best-practices and SEO are 100. Do not approve release on the basis of
+  passing axe/unit tests alone.
 - **P11 performance target remains open:** the six audited EN mobile routes have CLS 0, but Lighthouse
   reports 54–214ms startup tasks and performance scores 68–87. Prioritize initial rendering/data waterfalls
   and LCP in P12/P13, repeat on deployed/mobile hardware, and measure other locales and interaction CLS.

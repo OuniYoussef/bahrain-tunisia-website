@@ -9,6 +9,7 @@ import { SlideContent } from './SlideContent';
 const SlideIndex = lazy(() => import('./SlideIndex').then((module) => ({ default: module.SlideIndex })));
 import { slideMedia } from './model';
 import { useDeckMotion } from './useDeckMotion';
+import { MotionToggle } from '@/components/ui/MotionToggle';
 
 export function SlideDeck({
   index,
@@ -161,10 +162,10 @@ export function SlideDeck({
         <div className="matrix-controls">
           <span className="matrix-counter">{label}</span>
           <button aria-label={ui.previous} disabled={index === 0} onClick={() => go(index - 1)}>
-            <ChevronLeft className="rtl:-scale-x-100" />
+            <ChevronLeft aria-hidden="true" className="rtl:-scale-x-100" />
           </button>
           <button aria-label={ui.next} disabled={index === slides.length - 1} onClick={() => go(index + 1)}>
-            <ChevronRight className="rtl:-scale-x-100" />
+            <ChevronRight aria-hidden="true" className="rtl:-scale-x-100" />
           </button>
           <button
             aria-label={playing ? ui.pause : ui.play}
@@ -172,10 +173,10 @@ export function SlideDeck({
             disabled={index === slides.length - 1}
             onClick={() => setPlaying(!playing)}
           >
-            {playing ? <Pause /> : <Play />}
+            {playing ? <Pause aria-hidden="true" /> : <Play aria-hidden="true" />}
           </button>
           <button aria-label={ui.allSlides} onClick={() => setOpen(true)}>
-            <Grid2X2 />
+            <Grid2X2 aria-hidden="true" />
           </button>
           {document.fullscreenEnabled && (
             <button
@@ -186,10 +187,11 @@ export function SlideDeck({
                 );
               }}
             >
-              {fullscreen ? <Minimize /> : <Maximize />}
+              {fullscreen ? <Minimize aria-hidden="true" /> : <Maximize aria-hidden="true" />}
             </button>
           )}
         </div>
+        <MotionToggle className="matrix-button" />
         {hint && <p className="matrix-hint">{ui.hint}</p>}
       </div>
       <p className="sr-only" aria-live="polite" aria-atomic="true">

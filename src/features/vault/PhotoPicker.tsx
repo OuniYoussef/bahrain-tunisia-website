@@ -70,6 +70,7 @@ export function PhotoPicker({
           {labels.add} {labels.drop}
           <input
             type="file"
+            name="photos"
             multiple
             accept="image/jpeg,image/png,image/webp"
             onChange={(e) => {
@@ -86,6 +87,8 @@ export function PhotoPicker({
             <label>
               {t(labels.altLabel, { n: i + 1 })}
               <input
+                name={`photo-alt-${i}`}
+                autoComplete="off"
                 maxLength={200}
                 value={photo.alt}
                 onChange={(e) =>

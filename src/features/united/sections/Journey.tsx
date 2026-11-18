@@ -89,11 +89,11 @@ export function Journey() {
         {/* oxlint-disable-next-line jsx-a11y/prefer-tag-over-role */}
         <div ref={mapRoot} className="journey-map" dir="ltr" role="img" aria-label={journey.mapAlt}>
           <Suspense fallback={null}>{near ? <JourneyArtwork onReady={setReady} /> : null}</Suspense>
-          <span className="journey-city journey-tunis" dir={locale === 'ar' ? 'rtl' : 'ltr'}>
-            {journey.tunisLabel}
+          <span className="journey-city journey-tunis" dir="ltr">
+            <bdi dir={locale === 'ar' ? 'rtl' : 'ltr'}>{journey.tunisLabel}</bdi>
           </span>
-          <span className="journey-city journey-manama" dir={locale === 'ar' ? 'rtl' : 'ltr'}>
-            {journey.manamaLabel}
+          <span className="journey-city journey-manama" dir="ltr">
+            <bdi dir={locale === 'ar' ? 'rtl' : 'ltr'}>{journey.manamaLabel}</bdi>
           </span>
         </div>
         <p className="journey-distance">

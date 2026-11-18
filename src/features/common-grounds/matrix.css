@@ -54,6 +54,12 @@
   font-weight: 600;
   margin-block-start: 1.5rem;
 }
+.matrix-button:hover {
+  background: var(--color-sand-100);
+}
+.matrix-intro-copy .matrix-button + .matrix-button {
+  margin-inline-start: 0.75rem;
+}
 .matrix-deck {
   padding-block-start: var(--header-offset);
 }

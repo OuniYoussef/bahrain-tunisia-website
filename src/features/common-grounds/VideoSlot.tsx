@@ -65,6 +65,7 @@ export function VideoSlot({
             muted={muted}
             loop
             playsInline
+            controls
             preload="none"
           >
             <track

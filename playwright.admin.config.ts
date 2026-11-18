@@ -2,6 +2,7 @@ import { defineConfig } from '@playwright/test';
 import config from './playwright.config.ts';
 export default defineConfig({
   ...config,
+  outputDir: './test-results/admin',
   testMatch: 'admin.spec.ts',
   testIgnore: [],
   webServer: [

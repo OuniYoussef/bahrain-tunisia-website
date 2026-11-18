@@ -40,7 +40,14 @@ export function Login({ onSuccess }: { onSuccess: () => void }) {
       <p>{login.intro}</p>
       <label>
         {login.email}
-        <input name="email" type="email" autoComplete="username" required maxLength={254} />
+        <input
+          name="email"
+          type="email"
+          autoComplete="username"
+          spellCheck={false}
+          required
+          maxLength={254}
+        />
       </label>
       <label>
         {login.password}

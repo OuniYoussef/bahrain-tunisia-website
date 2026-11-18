@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    block-size: 36px;
+    block-size: 44px;
     padding-inline: 12px;
     overflow-x: auto;
     white-space: nowrap;
@@ -37,7 +37,7 @@
   .meta-nav a {
     display: inline-flex;
     align-items: center;
-    block-size: 36px;
+    block-size: 44px;
     color: inherit;
   }
   .meta-nav i {
@@ -412,6 +412,7 @@
     cursor: not-allowed;
   }
   .newsletter-consent {
+    min-block-size: 44px;
     display: flex;
     align-items: baseline;
     gap: 8px;
@@ -518,6 +519,13 @@
     align-items: center;
     gap: 12px;
     min-block-size: 44px;
+  }
+  .back-to-top:hover {
+    text-decoration: underline;
+  }
+  .credit-card {
+    content-visibility: auto;
+    contain-intrinsic-block-size: auto 230px;
   }
   .contact-page {
     display: grid;

@@ -22,7 +22,7 @@ export function useDeckMotion(
         const outgoing = root.current?.querySelector<HTMLElement>(`[data-slide-index="${previous.current}"]`);
         if (!current) return;
         if (ctx.conditions?.motion) {
-          const tl = gsap.timeline({ paused: true, defaults: { duration: DUR.base, ease: EASE.move } });
+          const tl = gsap.timeline({ defaults: { duration: DUR.base, ease: EASE.move } });
           if (outgoing && outgoing !== current)
             tl.fromTo(outgoing, { opacity: 1, scale: 1 }, { opacity: 0, scale: 0.96 }, 0);
           tl.fromTo(current, { opacity: 0 }, { opacity: 1 }, 0);
@@ -31,11 +31,10 @@ export function useDeckMotion(
             .forEach((half, i) =>
               tl.fromTo(half, { xPercent: (i ? 8 : -8) * dirSign() }, { xPercent: 0 }, 0),
             );
-          tl.fromTo(
+          const drift = gsap.fromTo(
             current.querySelectorAll('.matrix-photo'),
             { scale: 1 },
-            { scale: 1.08, duration: 10, ease: 'none' },
-            0,
+            { scale: 1.08, duration: 10, ease: 'none', paused: true },
           );
           if (current.dataset.layout === 'split-merge') {
             tl.fromTo(
@@ -51,7 +50,7 @@ export function useDeckMotion(
             { scaleX: 1, duration: DUR.base },
           );
           previous.current = index;
-          return pauseOutside(root.current!, tl);
+          return pauseOutside(root.current!, drift);
         }
         previous.current = index;
       });

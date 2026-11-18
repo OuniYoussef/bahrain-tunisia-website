@@ -22,6 +22,7 @@ export function MonumentGrid({
       <label className="monument-filter">
         <input
           type="checkbox"
+          name="unescoOnly"
           checked={unescoOnly}
           onChange={(event) => setUnescoOnly(event.target.checked)}
         />

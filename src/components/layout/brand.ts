@@ -1,11 +1,11 @@
 import { env } from '@/lib/env';
-const files = import.meta.glob('/public/brand/**/*.svg', { query: '?url', import: 'default', eager: true });
-export const brandExists = (file: string) => Object.hasOwn(files, `/public/brand/${file}`);
+import files from '@/content/generated/brand.json';
+export const brandExists = (file: string) => files.includes(file);
 export const brandUrl = (file: string) => `${env.basePath}brand/${file}`;
-export const unitLogos = Object.keys(files)
-  .filter((file) => file.startsWith('/public/brand/units/'))
+export const unitLogos = files
+  .filter((file) => file.startsWith('units/'))
   .map((file) => ({
-    src: brandUrl(file.replace('/public/brand/', '')),
+    src: brandUrl(file),
     name: file
       .split('/')
       .at(-1)!

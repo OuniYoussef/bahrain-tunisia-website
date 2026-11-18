@@ -109,6 +109,7 @@ export function Mfa({ onSuccess }: { onSuccess: () => void }) {
             {mfa.code}
             <input
               name="code"
+              spellCheck={false}
               inputMode="numeric"
               autoComplete="one-time-code"
               pattern="[0-9]{6}"

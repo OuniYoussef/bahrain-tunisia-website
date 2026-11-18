@@ -2,7 +2,9 @@ import { useLayoutEffect, useRef, useState } from 'react';
 import { SvgArtwork } from '@/components/media/SvgArtwork';
 import artwork from '/images/svg/skyline/skyline-tunisia-bahrain.svg?raw';
 import { useContent, useLocale } from '@/i18n/content';
-import { DUR, STAGGER, gsap, ScrollTrigger, useGSAP } from '@/lib/gsap';
+import { DUR, STAGGER, gsap, useGSAP } from '@/lib/gsap';
+import { pauseOutside } from '@/lib/ambient';
+
 type Landmark = { id: string; x: number; width: number; y: number };
 export function Skyline() {
   const { skyline } = useContent('common').footer;
@@ -68,20 +70,7 @@ export function Skyline() {
             scrollTrigger: { trigger: root.current, start: 'top 95%', once: true },
             delay: 1.3,
           });
-          const trigger = ScrollTrigger.create({
-            trigger: root.current,
-            start: 'top bottom',
-            end: 'bottom top',
-            onToggle: (self) => {
-              rotation.paused(!self.isActive || document.hidden);
-            },
-          });
-          const visibility = () => {
-            rotation.paused(!trigger.isActive || document.hidden);
-          };
-          visibility();
-          document.addEventListener('visibilitychange', visibility);
-          return () => document.removeEventListener('visibilitychange', visibility);
+          return pauseOutside(root.current, rotation);
         },
       );
       return () => mm.revert();

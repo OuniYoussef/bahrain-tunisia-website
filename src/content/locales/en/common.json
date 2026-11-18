@@ -21,7 +21,9 @@
     "backToTop": "Back to top",
     "breadcrumb": "Breadcrumb",
     "loadingPage": "Loading page",
-    "decorative": ""
+    "decorative": "",
+    "pauseMotion": "Pause decorative motion",
+    "resumeMotion": "Resume decorative motion"
   },
   "nav": {
     "united": "United",

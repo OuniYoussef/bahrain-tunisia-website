@@ -32,7 +32,7 @@ export function WordTable({ content }: { content: CountryContent['welcome'] }) {
                   </td>
                 )}
                 <th scope="row">{word.meaning}</th>
-                <td dir="ltr" className="word-transliteration">
+                <td dir={rtl ? 'rtl' : 'ltr'} className="word-transliteration">
                   {word.say}
                 </td>
                 {!rtl && (

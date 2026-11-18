@@ -52,7 +52,7 @@ export function HeartButton({ story }: { story: Story }) {
           (heart.hearted ? wall.reacted : wall.react) + ': ' + plural(wall.hearts, story.heart_count, locale)
         }
       >
-        <Heart size={18} fill={heart.hearted ? 'currentColor' : 'none'} />
+        <Heart aria-hidden="true" size={18} fill={heart.hearted ? 'currentColor' : 'none'} />
         <span>{plural(wall.hearts, story.heart_count, locale)}</span>
       </button>
       {Array.from({ length: 6 }, (_, i) => (

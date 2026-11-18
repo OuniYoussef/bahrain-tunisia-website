@@ -26,6 +26,7 @@ export function ShareFields({
               {...register(name)}
               maxLength={1500}
               rows={7}
+              autoComplete="off"
               aria-invalid={Boolean(errors[name])}
               aria-describedby={'share-' + name + '-help'}
               dir="auto"
@@ -35,6 +36,7 @@ export function ShareFields({
               id={'share-' + name}
               {...register(name)}
               maxLength={name === 'name' ? 60 : 80}
+              autoComplete={name === 'name' ? 'nickname' : 'off'}
               aria-invalid={Boolean(errors[name])}
               aria-describedby={'share-' + name + '-help'}
               dir="auto"

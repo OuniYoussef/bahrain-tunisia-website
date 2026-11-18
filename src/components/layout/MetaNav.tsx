@@ -1,6 +1,6 @@
 export function MetaNav() {
   return (
-    <nav className="meta-nav" aria-label="IEEE websites" lang="en" dir="ltr">
+    <nav className="meta-nav" aria-label="IEEE websites" lang="en" dir="ltr" translate="no">
       <div className="meta-network">
         <a href="https://www.ieee.org">IEEE.org</a>
         <span aria-hidden="true">|</span>

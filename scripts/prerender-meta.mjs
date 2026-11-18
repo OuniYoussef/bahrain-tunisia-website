@@ -2,10 +2,12 @@ import { mkdir, readFile, writeFile, access } from 'node:fs/promises';
 import { loadEnv } from 'vite';
 import { locales, pagesFor, escape } from './seo-data.mjs';
 import { writeHeaders, writeVercelOutput } from './write-headers.mjs';
+import { routeHints } from './route-hints.mjs';
 const env = loadEnv(process.env.NODE_ENV === 'development' ? 'development' : 'production', process.cwd(), 'VITE_');
 const base = `/${(env.VITE_BASE_PATH || '/').replace(/^\/+|\/+$/g, '')}`.replace(/\/?$/, '/');
 const origin = env.VITE_SITE_URL || 'https://your-domain.example';
 const out = process.argv[2] || 'dist';
+const hints = await routeHints(out, base);
 const url = (path) => new URL(`${base}${path}`, origin).href;
 const route = (lang, path) => `${lang}${path ? `/${path}` : ''}`;
 const headers = await writeHeaders(env, out, base);
@@ -27,7 +29,7 @@ for (const lang of locales) for (const page of await pagesFor(lang)) {
   const meta = [`<title data-prerender>${escape(page.title)}</title>`, tag('description', page.description), `<link data-prerender rel="canonical" href="${escape(canonical)}">`, alternates(page.path), ...Object.entries({ type: 'website', site_name: page.site.name, title: page.title, description: page.description, url: canonical, image, locale: { en: 'en_US', fr: 'fr_FR', ar: 'ar_TN' }[lang] }).map(([key, value]) => tag(`og:${key}`, value, true)), ...Object.entries({ card: 'summary_large_image', title: page.title, description: page.description, image }).map(([key, value]) => tag(`twitter:${key}`, value))].join('\n');
   const dir = `${out}/${route(lang, page.path)}`;
   await mkdir(dir, { recursive: true });
-  await writeFile(`${dir}/index.html`, template.replace(/<html[^>]*>/, `<html lang="${lang}" dir="${lang === 'ar' ? 'rtl' : 'ltr'}">`).replace('</head>', `${meta}\n</head>`));
+  await writeFile(`${dir}/index.html`, template.replace(/<html[^>]*>/, `<html lang="${lang}" dir="${lang === 'ar' ? 'rtl' : 'ltr'}">`).replace('</head>', `${meta}\n${hints(lang, page.path)}\n</head>`));
   entries.push(`<url><loc>${escape(canonical)}</loc>${alternates(page.path, true)}</url>`);
 }
 await writeFile(`${out}/index.html`, template);

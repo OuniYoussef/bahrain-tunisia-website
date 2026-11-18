@@ -108,6 +108,7 @@
       'SOFT' 40,
       'WONK' 1;
     overflow-wrap: break-word;
+    text-wrap: balance;
   }
   p {
     max-inline-size: 70ch;
@@ -121,6 +122,16 @@
   button:not(:disabled),
   summary {
     cursor: pointer;
+  }
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  summary {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgb(0 98 155 / 0.2);
+    scroll-margin-block: var(--header-offset) 2rem;
   }
   :focus-visible {
     outline: 2px solid var(--focus);
@@ -156,6 +167,7 @@
   .tone-pearl,
   .tone-sand,
   .ui-dialog {
+    padding-block-end: env(safe-area-inset-bottom);
     --focus: var(--color-ieee);
     --surface-text: var(--color-ink);
     --secondary-text: var(--color-muted);
@@ -184,7 +196,7 @@
     inline-size: 100%;
     max-inline-size: 1440px;
     margin-inline: auto;
-    padding-inline: clamp(1.25rem, 4vw, 4rem);
+    padding-inline: max(clamp(1.25rem, 4vw, 4rem), env(safe-area-inset-left), env(safe-area-inset-right));
   }
   .ui-section {
     padding-block: clamp(4.5rem, 9vw, 9rem);

@@ -21,7 +21,9 @@
     "backToTop": "العودة إلى الأعلى",
     "breadcrumb": "مسار التنقل",
     "loadingPage": "جارٍ تحميل الصفحة",
-    "decorative": ""
+    "decorative": "",
+    "pauseMotion": "إيقاف الحركة الزخرفية",
+    "resumeMotion": "استئناف الحركة الزخرفية"
   },
   "nav": {
     "united": "معاً",

@@ -43,6 +43,8 @@ export function Queue({ status }: { status: Story['status'] }) {
           {c.ui.search}
           <input
             type="search"
+            name="search"
+            autoComplete="off"
             maxLength={80}
             value={search}
             onChange={(e) => {

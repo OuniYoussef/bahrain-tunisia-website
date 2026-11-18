@@ -12,7 +12,7 @@ export function SiteHeader({ hero = false }: { hero?: boolean }) {
   const { a11y } = useContent('common');
   const { pathname } = useLocation();
   const [open, setOpen] = useState(false);
-  const [solid, setSolid] = useState(!hero || window.scrollY > 24);
+  const [solid, setSolid] = useState(() => !hero || window.scrollY > 24);
   const root = useRef<HTMLElement>(null);
   const previousSolid = useRef(solid);
   useGSAP(

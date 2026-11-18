@@ -51,6 +51,7 @@ export function NewsletterForm() {
               id="newsletter-email"
               onFocus={() => setActive(true)}
               type="email"
+              spellCheck={false}
               name="email"
               autoComplete="email"
               required

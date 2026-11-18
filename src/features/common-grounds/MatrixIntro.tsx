@@ -1,6 +1,7 @@
 import { useContent } from '@/i18n/content';
 import { PhotoSequence } from './PhotoSequence';
 import { slideMedia } from './model';
+import { MotionToggle } from '@/components/ui/MotionToggle';
 
 export function MatrixIntro({ onStart }: { onStart: () => void }) {
   const { intro } = useContent('matrix');
@@ -26,6 +27,7 @@ export function MatrixIntro({ onStart }: { onStart: () => void }) {
         <button className="matrix-button" onClick={onStart}>
           {intro.start}
         </button>
+        <MotionToggle className="matrix-button" />
       </div>
     </section>
   );

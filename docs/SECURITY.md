@@ -51,8 +51,16 @@ Cache headers: `/assets/*` and `/images/photos/*` → `public, max-age=31536000,
 - Turnstile widget: render explicitly in the form/report dialog, `action` names `submit-story`, `report-post`, `subscribe`.
 
 ## Release checklist
-- [ ] `npm run audit` shows no high/critical. [ ] No secrets in repo (`git grep -nE "sb_secret_|service_role|TURNSTILE_SECRET"` empty).
+- [x] P13 `npm run audit`: zero vulnerabilities.
+- [x] P13 tracked credential/environment scan (`node scripts/check-secrets.mjs`) passes; references from
+      `git grep -nE "sb_secret_|service_role|TURNSTILE_SECRET"` reviewed as variable/role names and documentation.
+      Literal grep cannot be empty in this repository; see D-069. This heuristic does not certify arbitrary secrets absent.
 - [ ] Supabase Security Advisor: 0 errors; RLS enabled on all tables; signups disabled; MFA on for every admin.
 - [ ] Production Turnstile keys; `ALLOWED_ORIGINS` = production domain(s) only.
 - [ ] Headers verified with `curl -I` and securityheaders.com (A or better). [ ] CSP has no violations in the console.
+- [x] Local generated-header harness: 93 static heads / 30 EN/FR/AR deep links, zero CSP violations.
 - [ ] Sample posts deleted. [ ] Backups/PITR as per plan; export of subscribers restricted to admins.
+
+P13 has no linked hosted Supabase project. Advisor results, production Auth/Turnstile/origin settings,
+deployed headers, backup policy and sample removal require the production operator; local mock tests
+and generated configuration do not verify them. Re-run checked items against each release artifact.

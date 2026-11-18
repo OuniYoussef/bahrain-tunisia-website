@@ -113,11 +113,11 @@ export function StoryWall() {
           : ''}
       </p>
       {query.isPending ? (
-        <div className="vault-grid" aria-label={wall.loading}>
+        <section className="vault-grid" aria-label={wall.loading} aria-busy="true">
           {[0, 1, 2, 3].map((i) => (
             <div className="vault-skeleton" key={i} />
           ))}
-        </div>
+        </section>
       ) : (
         <div className="vault-grid" aria-busy={query.isFetching}>
           {stories.map((story) => (

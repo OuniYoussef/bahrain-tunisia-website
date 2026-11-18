@@ -4,16 +4,16 @@ import { spawn } from 'node:child_process';
 import { resolve } from 'node:path';
 
 // Supply the CLI from an isolated npm exec installation; no runtime dependency.
-const [phase, cli] = process.argv.slice(2);
+const [phase, cli, base = 'http://127.0.0.1:4173', singleRoute] = process.argv.slice(2);
 if (!phase || !cli) throw new Error('Usage: node scripts/lighthouse-mobile.mjs before|after <lighthouse-cli>');
 const directory = resolve('node_modules/.cache/motion-audit', phase);
 await mkdir(directory, { recursive: true });
 const rows = [];
-for (const route of ['', 'tunisia', 'bahrain', 'common-grounds', 'vault', 'contact']) {
-  const name = route || 'united';
+for (const route of singleRoute === undefined ? ['', 'tunisia', 'bahrain', 'common-grounds', 'vault', 'contact'] : [singleRoute]) {
+  const name = route.replace(/\/$/, '') || 'united';
   const output = resolve(directory, `${name}.json`);
   await new Promise((done, reject) => {
-    const child = spawn(process.execPath, [cli, `http://127.0.0.1:4173/en/${route}`,
+    const child = spawn(process.execPath, [cli, `${base}/en/${route}`,
       '--quiet', '--chrome-flags=--headless --no-sandbox', '--only-categories=performance,accessibility,best-practices,seo',
       '--output=json', `--output-path=${output}`], {
       env: { ...process.env, CHROME_PATH: chromium.executablePath() }, stdio: 'inherit', windowsHide: true,

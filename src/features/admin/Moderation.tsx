@@ -88,7 +88,14 @@ export function Moderation({ children }: { children: ReactNode }) {
           {pending?.action === 'reject' && (
             <label>
               {c.queue.rejectReason}
-              <textarea value={note} onChange={(e) => setNote(e.target.value)} required maxLength={500} />
+              <textarea
+                name="rejectionNote"
+                autoComplete="off"
+                value={note}
+                onChange={(e) => setNote(e.target.value)}
+                required
+                maxLength={500}
+              />
             </label>
           )}
           <p role="alert">{message === c.queue.error ? message : ''}</p>

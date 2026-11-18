@@ -10,6 +10,9 @@ const loaders = import.meta.glob<{ default: CountryOverview<CountryNamespace> }>
   '/src/content/generated/country/*.json',
 );
 const cache = new Map<string, Promise<CountryOverview<CountryNamespace>>>();
+const resolved = new Map<string, CountryOverview<CountryNamespace>>();
+export const countryOverview = (locale: Locale, country: CountryNamespace) =>
+  resolved.get(`/src/content/generated/country/${locale}-${country}.json`);
 export function loadCountryOverview<N extends CountryNamespace>(
   locale: Locale,
   country: N,
@@ -19,7 +22,10 @@ export function loadCountryOverview<N extends CountryNamespace>(
   if (!promise) {
     const loader = loaders[path];
     if (!loader) throw new Error(`Unknown country overview: ${path}`);
-    promise = loader().then((module) => module.default);
+    promise = loader().then((module) => {
+      resolved.set(path, module.default);
+      return module.default;
+    });
     cache.set(path, promise);
   }
   return promise as Promise<CountryOverview<N>>;

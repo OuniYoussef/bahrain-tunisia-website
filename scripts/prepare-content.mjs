@@ -5,3 +5,4 @@ import './prepare-country.mjs';
 import './prepare-matrix.mjs';
 import './prepare-vault.mjs';
 import './prepare-contact.mjs';
+import './prepare-brand.mjs';
