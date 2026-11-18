@@ -65,21 +65,6 @@
     "dismiss": "Dismiss announcement"
   },
   "footer": {
-    "newsletter": {
-      "title": "Stay connected.",
-      "text": "Get stories, recipes and travel ideas from Tunisia and Bahrain in your inbox.",
-      "emailLabel": "Email address",
-      "consent": "I agree to receive the newsletter. I can unsubscribe at any time.",
-      "button": "Subscribe",
-      "submitting": "Subscribing…",
-      "success": "Thank you! You are on the list.",
-      "already": "This address is already subscribed.",
-      "invalid": "Please enter a valid email address.",
-      "error": "We could not subscribe you. Please try again later.",
-      "unavailable": "The newsletter will open soon.",
-      "unsubscribed": "You have been unsubscribed.",
-      "captchaLabel": "Security check"
-    },
     "columns": {
       "quickLinks": {
         "title": "Quick Links",

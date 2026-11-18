@@ -34,7 +34,6 @@ let browser;
 try {
   const sitemap = await readFile(`${root}/sitemap.xml`, 'utf8');
   assert.equal((sitemap.match(/<url>/g) || []).length, 93);
-  assert.ok(!sitemap.includes('/admin'));
   for (const lang of locales) for (const item of await pagesFor(lang)) {
     const path = `${lang}${item.path ? `/${item.path}` : ''}`;
     const response = await fetch(local + path);
@@ -53,15 +52,15 @@ try {
   page.on('console', (message) => { if (message.type() === 'error' && !message.text().includes('404 (Not Found)')) errors.push(message.text()); });
   await page.addInitScript(() => { window.__csp = []; document.addEventListener('securitypolicyviolation', (event) => window.__csp.push(`${event.effectiveDirective}: ${event.blockedURI}`)); });
   for (const lang of locales) {
-    for (const path of ['', '/tunisia', '/bahrain', '/common-grounds', '/common-grounds/sea', '/vault', '/contact', '/credits', '/admin', '/missing-route']) {
+    for (const path of ['', '/tunisia', '/bahrain', '/common-grounds', '/common-grounds/sea', '/vault', '/contact', '/credits', '/missing-route']) {
       const response = await page.goto(local + lang + path);
       await page.locator('h1').waitFor();
       await page.waitForLoadState('networkidle');
-      assert.equal(response.status(), ['/admin', '/missing-route'].includes(path) && !process.argv.includes('--spa') ? 404 : 200);
+      assert.equal(response.status(), path === '/missing-route' && !process.argv.includes('--spa') ? 404 : 200);
       assert.equal(await page.locator('html').getAttribute('dir'), lang === 'ar' ? 'rtl' : 'ltr');
       assert.equal(await page.locator('head > title').count(), 1);
       assert.equal(await page.locator('link[rel=canonical]').count(), 1);
-      if (path === '/missing-route' || path === '/admin') assert.equal(await page.locator('meta[name=robots]').getAttribute('content'), 'noindex');
+      if (path === '/missing-route') assert.equal(await page.locator('meta[name=robots]').getAttribute('content'), 'noindex');
       assert.deepEqual(await page.evaluate(() => window.__csp), [], lang + path);
     }
   }

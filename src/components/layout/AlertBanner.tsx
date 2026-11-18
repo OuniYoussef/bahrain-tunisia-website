@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react';
 import { X } from 'lucide-react';
 import { useContent, useLocale } from '@/i18n/content';
 import { t } from '@/i18n/format';
-import { loadAlerts } from '@/features/vault/api';
-import type { SiteAlert } from '@/features/vault/api/types';
+import { activeAlerts } from '@/lib/alerts';
 function wasDismissed(id: string) {
   try {
     return sessionStorage.getItem(`bt.alert.${id}`) === 'dismissed';
@@ -14,22 +13,13 @@ function wasDismissed(id: string) {
 export function AlertBanner() {
   const { alerts } = useContent('common');
   const locale = useLocale();
-  const [data, setData] = useState<SiteAlert[]>([]);
+  const [data, setData] = useState(activeAlerts);
   useEffect(() => {
-    let active = true;
-    const refresh = () =>
-      void loadAlerts()
-        .then((alerts) => {
-          if (active) setData(alerts);
-        })
-        .catch(() => {
-          /* The shell remains usable if announcements are unavailable. */
-        });
+    const refresh = () => setData(activeAlerts());
     refresh();
     const interval = window.setInterval(refresh, 300_000);
     window.addEventListener('focus', refresh);
     return () => {
-      active = false;
       window.clearInterval(interval);
       window.removeEventListener('focus', refresh);
     };
@@ -38,7 +28,7 @@ export function AlertBanner() {
   const [expanded, setExpanded] = useState(false);
   const visible = data
     .filter((alert) => !dismissed.includes(alert.id) && !wasDismissed(alert.id))
-    .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+    .sort((a, b) => (b.starts_at ?? '').localeCompare(a.starts_at ?? ''));
   if (!visible.length) return null;
   return (
     <section aria-label={alerts.regionLabel} className="alerts">
@@ -49,9 +39,10 @@ export function AlertBanner() {
           role={alert.level === 'critical' ? 'alert' : undefined}
         >
           <p>
-            {alert.message[locale]}{' '}
-            {alert.link && /^(https?:\/\/|\/(?!\/))/.test(alert.link.href) && (
-              <a href={alert.link.href}>{alert.link.label[locale]}</a>
+            {alert.link_url && /^(https?:\/\/|\/(?!\/))/.test(alert.link_url) ? (
+              <a href={alert.link_url}>{alert[`message_${locale}`]}</a>
+            ) : (
+              alert[`message_${locale}`]
             )}
           </p>
           <button

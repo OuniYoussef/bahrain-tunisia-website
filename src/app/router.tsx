@@ -72,11 +72,6 @@ export const router = createBrowserRouter(
             },
             { path: 'contact', lazy: () => import('@/features/misc/ContactPage') },
             { path: 'credits', lazy: () => import('@/features/misc/CreditsPage'), loader: preload('images') },
-            {
-              path: 'admin/*',
-              lazy: () => import('@/features/admin/AdminApp'),
-              loader: preload('admin'),
-            },
             { path: '*', lazy: () => import('@/features/misc/NotFoundPage'), loader: preload('images') },
           ],
         },

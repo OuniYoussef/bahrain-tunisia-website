@@ -373,61 +373,10 @@
   .footer-content {
     padding-block: 48px 24px;
   }
-  .newsletter-panel {
-    display: grid;
-    gap: 32px;
-    padding: clamp(24px, 4vw, 48px);
-    color: var(--color-ink);
-    background: var(--color-pearl);
-    border-radius: 20px;
-  }
-  .newsletter-panel h2 {
-    margin-block-end: 16px;
-  }
-  .newsletter-panel label {
-    font-size: 14px;
-  }
-  .newsletter-input-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-block: 8px 16px;
-  }
-  .newsletter-input-row input {
-    min-inline-size: 0;
-    inline-size: 100%;
-    flex: 1 1 160px;
-    border: 1px solid var(--color-muted);
-    border-radius: 6px;
-    padding: 10px;
-    min-block-size: 48px;
-    background: var(--color-pearl-glow);
-  }
-  .newsletter-input-row button {
-    padding: 10px 20px;
-    min-block-size: 48px;
-    border-radius: 6px;
-    background: var(--color-ink-soft);
-    color: var(--color-pearl);
-    cursor: not-allowed;
-  }
-  .newsletter-consent {
-    min-block-size: 44px;
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-    color: var(--color-muted);
-  }
-  #newsletter-status {
-    display: block;
-    color: var(--color-ieee);
-    margin-block-start: 16px;
-    font-size: 14px;
-  }
   .footer-links {
     display: grid;
     gap: 48px;
-    margin-block: 64px 40px;
+    margin-block: 24px 40px;
   }
   .footer-about > p:first-child {
     font-family: var(--font-display);
@@ -650,9 +599,6 @@
     }
   }
   @media (min-width: 768px) {
-    .newsletter-panel {
-      grid-template-columns: 1fr 1fr;
-    }
     .footer-links > nav {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
@@ -694,8 +640,4 @@
       display: none;
     }
   }
-}
-
-.newsletter-slot {
-  min-height: 220px;
 }

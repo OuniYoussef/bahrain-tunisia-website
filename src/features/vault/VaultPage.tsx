@@ -1,7 +1,7 @@
 import { lazy, Suspense } from 'react';
-import { useSearchParams } from 'react-router';
+import { Link, useSearchParams } from 'react-router';
 import { Feather, Camera, Map, MessagesSquare } from 'lucide-react';
-import { useContent } from '@/i18n/content';
+import { useContent, useLocale } from '@/i18n/content';
 import { PageHead } from '@/components/layout/PageHead';
 import { ResponsiveImage } from '@/components/media/ResponsiveImage';
 import { Flag } from '@/components/media/Flag';
@@ -17,15 +17,10 @@ const icons = [Feather, Camera, Map, MessagesSquare];
 export function Component() {
   const content = useContent('vault');
   const { hero, categories, meta } = content;
-  const [params, setParams] = useSearchParams();
+  const [params] = useSearchParams();
+  const locale = useLocale();
   const photos = media('vault.hero');
   const { root, near } = useNearViewport<HTMLDivElement>(false, '0px');
-  function open(category?: string) {
-    const next = new URLSearchParams(params);
-    next.set('share', '1');
-    if (category) next.set('shareCategory', category);
-    setParams(next, { preventScrollReset: true });
-  }
   return (
     <ImageCatalogContext value={catalog}>
       <div className="vault-page">
@@ -41,7 +36,7 @@ export function Component() {
               <p className="vault-subtitle">{hero.subheadline}</p>
               <p className="vault-intro">{hero.intro}</p>
               <div className="vault-actions">
-                <button onClick={() => open()}>{hero.ctaShare}</button>
+                <Link to={`/${locale}/contact`}>{hero.ctaShare}</Link>
                 <a href="#wall">{hero.ctaBrowse}</a>
               </div>
             </div>
@@ -61,14 +56,14 @@ export function Component() {
             {categories.items.map((item, i) => {
               const Icon = icons[i]!;
               return (
-                <button key={item.id} onClick={() => open(item.id)}>
+                <Link key={item.id} to={`/${locale}/contact`}>
                   <Icon aria-hidden="true" />
                   <h3 className="text-h3">{item.title}</h3>
                   <p>{item.text}</p>
                   <p>
                     <em>{item.prompt}</em>
                   </p>
-                </button>
+                </Link>
               );
             })}
           </div>
@@ -81,7 +76,7 @@ export function Component() {
               </div>
             }
           >
-            {near || params.has('story') || params.has('share') ? (
+            {near || params.has('story') ? (
               <VaultExperience />
             ) : (
               <div className="vault-wall-loading">
@@ -90,6 +85,14 @@ export function Component() {
             )}
           </Suspense>
         </div>
+        <section className="ui-container vault-guidelines">
+          <h2 className="text-h2">{content.guidelines.title}</h2>
+          <ul>
+            {content.guidelines.items.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </section>
       </div>
     </ImageCatalogContext>
   );

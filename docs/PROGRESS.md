@@ -4,6 +4,8 @@
 > move unfinished items to "Known issues / follow-ups", and set "Next prompt".
 
 ## Current state
+- **P15 — Static edition on `static-site` (2026-11-18).** Main is preserved. See P15 below.
+  P0–P14 records describe the main edition; backend operational follow-ups do not apply here.
 - **Complete — v1.0.0 implementation and handover (2026-11-18).** Public launch is pending
   the performance, human review and hosted-service follow-ups below; this is not launch approval.
 - P0 bootstrap implemented: Vite/React/TypeScript app, tooling, 15 project skills, folder skeleton, environment
@@ -28,7 +30,7 @@
 - P11 motion polish implemented; final verification and performance measurements recorded below.
 - P12 implemented: localized static metadata, OG images, sitemap, security headers and host configurations.
 - P13 automated QA and interface fixes implemented; performance and human/hosted release gates remain open below.
-- Next prompt: **Operator launch checklist and P13 performance remediation** (handover complete).
+- Next prompt: **Review static content/contact settings and remaining IEEE/performance launch gates.**
 
 ## Checklist
 ### P0 — Bootstrap & tooling
@@ -502,6 +504,23 @@ Notes:
   README link existence and tracked credential/environment checks pass.
 - Handover is complete; deployment, IEEE review/registration, official assets, editorial
   review and the existing P13 performance target remain explicit operator follow-ups.
+
+### P15 — Static edition
+- [x] Create static-site from clean main; keep main untouched.
+- [x] Remove database files, admin, forms/uploads, reactions/reports and newsletter, plus unused dependencies.
+- [x] Convert six sample stories and alerts to checked static JSON; preserve wall, filters, dialogs, photos and motion.
+- [x] Retarget sharing links, show guidelines, rebalance footer; retain trilingual content and public routes.
+- [x] Clean environment/hosting/CSP and update branch documentation.
+- [x] npm run verify and existing desktop smoke; removal scan; prepare commit and v1.0.0-static tag.
+Notes:
+- `npm run verify` passes: 11 files / 67 tests, typecheck, lint, trilingual content validation and
+  production build (93 localized heads). Removed-service scan is empty across src/scripts/public/dist
+  and the requested configuration files. Existing bootstrap smoke ran once on chromium-1280:
+  2/2 passed (normal/reduced motion), including axe, overflow and browser-console checks.
+- Zod remains for build-time public environment validation. No new tests, full e2e run, push or deployment.
+- Historical installed-version rows below describe main; package-lock.json is authoritative for static-site.
+- IEEE/assets, editorial/photo, caption and P13 performance follow-ups still apply. Backend onboarding,
+  hosted data services and production write-path checks belong only to main.
 
 ## Installed versions
 

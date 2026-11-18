@@ -31,7 +31,7 @@ for (const [lang, content] of Object.entries({ en, fr, ar })) {
         await expect(page.locator('[aria-roledescription="slide"]:not([inert])')).toHaveCount(1);
         if (i < 23) await page.keyboard.press(lang === 'ar' ? 'ArrowLeft' : 'ArrowRight');
       }
-      await expect(page.locator('[data-active="true"] a')).toHaveAttribute('href', `/${lang}/vault?share=1`);
+      await expect(page.locator('[data-active="true"] a')).toHaveAttribute('href', `/${lang}/vault`);
       await page.keyboard.press('Home');
       await page.getByRole('button', { name: content.ui.allSlides, exact: true }).click();
       const dialog = page.getByRole('dialog');

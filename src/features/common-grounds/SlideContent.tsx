@@ -85,7 +85,7 @@ export function SlideContent({ slide, active }: { slide: Slide; active: boolean 
               <Ornament kind="jasmine" />
               <Ornament kind="razji" />
             </div>
-            <Link className="matrix-button" to={`/${locale}/vault?share=1`}>
+            <Link className="matrix-button" to={`/${locale}/vault`}>
               {slide.cta}
             </Link>
           </>

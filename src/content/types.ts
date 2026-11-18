@@ -5,6 +5,5 @@ export type Content = {
   bahrain: typeof import('./locales/en/bahrain.json');
   matrix: typeof import('./locales/en/matrix.json');
   vault: typeof import('./locales/en/vault.json');
-  admin: typeof import('./locales/en/admin.json');
   images: typeof import('./locales/en/images.json');
 };

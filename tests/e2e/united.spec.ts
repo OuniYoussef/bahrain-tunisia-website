@@ -85,7 +85,7 @@ for (const locale of ['en', 'fr', 'ar'] as const) {
     await page.keyboard.press('Enter');
     const destinations = [
       `/${locale}/common-grounds`,
-      `/${locale}/vault?share=1`,
+      `/${locale}/vault`,
       `/${locale}/tunisia`,
       `/${locale}/bahrain`,
     ];

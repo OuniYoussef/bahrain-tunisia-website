@@ -1,5 +1,4 @@
 import { expect, test } from '@playwright/test';
-import AxeBuilder from '@axe-core/playwright';
 
 test('decorative motion can be paused and resumed by keyboard', async ({ page }) => {
   await page.goto('/en/common-grounds');
@@ -25,7 +24,7 @@ test('decorative motion can be paused and resumed by keyboard', async ({ page })
 });
 
 for (const locale of ['en', 'fr', 'ar']) {
-  test(`${locale} narrow reflow and keyboard share form`, async ({ page }) => {
+  test(`${locale} narrow reflow`, async ({ page }) => {
     await page.setViewportSize({ width: 320, height: 900 });
     await page.emulateMedia({ reducedMotion: 'reduce' });
     for (const route of ['', '/tunisia', '/bahrain', '/common-grounds', '/vault', '/contact', '/credits']) {
@@ -33,21 +32,5 @@ for (const locale of ['en', 'fr', 'ar']) {
       await expect(page.locator('h1')).toBeVisible();
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     }
-    await page.goto(`/${locale}/vault`);
-    await page.locator('.vault-actions button').focus();
-    await page.keyboard.press('Enter');
-    const dialog = page.locator('dialog[open]');
-    await expect(dialog).toBeVisible();
-    await page.keyboard.press('Tab');
-    await expect(dialog.locator('button').first()).toBeFocused();
-    await page.keyboard.press('Tab');
-    await expect(dialog.locator('#share-name')).toBeFocused();
-    await page.keyboard.type('Keyboard visitor');
-    await page.keyboard.press('Tab');
-    await expect(dialog.locator('#share-title')).toBeFocused();
-    expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
-    await page.keyboard.press('Escape');
-    await expect(dialog).toHaveCount(0);
-    await expect(page.locator('.vault-actions button')).toBeFocused();
   });
 }

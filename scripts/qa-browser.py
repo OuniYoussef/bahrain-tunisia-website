@@ -17,8 +17,7 @@ out = root / 'test-results' / 'screens'
 out.mkdir(parents=True, exist_ok=True)
 slides = json.loads((root / 'src/content/locales/en/matrix.json').read_text(encoding='utf-8'))['slides']
 routes = ['', 'tunisia', 'bahrain', 'common-grounds', 'vault', 'contact', 'credits',
-          'admin', 'admin/approved', 'admin/rejected', 'admin/reports', 'admin/alerts',
-          'admin/newsletter', 'missing'] + ['common-grounds/' + s['id'] for s in slides]
+          'missing'] + ['common-grounds/' + s['id'] for s in slides]
 if args.route:
     routes = ['' if args.route == 'united' else args.route]
 results = []

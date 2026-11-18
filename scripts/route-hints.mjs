@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
 
-// Discover only this route's startup graph; retain lazy loading for other pages/admin.
+// Discover only this route's startup graph; retain lazy loading for other pages.
 export async function routeHints(out, base) {
   const manifest = JSON.parse(await readFile(`${out}/.vite/manifest.json`, 'utf8'));
   const entryCss = new Set(Object.values(manifest).filter(entry => entry.isEntry).flatMap(entry => entry.css || []));

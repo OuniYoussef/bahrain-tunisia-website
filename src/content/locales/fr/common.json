@@ -65,21 +65,6 @@
     "dismiss": "Fermer l'annonce"
   },
   "footer": {
-    "newsletter": {
-      "title": "Restons en contact.",
-      "text": "Recevez des histoires, des recettes et des idées de voyage de Tunisie et de Bahreïn dans votre boîte mail.",
-      "emailLabel": "Adresse e-mail",
-      "consent": "J'accepte de recevoir la newsletter. Je peux me désabonner à tout moment.",
-      "button": "S'abonner",
-      "submitting": "Inscription en cours…",
-      "success": "Merci ! Vous êtes inscrit(e).",
-      "already": "Cette adresse est déjà inscrite.",
-      "invalid": "Veuillez saisir une adresse e-mail valide.",
-      "error": "L'inscription a échoué. Veuillez réessayer plus tard.",
-      "unavailable": "La newsletter ouvrira bientôt.",
-      "unsubscribed": "Votre désinscription est confirmée.",
-      "captchaLabel": "Vérification de sécurité"
-    },
     "columns": {
       "quickLinks": {
         "title": "Liens rapides",

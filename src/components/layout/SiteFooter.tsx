@@ -1,7 +1,6 @@
 import { Link } from 'react-router';
 import { ArrowUp } from 'lucide-react';
 import { useContent, useLocale } from '@/i18n/content';
-import { DeferredNewsletter } from './DeferredNewsletter';
 import { DeferredSkyline } from './DeferredSkyline';
 import { SocialLinks } from './SocialLinks';
 import { hasSocialLinks } from './socials';
@@ -25,7 +24,6 @@ export function SiteFooter() {
     <footer className="site-footer tone-ink">
       <DeferredSkyline />
       <div className="ui-container footer-content">
-        <DeferredNewsletter />
         <div className="footer-links">
           <div className="footer-about">
             <p className="text-h3">{site.name}</p>

@@ -109,33 +109,26 @@ Alt defaults to `useContent('images')[id]`; pass `alt=""` when purely decorative
 If the id is missing in the generated file (photos not fetched yet), render an elegant placeholder
 (gradient in the group colour + khatam pattern) so layouts still work.
 
-## Data (Vault, alerts, newsletter)
-- `features/vault/api/index.ts` exports `vaultApi: VaultApi` chosen by `env.vaultMode`:
-  `supabase` (when `VITE_SUPABASE_URL` + `VITE_SUPABASE_PUBLISHABLE_KEY` exist) or `mock`
-  (localStorage + 6 sample stories, same interface; lets the whole UI work without a backend).
-- `VaultApi`: `listStories({country, category, cursor, limit})`, `getStory(id)`, `submitStory(formData)`,
-  `react(storyId)`, `report(storyId, reason, details, token)`, `subscribe(email, locale, token)`, `getAlerts()`.
-- TanStack Query: `useInfiniteQuery(['stories', country, category])`, `staleTime: 60_000`,
-  `placeholderData: keepPreviousData`; prefetch `getStory` on card hover/focus; optimistic hearts.
-- Admin uses the same Supabase client with the signed-in session (RLS `is_admin()` + aal2) and calls the
-  `moderate` Edge Function for state changes that touch Storage.
+## Data (static edition)
+- This branch has no backend, visitor writes or authenticated routes. Earlier architecture diagrams
+  describe main; the static edition scope here supersedes their data and admin references.
+- `src/content/vault/stories.json` contains language-neutral editorial records, including six samples.
+  `features/vault/stories.ts` lists stories with country/category filters and 12-item pages, and gets by id.
+  React state controls pagination; URL parameters retain filters and story deep links. No data requests.
+- `src/content/alerts.json` contains trilingual alerts with optional start/expiry dates and links.
+  The banner filters dates on load, focus and every five minutes; dismissals last for the browser session.
+- Content checks validate both JSON files. Photos use the existing manifest, locale alts and pipeline.
 
 ## Environment variables (`.env.example`)
 ```
 VITE_SITE_URL=https://your-domain.example      # canonical URLs, sitemap, OG
 VITE_BASE_PATH=/                                # '/<repo>/' on GitHub Pages
-VITE_SUPABASE_URL=                              # https://<ref>.supabase.co
-VITE_SUPABASE_PUBLISHABLE_KEY=                  # sb_publishable_...  (never the secret key)
-VITE_TURNSTILE_SITE_KEY=                        # Cloudflare Turnstile site key
-VITE_VAULT_MODE=auto                            # auto | supabase | mock
 VITE_CONTACT_EMAIL=                             # shown on Contact page (mailto)
 VITE_SOCIAL_INSTAGRAM=  VITE_SOCIAL_FACEBOOK=  VITE_SOCIAL_LINKEDIN=  VITE_SOCIAL_YOUTUBE=
 VITE_IEEE_COOKIE_SCRIPT_URL=                    # only if IEEE provides a cookie banner script
 IMAGES_CONTACT=                                 # email/URL sent in the image script User-Agent
 ```
-Edge Function secrets (Supabase dashboard / `supabase secrets set`): `TURNSTILE_SECRET_KEY`, `IP_HASH_SALT`,
-`ALLOWED_ORIGINS` (comma-separated), `AUTO_HIDE_THRESHOLD` (default 3).
-`src/lib/env.ts` validates with zod and never throws for optional values (features degrade gracefully).
+`src/lib/env.ts` uses build-time public settings validated with zod and never throws for optional values (features degrade gracefully).
 
 ## Error handling & loading
 Route `errorElement` with friendly message (common.error). Suspense fallbacks are skeletons, not spinners,

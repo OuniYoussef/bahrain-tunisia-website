@@ -45,7 +45,7 @@ function Harness({ initial = false }: { initial?: boolean }) {
         title={common.contact.title}
         initialFocus={initial ? input : undefined}
       >
-        <input ref={input} aria-label={common.footer.newsletter.emailLabel} />
+        <input ref={input} aria-label={common.contact.emailLabel} />
         <DialogClose>{common.ui.close}</DialogClose>
       </Dialog>
     </ContentProvider>

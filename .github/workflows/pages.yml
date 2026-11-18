@@ -2,7 +2,7 @@ name: GitHub Pages
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [static-site]
 permissions:
   contents: read
   pages: write
@@ -16,11 +16,7 @@ jobs:
     env:
       VITE_BASE_PATH: ${{ vars.VITE_BASE_PATH || format('/{0}/', github.event.repository.name) }}
       VITE_SITE_URL: ${{ vars.VITE_SITE_URL || format('https://{0}.github.io', github.repository_owner) }}
-      VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
-      VITE_SUPABASE_PUBLISHABLE_KEY: ${{ vars.VITE_SUPABASE_PUBLISHABLE_KEY }}
-      VITE_TURNSTILE_SITE_KEY: ${{ vars.VITE_TURNSTILE_SITE_KEY }}
       VITE_IEEE_COOKIE_SCRIPT_URL: ${{ vars.VITE_IEEE_COOKIE_SCRIPT_URL }}
-      VITE_VAULT_MODE: ${{ vars.VITE_VAULT_MODE || 'auto' }}
       VITE_CONTACT_EMAIL: ${{ vars.VITE_CONTACT_EMAIL }}
       VITE_SOCIAL_INSTAGRAM: ${{ vars.VITE_SOCIAL_INSTAGRAM }}
       VITE_SOCIAL_FACEBOOK: ${{ vars.VITE_SOCIAL_FACEBOOK }}

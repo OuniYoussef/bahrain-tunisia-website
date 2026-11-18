@@ -515,3 +515,18 @@ normal-motion contrast failures while axe sampled a partially faded-in slide. Wa
 the active slide and copy to reach opacity 1 before the contrast audit, using retrying
 CSS assertions rather than a fixed delay or disabling a rule. Keep the motion tests
 and reduced-motion checks intact.
+
+**D-074 — Static edition branch (2026-11-18).** Create static-site from clean main; retain main unchanged.
+Remove the database service, admin namespace/routes, write interactions, newsletter and their dependencies.
+Keep the existing six editorial samples as language-neutral JSON with fixed dates and manifest photo ids.
+Their JSON order preserves the former wall's reverse-id sample order; future records follow editorial array order.
+The wall uses local filters/pages/get-by-id; no query client or prefetch is needed for synchronous data.
+Retain the visible guidelines and their review wording: the team reviews emailed stories before committing.
+Move existing country names out of the deleted form to wall.countryNames, preserving all translations.
+Reuse CTA labels; outside Vault link to Vault, inside link to Contact. Keep existing missing-story error copy.
+Alerts use static trilingual JSON, optional dates and session dismissals; linked messages reuse their text.
+Remove service origins from CSP; connect-src is self, while optional cookie code retains script-src access.
+Zod stays because public environment validation still imports it. GitHub Pages builds this branch.
+Only Architecture Data/Environment sections are rewritten as requested; their static scope overrides older
+main-oriented diagrams. Earlier progress/decisions are historical main evidence, not static release claims.
+No new tests or full browser run: reuse verify and one existing desktop bootstrap smoke. No push/deployment.

@@ -87,6 +87,39 @@ for (const [country, set] of Object.entries(places)) {
   for (const p of set) if (!pins.has(p)) problems.push(`${country}: place "${p}" has no pin in map-${country}.svg`);
 }
 
+const text = (value) => typeof value === 'string' && value.trim().length > 0;
+const isoDate = (value) => typeof value === 'string' && /^\d{4}-\d{2}-\d{2}T.*(?:Z|[+-]\d{2}:\d{2})$/.test(value) && Number.isFinite(Date.parse(value));
+const stories = read(path.join(ROOT, 'src/content/vault/stories.json'));
+const storyIds = new Set();
+if (!Array.isArray(stories)) problems.push('stories.json must be an array');
+else for (const story of stories) {
+  if (!story || typeof story !== 'object') { problems.push('Invalid story entry'); continue; }
+  if (!text(story.id) || storyIds.has(story.id)) problems.push(`Invalid or duplicate story id: ${story.id}`);
+  storyIds.add(story.id);
+  if (!['tunisia', 'bahrain', 'both', 'other'].includes(story.country)) problems.push(`${story.id}: invalid country`);
+  if (!['story', 'photo', 'diary', 'anecdote'].includes(story.category)) problems.push(`${story.id}: invalid category`);
+  for (const field of ['author_name', 'title', 'body']) if (!text(story[field])) problems.push(`${story.id}: missing ${field}`);
+  if (!LOCALES.includes(story.locale)) problems.push(`${story.id}: invalid locale`);
+  if (typeof story.is_sample !== 'boolean') problems.push(`${story.id}: is_sample must be boolean`);
+  if (story.place_year !== null && typeof story.place_year !== 'string') problems.push(`${story.id}: invalid place_year`);
+  if (!isoDate(story.approved_at)) problems.push(`${story.id}: invalid ISO date`);
+  if (!Array.isArray(story.image_ids)) problems.push(`${story.id}: image_ids must be an array`);
+  else for (const id of story.image_ids) if (!Object.hasOwn(manifest, id)) problems.push(`${story.id}: unknown image id ${id}`);
+}
+const alerts = read(path.join(ROOT, 'src/content/alerts.json'));
+const alertIds = new Set();
+if (!Array.isArray(alerts)) problems.push('alerts.json must be an array');
+else for (const alert of alerts) {
+  if (!alert || typeof alert !== 'object') { problems.push('Invalid alert entry'); continue; }
+  if (!text(alert.id) || alertIds.has(alert.id)) problems.push(`Invalid or duplicate alert id: ${alert.id}`);
+  alertIds.add(alert.id);
+  if (!['info', 'warning', 'critical'].includes(alert.level)) problems.push(`${alert.id}: invalid alert level`);
+  for (const lang of LOCALES) if (!text(alert[`message_${lang}`])) problems.push(`${alert.id}: missing ${lang} message`);
+  for (const field of ['starts_at', 'expires_at']) if (alert[field] !== undefined && !isoDate(alert[field])) problems.push(`${alert.id}: invalid ${field}`);
+  if (alert.starts_at && alert.expires_at && Date.parse(alert.starts_at) >= Date.parse(alert.expires_at)) problems.push(`${alert.id}: expiry must follow start`);
+  if (alert.link_url !== undefined && (!text(alert.link_url) || !/^(https?:\/\/|\/(?!\/))/.test(alert.link_url))) problems.push(`${alert.id}: invalid link_url`);
+}
+
 if (problems.length) {
   console.error(`✗ Content check failed (${problems.length} problems):\n  ` + problems.slice(0, 80).join('\n  '));
   process.exit(1);

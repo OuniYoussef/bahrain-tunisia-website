@@ -50,7 +50,7 @@ export function Hero() {
           <Link className="ui-button ui-button-primary" to={`/${locale}/common-grounds`}>
             {hero.exploreConnections}
           </Link>
-          <Link className="ui-button ui-button-ghost" to={`/${locale}/vault?share=1`}>
+          <Link className="ui-button ui-button-ghost" to={`/${locale}/vault`}>
             {hero.shareStory}
           </Link>
         </div>

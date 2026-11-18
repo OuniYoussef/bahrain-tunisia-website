@@ -13,7 +13,6 @@ import { Pattern } from '@/components/media/Pattern';
 import { Ornament } from '@/components/media/Ornament';
 export function FormSpecimens() {
   const common = useContent('common');
-  const newsletter = common.footer.newsletter;
   const [country, setCountry] = useState('tunisia');
   const [text, setText] = useState('');
   return (
@@ -30,11 +29,10 @@ export function FormSpecimens() {
             <Input
               type="email"
               spellCheck={false}
-              label={newsletter.emailLabel}
+              label={common.contact.emailLabel}
               autoComplete="email"
               name="email"
-              error={newsletter.invalid}
-              hint={newsletter.text}
+              hint={common.contact.responseNote}
             />
             <Textarea
               name="message"
@@ -58,9 +56,9 @@ export function FormSpecimens() {
                 { value: 'bahrain', label: common.ui.bahrain },
               ]}
             />
-            <Checkbox label={newsletter.consent} name="consent" />
+            <Checkbox label={common.footer.ieeeLinks.privacy} name="consent" />
             <Button type="submit" className="justify-self-start">
-              {newsletter.button}
+              {common.contact.title}
             </Button>
           </form>
           <aside

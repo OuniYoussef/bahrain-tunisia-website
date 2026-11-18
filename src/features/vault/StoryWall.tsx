@@ -1,14 +1,13 @@
-import { useEffect, useRef } from 'react';
-import { useSearchParams } from 'react-router';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { Link, useSearchParams } from 'react-router';
 import { Flip } from '@/lib/gsap-flip';
 import { DUR, EASE, STAGGER, gsap, useGSAP } from '@/lib/gsap';
 import { useContent, useLocale } from '@/i18n/content';
 import { plural } from '@/i18n/format';
-import { useStories } from './hooks';
-import { PendingStories } from './PendingStories';
+import { listStories } from './stories';
 import { StoryCard } from './StoryCard';
 import { Ornament } from '@/components/media/Ornament';
-import type { Country, Category } from './api/types';
+import type { Country, Category } from './stories';
 export function StoryWall() {
   const { wall, hero } = useContent('vault');
   const locale = useLocale();
@@ -19,16 +18,27 @@ export function StoryWall() {
   const previous = useRef(new Set<string>());
   const country = params.get('country') ?? 'all';
   const category = params.get('category') ?? 'all';
-  const query = useStories({
+  const filters = {
     country: ['tunisia', 'bahrain', 'both'].includes(country) ? (country as Country) : undefined,
     category: ['story', 'photo', 'diary', 'anecdote'].includes(category) ? (category as Category) : undefined,
-  });
-  const { hasNextPage, isFetching, isError, fetchNextPage } = query;
-  const stories = query.data?.pages.flatMap((p) => p.items) ?? [];
+  };
+  const filterKey = country + ':' + category;
+  const [pagination, setPagination] = useState({ key: filterKey, page: 0 });
+  if (pagination.key !== filterKey) setPagination({ key: filterKey, page: 0 });
+  const page = pagination.key === filterKey ? pagination.page : 0;
+  const result = listStories(filters, page);
+  const stories = Array.from({ length: page + 1 }, (_, i) => listStories(filters, i).items).flat();
+  const hasNextPage = result.hasMore;
+  const fetchNextPage = useCallback(() => {
+    setPagination((current) => ({
+      key: filterKey,
+      page: (current.key === filterKey ? current.page : 0) + 1,
+    }));
+  }, [filterKey]);
   const identity = stories.map((story) => story.id).join(',');
   useGSAP(
     () => {
-      if (query.isPlaceholderData || !root.current?.querySelector('.story-card')) return;
+      if (!root.current?.querySelector('.story-card')) return;
       const mm = gsap.matchMedia();
       mm.add(
         { motion: '(prefers-reduced-motion: no-preference)', reduce: '(prefers-reduced-motion: reduce)' },
@@ -60,11 +70,11 @@ export function StoryWall() {
       previous.current = new Set(identity.split(','));
       return () => mm.revert();
     },
-    { scope: root, dependencies: [identity, query.isPlaceholderData], revertOnUpdate: true },
+    { scope: root, dependencies: [identity], revertOnUpdate: true },
   );
   useEffect(() => {
     const element = sentinel.current;
-    if (!element || !hasNextPage || isFetching || isError) return;
+    if (!element || !hasNextPage) return;
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0]?.isIntersecting) void fetchNextPage();
@@ -73,7 +83,7 @@ export function StoryWall() {
     );
     observer.observe(element);
     return () => observer.disconnect();
-  }, [hasNextPage, isFetching, isError, fetchNextPage]);
+  }, [hasNextPage, page, fetchNextPage]);
   function change(key: string, value: string) {
     const cards = root.current?.querySelectorAll('.story-card');
     state.current =
@@ -107,31 +117,13 @@ export function StoryWall() {
           </fieldset>
         ))}
       </div>
-      <p aria-live="polite">
-        {query.data?.pages[0]?.total !== undefined
-          ? plural(wall.resultsCount, query.data.pages[0].total, locale)
-          : ''}
-      </p>
-      {query.isPending ? (
-        <section className="vault-grid" aria-label={wall.loading} aria-busy="true">
-          {[0, 1, 2, 3].map((i) => (
-            <div className="vault-skeleton" key={i} />
-          ))}
-        </section>
-      ) : (
-        <div className="vault-grid" aria-busy={query.isFetching}>
-          {stories.map((story) => (
-            <StoryCard story={story} key={story.id} />
-          ))}
-        </div>
-      )}
-      {query.isError && (
-        <div aria-live="polite">
-          <p>{wall.error}</p>
-          <button onClick={() => void query.refetch()}>{wall.retry}</button>
-        </div>
-      )}
-      {!query.isPending && !query.isError && !stories.length && (
+      <p aria-live="polite">{plural(wall.resultsCount, result.total, locale)}</p>
+      <div className="vault-grid">
+        {stories.map((story) => (
+          <StoryCard story={story} key={story.id} />
+        ))}
+      </div>
+      {!stories.length && (
         <div className="vault-empty">
           <Ornament kind="jasmine" className="mx-auto" />
           <p>{country === 'all' && category === 'all' ? wall.empty : wall.emptyFiltered}</p>
@@ -145,15 +137,12 @@ export function StoryWall() {
           >
             {wall.clearFilters}
           </button>
-          <button onClick={() => change('share', '1')}>{hero.ctaShare}</button>
+          <Link to={`/${locale}/contact`}>{hero.ctaShare}</Link>
         </div>
       )}
-      <PendingStories />
       <div ref={sentinel} />
-      {query.hasNextPage ? (
-        <button disabled={query.isFetching} onClick={() => void query.fetchNextPage()}>
-          {query.isFetching ? wall.loading : wall.loadMore}
-        </button>
+      {hasNextPage ? (
+        <button onClick={fetchNextPage}>{wall.loadMore}</button>
       ) : (
         stories.length > 0 && <p className="vault-end">{wall.end}</p>
       )}

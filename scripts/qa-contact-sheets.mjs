@@ -11,7 +11,7 @@ for (const width of widths) for (const locale of process.argv[3] ? [process.argv
   const tiles = [];
   if (!files.length) continue;
   const page = await browser.newPage({ viewport: { width, height: 900 }, reducedMotion: 'reduce' });
-  await page.goto(`http://127.0.0.1:4173/${locale}/admin`);
+  await page.goto(`http://127.0.0.1:4173/${locale}/contact`);
   await page.locator('.site-footer').waitFor();
   await page.evaluate('document.fonts.ready');
   const footerHeight = await page.locator('.site-footer').evaluate(el => el.getBoundingClientRect().height);
@@ -20,7 +20,7 @@ for (const width of widths) for (const locale of process.argv[3] ? [process.argv
     const original = sharp(`${source}/${file}`);
     const dimensions = await original.metadata();
     // Review the shared footer once per locale/width; all route-specific pixels remain.
-    const full = await original.extract({ left: 0, top: 0, width: dimensions.width, height: file === `${locale}-admin-${width}.png` ? dimensions.height : Math.max(1, dimensions.height - Math.floor(footerHeight)) }).resize({ width: 300 }).png().toBuffer();
+    const full = await original.extract({ left: 0, top: 0, width: dimensions.width, height: file === `${locale}-contact-${width}.png` ? dimensions.height : Math.max(1, dimensions.height - Math.floor(footerHeight)) }).resize({ width: 300 }).png().toBuffer();
     const { height } = await sharp(full).metadata();
     // Show every pixel, splitting long documents into readable consecutive strips.
     for (let y = 0; y < height; y += 650) {

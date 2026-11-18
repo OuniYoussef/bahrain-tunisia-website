@@ -1,0 +1,80 @@
+[
+  {
+    "id": "00000000-0000-4000-8000-000000000006",
+    "author_name": "IEEE Exchange Team",
+    "country": "both",
+    "category": "anecdote",
+    "title": "Barcha, wayed: one word, two accents",
+    "body": "Everyday expressions can introduce a conversation about language without turning it into a vocabulary test. Barcha in Tunisian speech and wayed in Bahraini speech can both express the idea of much or many, depending on context. Pronunciation and usage vary between speakers, so listening matters more than memorising a single translation. An exchange activity might invite participants to offer a short example, explain when they use it and compare friendly greetings at their own pace.",
+    "locale": "en",
+    "place_year": null,
+    "approved_at": "2026-11-17T12:00:00Z",
+    "is_sample": true,
+    "image_ids": ["cg-calligraphy"]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000005",
+    "author_name": "IEEE Exchange Team",
+    "country": "bahrain",
+    "category": "photo",
+    "title": "The Tree of Life at sunset",
+    "body": "The Tree of Life stands in an open desert setting where the changing light becomes part of the visit. Near sunset, its branches make a clear silhouette against the sky. The surrounding ground deserves the same care as the tree itself: stay within permitted areas, avoid climbing and take all litter away. Water and sun protection remain useful even late in the day. Arrange transport in advance and allow enough time for the return journey.",
+    "locale": "en",
+    "place_year": null,
+    "approved_at": "2026-11-17T12:00:00Z",
+    "is_sample": true,
+    "image_ids": ["bh-dest-tree-of-life"]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000004",
+    "author_name": "IEEE Exchange Team",
+    "country": "both",
+    "category": "anecdote",
+    "title": "من المقروض إلى اللقيمات",
+    "body": "تتيح الحلويات فرصة هادئة للتعرف على عادات الضيافة في تونس والبحرين. يقدم المقروض غالبا مع الشاي أو القهوة، وتظهر اللقيمات على موائد اللقاءات العائلية والمناسبات. تختلف الوصفات وطرق التقديم بين البيوت والمحلات، لذلك يمكن السؤال عن المكونات قبل التذوق، خاصة عند وجود حساسية غذائية. لا تختصر قطعة حلوى ثقافة بلد كامل، لكنها تفتح حديثا عن المطبخ والذاكرة اليومية. ومن اللطيف مشاركة طبق صغير وترك الوقت للاستماع إلى أسماء الحلويات وكيفية إعدادها واحترام تنوع الأذواق.",
+    "locale": "ar",
+    "place_year": null,
+    "approved_at": "2026-11-17T12:00:00Z",
+    "is_sample": true,
+    "image_ids": ["tn-sweet-makroudh"]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000003",
+    "author_name": "IEEE Exchange Team",
+    "country": "tunisia",
+    "category": "diary",
+    "title": "Une journée à Sidi Bou Saïd, pas à pas",
+    "body": "Les ruelles de Sidi Bou Saïd invitent à marcher lentement entre les façades blanches et les portes bleues. Depuis les hauteurs, le regard rejoint la baie et les jardins voisins. Une pause à une terrasse permet de profiter du paysage sans presser la visite. Les pavés peuvent être irréguliers et les montées demandent des chaussures confortables. Il est préférable de respecter les entrées privées et de demander avant de photographier les habitants ou leurs boutiques.",
+    "locale": "fr",
+    "place_year": null,
+    "approved_at": "2026-11-17T12:00:00Z",
+    "is_sample": true,
+    "image_ids": ["tn-dest-sidi-bou-said"]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000002",
+    "author_name": "IEEE Exchange Team",
+    "country": "bahrain",
+    "category": "photo",
+    "title": "Morning light on the Pearling Path",
+    "body": "The Pearling Path links houses and public spaces in Muharraq with the history of Bahrain’s pearl trade. Morning light reveals details in doorways, shaded passages and restored walls. A slow walk leaves room to read the interpretation panels and notice the relationship between homes and neighbourhood streets. Opening hours vary between buildings, so checking access before setting out is useful. Carry water, respect residential entrances and ask permission before including people in photographs.",
+    "locale": "en",
+    "place_year": null,
+    "approved_at": "2026-11-17T12:00:00Z",
+    "is_sample": true,
+    "image_ids": ["bh-dest-pearling-path"]
+  },
+  {
+    "id": "00000000-0000-4000-8000-000000000001",
+    "author_name": "IEEE Exchange Team",
+    "country": "tunisia",
+    "category": "story",
+    "title": "Tea above the domes of the Medina",
+    "body": "Rooftop terraces around the Medina offer views across domes, narrow lanes and the minaret of the Zitouna Mosque. Mint tea provides a quiet pause after walking through the covered souks. Late afternoon brings softer light to the white walls and tiled courtyards. Visitors can ask before photographing people, keep passageways clear and leave time to find their way back through the small streets. Comfortable shoes are useful on the uneven paving.",
+    "locale": "en",
+    "place_year": null,
+    "approved_at": "2026-11-17T12:00:00Z",
+    "is_sample": true,
+    "image_ids": ["tn-dest-medina-tunis"]
+  }
+]

@@ -9,8 +9,6 @@ const routes = [
   '/vault?country=tunisia',
   '/contact',
   '/credits',
-  '/admin',
-  '/admin/queue',
   '/missing',
 ];
 for (const locale of ['en', 'fr', 'ar'] as const) {

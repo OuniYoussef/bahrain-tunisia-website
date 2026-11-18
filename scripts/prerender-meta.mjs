@@ -35,6 +35,6 @@ for (const lang of locales) for (const page of await pagesFor(lang)) {
 await writeFile(`${out}/index.html`, template);
 await writeFile(`${out}/404.html`, template.replace('</head>', `${tag('robots', 'noindex')}\n</head>`));
 await writeFile(`${out}/sitemap.xml`, `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${entries.join('\n')}</urlset>\n`);
-await writeFile(`${out}/robots.txt`, `User-agent: *\nDisallow: /*/admin\nSitemap: ${url('sitemap.xml')}\n`);
+await writeFile(`${out}/robots.txt`, `User-agent: *\nSitemap: ${url('sitemap.xml')}\n`);
 if (process.env.VERCEL === '1') await writeVercelOutput(out, base, headers);
 console.log(`Generated ${entries.length} localized pages, sitemap, robots, 404 and host headers.`);

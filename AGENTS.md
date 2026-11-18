@@ -2,7 +2,7 @@
 
 You are building a premium, trilingual (EN default, FR, AR/RTL) cultural website that celebrates Tunisia,
 Bahrain and what connects them. Pages: United (landing), Tunisia, Bahrain, Common Grounds Media Matrix
-(24 slides), Community Experience Vault (stories wall + moderated uploads), plus Contact, Credits, Admin.
+(24 slides), Community Experience Vault (read-only stories wall), plus Contact and Credits.
 
 ## Session protocol (do this every time)
 1. Read `docs/PROGRESS.md` first (current state, what is done, what is next).
@@ -17,8 +17,7 @@ Bahrain and what connects them. Pages: United (landing), Tunisia, Bahrain, Commo
 ## Stack (keep these; latest stable within the major)
 TypeScript 7 (strict) · React 19 · Vite 8 · Tailwind CSS 4 (`@tailwindcss/vite`, CSS-first `@theme`) ·
 GSAP 3 + `@gsap/react` (all plugins are free: ScrollTrigger, SplitText, Flip, Observer, DrawSVGPlugin) ·
-React Router 8 (data router, `createBrowserRouter`) · TanStack Query 5 · Supabase (Postgres + RLS,
-Storage, Edge Functions, Auth with TOTP MFA) · Cloudflare Turnstile · react-hook-form + zod 4 ·
+React Router 8 (data router, `createBrowserRouter`) · Zod 4 (build-time environment validation) ·
 lucide-react · Vitest + Testing Library · Playwright + @axe-core/playwright · oxlint + Prettier.
 Fonts are self-hosted via @fontsource. No other UI kit (no shadcn/MUI/Bootstrap). No jQuery. No CSS-in-JS.
 
@@ -32,7 +31,6 @@ Fonts are self-hosted via @fontsource. No other UI kit (no shadcn/MUI/Bootstrap)
 | `npm run content:check` | locale parity, placeholders, image ids, map pins (`scripts/check-content.mjs`) |
 | `npm run images:fetch` | resolve/download/convert photos to WebP (`scripts/images/fetch-images.mjs`) |
 | `npm run test:e2e` | Playwright (a11y + smoke + screenshots) |
-| `npx supabase ...` | Supabase CLI (migrations in `supabase/migrations`, functions in `supabase/functions`) |
 
 ## Golden rules
 - **No hard-coded user-facing text.** Every string comes from `src/content/locales/<lang>/<ns>.json`
@@ -53,9 +51,9 @@ Fonts are self-hosted via @fontsource. No other UI kit (no shadcn/MUI/Bootstrap)
 - **IEEE branding is mandatory** (meta-nav, Master Brand upper-right, site identifier upper-left,
   required footer links + exact copyright/descriptor text). See `docs/IEEE_BRANDING.md`. Never redraw
   the IEEE logo; use files in `public/brand/` (placeholders until the official files are added).
-- **Security**: browser only gets the Supabase *publishable* key. All writes from visitors go through
-  Edge Functions (Turnstile + rate limit + validation). RLS on every table. Never log or expose secrets.
-  Treat all user content as untrusted text (never `dangerouslySetInnerHTML`). See `docs/BACKEND.md`, `docs/SECURITY.md`.
+- **Static data and security**: no backend, authentication or visitor submissions. Vault stories live in
+  `src/content/vault/stories.json`; alerts live in `src/content/alerts.json`. Review content before committing.
+  Treat story text as untrusted (never `dangerouslySetInnerHTML`). Keep CSP and headers in `docs/SECURITY.md`.
 - **Performance budget**: route-level code splitting; initial JS ≤ 180 KB gz; LCP image `fetchpriority="high"`;
   everything else lazy; fonts subset + `font-display: swap`; no layout shift (always width/height/aspect-ratio).
 - **TypeScript**: strict, no `any`, no `@ts-ignore` (use `@ts-expect-error` with a reason if unavoidable).
@@ -68,10 +66,9 @@ Fonts are self-hosted via @fontsource. No other UI kit (no shadcn/MUI/Bootstrap)
 ```
 AGENTS.md            ← you are here      docs/            ← specs (see docs/INDEX.md)
 src/content/         ← locales/<en|fr|ar>/*.json, media.json, images.manifest.json, generated/
-src/features/        ← united, country, common-grounds, vault, admin, misc
+src/features/        ← united, country, common-grounds, vault, misc
 src/components/      ← layout, ui, media, content, motion
-src/lib/             ← gsap, media, images, supabase, env, compression, utils
-supabase/            ← migrations, functions, seed.sql, config.toml
+src/lib/             ← gsap, media, images, env, alerts, utils
 scripts/             ← images/fetch-images.mjs, check-content.mjs, prerender-meta.mjs
 public/              ← images/svg (maps, skyline, patterns, ornaments, flags), images/photos (generated), brand/
 ```
@@ -80,8 +77,7 @@ public/              ← images/svg (maps, skyline, patterns, ornaments, flags),
 Use them explicitly when relevant: `$frontend-design` (visual quality, distinctive UI),
 `$web-design-guidelines` (UI/a11y review), `$vercel-react-best-practices` (React perf),
 `$vercel-composition-patterns` (component APIs), `$gsap-core` `$gsap-react` `$gsap-scrolltrigger`
-`$gsap-timeline` `$gsap-plugins` `$gsap-performance` (animation), `$supabase` and
-`$supabase-postgres-best-practices` (backend), `$webapp-testing` (Playwright checks).
+`$gsap-timeline` `$gsap-plugins` `$gsap-performance` (animation), `$webapp-testing` (Playwright checks).
 The design direction in `docs/DESIGN_SYSTEM.md` wins over generic skill advice when they conflict.
 
 ## Definition of done (every task)
